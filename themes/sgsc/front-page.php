@@ -37,20 +37,24 @@ get_header(); ?>
         </header><!-- .entry-header -->
       </article><!-- #post-## -->
 
-      <div class="front-program">
-        <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'programs' )) ) ?>">
-          <h1>Discover Our Programs</h1></a>
-      </div>
+      <section class="program-event-post">
+        <div class="front-program">
+          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'programs' )) ) ?>">
+            <h1>Discover Our Programs</h1></a>
+        </div>
 
-      <div class="front-events">
-        <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'event' )) ) ?>">
-          <h1>Upcomming events</h1></a>
-      </div>
+        <div>
+          <div class="front-events">
+            <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'event' )) ) ?>">
+              <h1>Upcomming Events</h1></a>
+          </div>
 
-      <div class="front-blog">
-        <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'blog' )) ) ?>">
-          <h1>Lastest blog posts</h1></a>
-      </div>
+          <div class="front-blog">
+            <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'blog' )) ) ?>">
+              <h1>Lastest Blog Posts</h1></a>
+          </div>
+        </div>
+      </section>
 
       <section class="feature-gallery">
         <div class="front-gallery">

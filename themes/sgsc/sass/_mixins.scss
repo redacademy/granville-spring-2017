@@ -20,7 +20,10 @@
         color: $white;
       }
       p {
-        padding: $p_padding;
+        padding: $m_padding;
+        @media screen and (min-width: $mobile_width) {
+          padding: $d_padding;
+        }
         border: $p_border;
         margin: 0;
         &:hover {
@@ -56,8 +59,13 @@
         }
       }
       @media screen and (min-width: $mobile_width) {
-        a p {
-          display: initial;
+        a {
+          i {
+            font-size: $font__body;
+          }
+          p {
+            display: initial;
+          }
         }
       }
     }

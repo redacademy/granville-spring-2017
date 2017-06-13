@@ -1,6 +1,41 @@
+/*
+  ** South Granvillge Senior Center Variables
+  */
+
+// structure
+$mobile_width: 470px;
+$d_width:1024px;
+// Colors
+$black: #000000;
+$white: #ffffff;
+$orange: #f5a623;
+$blue: #45cdcb;
+$pink: #F91E72;
+// Typography
+$font__header: montserrat;
+$font__main: lato;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+//desktop font size
+$font__header: 40px;
+$font__sub-header: 36px;
+$font__body: 24px;
+$font__sub-body: 18px;
+//mobile font size
+$font__m-header: 22px;
+$font__m-sub-header: 16px;
+$font__m-body: 12px;
+//button
+$m_padding: .3rem 1.5rem;
+$d_padding: .4rem 3rem;
+$p_border: 2px $black solid;
+
+/*
+ ** Default Variables (don't change anything here)
+  */
+
 // Structure
 $base__space-unit: 1.5rem;
-$mobile_width: 470px;
 // Colors
 $color__background-body: #fff;
 $color__background-screen: #f1f1f1;
@@ -37,27 +72,3 @@ Courier,
 monospace;
 $font__line-height-body: 1.75;
 $font__line-height-pre: 1.6;
-//SGSC
-// Colors
-$black: #000000;
-$white: #ffffff;
-$orange: #f5a623;
-$blue: #45cdcb;
-$pink: #F91E72;
-// Typography
-$font__header: montserrat;
-$font__main: lato;
-$font__line-height-body: 1.5;
-$font__line-height-pre: 1.6;
-//desktop font size
-$font__header: 40px;
-$font__sub-header: 36px;
-$font__body: 24px;
-$font__sub-body: 18px;
-//mobile font size
-$font__m-header: 22px;
-$font__m-sub-header: 16px;
-$font__m-body: 12px;
-//border
-$p_padding: .3rem 1.5rem;
-$p_border: 2px $black solid;
