@@ -17,7 +17,6 @@
         display: flex;
         height: 276px;
         flex-flow: column nowrap;
-        background: grey;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -53,6 +52,7 @@
         align-items: center;
         background: $orange;
         height: 138px;
+        width: 100%;
         a {
           text-decoration: none;
           height: 100%;
@@ -72,8 +72,31 @@
       .front-blog {
         background: $white;
       }
-      .front-join {
-        background: $blue;
+      .feature-gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 276px;
+        background: gray;
+        width: 100%;
+        .front-gallery {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          position: absolute;
+          bottom: 0;
+          height: 138px;
+          width: 100%;
+          background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+          h1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+          }
+          @include m-button;
+        }
       }
       .involved-join {
         height: 138px;
@@ -81,6 +104,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         &:hover {
           border: $p_border 4px;
         }
@@ -95,6 +119,9 @@
             background: $pink;
           }
         }
+      }
+      .front-join {
+        background: $blue;
       }
     }
   }
