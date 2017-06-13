@@ -7,14 +7,16 @@ $orange: #f5a623;
 $blue: #45cdcb;
 $pink: #F91E72;
 // Typography
-$font__main: sans-serif;
-$font__code: Monaco,
-Consolas,
-"Andale Mono",
-"DejaVu Sans Mono",
-monospace;
-$font__pre: "Courier 10 Pitch",
-Courier,
-monospace;
+$font__header: montserrat;
+$font__body: lato;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+//desktop font size
+$font__header: 40px;
+$font__sub-header: 36px;
+$font__body: 24px;
+$font__sub-body: 18px;
+//mobile font size
+$font__m-header: 22px;
+$font__m-sub-header: 16px;
+$font__m-body: 12px;
