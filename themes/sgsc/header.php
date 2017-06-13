@@ -28,7 +28,8 @@
 
 				<div class="logo">
 					<div class="logo-header">
-						<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/dekstop-logo.svg"/>
+						<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo.svg"/>
+						<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo-text.svg"/>
 					</div>
 				</div>
 

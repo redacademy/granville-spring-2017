@@ -419,6 +419,9 @@ a {
     outline: 0; }
 
 /* Menus */
+.site-branding {
+  display: none; }
+
 .main-navigation {
   clear: both;
   display: block;
@@ -662,14 +665,14 @@ object {
 /* Front page */
 .site-header {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 13rem; }
   .site-header a {
     color: black; }
   .site-header a:hover {
     color: #F5A623; }
-
-.logo {
-  background-image: url("../../assets/images/desktop-logo.svg"); }
 
 .main-navigation .search-field {
   display: none;
@@ -678,6 +681,13 @@ object {
   background: transparent; }
   .main-navigation .search-field:focus {
     outline: none; }
+
+.logo-header {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -ms-flex-align: start;
+      align-items: flex-start; }
 
 .icon-search {
   cursor: pointer; }
@@ -698,9 +708,14 @@ object {
 
 .menu {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end; }
 
 .main-navigation {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center; }
+  padding-bottom: 0.5rem; }
+  .main-navigation li {
+    padding: 0px 1.4rem; }
+
+.icon-search .fa-search {
+  font-size: 1.5rem; }
