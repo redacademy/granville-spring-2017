@@ -1,0 +1,53 @@
+.site-header {
+  display: flex;
+  a {
+    color: black;
+  }
+  a:hover {
+    color: $color__link-hover;
+  }
+}
+
+.logo {
+  background-image: url('../../assets/images/desktop-logo.svg');
+}
+
+.main-navigation .search-field{ 
+	display: none;
+	overflow:hidden;
+	border: none;
+	background: transparent;
+	&:focus{
+		outline: none;
+	}
+}
+
+.icon-search{
+	cursor: pointer;
+}
+
+.search-submit {
+	display: inline;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+.search-form {
+	fieldset {
+	border: none;
+	}
+	input {
+    display: none;
+		border: none;
+		outline: none;
+	}
+}
+
+.menu {
+  display: flex;
+}
+
+.main-navigation {
+  align-self: center;
+}
