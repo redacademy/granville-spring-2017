@@ -725,7 +725,8 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  height: 4rem; }
+  height: 4rem;
+  z-index: -1; }
 
 .logo-img {
   height: 3.5rem;
