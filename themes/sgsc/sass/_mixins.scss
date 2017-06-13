@@ -1,12 +1,52 @@
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
+  font-size: ($sizeValue * 16) * 1px;
+  font-size: $sizeValue * 1rem;
 }
 
 // Center block
 @mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//mobile "more" button
+@mixin m-button {
+  a {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+      color: $white;
+    }
+    p {
+      padding: $p_padding;
+      border: $p_border;
+      margin: 0;
+      &:hover {
+        border: none;
+        background: $orange;
+        z-index: 2;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+//mobile donate-btn 
+@mixin m-donate {
+  .donate-btn {
+    background-color: $pink;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    i {
+      padding: .4rem;
+      color: $black;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
 }

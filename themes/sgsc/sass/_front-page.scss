@@ -32,21 +32,37 @@
         align-items: center;
         flex-direction: column;
         align-items: center;
-        background: white;
-        opacity: .8;
+        background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
         h1 {
           margin: 0;
           padding-bottom: .5rem;
         }
+        @include m-button;
+      }
+      @include m-donate;
+    }
+    .programs-event-blog {
+      .front-program,
+      .front-events,
+      .front-blog {
+        display: flex;
+        justify-content: center;
+        height: 138px;
+        align-items: center;
+        background: $orange;
         a {
           text-decoration: none;
           color: $black;
-          p {
-            padding: $p_padding;
-            border: $p_border;
-            margin: 0;
-          }
         }
+        &:hover {
+          border: $p_border 4px;
+        }
+      }
+      .front-events {
+        background: $blue;
+      }
+      .front-blog {
+        background: $white;
       }
     }
   }
