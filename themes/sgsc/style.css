@@ -719,19 +719,93 @@ object {
 /*--------------------------------------------------------------
 # Front-Page
 --------------------------------------------------------------*/
-.site-footer {
-  padding: 30px;
+footer {
+  max-width: 1024px;
+  margin: auto; }
+
+.site-info {
+  padding: 0 5%;
+  margin: auto;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  color: #000000; }
+  .site-info:hover {
+    color: #f5a623; }
 
 .footer-links {
-  width: 75%;
-  font-size: 1.25rem;
-  display: inline;
-  list-style-type: none; }
-  .footer-links li {
+  width: 123px; }
+
+.footer-links p:last-child {
+  margin-bottom: 0; }
+
+.footer-icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end; }
+
+.facebook {
+  background-image: url("../../assets/images/facebook-circle-sm.svg");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  height: 25px;
+  width: 25px; }
+
+.twitter {
+  background-image: url("../../assets/images/twitter-circle-sm.svg");
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 25px;
+  width: 25px; }
+
+.copywrite {
+  text-align: center;
+  padding: 0 5%; }
+
+@media all and (min-width: 600px) {
+  .site-info {
+    padding: 0 5%;
+    margin: auto;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    color: #000000; }
+    .site-info:hover {
+      color: #f5a623; }
+  .footer-links {
+    width: 60%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-width: 526px; }
+    .footer-links p {
+      width: 175px;
+      margin: 0; }
+  .footer-icons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+  .facebook {
+    background-image: url("../../assets/images/facebook-circle-lg.svg");
+    height: 50px;
+    width: 50px; }
+  .twitter {
+    background-image: url("../../assets/images/twitter-circle-lg.svg");
+    height: 50px;
+    width: 50px; }
+  .copywrite {
+    text-align: center;
+    padding: 0 5%; } }
 
 .page-template-page-about .entry-title {
   display: none; }
