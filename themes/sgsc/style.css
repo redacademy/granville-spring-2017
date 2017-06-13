@@ -723,3 +723,58 @@ object {
 /*--------------------------------------------------------------
 # Front-Page
 --------------------------------------------------------------*/
+.home .content-area {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .home .content-area .site-main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .home .content-area .site-main .learn-about-story {
+      display: -ms-flexbox;
+      display: flex;
+      height: 276px;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      background: grey;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      position: relative; }
+      .home .content-area .site-main .learn-about-story img {
+        height: 276px;
+        width: auto; }
+      .home .content-area .site-main .learn-about-story .front-learn {
+        position: absolute;
+        bottom: 0;
+        height: 138px;
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        align-items: center;
+        background: white;
+        opacity: .8; }
+        .home .content-area .site-main .learn-about-story .front-learn h1 {
+          margin: 0;
+          padding-bottom: .5rem; }
+        .home .content-area .site-main .learn-about-story .front-learn a {
+          text-decoration: none;
+          color: #000000; }
+          .home .content-area .site-main .learn-about-story .front-learn a p {
+            padding: 0.3rem 1.5rem;
+            border: 2px #000000 solid;
+            margin: 0; }

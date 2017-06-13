@@ -16,10 +16,22 @@ get_header(); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
-
-			<section class="learn-about-story">
-        <h1>Learn sbout our story</h1>
-      </section>
+			<?php while ( have_posts() ) : the_post(); ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <header class="entry-header">
+            <section class="learn-about-story">
+            <?php if ( has_post_thumbnail() ) : ?>
+              <?php the_post_thumbnail( 'large' ); ?>
+            <?php endif; ?>
+              <div class="front-learn">
+                <h1>Learn About Our Story</h1>
+                <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
+              </div>
+            </section>
+          </header><!-- .entry-header -->
+        </article><!-- #post-## -->
+          <div class="front-learn">
+			<?php endwhile; ?>
 
       <section class="programs-event-blog">
         <div class="front-program">
