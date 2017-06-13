@@ -1,27 +1,59 @@
 // Structure
 $base__space-unit: 1.5rem;
 // Colors
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__text-screen: #21759b;
+$color__widget-header: #d99054;
+$color__background-hr: #ccc;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+$color__border-abbr: #666;
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+$color__text-main: #404040;
+$color__background-post: #248A83;
+$color-purple: #2f1339;
+$color-organe: #d99054;
+$color-yellow: #f0e4d1;
+$color-grey-light: #a1a1a1;
+$color-grey-medium: #808080;
+$color-border-solid: #e1e1e1;
+$color-border-dash: #c8c8c8;
+// Typography
+$font__main: merriweather,
+sans-serif;
+$font__accent: novecentosanswide,
+sans-serif;
+$font__code: Monaco,
+Consolas,
+"Andale Mono",
+"DejaVu Sans Mono",
+monospace;
+$font__pre: "Courier 10 Pitch",
+Courier,
+monospace;
+$font__line-height-body: 1.75;
+$font__line-height-pre: 1.6;
+//SGSC
+// Colors
 $black: #000000;
 $white: #ffffff;
 $orange: #f5a623;
 $blue: #45cdcb;
 $pink: #F91E72;
-
 $color__background-body: #fff;
 $color__text-main: #404040;
-
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
-
 $color__background-hr: #ccc;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
-
 $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: #F5A623;
-
 // Typography
 $font__header: montserrat;
 $font__main: lato;

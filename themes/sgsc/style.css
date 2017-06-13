@@ -231,7 +231,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: lato;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -670,7 +670,7 @@ object {
       justify-content: space-between;
   height: 13rem; }
   .site-header a {
-    color: black; }
+    color: magenta; }
   .site-header a:hover {
     color: #F5A623; }
 
@@ -719,3 +719,7 @@ object {
 
 .icon-search .fa-search {
   font-size: 1.5rem; }
+
+/*--------------------------------------------------------------
+# Front-Page
+--------------------------------------------------------------*/
