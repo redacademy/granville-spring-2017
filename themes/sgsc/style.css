@@ -412,7 +412,7 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #F5A623; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -580,6 +580,10 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.container {
+  width: 1024px;
+  margin: auto; }
+
 /* Asides */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
@@ -656,3 +660,47 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-header {
+  display: -ms-flexbox;
+  display: flex; }
+  .site-header a {
+    color: black; }
+  .site-header a:hover {
+    color: #F5A623; }
+
+.logo {
+  background-image: url("../../assets/images/desktop-logo.svg"); }
+
+.main-navigation .search-field {
+  display: none;
+  overflow: hidden;
+  border: none;
+  background: transparent; }
+  .main-navigation .search-field:focus {
+    outline: none; }
+
+.icon-search {
+  cursor: pointer; }
+
+.search-submit {
+  display: inline;
+  border: none;
+  background: none;
+  box-shadow: none; }
+
+.search-form fieldset {
+  border: none; }
+
+.search-form input {
+  display: none;
+  border: none;
+  outline: none; }
+
+.menu {
+  display: -ms-flexbox;
+  display: flex; }
+
+.main-navigation {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
