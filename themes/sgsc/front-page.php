@@ -27,7 +27,11 @@ get_header(); ?>
               <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
             </div>
             <div class="donate-btn">
-              <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+              <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+                <i class="fa fa-heart-o" aria-hidden="true">
+                  <p>Donate</p>
+                </i>
+                </a>
             </div>
           </section>
         </header><!-- .entry-header -->

@@ -791,11 +791,19 @@ object {
         bottom: 0;
         right: 0;
         z-index: 100; }
-        .home .content-area .site-main .learn-about-story .donate-btn i {
-          padding: .4rem;
+        .home .content-area .site-main .learn-about-story .donate-btn a {
+          text-decoration: none;
           color: #000000; }
-          .home .content-area .site-main .learn-about-story .donate-btn i:hover {
-            color: #f5a623; }
+          .home .content-area .site-main .learn-about-story .donate-btn a i {
+            padding: .4rem;
+            color: #000000; }
+            .home .content-area .site-main .learn-about-story .donate-btn a i:hover {
+              color: #f5a623; }
+          .home .content-area .site-main .learn-about-story .donate-btn a p {
+            display: none; }
+        @media screen and (min-width: 470px) {
+          .home .content-area .site-main .learn-about-story .donate-btn a p {
+            display: initial; } }
     .home .content-area .site-main .front-program,
     .home .content-area .site-main .front-events,
     .home .content-area .site-main .front-blog,
