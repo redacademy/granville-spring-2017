@@ -663,63 +663,57 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.site-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  height: 13rem; }
-  .site-header a {
-    color: black; }
-  .site-header a:hover {
-    color: #F5A623; }
-
-.main-navigation .search-field {
-  display: none;
-  overflow: hidden;
-  border: none;
-  background: transparent; }
-  .main-navigation .search-field:focus {
+@media screen and (min-width: 600px) {
+  .site-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    height: 13rem; }
+    .site-header a {
+      color: black; }
+    .site-header a:hover {
+      color: #F5A623; }
+  .main-navigation .search-field {
+    display: none;
+    overflow: hidden;
+    border: none;
+    background: transparent; }
+    .main-navigation .search-field:focus {
+      outline: none; }
+  .logo-header {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+  .icon-search {
+    cursor: pointer; }
+  .search-submit {
+    display: inline;
+    border: none;
+    background: none;
+    box-shadow: none; }
+  .search-form fieldset {
+    border: none; }
+  .search-form input {
+    display: none;
+    border: none;
     outline: none; }
-
-.logo-header {
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  -ms-flex-align: start;
-      align-items: flex-start; }
-
-.icon-search {
-  cursor: pointer; }
-
-.search-submit {
-  display: inline;
-  border: none;
-  background: none;
-  box-shadow: none; }
-
-.search-form fieldset {
-  border: none; }
-
-.search-form input {
-  display: none;
-  border: none;
-  outline: none; }
-
-.menu {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: end;
-      align-items: flex-end; }
-
-.main-navigation {
-  padding-bottom: 0.5rem; }
-  .main-navigation li {
-    padding: 0px 1.4rem; }
-
-.icon-search .fa-search {
-  font-size: 1.5rem; }
+  .menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+  .main-navigation {
+    padding-bottom: 0.5rem; }
+    .main-navigation li {
+      padding: 0px 1.4rem; }
+  .icon-search .fa-search {
+    font-size: 1.5rem; } }
 
 /*--------------------------------------------------------------
 # Front-Page
 --------------------------------------------------------------*/
+.page-template-page-about .entry-title {
+  display: none; }
