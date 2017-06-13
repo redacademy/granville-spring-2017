@@ -1,15 +1,13 @@
 .site-header {
   display: flex;
+  justify-content: space-between;
+  height: 13rem;  
   a {
     color: black;
   }
   a:hover {
     color: $color__link-hover;
   }
-}
-
-.logo {
-  background-image: url('../../assets/images/desktop-logo.svg');
 }
 
 .main-navigation .search-field{ 
@@ -20,6 +18,12 @@
 	&:focus{
 		outline: none;
 	}
+}
+
+.logo-header {
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
 }
 
 .icon-search{
@@ -46,8 +50,16 @@
 
 .menu {
   display: flex;
+  align-items: flex-end;
 }
 
 .main-navigation {
-  align-self: center;
+  padding-bottom: 0.5rem;
+  li {
+    padding: 0px 1.4rem;
+  }
+}
+
+.icon-search .fa-search {
+  font-size: 1.5rem;
 }
