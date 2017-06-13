@@ -1,0 +1,18 @@
+.site-footer {
+   padding: 30px;
+    // width: 90%;
+    display: flex;
+}
+
+.footer-links {
+    width: 75%;
+    font-size: 1.25rem;
+    display: inline;
+    list-style-type: none;
+    li {
+        display: flex;
+    }
+}
+
+.fa {
+}

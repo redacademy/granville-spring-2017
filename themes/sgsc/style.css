@@ -723,5 +723,16 @@ object {
 /*--------------------------------------------------------------
 # Front-Page
 --------------------------------------------------------------*/
-li {
-  color: white; }
+.site-footer {
+  padding: 30px;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer-links {
+  width: 75%;
+  font-size: 1.25rem;
+  display: inline;
+  list-style-type: none; }
+  .footer-links li {
+    display: -ms-flexbox;
+    display: flex; }
