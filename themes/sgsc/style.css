@@ -737,6 +737,8 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+    .home .content-area .site-main article {
+      margin: 0; }
     .home .content-area .site-main .learn-about-story {
       display: -ms-flexbox;
       display: flex;
@@ -795,27 +797,77 @@ object {
           color: #000000; }
           .home .content-area .site-main .learn-about-story .donate-btn i:hover {
             color: #f5a623; }
-    .home .content-area .site-main .programs-event-blog .front-program,
-    .home .content-area .site-main .programs-event-blog .front-events,
-    .home .content-area .site-main .programs-event-blog .front-blog {
+    .home .content-area .site-main .front-program,
+    .home .content-area .site-main .front-events,
+    .home .content-area .site-main .front-blog,
+    .home .content-area .site-main .front-join {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
           justify-content: center;
-      height: 138px;
       -ms-flex-align: center;
           align-items: center;
-      background: #f5a623; }
-      .home .content-area .site-main .programs-event-blog .front-program a,
-      .home .content-area .site-main .programs-event-blog .front-events a,
-      .home .content-area .site-main .programs-event-blog .front-blog a {
+      background: #f5a623;
+      height: 138px; }
+      .home .content-area .site-main .front-program a,
+      .home .content-area .site-main .front-events a,
+      .home .content-area .site-main .front-blog a,
+      .home .content-area .site-main .front-join a {
         text-decoration: none;
-        color: #000000; }
-      .home .content-area .site-main .programs-event-blog .front-program:hover,
-      .home .content-area .site-main .programs-event-blog .front-events:hover,
-      .home .content-area .site-main .programs-event-blog .front-blog:hover {
+        height: 100%;
+        width: 100%;
+        color: #000000;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
+      .home .content-area .site-main .front-program:hover,
+      .home .content-area .site-main .front-events:hover,
+      .home .content-area .site-main .front-blog:hover,
+      .home .content-area .site-main .front-join:hover {
         border: 2px #000000 solid 4px; }
-    .home .content-area .site-main .programs-event-blog .front-events {
+    .home .content-area .site-main .front-events {
       background: #45cdcb; }
-    .home .content-area .site-main .programs-event-blog .front-blog {
+    .home .content-area .site-main .front-blog {
       background: #ffffff; }
+    .home .content-area .site-main .front-join {
+      background: #45cdcb; }
+    .home .content-area .site-main .involved-join {
+      height: 138px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .home .content-area .site-main .involved-join:hover {
+        border: 2px #000000 solid 4px; }
+      .home .content-area .site-main .involved-join .front-involved {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+        width: 100%;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+        .home .content-area .site-main .involved-join .front-involved a {
+          text-decoration: none;
+          color: #000000; }
+          .home .content-area .site-main .involved-join .front-involved a:hover {
+            color: #ffffff; }
+          .home .content-area .site-main .involved-join .front-involved a p {
+            padding: 0.3rem 1.5rem;
+            border: 2px #000000 solid;
+            margin: 0; }
+            .home .content-area .site-main .involved-join .front-involved a p:hover {
+              border: none;
+              background: #f5a623;
+              z-index: 2;
+              opacity: 1; }
+        .home .content-area .site-main .involved-join .front-involved p {
+          border: none !important;
+          background: #F91E72; }

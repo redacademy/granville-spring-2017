@@ -58,14 +58,20 @@ get_header(); ?>
       </section>
 
       <section class="involved-join">
+          <h1>Get Involved</h1>
         <div class="front-involved">
-          <h1>Get involved</h1>
-        </div>
-
-        <div class="front-join">
-          <h1>Join Us or Volunteer</h1>
+          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+            <p>Donate</p></a>
+          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'advertise' )) ) ?>">
+            <p>Advertise</p></a>
         </div>
       </section>
+        
+        <div class="front-join">
+          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'join us' )) ) ?>">
+            <h1>Join Us or Volunteer</h1></a>
+        </div>
+
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
