@@ -462,11 +462,24 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
+.menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 100vw; }
+
+@media screen and (min-width: 480px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
     display: block; } }
+
+.menu {
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: end;
+      align-items: flex-end; }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -685,7 +698,37 @@ object {
   border: none;
   outline: none; }
 
-@media screen and (min-width: 600px) {
+.menu .fa {
+  font-size: 2rem; }
+
+.menu-toggle {
+  background: none;
+  box-shadow: none;
+  border: none; }
+
+.main-navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.site-header {
+  height: 4rem;
+  width: auto; }
+
+.logo {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.logo img {
+  height: 3rem; }
+
+@media screen and (min-width: 480px) {
   .site-header {
     display: -ms-flexbox;
     display: flex;
@@ -704,11 +747,6 @@ object {
         align-items: flex-start; }
   .icon-search {
     cursor: pointer; }
-  .menu {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: end;
-        align-items: flex-end; }
   .main-navigation {
     padding-bottom: 0.5rem; }
     .main-navigation li {

@@ -27,19 +27,17 @@
 				</div><!-- .site-branding -->
 
 				<div class="logo">
-					<div class="logo-header">
-						<a href="<?php echo get_home_url(); ?>" rel="home">
-							<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo.svg"/>
-						</a>
-						<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo-text.svg"/>
-					</div>
+					<a href="<?php echo get_home_url(); ?>" rel="home">
+						<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo.svg"/>
+					</a>
+					<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo-text.svg"/>
 				</div>
 
 				<section class="menu">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</nav><!-- #site-navigation -->
+						<button class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+					</nav>
 					<div>
 						<?php get_search_form() ?>
 					</div>

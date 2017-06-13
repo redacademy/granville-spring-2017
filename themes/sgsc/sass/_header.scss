@@ -26,7 +26,41 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+.menu {
+  .fa {
+    font-size: 2rem;
+  }
+}
+
+.menu-toggle {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.main-navigation {
+  display: flex;
+  align-self: center;
+}
+
+.site-header {
+  height: 4rem;
+  width: auto;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  justify-content: center;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+@media screen and (min-width: 480px) {
 
   .site-header {
     display: flex;
@@ -48,11 +82,6 @@
 
   .icon-search{
     cursor: pointer;
-  }
-
-  .menu {
-    display: flex;
-    align-items: flex-end;
   }
 
   .main-navigation {
