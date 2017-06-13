@@ -720,13 +720,17 @@ object {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin: auto;
   position: absolute;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 4rem; }
 
-.logo img {
-  height: 3rem; }
+.logo-img {
+  height: 3.5rem;
+  display: -ms-flexbox;
+  display: flex; }
 
 @media screen and (min-width: 480px) {
   .site-header {

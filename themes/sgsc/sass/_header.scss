@@ -51,13 +51,15 @@
 .logo {
   display: flex;
   width: 100%;
-  margin: auto;
   position: absolute;
   justify-content: center;
+  align-items: center;
+  height: 4rem;
 }
 
-.logo img {
-  height: 3rem;
+.logo-img {
+  height: 3.5rem;
+  display: flex;
 }
 
 @media screen and (min-width: 480px) {
