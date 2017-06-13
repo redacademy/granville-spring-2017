@@ -28,7 +28,9 @@
 
 				<div class="logo">
 					<div class="logo-header">
-						<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo.svg"/>
+						<a href="<?php echo get_home_url(); ?>" rel="home">
+							<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo.svg"/>
+						</a>
 						<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo-text.svg"/>
 					</div>
 				</div>
