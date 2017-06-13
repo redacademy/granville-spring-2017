@@ -663,6 +663,28 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.main-navigation .search-field {
+  display: none;
+  overflow: hidden;
+  border: none;
+  background: transparent; }
+  .main-navigation .search-field:focus {
+    outline: none; }
+
+.search-submit {
+  display: inline;
+  border: none;
+  background: none;
+  box-shadow: none; }
+
+.search-form fieldset {
+  border: none; }
+
+.search-form input {
+  display: none;
+  border: none;
+  outline: none; }
+
 @media screen and (min-width: 600px) {
   .site-header {
     display: -ms-flexbox;
@@ -674,13 +696,6 @@ object {
       color: black; }
     .site-header a:hover {
       color: #F5A623; }
-  .main-navigation .search-field {
-    display: none;
-    overflow: hidden;
-    border: none;
-    background: transparent; }
-    .main-navigation .search-field:focus {
-      outline: none; }
   .logo-header {
     display: -ms-flexbox;
     display: flex;
@@ -689,17 +704,6 @@ object {
         align-items: flex-start; }
   .icon-search {
     cursor: pointer; }
-  .search-submit {
-    display: inline;
-    border: none;
-    background: none;
-    box-shadow: none; }
-  .search-form fieldset {
-    border: none; }
-  .search-form input {
-    display: none;
-    border: none;
-    outline: none; }
   .menu {
     display: -ms-flexbox;
     display: flex;

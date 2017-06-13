@@ -1,3 +1,31 @@
+.main-navigation .search-field{ 
+  display: none;
+  overflow:hidden;
+  border: none;
+  background: transparent;
+  &:focus{
+    outline: none;
+  }
+}
+
+.search-submit {
+  display: inline;
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+.search-form {
+  fieldset {
+  border: none;
+  }
+  input {
+    display: none;
+    border: none;
+    outline: none;
+  }
+}
+
 @media screen and (min-width: 600px) {
 
   .site-header {
@@ -12,16 +40,6 @@
     }
   }
 
-  .main-navigation .search-field{ 
-    display: none;
-    overflow:hidden;
-    border: none;
-    background: transparent;
-    &:focus{
-      outline: none;
-    }
-  }
-
   .logo-header {
     display: flex;
     position: absolute;
@@ -30,24 +48,6 @@
 
   .icon-search{
     cursor: pointer;
-  }
-
-  .search-submit {
-    display: inline;
-    border: none;
-    background: none;
-    box-shadow: none;
-  }
-
-  .search-form {
-    fieldset {
-    border: none;
-    }
-    input {
-      display: none;
-      border: none;
-      outline: none;
-    }
   }
 
   .menu {
