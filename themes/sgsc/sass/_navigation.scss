@@ -37,7 +37,7 @@ a {
 	width: 100%;
 
 	ul {
-		visibility: hidden;
+		// visibility: hidden;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -99,10 +99,18 @@ a {
 	}
 }
 
+.nav-menu {
+	display: none;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+}
+
+.mobile-menu {
+	display: none;
 }
 
 .menu {
@@ -111,19 +119,12 @@ a {
 	width: 100vw;
 }
 
-@media screen and (min-width: 480px) {
-	.menu-toggle {
-		display: none;
-	}
-	// .main-navigation ul {
-	// 	display: flex !important;
-	// }
+.menu {
+	justify-content: flex-end;
+	align-items: flex-end;
 }
 
-	.menu {
-		justify-content: flex-end;
-		align-items: flex-end;
-	}
+
 
 .comment-navigation,
 .posts-navigation,
@@ -211,4 +212,16 @@ a {
 	border: 2px solid black;
 	box-shadow: none;
 	border-radius: 0;
+}
+
+@media screen and (min-width: 480px) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+	.nav-menu {
+	display: initial;
+	}
 }

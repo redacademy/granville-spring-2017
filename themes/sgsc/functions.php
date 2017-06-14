@@ -24,6 +24,7 @@ function red_starter_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
+		'mobile' => esc_html( 'Mobile Menu' ),
 	) );
 
 	//add mobile menu
