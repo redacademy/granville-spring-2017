@@ -164,9 +164,12 @@
             width: 100%;
             justify-content: space-around;
             @include m-button;
-            p {
-              border: none !important;
+            .m-button {
               background: $pink;
+              display: flex;
+              p {
+                border: none;
+              }
             }
           }
         }

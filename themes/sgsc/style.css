@@ -1013,18 +1013,29 @@ object {
           @media screen and (min-width: 470px) {
             .home .content-area .site-main .learn-about-story .front-learn .m-button {
               display: -ms-flexbox;
-              display: flex; } }
-          .home .content-area .site-main .learn-about-story .front-learn .m-button:hover {
+              display: flex; }
+              .home .content-area .site-main .learn-about-story .front-learn .m-button:hover {
+                color: #ffffff; } }
+          .home .content-area .site-main .learn-about-story .front-learn .m-button:active {
             color: #ffffff; }
           .home .content-area .site-main .learn-about-story .front-learn .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
             margin: 0; }
-            .home .content-area .site-main .learn-about-story .front-learn .m-button p:hover {
+            .home .content-area .site-main .learn-about-story .front-learn .m-button p:active {
               border: none;
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
+            @media screen and (min-width: 470px) {
+              .home .content-area .site-main .learn-about-story .front-learn .m-button p {
+                display: -ms-flexbox;
+                display: flex; }
+                .home .content-area .site-main .learn-about-story .front-learn .m-button p:hover {
+                  border: none;
+                  background: #f5a623;
+                  z-index: 2;
+                  opacity: 1; } }
         .home .content-area .site-main .learn-about-story .front-learn .m-button {
           display: -ms-flexbox;
           display: flex; }
@@ -1105,18 +1116,29 @@ object {
         @media screen and (min-width: 470px) {
           .home .content-area .site-main .program-event-post .front-program .m-button {
             display: -ms-flexbox;
-            display: flex; } }
-        .home .content-area .site-main .program-event-post .front-program .m-button:hover {
+            display: flex; }
+            .home .content-area .site-main .program-event-post .front-program .m-button:hover {
+              color: #ffffff; } }
+        .home .content-area .site-main .program-event-post .front-program .m-button:active {
           color: #ffffff; }
         .home .content-area .site-main .program-event-post .front-program .m-button p {
           padding: 0.3rem 1.5rem;
           border: 2px #000000 solid;
           margin: 0; }
-          .home .content-area .site-main .program-event-post .front-program .m-button p:hover {
+          .home .content-area .site-main .program-event-post .front-program .m-button p:active {
             border: none;
             background: #f5a623;
             z-index: 2;
             opacity: 1; }
+          @media screen and (min-width: 470px) {
+            .home .content-area .site-main .program-event-post .front-program .m-button p {
+              display: -ms-flexbox;
+              display: flex; }
+              .home .content-area .site-main .program-event-post .front-program .m-button p:hover {
+                border: none;
+                background: #f5a623;
+                z-index: 2;
+                opacity: 1; } }
       .home .content-area .site-main .program-event-post .front-program p {
         display: none; }
       @media screen and (min-width: 470px) {
@@ -1179,18 +1201,29 @@ object {
           @media screen and (min-width: 470px) {
             .home .content-area .site-main .feature-gallery .front-gallery .m-button {
               display: -ms-flexbox;
-              display: flex; } }
-          .home .content-area .site-main .feature-gallery .front-gallery .m-button:hover {
+              display: flex; }
+              .home .content-area .site-main .feature-gallery .front-gallery .m-button:hover {
+                color: #ffffff; } }
+          .home .content-area .site-main .feature-gallery .front-gallery .m-button:active {
             color: #ffffff; }
           .home .content-area .site-main .feature-gallery .front-gallery .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
             margin: 0; }
-            .home .content-area .site-main .feature-gallery .front-gallery .m-button p:hover {
+            .home .content-area .site-main .feature-gallery .front-gallery .m-button p:active {
               border: none;
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
+            @media screen and (min-width: 470px) {
+              .home .content-area .site-main .feature-gallery .front-gallery .m-button p {
+                display: -ms-flexbox;
+                display: flex; }
+                .home .content-area .site-main .feature-gallery .front-gallery .m-button p:hover {
+                  border: none;
+                  background: #f5a623;
+                  z-index: 2;
+                  opacity: 1; } }
         .home .content-area .site-main .feature-gallery .front-gallery .m-button {
           display: -ms-flexbox;
           display: flex; }
@@ -1222,21 +1255,35 @@ object {
           @media screen and (min-width: 470px) {
             .home .content-area .site-main .involved-join .front-involved .m-button {
               display: -ms-flexbox;
-              display: flex; } }
-          .home .content-area .site-main .involved-join .front-involved .m-button:hover {
+              display: flex; }
+              .home .content-area .site-main .involved-join .front-involved .m-button:hover {
+                color: #ffffff; } }
+          .home .content-area .site-main .involved-join .front-involved .m-button:active {
             color: #ffffff; }
           .home .content-area .site-main .involved-join .front-involved .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
             margin: 0; }
-            .home .content-area .site-main .involved-join .front-involved .m-button p:hover {
+            .home .content-area .site-main .involved-join .front-involved .m-button p:active {
               border: none;
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
-        .home .content-area .site-main .involved-join .front-involved p {
-          border: none !important;
-          background: #F91E72; }
+            @media screen and (min-width: 470px) {
+              .home .content-area .site-main .involved-join .front-involved .m-button p {
+                display: -ms-flexbox;
+                display: flex; }
+                .home .content-area .site-main .involved-join .front-involved .m-button p:hover {
+                  border: none;
+                  background: #f5a623;
+                  z-index: 2;
+                  opacity: 1; } }
+        .home .content-area .site-main .involved-join .front-involved .m-button {
+          background: #F91E72;
+          display: -ms-flexbox;
+          display: flex; }
+          .home .content-area .site-main .involved-join .front-involved .m-button p {
+            border: none; }
   .home .content-area .front-join {
     display: -ms-flexbox;
     display: flex;

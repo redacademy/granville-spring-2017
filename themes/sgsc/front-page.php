@@ -65,9 +65,9 @@ get_header(); ?>
       <section class="involved-join">
           <h1>Get Involved</h1>
         <div class="front-involved">
-          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+          <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
             <p>Donate</p></a>
-          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'advertise' )) ) ?>">
+          <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'advertise' )) ) ?>">
             <p>Advertise</p></a>
         </div>
       </section>
