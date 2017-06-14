@@ -87,14 +87,16 @@
             }
           }
           .front-program {
+            @include m-button;
+            p {
+              display: none;
+            }
             @media screen and (min-width: $mobile_width) {
               width: 544px;
               height: 288px;
               flex-flow: column nowrap;
-              @include m-button;
-              .detail-program {
+              p {
                 display: flex;
-                flex-flow: column wrap;
               }
             }
           }

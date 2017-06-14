@@ -826,16 +826,18 @@ object {
           padding-bottom: .5rem; }
         .home .content-area .site-main .learn-about-story .front-learn .m-button {
           text-decoration: none;
-          color: #000000; }
+          color: #000000;
+          display: none; }
+          @media screen and (min-width: 470px) {
+            .home .content-area .site-main .learn-about-story .front-learn .m-button {
+              display: -ms-flexbox;
+              display: flex; } }
           .home .content-area .site-main .learn-about-story .front-learn .m-button:hover {
             color: #ffffff; }
           .home .content-area .site-main .learn-about-story .front-learn .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
             margin: 0; }
-            @media screen and (min-width: 470px) {
-              .home .content-area .site-main .learn-about-story .front-learn .m-button p {
-                padding: 0.4rem 3rem; } }
             .home .content-area .site-main .learn-about-story .front-learn .m-button p:hover {
               border: none;
               background: #f5a623;
@@ -911,35 +913,36 @@ object {
         .home .content-area .site-main .program-event-post .front-events:hover,
         .home .content-area .site-main .program-event-post .front-blog:hover {
           border: 2px #000000 solid 4px; }
+      .home .content-area .site-main .program-event-post .front-program .m-button {
+        text-decoration: none;
+        color: #000000;
+        display: none; }
+        @media screen and (min-width: 470px) {
+          .home .content-area .site-main .program-event-post .front-program .m-button {
+            display: -ms-flexbox;
+            display: flex; } }
+        .home .content-area .site-main .program-event-post .front-program .m-button:hover {
+          color: #ffffff; }
+        .home .content-area .site-main .program-event-post .front-program .m-button p {
+          padding: 0.3rem 1.5rem;
+          border: 2px #000000 solid;
+          margin: 0; }
+          .home .content-area .site-main .program-event-post .front-program .m-button p:hover {
+            border: none;
+            background: #f5a623;
+            z-index: 2;
+            opacity: 1; }
+      .home .content-area .site-main .program-event-post .front-program p {
+        display: none; }
       @media screen and (min-width: 470px) {
         .home .content-area .site-main .program-event-post .front-program {
           width: 544px;
           height: 288px;
           -ms-flex-flow: column nowrap;
               flex-flow: column nowrap; }
-          .home .content-area .site-main .program-event-post .front-program .m-button {
-            text-decoration: none;
-            color: #000000; }
-            .home .content-area .site-main .program-event-post .front-program .m-button:hover {
-              color: #ffffff; }
-            .home .content-area .site-main .program-event-post .front-program .m-button p {
-              padding: 0.3rem 1.5rem;
-              border: 2px #000000 solid;
-              margin: 0; } }
-      @media screen and (min-width: 470px) and (min-width: 470px) {
-        .home .content-area .site-main .program-event-post .front-program .m-button p {
-          padding: 0.4rem 3rem; } }
-      @media screen and (min-width: 470px) {
-              .home .content-area .site-main .program-event-post .front-program .m-button p:hover {
-                border: none;
-                background: #f5a623;
-                z-index: 2;
-                opacity: 1; }
-          .home .content-area .site-main .program-event-post .front-program .detail-program {
+          .home .content-area .site-main .program-event-post .front-program p {
             display: -ms-flexbox;
-            display: flex;
-            -ms-flex-flow: column wrap;
-                flex-flow: column wrap; } }
+            display: flex; } }
       .home .content-area .site-main .program-event-post .front-events {
         background: #45cdcb; }
         @media screen and (min-width: 470px) {
@@ -986,16 +989,18 @@ object {
           text-align: center; }
         .home .content-area .site-main .feature-gallery .front-gallery .m-button {
           text-decoration: none;
-          color: #000000; }
+          color: #000000;
+          display: none; }
+          @media screen and (min-width: 470px) {
+            .home .content-area .site-main .feature-gallery .front-gallery .m-button {
+              display: -ms-flexbox;
+              display: flex; } }
           .home .content-area .site-main .feature-gallery .front-gallery .m-button:hover {
             color: #ffffff; }
           .home .content-area .site-main .feature-gallery .front-gallery .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
             margin: 0; }
-            @media screen and (min-width: 470px) {
-              .home .content-area .site-main .feature-gallery .front-gallery .m-button p {
-                padding: 0.4rem 3rem; } }
             .home .content-area .site-main .feature-gallery .front-gallery .m-button p:hover {
               border: none;
               background: #f5a623;
@@ -1024,16 +1029,18 @@ object {
             justify-content: space-around; }
         .home .content-area .site-main .involved-join .front-involved .m-button {
           text-decoration: none;
-          color: #000000; }
+          color: #000000;
+          display: none; }
+          @media screen and (min-width: 470px) {
+            .home .content-area .site-main .involved-join .front-involved .m-button {
+              display: -ms-flexbox;
+              display: flex; } }
           .home .content-area .site-main .involved-join .front-involved .m-button:hover {
             color: #ffffff; }
           .home .content-area .site-main .involved-join .front-involved .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
             margin: 0; }
-            @media screen and (min-width: 470px) {
-              .home .content-area .site-main .involved-join .front-involved .m-button p {
-                padding: 0.4rem 3rem; } }
             .home .content-area .site-main .involved-join .front-involved .m-button p:hover {
               border: none;
               background: #f5a623;

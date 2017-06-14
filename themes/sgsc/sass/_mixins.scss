@@ -18,14 +18,15 @@
     .m-button {
       text-decoration: none;
       color: $black;
+      display: none;
+      @media screen and (min-width: $mobile_width) {
+        display: flex;
+      }
       &:hover {
         color: $white;
       }
       p {
         padding: $m_padding;
-        @media screen and (min-width: $mobile_width) {
-          padding: $d_padding;
-        }
         border: $p_border;
         margin: 0;
         &:hover {
