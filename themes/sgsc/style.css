@@ -567,7 +567,7 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
+    visibility: hidden;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -638,34 +638,38 @@ a {
   width: 50%; }
 
 .menu-visible {
-  display: -ms-flexbox !important;
-  display: flex !important;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  position: fixed;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
-      align-items: center;
+      align-items: center; }
+  .menu-visible li {
+    float: left;
+    position: relative;
+    background: #f5a623;
+    width: 80%;
+    margin: 1rem;
+    padding: 3rem;
+    text-align: center;
+    border: 4px solid #f5a623; }
+  .menu-visible li:hover {
+    border: 4px solid black; }
+  .menu-visible a {
+    color: black; }
+
+.overlay-open {
   position: fixed;
   width: 100%;
+  height: 100%;
+  padding-top: 5rem;
   top: 0;
   left: 0;
   background: white;
   z-index: 200;
   overflow: scroll; }
-  .menu-visible li {
-    float: left;
-    position: relative;
-    background: orange;
-    width: 80%;
-    margin: 1rem;
-    padding: 3rem;
-    text-align: center; }
-  .menu-visible li:hover {
-    border: 4px solid black; }
-  .menu-visible a {
-    color: black; }
 
 /*--------------------------------------------------------------
 # Accessibility

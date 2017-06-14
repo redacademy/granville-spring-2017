@@ -37,7 +37,7 @@ a {
 	width: 100%;
 
 	ul {
-		display: none;
+		visibility: hidden;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -147,27 +147,20 @@ a {
 }
 
  .menu-visible {
-	display: flex !important;
+	display: flex;
 	flex-direction: column;
-	position: fixed;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed;
-	width: 100%;
-	// height: 100%;
-	top: 0;
-	left: 0;
-	background: white;
-	z-index: 200;
-	overflow: scroll;
+
 	li {
 		float: left;
     position: relative;
-    background: orange;
+    background: $orange;
     width: 80%;
 		margin: 1rem;
     padding: 3rem;
     text-align: center;
+		border: 4px solid $orange;		
 	}
 	li:hover {
 		border: 4px solid black;
@@ -175,6 +168,18 @@ a {
 	a {
 		color: black;
 	}
+}
+
+.overlay-open {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding-top: 5rem;
+	top: 0;
+	left: 0;
+	background: white;
+	z-index: 200;
+	overflow: scroll;
 }
 
 // .overlay-slidedown {
