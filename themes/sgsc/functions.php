@@ -78,7 +78,7 @@ add_action( 'widgets_init', 'red_starter_widgets_init' );
 
 function red_starter_widgets_footer() {
 	register_sidebar( array(
-		'name'          => esc_html( 'Footer Widgit' ),
+		'name'          => esc_html( 'Footer Widget' ),
 		'id'            => 'customer_footer',
 		'description'   => 'This is for updating content within the footer',
 		'before_widget' => '<div id="%1$s" class="footer-widget">',
