@@ -21,7 +21,7 @@ get_header(); ?>
             <?php the_post_thumbnail( 'large' ); ?>
           <?php endif; ?>
             <div class="front-learn">
-              <h1>Learn About Our Story</h1>
+              <h1>Learn About Our Mission and Our Story</h1>
               <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
             </div>
             <div class="donate-btn">
@@ -43,7 +43,7 @@ get_header(); ?>
           <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
         </div>
 
-        <div>
+        <div class="intro-event-blog">
           <div class="front-events">
             <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'event' )) ) ?>">
               <h1>Upcomming Events</h1></a>
@@ -67,7 +67,7 @@ get_header(); ?>
         <div class="front-involved">
           <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
             <p>Donate</p></a>
-          <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'advertise' )) ) ?>">
+          <a class="m-button"href="<?php echo esc_url( get_permalink(get_page_by_title( 'advertise' )) ) ?>">
             <p>Advertise</p></a>
         </div>
       </section>

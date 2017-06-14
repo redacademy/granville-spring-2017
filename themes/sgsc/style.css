@@ -956,15 +956,11 @@ object {
   -ms-flex-pack: center;
       justify-content: center; }
   .home .content-area .site-main {
+    width: 1024px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    width: 1024px; }
+        flex-flow: column nowrap; }
     .home .content-area .site-main article {
       margin: 0; }
     .home .content-area .site-main .learn-about-story {
@@ -987,7 +983,8 @@ object {
         width: 100%; }
         @media screen and (min-width: 470px) {
           .home .content-area .site-main .learn-about-story img {
-            height: 386px; } }
+            height: 386px;
+            position: absolute; } }
       .home .content-area .site-main .learn-about-story .front-learn {
         position: absolute;
         bottom: 0;
@@ -1059,8 +1056,9 @@ object {
         .home .content-area .site-main .program-event-post {
           display: -ms-flexbox;
           display: flex;
-          -ms-flex-pack: distribute;
-              justify-content: space-around; } }
+          padding: 32px;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
       .home .content-area .site-main .program-event-post .front-program,
       .home .content-area .site-main .program-event-post .front-events,
       .home .content-area .site-main .program-event-post .front-blog {
@@ -1091,13 +1089,6 @@ object {
               justify-content: center;
           -ms-flex-align: center;
               align-items: center; }
-          @media screen and (min-width: 470px) {
-            .home .content-area .site-main .program-event-post .front-program a,
-            .home .content-area .site-main .program-event-post .front-events a,
-            .home .content-area .site-main .program-event-post .front-blog a {
-              -ms-flex-pack: start;
-                  justify-content: flex-start;
-              padding-left: 60px; } }
         .home .content-area .site-main .program-event-post .front-program:hover, .home .content-area .site-main .program-event-post .front-program:active, .home .content-area .site-main .program-event-post .front-program:focus,
         .home .content-area .site-main .program-event-post .front-events:hover,
         .home .content-area .site-main .program-event-post .front-events:active,
@@ -1130,7 +1121,8 @@ object {
               display: -ms-flexbox;
               display: flex; } }
       .home .content-area .site-main .program-event-post .front-program p {
-        display: none; }
+        display: none;
+        padding: 0 60px; }
       @media screen and (min-width: 470px) {
         .home .content-area .site-main .program-event-post .front-program {
           width: 544px;
@@ -1139,17 +1131,29 @@ object {
               flex-flow: column nowrap; }
           .home .content-area .site-main .program-event-post .front-program p {
             display: -ms-flexbox;
-            display: flex; } }
-      .home .content-area .site-main .program-event-post .front-events {
+            display: flex; }
+          .home .content-area .site-main .program-event-post .front-program a {
+            padding-left: 60px;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
+      @media screen and (min-width: 470px) {
+        .home .content-area .site-main .program-event-post .intro-event-blog {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap; } }
+      .home .content-area .site-main .program-event-post .intro-event-blog .front-events {
         background: #45cdcb; }
         @media screen and (min-width: 470px) {
-          .home .content-area .site-main .program-event-post .front-events {
+          .home .content-area .site-main .program-event-post .intro-event-blog .front-events {
             width: 383px;
             height: 129px; } }
-      .home .content-area .site-main .program-event-post .front-blog {
+      .home .content-area .site-main .program-event-post .intro-event-blog .front-blog {
         background: #ffffff; }
         @media screen and (min-width: 470px) {
-          .home .content-area .site-main .program-event-post .front-blog {
+          .home .content-area .site-main .program-event-post .intro-event-blog .front-blog {
             width: 383px;
             height: 129px;
             background: #45cdcb; } }
