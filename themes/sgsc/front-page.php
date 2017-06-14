@@ -22,7 +22,7 @@ get_header(); ?>
           <?php endif; ?>
             <div class="front-learn">
               <h1>Learn About Our Story</h1>
-              <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
+              <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
             </div>
             <div class="donate-btn">
               <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
@@ -57,7 +57,7 @@ get_header(); ?>
       <section class="feature-gallery">
         <div class="front-gallery">
           <h1>"Grandma", Mae Irving's 105th birthday</h1>
-          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'gallery' )) ) ?>"><p>More</p></a>
+          <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'gallery' )) ) ?>"><p>More</p></a>
       </section>
 
       <section class="involved-join">
