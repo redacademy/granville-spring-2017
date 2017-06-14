@@ -16,9 +16,7 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <header class="entry-header">
-          <section class="learn-about-story">
+          <section id="post-<?php the_ID(); ?>"class="learn-about-story">
           <?php if ( has_post_thumbnail() ) : ?>
             <?php the_post_thumbnail( 'large' ); ?>
           <?php endif; ?>
@@ -34,8 +32,7 @@ get_header(); ?>
                 </a>
             </div>
           </section>
-        </header><!-- .entry-header -->
-      </article><!-- #post-## -->
+
 
       <section class="program-event-post">
         <div class="front-program">
