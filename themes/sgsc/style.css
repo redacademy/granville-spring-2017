@@ -1035,7 +1035,13 @@ object {
         position: absolute;
         bottom: 0;
         right: 0;
-        z-index: 3; }
+        z-index: 3;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
         .home .content-area .site-main .learn-about-story .donate-btn a {
           text-decoration: none;
           color: #000000; }
@@ -1047,10 +1053,20 @@ object {
           .home .content-area .site-main .learn-about-story .donate-btn a p {
             display: none; }
         @media screen and (min-width: 470px) {
+<<<<<<< HEAD
           .home .content-area .site-main .learn-about-story .donate-btn a i {
             font-size: lato; }
           .home .content-area .site-main .learn-about-story .donate-btn a p {
             display: initial; } }
+=======
+          .home .content-area .site-main .learn-about-story .donate-btn {
+            height: 73px;
+            width: 224px; }
+            .home .content-area .site-main .learn-about-story .donate-btn a i {
+              font-size: 40px; }
+            .home .content-area .site-main .learn-about-story .donate-btn a p {
+              display: initial; } }
+>>>>>>> add scss mixin desktop donate button bigger
     .home .content-area .site-main .program-event-post {
       width: 100%; }
       @media screen and (min-width: 470px) {
