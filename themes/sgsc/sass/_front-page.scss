@@ -1,145 +1,67 @@
-    /*--------------------------------------------------------------
+  /*--------------------------------------------------------------
 # Front-Page
 --------------------------------------------------------------*/
-    
-    .home .content-area {
+  
+  .home .content-area {
+    display: flex;
+    justify-content: center;
+    .site-main {
       display: flex;
+      flex-flow: column nowrap;
       justify-content: center;
-      .site-main {
+      align-items: center;
+      width: $d-width;
+      article {
+        margin: 0;
+      }
+      .learn-about-story {
         display: flex;
+        height: 276px;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        width: $d-width;
-        article {
-          margin: 0;
+        position: relative;
+        @media screen and (min-width: $mobile_width) {
+          height: 386px;
         }
-        .learn-about-story {
-          display: flex;
+        img {
           height: 276px;
-          flex-flow: column nowrap;
-          justify-content: center;
-          align-items: center;
-          position: relative;
+          width: 100%;
           @media screen and (min-width: $mobile_width) {
             height: 386px;
           }
-          img {
-            height: 276px;
-            width: auto;
-            @media screen and (min-width: $mobile_width) {
-              height: 386px;
-            }
-          }
-          .front-learn {
-            position: absolute;
-            bottom: 0;
-            height: 138px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            align-items: center;
-            background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
-            h1 {
-              margin: 0;
-              padding-bottom: .5rem;
-            }
-            @include m-button;
-          }
-          @include m-donate;
         }
-        .program-event-post {
+        .front-learn {
+          position: absolute;
+          bottom: 0;
+          height: 138px;
           width: 100%;
-          @media screen and (min-width: $mobile_width) {
-            // width: 386px;
-          }
-          .front-program,
-          .front-events,
-          .front-blog {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: $orange;
-            height: 138px;
-            width: 100%;
-            @media screen and (min-width: $mobile_width) {
-              height: 386px;
-            }
-            a {
-              text-decoration: none;
-              height: 100%;
-              width: 100%;
-              color: $black;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
-            &:hover {
-              border: $p_border 4px;
-            }
-          }
-          .front-events {
-            background: $blue;
-          }
-          .front-blog {
-            background: $white;
-          }
-          .feature-gallery {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            height: 276px;
-            background: gray;
-            width: 100%;
-            .front-gallery {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-              position: absolute;
-              bottom: 0;
-              height: 138px;
-              width: 100%;
-              background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
-              h1 {
-                display: flex;
-                justify-content: center;
-                text-align: center;
-              }
-              @include m-button;
-            }
-          }
-          .involved-join {
-            height: 138px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            &:hover {
-              border: $p_border 4px;
-            }
-            .front-involved {
-              display: flex;
-              flex-flow: row wrap;
-              width: 100%;
-              justify-content: space-around;
-              @include m-button;
-              p {
-                border: none !important;
-                background: $pink;
-              }
-            }
-          }
-        }
-        .front-join {
           display: flex;
           justify-content: center;
           align-items: center;
-          background: $blue;
+          flex-direction: column;
+          align-items: center;
+          background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+          h1 {
+            margin: 0;
+            padding-bottom: .5rem;
+          }
+          @include m-button;
+        }
+        @include m-donate;
+      }
+      .program-event-post {
+        width: 100%;
+        @media screen and (min-width: $mobile_width) {
+          // width: 386px;
+        }
+        .front-program,
+        .front-events,
+        .front-blog {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $orange;
           height: 138px;
           width: 100%;
           @media screen and (min-width: $mobile_width) {
@@ -158,5 +80,83 @@
             border: $p_border 4px;
           }
         }
+        .front-events {
+          background: $blue;
+        }
+        .front-blog {
+          background: $white;
+        }
+      }
+      .feature-gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 276px;
+        background: gray;
+        width: 100%;
+        .front-gallery {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          position: absolute;
+          bottom: 0;
+          height: 138px;
+          width: 100%;
+          background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+          h1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+          }
+          @include m-button;
+        }
+      }
+      .involved-join {
+        height: 138px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        &:hover {
+          border: $p_border 4px;
+        }
+        .front-involved {
+          display: flex;
+          flex-flow: row wrap;
+          width: 100%;
+          justify-content: space-around;
+          @include m-button;
+          p {
+            border: none !important;
+            background: $pink;
+          }
+        }
       }
     }
+    .front-join {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $blue;
+      height: 138px;
+      width: 100%;
+      @media screen and (min-width: $mobile_width) {
+        height: 386px;
+      }
+      a {
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        color: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &:hover {
+        border: $p_border 4px;
+      }
+    }
+  }
