@@ -1264,7 +1264,6 @@ footer {
   margin: auto; }
 
 .site-info {
-  padding: 0 5%;
   margin: auto;
   display: -ms-flexbox;
   display: flex;
@@ -1292,16 +1291,16 @@ footer {
   background-image: url("../../assets/images/facebook-circle-sm.svg");
   background-repeat: no-repeat;
   margin-right: 10px;
-  height: 25px;
-  width: 25px; }
+  height: 36px;
+  width: 36px; }
 
 .twitter {
   background-image: url("../../assets/images/twitter-circle-sm.svg");
   background-repeat: no-repeat;
   margin-left: 10px;
   margin-right: 10px;
-  height: 25px;
-  width: 25px; }
+  height: 36px;
+  width: 36px; }
 
 .copywrite {
   text-align: center;
