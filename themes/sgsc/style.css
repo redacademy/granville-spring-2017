@@ -795,7 +795,8 @@ object {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center;
-      position: relative; }
+      position: relative;
+      width: 100%; }
       @media screen and (min-width: 470px) {
         .home .content-area .site-main .learn-about-story {
           height: 386px; } }
@@ -863,6 +864,9 @@ object {
             display: initial; } }
     .home .content-area .site-main .program-event-post {
       width: 100%; }
+      @media screen and (min-width: 470px) {
+        .home .content-area .site-main .program-event-post {
+          width: 386px; } }
       .home .content-area .site-main .program-event-post .front-program,
       .home .content-area .site-main .program-event-post .front-events,
       .home .content-area .site-main .program-event-post .front-blog {
