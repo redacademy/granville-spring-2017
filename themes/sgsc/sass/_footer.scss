@@ -17,6 +17,8 @@ footer {
 
 .textwidget {
     width: 123px;
+    font-family: $font__body;
+    font-size: $font_d-sub-body;
 }
 
 .textwidget p:last-child {
@@ -56,6 +58,8 @@ footer {
     padding: 0 5%;
     p{
         margin-bottom: 25px;
+        font-family: $font__body;
+        font-size: 14px;
     }
 }
 

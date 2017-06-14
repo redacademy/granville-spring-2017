@@ -1046,7 +1046,7 @@ object {
             display: none; }
         @media screen and (min-width: 470px) {
           .home .content-area .site-main .learn-about-story .donate-btn a i {
-            font-size: 24px; }
+            font-size: lato; }
           .home .content-area .site-main .learn-about-story .donate-btn a p {
             display: initial; } }
     .home .content-area .site-main .program-event-post {
@@ -1281,7 +1281,9 @@ footer {
     color: #f5a623; }
 
 .textwidget {
-  width: 123px; }
+  width: 123px;
+  font-family: lato;
+  font-size: 18px; }
 
 .textwidget p:last-child {
   margin-bottom: 0; }
@@ -1315,7 +1317,9 @@ footer {
   text-align: center;
   padding: 0 5%; }
   .copywrite p {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    font-family: lato;
+    font-size: 14px; }
 
 @media all and (min-width: 600px) {
   .textwidget {
