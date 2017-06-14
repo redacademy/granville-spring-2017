@@ -92,6 +92,10 @@
               height: 288px;
               flex-flow: column nowrap;
               @include m-button;
+              .detail-program {
+                display: flex;
+                flex-flow: column wrap;
+              }
             }
           }
           .front-events {

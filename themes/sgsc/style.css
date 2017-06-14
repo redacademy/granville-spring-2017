@@ -934,7 +934,12 @@ object {
                 border: none;
                 background: #f5a623;
                 z-index: 2;
-                opacity: 1; } }
+                opacity: 1; }
+          .home .content-area .site-main .program-event-post .front-program .detail-program {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap; } }
       .home .content-area .site-main .program-event-post .front-events {
         background: #45cdcb; }
         @media screen and (min-width: 470px) {
