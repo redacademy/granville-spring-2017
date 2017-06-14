@@ -1243,7 +1243,21 @@ object {
         .home .content-area .site-main .feature-gallery .front-gallery .m-button {
           display: -ms-flexbox;
           display: flex; }
-    .home .content-area .site-main .involved-join {
+    @media screen and (min-width: 470px) {
+      .home .content-area .site-main .intro-involved-join {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        padding: 32px; } }
+    @media screen and (min-width: 470px) {
+      .home .content-area .site-main .intro-involved-join .involve-pillar {
+        width: 544px;
+        display: -ms-flexbox;
+        display: flex; } }
+    .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join {
       height: 138px;
       display: -ms-flexbox;
       display: flex;
@@ -1255,9 +1269,22 @@ object {
           align-items: center;
       width: 100%;
       border: 2px #000000 solid 4px #ffffff; }
-      .home .content-area .site-main .involved-join:hover, .home .content-area .site-main .involved-join:active, .home .content-area .site-main .involved-join:focus {
+      .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join:hover, .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join:active, .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join:focus {
         border: 2px #000000 solid 4px; }
-      .home .content-area .site-main .involved-join .front-involved {
+      @media screen and (min-width: 470px) {
+        .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join {
+          width: 416px;
+          height: 288px;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
+          .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join p,
+          .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join h1 {
+            padding: 0 60px;
+            margin: 0; }
+          .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join p {
+            line-height: 120%;
+            text-align: center; } }
+      .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-flow: row wrap;
@@ -1265,63 +1292,85 @@ object {
         width: 100%;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
-        .home .content-area .site-main .involved-join .front-involved .m-button {
+        .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button {
           text-decoration: none;
           color: #000000;
           display: none; }
-          .home .content-area .site-main .involved-join .front-involved .m-button:hover, .home .content-area .site-main .involved-join .front-involved .m-button:active, .home .content-area .site-main .involved-join .front-involved .m-button:focus {
+          .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button:hover, .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button:active, .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button:focus {
             color: #ffffff; }
           @media screen and (min-width: 470px) {
-            .home .content-area .site-main .involved-join .front-involved .m-button {
+            .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button {
               display: -ms-flexbox;
               display: flex; } }
-          .home .content-area .site-main .involved-join .front-involved .m-button p {
+          .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
             margin: 0; }
-            .home .content-area .site-main .involved-join .front-involved .m-button p:hover, .home .content-area .site-main .involved-join .front-involved .m-button p:active, .home .content-area .site-main .involved-join .front-involved .m-button p:focus {
+            .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button p:hover, .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button p:active, .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button p:focus {
               border: 2px #000000 solid #f5a623;
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
             @media screen and (min-width: 470px) {
-              .home .content-area .site-main .involved-join .front-involved .m-button p {
+              .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button p {
                 display: -ms-flexbox;
                 display: flex;
                 padding: 0.4rem 3rem; } }
-        .home .content-area .site-main .involved-join .front-involved .m-button {
+        .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button {
           background: #F91E72;
           display: -ms-flexbox;
           display: flex; }
-          .home .content-area .site-main .involved-join .front-involved .m-button p {
-            border: none; }
-  .home .content-area .front-join {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    background: #45cdcb;
-    height: 138px;
-    width: 100%;
-    border: 2px #000000 solid 4px #45cdcb; }
-    @media screen and (min-width: 470px) {
-      .home .content-area .front-join {
-        height: 386px; } }
-    .home .content-area .front-join a {
-      text-decoration: none;
-      height: 100%;
-      width: 100%;
-      color: #000000;
+          .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button p {
+            border: none;
+            line-height: initial; }
+    .home .content-area .site-main .intro-involved-join .pillar {
+      display: none; }
+      @media screen and (min-width: 470px) {
+        .home .content-area .site-main .intro-involved-join .pillar {
+          width: 128px;
+          height: 297px;
+          background: #F91E72;
+          display: -ms-flexbox;
+          display: flex; } }
+    .home .content-area .site-main .front-join {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
           justify-content: center;
       -ms-flex-align: center;
-          align-items: center; }
-    .home .content-area .front-join:hover, .home .content-area .front-join:active, .home .content-area .front-join:focus {
-      border: 2px #000000 solid 4px; }
+          align-items: center;
+      background: #45cdcb;
+      height: 138px;
+      width: 100%;
+      border: 2px #000000 solid 4px #45cdcb; }
+      .home .content-area .site-main .front-join:hover, .home .content-area .site-main .front-join:active, .home .content-area .site-main .front-join:focus {
+        border: 2px #000000 solid 4px; }
+      .home .content-area .site-main .front-join p {
+        display: none; }
+      .home .content-area .site-main .front-join a {
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        color: #000000;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap; }
+      @media screen and (min-width: 470px) {
+        .home .content-area .site-main .front-join {
+          height: 297px;
+          width: 383px;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap; }
+          .home .content-area .site-main .front-join p {
+            display: -ms-flexbox;
+            display: flex;
+            width: 70%;
+            text-align: center; } }
 
 footer {
   max-width: 1024px;

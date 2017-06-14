@@ -62,21 +62,30 @@ get_header(); ?>
           <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'gallery' )) ) ?>"><p>More</p></a>
       </section>
 
-      <section class="involved-join">
-          <h1>Get Involved</h1>
-        <div class="front-involved">
-          <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
-            <p>Donate</p></a>
-          <a class="m-button"href="<?php echo esc_url( get_permalink(get_page_by_title( 'advertise' )) ) ?>">
-            <p>Advertise</p></a>
-        </div>
-      </section>
-        
-      <div class="front-join">
-        <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'join us' )) ) ?>">
-          <h1>Join Us or Volunteer</h1></a>
-      </div>
+      <section class="intro-involved-join">
 
+        <div class="involve-pillar">
+          <div class="involved-join">        
+            <h1>Get Involved</h1>
+            <p>We are committed to maintaining a welcoming, friendly, and open community space for low income adults 55+ and the community members who support them.</p>
+            <div class="front-involved">
+              <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+                <p>Donate</p></a>
+              <a class="m-button"href="<?php echo esc_url( get_permalink(get_page_by_title( 'advertise' )) ) ?>">
+                <p>Advertise</p></a>
+            </div>
+          </div>
+          <div class="pillar">
+          </div>
+        </div>
+        <div class="front-join">
+          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'join us' )) ) ?>">
+            <h1>Join Us or Volunteer</h1>
+            <p>Join the South Granville Seniors Centre and be a part of our fantastic community! </p>
+          </a>
+        </div>
+
+      </section>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
