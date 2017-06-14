@@ -48,6 +48,9 @@
               padding-bottom: .5rem;
             }
             @include m-button;
+            .m-button {
+              display: flex;
+            }
           }
           @include m-donate;
         }
@@ -140,6 +143,9 @@
               text-align: center;
             }
             @include m-button;
+            .m-button {
+              display: flex;
+            }
           }
         }
         .involved-join {

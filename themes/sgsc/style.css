@@ -843,6 +843,9 @@ object {
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
+        .home .content-area .site-main .learn-about-story .front-learn .m-button {
+          display: -ms-flexbox;
+          display: flex; }
       .home .content-area .site-main .learn-about-story .donate-btn {
         background-color: #F91E72;
         position: absolute;
@@ -1006,6 +1009,9 @@ object {
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
+        .home .content-area .site-main .feature-gallery .front-gallery .m-button {
+          display: -ms-flexbox;
+          display: flex; }
     .home .content-area .site-main .involved-join {
       height: 138px;
       display: -ms-flexbox;
