@@ -11,19 +11,22 @@
     margin-right: auto;
   }
   
-  //mobile "more" button
+  // "more" button
+  // Example
+  // <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
   @mixin m-button {
-    a {
+    .m-button {
       text-decoration: none;
       color: $black;
+      display: none;
+      @media screen and (min-width: $mobile_width) {
+        display: flex;
+      }
       &:hover {
         color: $white;
       }
       p {
         padding: $m_padding;
-        @media screen and (min-width: $mobile_width) {
-          padding: $d_padding;
-        }
         border: $p_border;
         margin: 0;
         &:hover {
@@ -36,14 +39,22 @@
     }
   }
   
-  //mobile donate-btn 
+  // Donate-btn 
+  // Example
+  // 	<div class="donate-btn">
+  // 	<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+  // 		<i class="fa fa-heart-o" aria-hidden="true">
+  // 			<p>Donate</p>
+  // 		</i>
+  // 		</a>
+  // </div>
   @mixin m-donate {
     .donate-btn {
       background-color: $pink;
       position: absolute;
       bottom: 0;
       right: 0;
-      z-index: 100;
+      z-index: 3;
       a {
         text-decoration: none;
         color: $black;

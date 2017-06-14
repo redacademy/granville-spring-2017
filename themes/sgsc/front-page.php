@@ -16,15 +16,13 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <header class="entry-header">
-          <section class="learn-about-story">
+          <section id="post-<?php the_ID(); ?>"class="learn-about-story">
           <?php if ( has_post_thumbnail() ) : ?>
             <?php the_post_thumbnail( 'large' ); ?>
           <?php endif; ?>
             <div class="front-learn">
               <h1>Learn About Our Story</h1>
-              <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
+              <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
             </div>
             <div class="donate-btn">
               <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
@@ -34,13 +32,15 @@ get_header(); ?>
                 </a>
             </div>
           </section>
-        </header><!-- .entry-header -->
-      </article><!-- #post-## -->
+
 
       <section class="program-event-post">
+
         <div class="front-program">
           <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'programs' )) ) ?>">
             <h1>Discover Our Programs</h1></a>
+          <p>We have a multitude of programs to keep you healthy, active and connected.</p>
+          <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
         </div>
 
         <div>
@@ -59,7 +59,7 @@ get_header(); ?>
       <section class="feature-gallery">
         <div class="front-gallery">
           <h1>"Grandma", Mae Irving's 105th birthday</h1>
-          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'gallery' )) ) ?>"><p>More</p></a>
+          <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'gallery' )) ) ?>"><p>More</p></a>
       </section>
 
       <section class="involved-join">
