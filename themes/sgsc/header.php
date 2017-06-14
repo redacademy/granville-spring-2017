@@ -36,7 +36,9 @@
 				<section class="menu">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+						<div class="overlay overlay-slidedown">
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu-visible' ) ); ?>
+						</div>
 					</nav>
 					<div>
 						<?php get_search_form() ?>

@@ -115,9 +115,9 @@ a {
 	.menu-toggle {
 		display: none;
 	}
-	.main-navigation ul {
-		display: block;
-	}
+	// .main-navigation ul {
+	// 	display: flex !important;
+	// }
 }
 
 	.menu {
@@ -145,3 +145,56 @@ a {
 		width: 50%;
 	}
 }
+
+ .menu-visible {
+	display: flex !important;
+	flex-direction: column;
+	position: fixed;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	// height: 100%;
+	top: 0;
+	left: 0;
+	background: white;
+	z-index: 200;
+	overflow: scroll;
+	li {
+		float: left;
+    position: relative;
+    background: orange;
+    width: 80%;
+		margin: 1rem;
+    padding: 3rem;
+    text-align: center;
+	}
+	li:hover {
+		border: 4px solid black;
+	}
+	a {
+		color: black;
+	}
+}
+
+// .overlay-slidedown {
+// 	visibility: hidden;
+// 	-webkit-transform: translateY(-100%);
+// 	transform: translateY(-100%);
+// 	-webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+// 	transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+// }
+
+// .overlay-slidedown.menu-visible {
+// 	visibility: visible;
+// 	-webkit-transform: translateY(0%);
+// 	transform: translateY(0%);
+// 	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+// 	transition: transform 0.4s ease-in-out;
+// }
+
+// .overlay.menu-visible {
+//   opacity: 1;
+//   visibility: visible;
+//   height: 100%;
+// }

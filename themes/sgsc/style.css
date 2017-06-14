@@ -610,9 +610,7 @@ a {
 
 @media screen and (min-width: 480px) {
   .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
+    display: none; } }
 
 .menu {
   -ms-flex-pack: end;
@@ -638,6 +636,36 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.menu-visible {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: fixed;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 200;
+  overflow: scroll; }
+  .menu-visible li {
+    float: left;
+    position: relative;
+    background: orange;
+    width: 80%;
+    margin: 1rem;
+    padding: 3rem;
+    text-align: center; }
+  .menu-visible li:hover {
+    border: 4px solid black; }
+  .menu-visible a {
+    color: black; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1002,12 +1030,15 @@ object {
             display: initial; } }
     .home .content-area .site-main .program-event-post {
       width: 100%; }
+<<<<<<< HEAD
       @media screen and (min-width: 470px) {
         .home .content-area .site-main .program-event-post {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-pack: distribute;
               justify-content: space-around; } }
+=======
+>>>>>>> make mobile header overlay whole page
       .home .content-area .site-main .program-event-post .front-program,
       .home .content-area .site-main .program-event-post .front-events,
       .home .content-area .site-main .program-event-post .front-blog {
