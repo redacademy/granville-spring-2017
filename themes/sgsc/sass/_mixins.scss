@@ -37,6 +37,7 @@
         }
         @media screen and (min-width: $mobile_width) {
           display: flex;
+          padding: $d_padding;
         }
       }
     }

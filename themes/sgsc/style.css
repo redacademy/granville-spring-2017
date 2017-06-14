@@ -1025,7 +1025,8 @@ object {
             @media screen and (min-width: 470px) {
               .home .content-area .site-main .learn-about-story .front-learn .m-button p {
                 display: -ms-flexbox;
-                display: flex; } }
+                display: flex;
+                padding: 0.4rem 3rem; } }
         .home .content-area .site-main .learn-about-story .front-learn .m-button {
           display: -ms-flexbox;
           display: flex; }
@@ -1119,7 +1120,8 @@ object {
           @media screen and (min-width: 470px) {
             .home .content-area .site-main .program-event-post .front-program .m-button p {
               display: -ms-flexbox;
-              display: flex; } }
+              display: flex;
+              padding: 0.4rem 3rem; } }
       .home .content-area .site-main .program-event-post .front-program p {
         display: none;
         padding: 0 60px; }
@@ -1207,7 +1209,8 @@ object {
             @media screen and (min-width: 470px) {
               .home .content-area .site-main .feature-gallery .front-gallery .m-button p {
                 display: -ms-flexbox;
-                display: flex; } }
+                display: flex;
+                padding: 0.4rem 3rem; } }
         @media screen and (min-width: 470px) {
           .home .content-area .site-main .feature-gallery .front-gallery {
             height: 174px; } }
@@ -1263,7 +1266,8 @@ object {
             @media screen and (min-width: 470px) {
               .home .content-area .site-main .involved-join .front-involved .m-button p {
                 display: -ms-flexbox;
-                display: flex; } }
+                display: flex;
+                padding: 0.4rem 3rem; } }
         .home .content-area .site-main .involved-join .front-involved .m-button {
           background: #F91E72;
           display: -ms-flexbox;
