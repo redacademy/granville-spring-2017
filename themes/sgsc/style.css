@@ -671,6 +671,14 @@ a {
   z-index: 200;
   overflow: scroll; }
 
+#back-button {
+  display: none;
+  margin-left: 2rem;
+  background: none;
+  border: 2px solid black;
+  box-shadow: none;
+  border-radius: 0; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
