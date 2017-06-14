@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*!
 Theme Name: South Granville Senior Center
 Theme URI: http://underscores.me/
@@ -568,7 +567,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    visibility: hidden;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -597,10 +595,16 @@ a {
     display: block;
     text-decoration: none; }
 
+.nav-menu {
+  display: none; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block; }
+
+.mobile-menu {
+  display: none; }
 
 .menu {
   display: -ms-flexbox;
@@ -608,10 +612,6 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 100vw; }
-
-@media screen and (min-width: 480px) {
-  .menu-toggle {
-    display: none; } }
 
 .menu {
   -ms-flex-pack: end;
@@ -679,6 +679,14 @@ a {
   border: 2px solid black;
   box-shadow: none;
   border-radius: 0; }
+
+@media screen and (min-width: 480px) {
+  .menu-toggle {
+    display: none; }
+  .main-navigation ul {
+    display: block; }
+  .nav-menu {
+    display: initial; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1043,15 +1051,12 @@ object {
             display: initial; } }
     .home .content-area .site-main .program-event-post {
       width: 100%; }
-<<<<<<< HEAD
       @media screen and (min-width: 470px) {
         .home .content-area .site-main .program-event-post {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-pack: distribute;
               justify-content: space-around; } }
-=======
->>>>>>> make mobile header overlay whole page
       .home .content-area .site-main .program-event-post .front-program,
       .home .content-area .site-main .program-event-post .front-events,
       .home .content-area .site-main .program-event-post .front-blog {
@@ -1349,5 +1354,3 @@ footer {
 
 .page-template-page-about .entry-title {
   display: none; }
-=======
->>>>>>> help with merging
