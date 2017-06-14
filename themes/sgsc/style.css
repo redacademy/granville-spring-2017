@@ -1010,19 +1010,17 @@ object {
           text-decoration: none;
           color: #000000;
           display: none; }
+          .home .content-area .site-main .learn-about-story .front-learn .m-button:hover, .home .content-area .site-main .learn-about-story .front-learn .m-button:active, .home .content-area .site-main .learn-about-story .front-learn .m-button:focus {
+            color: #ffffff; }
           @media screen and (min-width: 470px) {
             .home .content-area .site-main .learn-about-story .front-learn .m-button {
               display: -ms-flexbox;
-              display: flex; }
-              .home .content-area .site-main .learn-about-story .front-learn .m-button:hover {
-                color: #ffffff; } }
-          .home .content-area .site-main .learn-about-story .front-learn .m-button:active {
-            color: #ffffff; }
+              display: flex; } }
           .home .content-area .site-main .learn-about-story .front-learn .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
             margin: 0; }
-            .home .content-area .site-main .learn-about-story .front-learn .m-button p:active {
+            .home .content-area .site-main .learn-about-story .front-learn .m-button p:hover, .home .content-area .site-main .learn-about-story .front-learn .m-button p:active, .home .content-area .site-main .learn-about-story .front-learn .m-button p:focus {
               border: none;
               background: #f5a623;
               z-index: 2;
@@ -1030,12 +1028,7 @@ object {
             @media screen and (min-width: 470px) {
               .home .content-area .site-main .learn-about-story .front-learn .m-button p {
                 display: -ms-flexbox;
-                display: flex; }
-                .home .content-area .site-main .learn-about-story .front-learn .m-button p:hover {
-                  border: none;
-                  background: #f5a623;
-                  z-index: 2;
-                  opacity: 1; } }
+                display: flex; } }
         .home .content-area .site-main .learn-about-story .front-learn .m-button {
           display: -ms-flexbox;
           display: flex; }
@@ -1105,27 +1098,29 @@ object {
               -ms-flex-pack: start;
                   justify-content: flex-start;
               padding-left: 60px; } }
-        .home .content-area .site-main .program-event-post .front-program:hover,
+        .home .content-area .site-main .program-event-post .front-program:hover, .home .content-area .site-main .program-event-post .front-program:active, .home .content-area .site-main .program-event-post .front-program:focus,
         .home .content-area .site-main .program-event-post .front-events:hover,
-        .home .content-area .site-main .program-event-post .front-blog:hover {
+        .home .content-area .site-main .program-event-post .front-events:active,
+        .home .content-area .site-main .program-event-post .front-events:focus,
+        .home .content-area .site-main .program-event-post .front-blog:hover,
+        .home .content-area .site-main .program-event-post .front-blog:active,
+        .home .content-area .site-main .program-event-post .front-blog:focus {
           border: 2px #000000 solid 4px; }
       .home .content-area .site-main .program-event-post .front-program .m-button {
         text-decoration: none;
         color: #000000;
         display: none; }
+        .home .content-area .site-main .program-event-post .front-program .m-button:hover, .home .content-area .site-main .program-event-post .front-program .m-button:active, .home .content-area .site-main .program-event-post .front-program .m-button:focus {
+          color: #ffffff; }
         @media screen and (min-width: 470px) {
           .home .content-area .site-main .program-event-post .front-program .m-button {
             display: -ms-flexbox;
-            display: flex; }
-            .home .content-area .site-main .program-event-post .front-program .m-button:hover {
-              color: #ffffff; } }
-        .home .content-area .site-main .program-event-post .front-program .m-button:active {
-          color: #ffffff; }
+            display: flex; } }
         .home .content-area .site-main .program-event-post .front-program .m-button p {
           padding: 0.3rem 1.5rem;
           border: 2px #000000 solid;
           margin: 0; }
-          .home .content-area .site-main .program-event-post .front-program .m-button p:active {
+          .home .content-area .site-main .program-event-post .front-program .m-button p:hover, .home .content-area .site-main .program-event-post .front-program .m-button p:active, .home .content-area .site-main .program-event-post .front-program .m-button p:focus {
             border: none;
             background: #f5a623;
             z-index: 2;
@@ -1133,12 +1128,7 @@ object {
           @media screen and (min-width: 470px) {
             .home .content-area .site-main .program-event-post .front-program .m-button p {
               display: -ms-flexbox;
-              display: flex; }
-              .home .content-area .site-main .program-event-post .front-program .m-button p:hover {
-                border: none;
-                background: #f5a623;
-                z-index: 2;
-                opacity: 1; } }
+              display: flex; } }
       .home .content-area .site-main .program-event-post .front-program p {
         display: none; }
       @media screen and (min-width: 470px) {
@@ -1198,19 +1188,17 @@ object {
           text-decoration: none;
           color: #000000;
           display: none; }
+          .home .content-area .site-main .feature-gallery .front-gallery .m-button:hover, .home .content-area .site-main .feature-gallery .front-gallery .m-button:active, .home .content-area .site-main .feature-gallery .front-gallery .m-button:focus {
+            color: #ffffff; }
           @media screen and (min-width: 470px) {
             .home .content-area .site-main .feature-gallery .front-gallery .m-button {
               display: -ms-flexbox;
-              display: flex; }
-              .home .content-area .site-main .feature-gallery .front-gallery .m-button:hover {
-                color: #ffffff; } }
-          .home .content-area .site-main .feature-gallery .front-gallery .m-button:active {
-            color: #ffffff; }
+              display: flex; } }
           .home .content-area .site-main .feature-gallery .front-gallery .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
             margin: 0; }
-            .home .content-area .site-main .feature-gallery .front-gallery .m-button p:active {
+            .home .content-area .site-main .feature-gallery .front-gallery .m-button p:hover, .home .content-area .site-main .feature-gallery .front-gallery .m-button p:active, .home .content-area .site-main .feature-gallery .front-gallery .m-button p:focus {
               border: none;
               background: #f5a623;
               z-index: 2;
@@ -1218,12 +1206,7 @@ object {
             @media screen and (min-width: 470px) {
               .home .content-area .site-main .feature-gallery .front-gallery .m-button p {
                 display: -ms-flexbox;
-                display: flex; }
-                .home .content-area .site-main .feature-gallery .front-gallery .m-button p:hover {
-                  border: none;
-                  background: #f5a623;
-                  z-index: 2;
-                  opacity: 1; } }
+                display: flex; } }
         .home .content-area .site-main .feature-gallery .front-gallery .m-button {
           display: -ms-flexbox;
           display: flex; }
@@ -1238,7 +1221,7 @@ object {
       -ms-flex-align: center;
           align-items: center;
       width: 100%; }
-      .home .content-area .site-main .involved-join:hover {
+      .home .content-area .site-main .involved-join:hover, .home .content-area .site-main .involved-join:active, .home .content-area .site-main .involved-join:focus {
         border: 2px #000000 solid 4px; }
       .home .content-area .site-main .involved-join .front-involved {
         display: -ms-flexbox;
@@ -1252,19 +1235,17 @@ object {
           text-decoration: none;
           color: #000000;
           display: none; }
+          .home .content-area .site-main .involved-join .front-involved .m-button:hover, .home .content-area .site-main .involved-join .front-involved .m-button:active, .home .content-area .site-main .involved-join .front-involved .m-button:focus {
+            color: #ffffff; }
           @media screen and (min-width: 470px) {
             .home .content-area .site-main .involved-join .front-involved .m-button {
               display: -ms-flexbox;
-              display: flex; }
-              .home .content-area .site-main .involved-join .front-involved .m-button:hover {
-                color: #ffffff; } }
-          .home .content-area .site-main .involved-join .front-involved .m-button:active {
-            color: #ffffff; }
+              display: flex; } }
           .home .content-area .site-main .involved-join .front-involved .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
             margin: 0; }
-            .home .content-area .site-main .involved-join .front-involved .m-button p:active {
+            .home .content-area .site-main .involved-join .front-involved .m-button p:hover, .home .content-area .site-main .involved-join .front-involved .m-button p:active, .home .content-area .site-main .involved-join .front-involved .m-button p:focus {
               border: none;
               background: #f5a623;
               z-index: 2;
@@ -1272,12 +1253,7 @@ object {
             @media screen and (min-width: 470px) {
               .home .content-area .site-main .involved-join .front-involved .m-button p {
                 display: -ms-flexbox;
-                display: flex; }
-                .home .content-area .site-main .involved-join .front-involved .m-button p:hover {
-                  border: none;
-                  background: #f5a623;
-                  z-index: 2;
-                  opacity: 1; } }
+                display: flex; } }
         .home .content-area .site-main .involved-join .front-involved .m-button {
           background: #F91E72;
           display: -ms-flexbox;
@@ -1308,7 +1284,7 @@ object {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
-    .home .content-area .front-join:hover {
+    .home .content-area .front-join:hover, .home .content-area .front-join:active, .home .content-area .front-join:focus {
       border: 2px #000000 solid 4px; }
 
 footer {

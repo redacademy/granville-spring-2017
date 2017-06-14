@@ -85,7 +85,7 @@
                 padding-left: 60px;
               }
             }
-            &:hover {
+            @include hover-state {
               border: $p_border 4px;
             }
           }
@@ -155,7 +155,7 @@
           justify-content: center;
           align-items: center;
           width: 100%;
-          &:hover {
+          @include hover-state {
             border: $p_border 4px;
           }
           .front-involved {
@@ -193,7 +193,7 @@
           justify-content: center;
           align-items: center;
         }
-        &:hover {
+        @include hover-state {
           border: $p_border 4px;
         }
       }
