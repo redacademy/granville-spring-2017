@@ -53,9 +53,6 @@
       }
       .program-event-post {
         width: 100%;
-        @media screen and (min-width: $mobile_width) {
-          width: 386px;
-        }
         .front-program,
         .front-events,
         .front-blog {
@@ -86,6 +83,22 @@
         }
         .front-blog {
           background: $white;
+        }
+        @media screen and (min-width: $mobile_width) {
+          .front-program {
+            width: 544px;
+            height: 288px;
+            @include m-button;
+          }
+          .front-events {
+            width: 383px;
+            height: 49px;
+          }
+          .front-blog {
+            width: 383px;
+            height: 49px;
+            background: $blue;
+          }
         }
       }
       .feature-gallery {

@@ -864,9 +864,6 @@ object {
             display: initial; } }
     .home .content-area .site-main .program-event-post {
       width: 100%; }
-      @media screen and (min-width: 470px) {
-        .home .content-area .site-main .program-event-post {
-          width: 386px; } }
       .home .content-area .site-main .program-event-post .front-program,
       .home .content-area .site-main .program-event-post .front-events,
       .home .content-area .site-main .program-event-post .front-blog {
@@ -905,6 +902,35 @@ object {
         background: #45cdcb; }
       .home .content-area .site-main .program-event-post .front-blog {
         background: #ffffff; }
+      @media screen and (min-width: 470px) {
+        .home .content-area .site-main .program-event-post .front-program {
+          width: 544px;
+          height: 288px; }
+          .home .content-area .site-main .program-event-post .front-program a {
+            text-decoration: none;
+            color: #000000; }
+            .home .content-area .site-main .program-event-post .front-program a:hover {
+              color: #ffffff; }
+            .home .content-area .site-main .program-event-post .front-program a p {
+              padding: 0.3rem 1.5rem;
+              border: 2px #000000 solid;
+              margin: 0; } }
+      @media screen and (min-width: 470px) and (min-width: 470px) {
+        .home .content-area .site-main .program-event-post .front-program a p {
+          padding: 0.4rem 3rem; } }
+      @media screen and (min-width: 470px) {
+              .home .content-area .site-main .program-event-post .front-program a p:hover {
+                border: none;
+                background: #f5a623;
+                z-index: 2;
+                opacity: 1; }
+        .home .content-area .site-main .program-event-post .front-events {
+          width: 383px;
+          height: 49px; }
+        .home .content-area .site-main .program-event-post .front-blog {
+          width: 383px;
+          height: 49px;
+          background: #45cdcb; } }
     .home .content-area .site-main .feature-gallery {
       display: -ms-flexbox;
       display: flex;
