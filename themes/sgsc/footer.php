@@ -22,10 +22,11 @@
 						<a class="facebook" href="https://www.facebook.com/SouthGranvilleSeniorsCentre/"></a>
 						<a class="twitter" href="https://twitter.com/sgseniors"></a> 
 					</div>	
-				</div><!-- .site-info -->
-				<div class="copywrite">	
-					<p>&copy; 2017 South Granville Seniors Centre is  Registered Canadian Charity</p>
-				</div>
+				</div>	
+					<div class="copywrite">	
+						<p>&copy; 2017 South Granville Seniors Centre is Registered Canadian Charity</p>
+					</div>
+				
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
