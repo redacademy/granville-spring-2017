@@ -1018,7 +1018,7 @@ object {
             border: 2px #000000 solid;
             margin: 0; }
             .home .content-area .site-main .learn-about-story .front-learn .m-button p:hover, .home .content-area .site-main .learn-about-story .front-learn .m-button p:active, .home .content-area .site-main .learn-about-story .front-learn .m-button p:focus {
-              border: none;
+              border: 2px #000000 solid #f5a623;
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
@@ -1129,7 +1129,7 @@ object {
           border: 2px #000000 solid;
           margin: 0; }
           .home .content-area .site-main .program-event-post .front-program .m-button p:hover, .home .content-area .site-main .program-event-post .front-program .m-button p:active, .home .content-area .site-main .program-event-post .front-program .m-button p:focus {
-            border: none;
+            border: 2px #000000 solid #f5a623;
             background: #f5a623;
             z-index: 2;
             opacity: 1; }
@@ -1218,7 +1218,7 @@ object {
             border: 2px #000000 solid;
             margin: 0; }
             .home .content-area .site-main .feature-gallery .front-gallery .m-button p:hover, .home .content-area .site-main .feature-gallery .front-gallery .m-button p:active, .home .content-area .site-main .feature-gallery .front-gallery .m-button p:focus {
-              border: none;
+              border: 2px #000000 solid #f5a623;
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
@@ -1275,7 +1275,7 @@ object {
             border: 2px #000000 solid;
             margin: 0; }
             .home .content-area .site-main .involved-join .front-involved .m-button p:hover, .home .content-area .site-main .involved-join .front-involved .m-button p:active, .home .content-area .site-main .involved-join .front-involved .m-button p:focus {
-              border: none;
+              border: 2px #000000 solid #f5a623;
               background: #f5a623;
               z-index: 2;
               opacity: 1; }

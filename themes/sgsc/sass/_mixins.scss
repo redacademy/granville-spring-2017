@@ -30,7 +30,7 @@
         border: $p_border;
         margin: 0;
         @include hover-state() {
-          border: none;
+          border: $p_border $orange;
           background: $orange;
           z-index: 2;
           opacity: 1;
