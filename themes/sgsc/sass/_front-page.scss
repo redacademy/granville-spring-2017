@@ -135,6 +135,9 @@
           height: 276px;
           background: gray;
           width: 100%;
+          @media screen and (min-width: $mobile_width) {
+            height: 356px;
+          }
           .front-gallery {
             display: flex;
             justify-content: center;
@@ -145,12 +148,15 @@
             height: 138px;
             width: 100%;
             background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+            @include m-button;
+            @media screen and (min-width: $mobile_width) {
+              height: 174px;
+            }
             h1 {
               display: flex;
               justify-content: center;
               text-align: center;
             }
-            @include m-button;
             .m-button {
               display: flex;
             }

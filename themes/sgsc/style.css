@@ -1168,6 +1168,9 @@ object {
       height: 276px;
       background: gray;
       width: 100%; }
+      @media screen and (min-width: 470px) {
+        .home .content-area .site-main .feature-gallery {
+          height: 356px; } }
       .home .content-area .site-main .feature-gallery .front-gallery {
         display: -ms-flexbox;
         display: flex;
@@ -1182,12 +1185,6 @@ object {
         height: 138px;
         width: 100%;
         background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)); }
-        .home .content-area .site-main .feature-gallery .front-gallery h1 {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          text-align: center; }
         .home .content-area .site-main .feature-gallery .front-gallery .m-button {
           text-decoration: none;
           color: #000000;
@@ -1211,6 +1208,15 @@ object {
               .home .content-area .site-main .feature-gallery .front-gallery .m-button p {
                 display: -ms-flexbox;
                 display: flex; } }
+        @media screen and (min-width: 470px) {
+          .home .content-area .site-main .feature-gallery .front-gallery {
+            height: 174px; } }
+        .home .content-area .site-main .feature-gallery .front-gallery h1 {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          text-align: center; }
         .home .content-area .site-main .feature-gallery .front-gallery .m-button {
           display: -ms-flexbox;
           display: flex; }
