@@ -1,65 +1,100 @@
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  height: 13rem;  
-  a {
-    color: black;
-  }
-  a:hover {
-    color: $color__link-hover;
-  }
-}
-
 .main-navigation .search-field{ 
-	display: none;
-	overflow:hidden;
-	border: none;
-	background: transparent;
-	&:focus{
-		outline: none;
-	}
-}
-
-.logo-header {
-  display: flex;
-  position: absolute;
-  align-items: flex-start;
-}
-
-.icon-search{
-	cursor: pointer;
+  display: none;
+  overflow:hidden;
+  border: none;
+  background: transparent;
+  &:focus{
+    outline: none;
+  }
 }
 
 .search-submit {
-	display: inline;
+  display: inline;
   border: none;
   background: none;
   box-shadow: none;
 }
 
 .search-form {
-	fieldset {
-	border: none;
-	}
-	input {
+  fieldset {
+  border: none;
+  }
+  input {
     display: none;
-		border: none;
-		outline: none;
-	}
-}
-
-.menu {
-  display: flex;
-  align-items: flex-end;
-}
-
-.main-navigation {
-  padding-bottom: 0.5rem;
-  li {
-    padding: 0px 1.4rem;
+    border: none;
+    outline: none;
   }
 }
 
-.icon-search .fa-search {
-  font-size: 1.5rem;
+.menu {
+  .fa {
+    font-size: 2rem;
+  }
+}
+
+.menu-toggle {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.main-navigation {
+  display: flex;
+  align-self: center;
+}
+
+.site-header {
+  height: 4rem;
+  width: auto;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  z-index: -1;
+}
+
+.logo-img {
+  height: 3.5rem;
+  display: flex;
+}
+
+@media screen and (min-width: 480px) {
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    height: 13rem;  
+    a {
+      color: black;
+    }
+    a:hover {
+      color: $color__link-hover;
+    }
+  }
+
+  .logo-header {
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+  }
+
+  .icon-search{
+    cursor: pointer;
+  }
+
+  .main-navigation {
+    padding-bottom: 0.5rem;
+    li {
+      padding: 0px 1.4rem;
+    }
+  }
+
+  .icon-search .fa-search {
+    font-size: 1.5rem;
+  }
 }

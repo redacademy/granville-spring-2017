@@ -105,7 +105,13 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: 768px) {
+.menu {
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+}
+
+@media screen and (min-width: 480px) {
 	.menu-toggle {
 		display: none;
 	}
@@ -113,6 +119,11 @@ a {
 		display: block;
 	}
 }
+
+	.menu {
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
 
 .comment-navigation,
 .posts-navigation,

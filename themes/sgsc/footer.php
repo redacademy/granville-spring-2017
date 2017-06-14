@@ -11,18 +11,21 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<ul>
-						<li>E-News Letter</li>
-						<li>Join Us</li>
-						<li>Donate</li>
-						<li>Contact Us</li>
-						<li>Advertise With Us</li>
-					</ul>
-					<p>2017 South Granville Seniors Centre is  Registered Canadian Charity</p>
-					<i class="fa fa-facebook" aria-hidden="true"></i>
-					<i class="fa fa-twitter" aria-hidden="true"></i>
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly worked on by %s' ), 'WordPress' ); ?></a>
+					<div class="footer-links">
+						<p>E-Newsletter</p>
+						<p>Donate</p>
+						<p>Contact Us</p>
+						<p>Advertise With Us</p>
+						<p class="join-us">Join Us</p>
+					</div>
+					<div class="footer-icons">
+						<a class="facebook" href="https://www.facebook.com/SouthGranvilleSeniorsCentre/"></a>
+						<a class="twitter" href="https://twitter.com/sgseniors"></a> 
+					</div>	
 				</div><!-- .site-info -->
+				<div class="copywrite">	
+					<p>&copy; 2017 South Granville Seniors Centre is  Registered Canadian Charity</p>
+				</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
