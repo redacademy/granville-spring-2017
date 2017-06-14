@@ -23,6 +23,7 @@
 					} ?>
 
 					<div class="footer-icons">
+						<a class="facebook" href="https://www.facebook.com/SouthGranvilleSeniorsCentre/" target="_blank"></a>
 						<a class="twitter" href="https://twitter.com/sgseniors" target="_blank"></a> 
 					</div>	
 				</div>	
