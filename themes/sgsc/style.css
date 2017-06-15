@@ -1053,12 +1053,6 @@ object {
           .home .content-area .site-main .learn-about-story .donate-btn a p {
             display: none; }
         @media screen and (min-width: 470px) {
-<<<<<<< HEAD
-          .home .content-area .site-main .learn-about-story .donate-btn a i {
-            font-size: lato; }
-          .home .content-area .site-main .learn-about-story .donate-btn a p {
-            display: initial; } }
-=======
           .home .content-area .site-main .learn-about-story .donate-btn {
             height: 73px;
             width: 224px; }
@@ -1066,7 +1060,6 @@ object {
               font-size: 40px; }
             .home .content-area .site-main .learn-about-story .donate-btn a p {
               display: initial; } }
->>>>>>> add scss mixin desktop donate button bigger
     .home .content-area .site-main .program-event-post {
       width: 100%; }
       @media screen and (min-width: 470px) {
