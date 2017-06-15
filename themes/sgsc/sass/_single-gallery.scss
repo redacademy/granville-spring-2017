@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# Single-Gallery Page
+--------------------------------------------------------------*/
+
+.single-gallery .content-area {
+  display: flex;
+  justify-content: center;
+  .site-main {
+    width: $d_width;
+    display: flex;
+    flex-flow: column nowrap;
+    article {
+      margin: 0;
+      .entry-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: $orange;
+        img {
+          display: none;
+        }
+        @include m-donate;
+        .entry-meta {
+          display: none;
+        }
+      }
+      .entry-content {
+        width: $d_width;
+        .gallery {
+          display: flex;
+          justify-content: space-around;
+          flex-flow: column wrap;
+          figure {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            height: 321px;
+            width: 463px;
+            background: gainsboro;
+            .gallery-icon {
+              height: 321px;
+              width: 463px;
+              position: relative;
+              a {
+                pointer-events: none;
+                cursor: default;
+              }
+            }
+          }
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        form {
+          display: none;
+        }
+      }
+    }
+  }
+}

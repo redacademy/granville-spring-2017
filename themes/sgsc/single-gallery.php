@@ -19,7 +19,13 @@ get_header(); ?>
 				<?php endif; ?>
 
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+				<div class="donate-btn">
+					<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+						<i class="fa fa-heart-o" aria-hidden="true">
+							<p>Donate</p>
+						</i>
+					</a>
+				</div>
 				<div class="entry-meta">
 					<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
 				</div><!-- .entry-meta -->

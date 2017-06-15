@@ -1394,6 +1394,99 @@ object {
             width: 70%;
             text-align: center; } }
 
+/*--------------------------------------------------------------
+# Single-Gallery Page
+--------------------------------------------------------------*/
+.single-gallery .content-area {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .single-gallery .content-area .site-main {
+    width: 1024px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
+    .single-gallery .content-area .site-main article {
+      margin: 0; }
+      .single-gallery .content-area .site-main article .entry-header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        position: relative;
+        background: #f5a623; }
+        .single-gallery .content-area .site-main article .entry-header img {
+          display: none; }
+        .single-gallery .content-area .site-main article .entry-header .donate-btn {
+          background-color: #F91E72;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 3;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center; }
+          .single-gallery .content-area .site-main article .entry-header .donate-btn a {
+            text-decoration: none;
+            color: #000000; }
+            .single-gallery .content-area .site-main article .entry-header .donate-btn a i {
+              padding: .4rem;
+              color: #000000; }
+              .single-gallery .content-area .site-main article .entry-header .donate-btn a i:hover {
+                color: #f5a623; }
+            .single-gallery .content-area .site-main article .entry-header .donate-btn a p {
+              display: none; }
+          @media screen and (min-width: 480px) {
+            .single-gallery .content-area .site-main article .entry-header .donate-btn {
+              height: 73px;
+              width: 224px; }
+              .single-gallery .content-area .site-main article .entry-header .donate-btn a i {
+                font-size: 40px; }
+              .single-gallery .content-area .site-main article .entry-header .donate-btn a p {
+                display: initial; } }
+        .single-gallery .content-area .site-main article .entry-header .entry-meta {
+          display: none; }
+      .single-gallery .content-area .site-main article .entry-content {
+        width: 1024px; }
+        .single-gallery .content-area .site-main article .entry-content .gallery {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap; }
+          .single-gallery .content-area .site-main article .entry-content .gallery figure {
+            display: -ms-flexbox;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            height: 321px;
+            width: 463px;
+            background: gainsboro; }
+            .single-gallery .content-area .site-main article .entry-content .gallery figure .gallery-icon {
+              height: 321px;
+              width: 463px;
+              position: relative; }
+              .single-gallery .content-area .site-main article .entry-content .gallery figure .gallery-icon a {
+                pointer-events: none;
+                cursor: default; }
+        .single-gallery .content-area .site-main article .entry-content h1,
+        .single-gallery .content-area .site-main article .entry-content h2,
+        .single-gallery .content-area .site-main article .entry-content h3,
+        .single-gallery .content-area .site-main article .entry-content h4,
+        .single-gallery .content-area .site-main article .entry-content h5,
+        .single-gallery .content-area .site-main article .entry-content h6,
+        .single-gallery .content-area .site-main article .entry-content p,
+        .single-gallery .content-area .site-main article .entry-content form {
+          display: none; }
+
 footer {
   max-width: 1024px;
   margin: auto; }
