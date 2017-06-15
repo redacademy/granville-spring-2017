@@ -4,21 +4,20 @@ footer {
 }
 
 .site-info {
-    // padding: 0 5%;
-    margin: auto;
+    margin-left: 16px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     color: $black;
-    &:hover{
-        color: $orange;
-    }
 }
 
 .textwidget {
-    width: 123px;
+    width: 125px;
     font-family: $font__body;
-    font-size: $font_d-sub-body;
+    font-size: 12px;
+        & p:hover{
+        color: $orange;
+    }
 }
 
 .textwidget p:last-child {
@@ -27,7 +26,6 @@ footer {
 
 
 .footer-icons {
-    // width: 65%;
     display: flex;
     align-items: flex-end;
 }
@@ -54,13 +52,12 @@ footer {
 }
 
 .copywrite {
-    text-align: center;
-    padding: 0 5%;
-    p{
+    text-align: left;
+    padding-left: 16px;
         margin-bottom: 25px;
         font-family: $font__body;
-        font-size: 14px;
-    }
+        font-size: 10px;
+    
 }
 
 
@@ -71,24 +68,25 @@ footer {
 }
 
 .site-info {
-    padding: 0 5%;
+    padding-left: 35px;
+    padding-top: 20px;
     margin: auto;
     display: flex;
     flex-direction: row;
     color: $black;
-    &:hover{
-        color: $orange;
-    }
+    justify-content: flex-start;
+    
 }
 
 .textwidget {
-    width: 60%;
+    // width: 60%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     min-width: 526px;
     p {
         width: 175px;
+        font-size: $font_d-sub-body;
         margin: 0;
     }
 }
@@ -114,8 +112,9 @@ footer {
 
 
 .copywrite {
-    text-align: center;
-    padding: 0 5%;
+    text-align: left;
+    padding: 0 35px;
+    font-size: 14px;
 }
 
 }

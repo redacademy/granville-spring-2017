@@ -1269,21 +1269,21 @@ footer {
   margin: auto; }
 
 .site-info {
-  margin: auto;
+  margin-left: 16px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   color: #000000; }
-  .site-info:hover {
-    color: #f5a623; }
 
 .textwidget {
-  width: 123px;
+  width: 125px;
   font-family: lato;
-  font-size: 18px; }
+  font-size: 12px; }
+  .textwidget p:hover {
+    color: #f5a623; }
 
 .textwidget p:last-child {
   margin-bottom: 0; }
@@ -1314,29 +1314,28 @@ footer {
   width: 36px; }
 
 .copywrite {
-  text-align: center;
-  padding: 0 5%; }
-  .copywrite p {
-    margin-bottom: 25px;
-    font-family: lato;
-    font-size: 14px; }
+  text-align: left;
+  padding-left: 16px;
+  margin-bottom: 25px;
+  font-family: lato;
+  font-size: 10px; }
 
 @media all and (min-width: 600px) {
   .textwidget {
     display: -ms-flexbox;
     display: flex; }
   .site-info {
-    padding: 0 5%;
+    padding-left: 35px;
+    padding-top: 20px;
     margin: auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
-    color: #000000; }
-    .site-info:hover {
-      color: #f5a623; }
+    color: #000000;
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
   .textwidget {
-    width: 60%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -1346,6 +1345,7 @@ footer {
     min-width: 526px; }
     .textwidget p {
       width: 175px;
+      font-size: 18px;
       margin: 0; }
   .footer-icons {
     display: -ms-flexbox;
@@ -1361,8 +1361,9 @@ footer {
     height: 50px;
     width: 50px; }
   .copywrite {
-    text-align: center;
-    padding: 0 5%; } }
+    text-align: left;
+    padding: 0 35px;
+    font-size: 14px; } }
 
 .page-template-page-about .entry-title {
   display: none; }
