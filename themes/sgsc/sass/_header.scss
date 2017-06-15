@@ -8,6 +8,10 @@
   }
 }
 
+.search-field {
+  width: 135px;
+}
+
 .search-submit {
   display: inline;
   border: none;
@@ -18,11 +22,16 @@
 .search-form {
   fieldset {
   border: none;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 172px;
   }
   input {
     display: none;
-    border: none;
     outline: none;
+    border: 2px solid $orange;
+    border-radius: 25px;
+    font-family: $font__header;
   }
 }
 
@@ -103,8 +112,12 @@
     justify-content: flex-end;
     align-self: initial;
     li {
-      padding: 0px 1.4rem;
+      padding: 0px 1.2rem;
     }
+  }
+
+  fieldset {
+    margin: 0;
   }
 
   .logo-desktop {

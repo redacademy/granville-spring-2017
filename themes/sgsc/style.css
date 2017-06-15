@@ -875,6 +875,9 @@ object {
   .main-navigation .search-field:focus {
     outline: none; }
 
+.search-field {
+  width: 135px; }
+
 .search-submit {
   display: inline;
   border: none;
@@ -882,12 +885,17 @@ object {
   box-shadow: none; }
 
 .search-form fieldset {
-  border: none; }
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 172px; }
 
 .search-form input {
   display: none;
-  border: none;
-  outline: none; }
+  outline: none;
+  border: 2px solid #f5a623;
+  border-radius: 25px;
+  font-family: montserrat; }
 
 .menu .fa {
   font-size: 2rem; }
@@ -960,7 +968,9 @@ object {
         -ms-grid-row-align: initial;
         align-self: initial; }
     .main-navigation li {
-      padding: 0px 1.4rem; }
+      padding: 0px 1.2rem; }
+  fieldset {
+    margin: 0; }
   .logo-desktop {
     height: 0;
     -ms-flex-item-align: end;
