@@ -2,8 +2,8 @@
 
   $(document).ready(function() {      
     $('.icon-search').click(function(){
-        $('.main-navigation .search-field').toggle('fast');
-        $('.main-navigation .search-field').focus();
+        $('.search-field').animate({ width: 'toggle' }, 350);
+        $('.search-field').focus();
         return false;
     });
     $(document).click( function(event){

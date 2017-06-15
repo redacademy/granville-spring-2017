@@ -1003,13 +1003,13 @@ object {
           align-items: center;
       position: relative;
       width: 100%; }
-      @media screen and (min-width: 470px) {
+      @media screen and (min-width: 480px) {
         .home .content-area .site-main .learn-about-story {
           height: 386px; } }
       .home .content-area .site-main .learn-about-story img {
         height: 276px;
         width: 100%; }
-        @media screen and (min-width: 470px) {
+        @media screen and (min-width: 480px) {
           .home .content-area .site-main .learn-about-story img {
             height: 386px;
             position: absolute; } }
@@ -1037,7 +1037,7 @@ object {
           display: none; }
           .home .content-area .site-main .learn-about-story .front-learn .m-button:hover, .home .content-area .site-main .learn-about-story .front-learn .m-button:active, .home .content-area .site-main .learn-about-story .front-learn .m-button:focus {
             color: #ffffff; }
-          @media screen and (min-width: 470px) {
+          @media screen and (min-width: 480px) {
             .home .content-area .site-main .learn-about-story .front-learn .m-button {
               display: -ms-flexbox;
               display: flex; } }
@@ -1050,7 +1050,7 @@ object {
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
-            @media screen and (min-width: 470px) {
+            @media screen and (min-width: 480px) {
               .home .content-area .site-main .learn-about-story .front-learn .m-button p {
                 display: -ms-flexbox;
                 display: flex;
@@ -1080,7 +1080,7 @@ object {
               color: #f5a623; }
           .home .content-area .site-main .learn-about-story .donate-btn a p {
             display: none; }
-        @media screen and (min-width: 470px) {
+        @media screen and (min-width: 480px) {
           .home .content-area .site-main .learn-about-story .donate-btn {
             height: 73px;
             width: 224px; }
@@ -1090,7 +1090,7 @@ object {
               display: initial; } }
     .home .content-area .site-main .program-event-post {
       width: 100%; }
-      @media screen and (min-width: 470px) {
+      @media screen and (min-width: 480px) {
         .home .content-area .site-main .program-event-post {
           display: -ms-flexbox;
           display: flex;
@@ -1109,7 +1109,7 @@ object {
         background: #f5a623;
         height: 138px;
         width: 100%; }
-        @media screen and (min-width: 470px) {
+        @media screen and (min-width: 480px) {
           .home .content-area .site-main .program-event-post .front-program,
           .home .content-area .site-main .program-event-post .front-events,
           .home .content-area .site-main .program-event-post .front-blog {
@@ -1137,7 +1137,7 @@ object {
           display: none; }
           .home .content-area .site-main .program-event-post .front-program .m-button:hover, .home .content-area .site-main .program-event-post .front-program .m-button:active, .home .content-area .site-main .program-event-post .front-program .m-button:focus {
             color: #ffffff; }
-          @media screen and (min-width: 470px) {
+          @media screen and (min-width: 480px) {
             .home .content-area .site-main .program-event-post .front-program .m-button {
               display: -ms-flexbox;
               display: flex; } }
@@ -1150,7 +1150,7 @@ object {
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
-            @media screen and (min-width: 470px) {
+            @media screen and (min-width: 480px) {
               .home .content-area .site-main .program-event-post .front-program .m-button p {
                 display: -ms-flexbox;
                 display: flex;
@@ -1161,7 +1161,7 @@ object {
         .home .content-area .site-main .program-event-post .front-program p {
           display: none;
           padding: 0 60px; }
-        @media screen and (min-width: 470px) {
+        @media screen and (min-width: 480px) {
           .home .content-area .site-main .program-event-post .front-program {
             width: 544px;
             height: 288px;
@@ -1174,7 +1174,7 @@ object {
               padding-left: 60px;
               -ms-flex-pack: start;
                   justify-content: flex-start; } }
-      @media screen and (min-width: 470px) {
+      @media screen and (min-width: 480px) {
         .home .content-area .site-main .program-event-post .intro-event-blog {
           display: -ms-flexbox;
           display: flex;
@@ -1187,7 +1187,7 @@ object {
         background: #45cdcb; }
         .home .content-area .site-main .program-event-post .intro-event-blog .front-events:hover, .home .content-area .site-main .program-event-post .intro-event-blog .front-events:active, .home .content-area .site-main .program-event-post .intro-event-blog .front-events:focus {
           border: 2px #000000 solid 4px; }
-        @media screen and (min-width: 470px) {
+        @media screen and (min-width: 480px) {
           .home .content-area .site-main .program-event-post .intro-event-blog .front-events {
             width: 383px;
             height: 129px; } }
@@ -1196,7 +1196,7 @@ object {
         background: #ffffff; }
         .home .content-area .site-main .program-event-post .intro-event-blog .front-blog:hover, .home .content-area .site-main .program-event-post .intro-event-blog .front-blog:active, .home .content-area .site-main .program-event-post .intro-event-blog .front-blog:focus {
           border: 2px #000000 solid 4px; }
-        @media screen and (min-width: 470px) {
+        @media screen and (min-width: 480px) {
           .home .content-area .site-main .program-event-post .intro-event-blog .front-blog {
             width: 383px;
             height: 129px;
@@ -1212,7 +1212,7 @@ object {
       height: 276px;
       background: gray;
       width: 100%; }
-      @media screen and (min-width: 470px) {
+      @media screen and (min-width: 480px) {
         .home .content-area .site-main .feature-gallery {
           height: 356px; } }
       .home .content-area .site-main .feature-gallery .front-gallery {
@@ -1235,7 +1235,7 @@ object {
           display: none; }
           .home .content-area .site-main .feature-gallery .front-gallery .m-button:hover, .home .content-area .site-main .feature-gallery .front-gallery .m-button:active, .home .content-area .site-main .feature-gallery .front-gallery .m-button:focus {
             color: #ffffff; }
-          @media screen and (min-width: 470px) {
+          @media screen and (min-width: 480px) {
             .home .content-area .site-main .feature-gallery .front-gallery .m-button {
               display: -ms-flexbox;
               display: flex; } }
@@ -1248,12 +1248,12 @@ object {
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
-            @media screen and (min-width: 470px) {
+            @media screen and (min-width: 480px) {
               .home .content-area .site-main .feature-gallery .front-gallery .m-button p {
                 display: -ms-flexbox;
                 display: flex;
                 padding: 0.4rem 3rem; } }
-        @media screen and (min-width: 470px) {
+        @media screen and (min-width: 480px) {
           .home .content-area .site-main .feature-gallery .front-gallery {
             height: 174px; } }
         .home .content-area .site-main .feature-gallery .front-gallery h1 {
@@ -1265,7 +1265,7 @@ object {
         .home .content-area .site-main .feature-gallery .front-gallery .m-button {
           display: -ms-flexbox;
           display: flex; }
-    @media screen and (min-width: 470px) {
+    @media screen and (min-width: 480px) {
       .home .content-area .site-main .intro-involved-join {
         display: -ms-flexbox;
         display: flex;
@@ -1274,7 +1274,7 @@ object {
         -ms-flex-pack: justify;
             justify-content: space-between;
         padding: 32px; } }
-    @media screen and (min-width: 470px) {
+    @media screen and (min-width: 480px) {
       .home .content-area .site-main .intro-involved-join .involve-pillar {
         width: 544px;
         display: -ms-flexbox;
@@ -1293,7 +1293,7 @@ object {
       border: 2px #000000 solid 4px #ffffff; }
       .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join:hover, .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join:active, .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join:focus {
         border: 2px #000000 solid 4px; }
-      @media screen and (min-width: 470px) {
+      @media screen and (min-width: 480px) {
         .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join {
           width: 416px;
           height: 297px;
@@ -1320,7 +1320,7 @@ object {
           display: none; }
           .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button:hover, .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button:active, .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button:focus {
             color: #ffffff; }
-          @media screen and (min-width: 470px) {
+          @media screen and (min-width: 480px) {
             .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button {
               display: -ms-flexbox;
               display: flex; } }
@@ -1333,7 +1333,7 @@ object {
               background: #f5a623;
               z-index: 2;
               opacity: 1; }
-            @media screen and (min-width: 470px) {
+            @media screen and (min-width: 480px) {
               .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button p {
                 display: -ms-flexbox;
                 display: flex;
@@ -1347,7 +1347,7 @@ object {
             line-height: initial; }
     .home .content-area .site-main .intro-involved-join .pillar {
       display: none; }
-      @media screen and (min-width: 470px) {
+      @media screen and (min-width: 480px) {
         .home .content-area .site-main .intro-involved-join .pillar {
           width: 128px;
           height: 297px;
@@ -1382,7 +1382,7 @@ object {
             align-items: center;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap; }
-      @media screen and (min-width: 470px) {
+      @media screen and (min-width: 480px) {
         .home .content-area .site-main .front-join {
           height: 297px;
           width: 383px;
@@ -1450,7 +1450,7 @@ footer {
   font-family: lato;
   font-size: 10px; }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 480px) {
   .textwidget {
     display: -ms-flexbox;
     display: flex; }
