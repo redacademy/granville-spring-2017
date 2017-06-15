@@ -6,6 +6,7 @@
 
 a {
 	color: $color__link;
+	font-family: montserrat;
 
 	&:visited {
 		color: $color__link-visited;
@@ -223,5 +224,8 @@ a {
 	}
 	.nav-menu {
 	display: initial;
+	}
+	#menu-mobile-menu {
+		display: none;
 	}
 }

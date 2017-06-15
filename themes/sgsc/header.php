@@ -27,10 +27,10 @@
 				</div><!-- .site-branding -->
 
 				<div class="logo">
-					<a href="<?php echo get_home_url(); ?>" rel="home">
+					<a class="logo-desktop" href="<?php echo get_home_url(); ?>" rel="home">
 						<img class="logo-img" src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo.svg"/>
 					</a>
-					<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo-text.svg"/>
+					<img class="logo-text" src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo-text.svg"/>
 				</div>
 
 				<section class="menu">

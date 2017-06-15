@@ -547,7 +547,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: royalblue;
+  font-family: montserrat; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -686,7 +687,9 @@ a {
   .main-navigation ul {
     display: block; }
   .nav-menu {
-    display: initial; } }
+    display: initial; }
+  #menu-mobile-menu {
+    display: none; } }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -927,25 +930,50 @@ object {
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    height: 13rem; }
+    height: 13rem;
+    width: 1024px; }
     .site-header a {
       color: black; }
     .site-header a:hover {
       color: midnightblue; }
+  .logo {
+    z-index: 10;
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
   .logo-header {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
     -ms-flex-align: start;
         align-items: flex-start; }
+  .logo-text {
+    width: 19.7rem;
+    padding-left: 2rem;
+    padding-top: 6rem; }
   .icon-search {
     cursor: pointer; }
   .main-navigation {
-    padding-bottom: 0.5rem; }
+    padding-bottom: 0.9rem;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-item-align: initial;
+        -ms-grid-row-align: initial;
+        align-self: initial; }
     .main-navigation li {
       padding: 0px 1.4rem; }
+  .logo-desktop {
+    height: 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding-bottom: 3rem; }
+  .logo-img {
+    height: 11rem; }
   .icon-search .fa-search {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .menu {
+    height: 4rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end; } }
 
 /*--------------------------------------------------------------
 # Front-Page

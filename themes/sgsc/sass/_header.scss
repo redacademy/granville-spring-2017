@@ -69,12 +69,17 @@
     display: flex;
     justify-content: space-between;
     height: 13rem;  
+    width: 1024px;
     a {
       color: black;
     }
     a:hover {
       color: $color__link-hover;
     }
+  }
+  .logo {
+    z-index: 10;
+    justify-content: flex-start;
   }
 
   .logo-header {
@@ -83,18 +88,42 @@
     align-items: flex-start;
   }
 
+  .logo-text {
+    width: 19.7rem;
+    padding-left: 2rem;
+    padding-top: 6rem;
+  }
+
   .icon-search{
     cursor: pointer;
   }
 
   .main-navigation {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.9rem;
+    justify-content: flex-end;
+    align-self: initial;
     li {
       padding: 0px 1.4rem;
     }
   }
 
+  .logo-desktop {
+    height: 0;
+    align-self: flex-end;
+    padding-bottom: 3rem;
+  }
+  
+  .logo-img {
+    height: 11rem;
+  }
+
   .icon-search .fa-search {
     font-size: 1.5rem;
   }
+
+  .menu {
+    height: 4rem;
+    align-self: flex-end;
+  }
+  
 }
