@@ -1106,16 +1106,10 @@ object {
               justify-content: center;
           -ms-flex-align: center;
               align-items: center; }
-        .home .content-area .site-main .program-event-post .front-program:hover, .home .content-area .site-main .program-event-post .front-program:active, .home .content-area .site-main .program-event-post .front-program:focus,
-        .home .content-area .site-main .program-event-post .front-events:hover,
-        .home .content-area .site-main .program-event-post .front-events:active,
-        .home .content-area .site-main .program-event-post .front-events:focus,
-        .home .content-area .site-main .program-event-post .front-blog:hover,
-        .home .content-area .site-main .program-event-post .front-blog:active,
-        .home .content-area .site-main .program-event-post .front-blog:focus {
-          border: 2px #000000 solid 4px; }
       .home .content-area .site-main .program-event-post .front-program {
         border: 2px #000000 solid 4px #f5a623; }
+        .home .content-area .site-main .program-event-post .front-program:hover, .home .content-area .site-main .program-event-post .front-program:active, .home .content-area .site-main .program-event-post .front-program:focus {
+          border: 2px #000000 solid 4px; }
         .home .content-area .site-main .program-event-post .front-program .m-button {
           text-decoration: none;
           color: #000000;
@@ -1140,6 +1134,9 @@ object {
                 display: -ms-flexbox;
                 display: flex;
                 padding: 0.4rem 3rem; } }
+        .home .content-area .site-main .program-event-post .front-program .m-button p:hover, .home .content-area .site-main .program-event-post .front-program .m-button p:active, .home .content-area .site-main .program-event-post .front-program .m-button p:focus {
+          background: #45cdcb;
+          color: #ffffff; }
         .home .content-area .site-main .program-event-post .front-program p {
           display: none;
           padding: 0 60px; }
@@ -1167,6 +1164,8 @@ object {
       .home .content-area .site-main .program-event-post .intro-event-blog .front-events {
         border: 2px #000000 solid 4px #45cdcb;
         background: #45cdcb; }
+        .home .content-area .site-main .program-event-post .intro-event-blog .front-events:hover, .home .content-area .site-main .program-event-post .intro-event-blog .front-events:active, .home .content-area .site-main .program-event-post .intro-event-blog .front-events:focus {
+          border: 2px #000000 solid 4px; }
         @media screen and (min-width: 470px) {
           .home .content-area .site-main .program-event-post .intro-event-blog .front-events {
             width: 383px;
@@ -1174,6 +1173,8 @@ object {
       .home .content-area .site-main .program-event-post .intro-event-blog .front-blog {
         border: 2px #000000 solid 4px #ffffff;
         background: #ffffff; }
+        .home .content-area .site-main .program-event-post .intro-event-blog .front-blog:hover, .home .content-area .site-main .program-event-post .intro-event-blog .front-blog:active, .home .content-area .site-main .program-event-post .intro-event-blog .front-blog:focus {
+          border: 2px #000000 solid 4px; }
         @media screen and (min-width: 470px) {
           .home .content-area .site-main .program-event-post .intro-event-blog .front-blog {
             width: 383px;
