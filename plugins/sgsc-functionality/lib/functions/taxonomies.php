@@ -41,7 +41,7 @@ function featured_gallery_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'featured gallery', array( 'gallery' ), $args );
+	register_taxonomy( 'featured-gallery', array( 'gallery' ), $args );
 
 }
 add_action( 'init', 'featured_gallery_taxonomy', 0 );
