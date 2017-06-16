@@ -1,12 +1,100 @@
-// Rem output with px fallback
-@mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
-}
-
-// Center block
-@mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
+  // Rem output with px fallback
+  @mixin font-size($sizeValue: 1) {
+    font-size: ($sizeValue * 16) * 1px;
+    font-size: $sizeValue * 1rem;
+  }
+  
+  // Center block
+  @mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  // "more" button
+  // Example
+  // <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
+  @mixin m-button {
+    .m-button {
+      text-decoration: none;
+      color: $black;
+      display: none;
+      @include hover-state {
+        color: $white;
+      }
+      @media screen and (min-width: $mobile_width) {
+        display: flex;
+      }
+      p {
+        padding: $m_padding;
+        border: $p_border;
+        margin: 0;
+        @include hover-state() {
+          border: $p_border $orange;
+          background: $orange;
+          z-index: 2;
+          opacity: 1;
+        }
+        @media screen and (min-width: $mobile_width) {
+          display: flex;
+          padding: $d_padding;
+        }
+      }
+    }
+  }
+  
+  // Donate-btn 
+  // Example
+  // 	<div class="donate-btn">
+  // 	<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+  // 		<i class="fa fa-heart-o" aria-hidden="true">
+  // 			<p>Donate</p>
+  // 		</i>
+  // 		</a>
+  // </div>
+  @mixin m-donate {
+    .donate-btn {
+      background-color: $pink;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: $black;
+        i {
+          padding: .4rem;
+          color: $black;
+          &:hover {
+            color: $orange;
+          }
+        }
+        p {
+          display: none;
+        }
+      }
+      @media screen and (min-width: $mobile_width) {
+        height: 73px;
+        width: 224px;
+        a {
+          i {
+            font-size: 40px;
+          }
+          p {
+            display: initial;
+          }
+        }
+      }
+    }
+  }
+  
+  @mixin hover-state {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }

@@ -1,15 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="278px" height="200px" viewBox="0 0 300 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="130px" height="26px" viewBox="0 0 130 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
-    <title>Desktop logo text</title>
+    <title>SOUTH GRANVILLE SENI</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="40" font-family="Montserrat-Regular, Montserrat" font-weight="normal">
-        <g id="Desktop-logo-text" fill="#000000">
-            <text id="South-Granville-Seni">
-                <tspan x="45" y="77">South Granville </tspan>
-                <tspan x="45" y="126">Seniors Centre</tspan>
-            </text>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="12" font-family="arial" font-weight="normal">
+        <g id="Mobile-Top-Nav" transform="translate(-138.000000, -36.000000)" fill="#000000">
+            <g id="Group" transform="translate(0.000000, 5.000000)">
+                <text id="SOUTH-GRANVILLE-SENI">
+                    <tspan x="137.704102" y="41">SOUTH GRANVILLE</tspan>
+                    <tspan x="137.735547" y="56" letter-spacing="1.3">SENIORS CENTRE</tspan>
+                </text>
+            </g>
         </g>
     </g>
 </svg>

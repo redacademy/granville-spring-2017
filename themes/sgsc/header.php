@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+		<script src="https://use.fontawesome.com/aff976956a.js"></script>
 
 	<?php wp_head(); ?>
 	</head>
@@ -26,17 +27,21 @@
 				</div><!-- .site-branding -->
 
 				<div class="logo">
-					<div class="logo-header">
-						<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo.svg"/>
-						<img src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo-text.svg"/>
-					</div>
+					<a class="logo-desktop" href="<?php echo get_home_url(); ?>" rel="home">
+						<img class="logo-img" src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo.svg"/>
+					</a>
+					<img class="logo-text" src ="<?php echo get_template_directory_uri(); ?>/assets/images/desktop-logo-text.svg"/>
 				</div>
 
 				<section class="menu">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</nav><!-- #site-navigation -->
+						<button class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+						<div class="overlay overlay-slidedown">
+							<button id="back-button" class="back-visible">Back</button>
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+							<?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' => 'mobile-menu', 'menu-visible' ) ); ?>
+						</div>
+					</nav>
 					<div>
 						<?php get_search_form() ?>
 					</div>

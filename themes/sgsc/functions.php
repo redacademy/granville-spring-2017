@@ -24,7 +24,15 @@ function red_starter_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
+		'mobile' => esc_html( 'Mobile Menu' ),
 	) );
+
+	//add mobile menu
+	function wdm_register_mobile_menu() {
+    add_theme_support( 'nav-menus' );
+    register_nav_menus( array('mobile-menu' => __( 'Mobile Menu', 'wdm' )) );
+	}
+	add_action( 'init', 'wdm_register_mobile_menu' );
 
 	// Switch search form, comment form, and comments to output valid HTML5.
 	add_theme_support( 'html5', array(
@@ -65,8 +73,23 @@ function red_starter_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
+
 add_action( 'widgets_init', 'red_starter_widgets_init' );
 
+function red_starter_widgets_footer() {
+	register_sidebar( array(
+		'name'          => esc_html( 'Footer Widget' ),
+		'id'            => 'customer_footer',
+		'description'   => 'This is for updating content within the footer',
+		'before_widget' => '<div id="%1$s" class="footer-widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+
+add_action( 'widgets_init', 'red_starter_widgets_footer' );
+	
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
@@ -89,6 +112,14 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
+	wp_enqueue_script( 'jquery' );
+	
+	// Hamburger menu on mobile size
+	wp_enqueue_script( 'wpb_togglemenu', get_template_directory_uri() . '/build/js/navigation.min.js', array('jquery'), '20160909', true );
+
+	// Toggle-able search form
+	wp_enqueue_script( 'sgsc_serach_form', get_template_directory_uri() . '/build/js/search-form.min.js', array('jquery'), '20170614', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -104,3 +135,4 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+

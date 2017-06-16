@@ -1,65 +1,142 @@
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  height: 13rem;  
-  a {
-    color: black;
-  }
-  a:hover {
-    color: $color__link-hover;
-  }
-}
-
 .main-navigation .search-field{ 
-	display: none;
-	overflow:hidden;
-	border: none;
-	background: transparent;
-	&:focus{
-		outline: none;
-	}
+  display: none;
+  overflow:hidden;
+  border: none;
+  background: transparent;
+  &:focus{
+    outline: none;
+  }
 }
 
-.logo-header {
-  display: flex;
-  position: absolute;
-  align-items: flex-start;
-}
-
-.icon-search{
-	cursor: pointer;
+.search-field {
+  width: 135px;
 }
 
 .search-submit {
-	display: inline;
+  display: inline;
   border: none;
   background: none;
   box-shadow: none;
 }
 
 .search-form {
-	fieldset {
-	border: none;
-	}
-	input {
+  fieldset {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 172px;
+  }
+  input {
     display: none;
-		border: none;
-		outline: none;
-	}
-}
-
-.menu {
-  display: flex;
-  align-items: flex-end;
-}
-
-.main-navigation {
-  padding-bottom: 0.5rem;
-  li {
-    padding: 0px 1.4rem;
+    outline: none;
+    border: 2px solid $orange;
+    border-radius: 25px;
+    font-family: $font__header;
   }
 }
 
-.icon-search .fa-search {
-  font-size: 1.5rem;
+.menu {
+  .fa {
+    font-size: 2rem;
+  }
+}
+
+.menu-toggle {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.main-navigation {
+  display: flex;
+  align-self: center;
+}
+
+.site-header {
+  height: 4rem;
+  width: auto;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  z-index: -1;
+}
+
+.logo-img {
+  height: 3.5rem;
+  display: flex;
+}
+
+@media screen and (min-width: 480px) {
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    height: 13rem;  
+    width: 1024px;
+    a {
+      color: black;
+    }
+    a:hover {
+      color: $color__link-hover;
+    }
+  }
+  .logo {
+    z-index: 10;
+    justify-content: flex-start;
+  }
+
+  .logo-header {
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+  }
+
+  .logo-text {
+    width: 19.7rem;
+    padding-left: 2rem;
+    padding-top: 6rem;
+  }
+
+  .icon-search{
+    cursor: pointer;
+  }
+
+  .main-navigation {
+    padding-bottom: 0.9rem;
+    justify-content: flex-end;
+    align-self: initial;
+    li {
+      padding: 0px 1.2rem;
+    }
+  }
+
+  fieldset {
+    margin: 0;
+  }
+
+  .logo-desktop {
+    height: 0;
+    align-self: flex-end;
+    padding-bottom: 3rem;
+  }
+  
+  .logo-img {
+    height: 11rem;
+  }
+
+  .icon-search .fa-search {
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    height: 4rem;
+    align-self: flex-end;
+  }
+  
 }

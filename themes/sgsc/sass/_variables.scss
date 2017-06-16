@@ -1,28 +1,80 @@
-// Structure
+/*
+  ** South Granvillge Senior Center Variables
+  */
 
-$base__space-unit: 1.5rem;
-
+// structure
+$mobile_width: 480px;
+$d_width:1024px;
+$desktop-view: 600px;
 // Colors
+$black: #000000;
+$white: #ffffff;
+$orange: #f5a623;
+$blue: #45cdcb;
+$pink: #F91E72;
+// Typography
+$font__header: montserrat;
+$font__body: lato;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+//desktop font size
+$font_d-h1: 40px;
+$font_d-h2: 36px;
+$font_d-body: 24px;
+$font_d-sub-body: 18px;
+//mobile font size
+$font_m-h1: 22px;
+$font_m-h2: 16px;
+$font_m-body: 12px;
+//button
+$m_padding: .3rem 1.5rem;
+$d_padding: .4rem 3rem;
+$p_border: 2px $black solid;
 
+/*
+ ** Default Variables (don't change anything here)
+  */
+
+// Structure
+$base__space-unit: 1.5rem;
+// Colors
 $color__background-body: #fff;
-$color__text-main: #404040;
-
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
-
+$color__widget-header: #d99054;
 $color__background-hr: #ccc;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
-
 $color__link: royalblue;
 $color__link-visited: purple;
+<<<<<<< HEAD
 $color__link-hover: #F5A623;
 
+=======
+$color__link-hover: midnightblue;
+$color__text-main: #404040;
+$color__background-post: #248A83;
+$color-purple: #2f1339;
+$color-organe: #d99054;
+$color-yellow: #f0e4d1;
+$color-grey-light: #a1a1a1;
+$color-grey-medium: #808080;
+$color-border-solid: #e1e1e1;
+$color-border-dash: #c8c8c8;
+>>>>>>> 3ecacc94bbf9ee86da70a190e80cd083c30e1e95
 // Typography
-
-$font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: 1.5;
+$font__main: merriweather,
+sans-serif;
+$font__accent: novecentosanswide,
+sans-serif;
+$font__code: Monaco,
+Consolas,
+"Andale Mono",
+"DejaVu Sans Mono",
+monospace;
+$font__pre: "Courier 10 Pitch",
+Courier,
+monospace;
+$font__line-height-body: 1.75;
 $font__line-height-pre: 1.6;
