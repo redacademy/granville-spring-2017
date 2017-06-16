@@ -69,6 +69,10 @@
   z-index: -1;
 }
 
+.logo-text {
+  height: 3rem;
+}
+
 .logo-img {
   height: 3.5rem;
   display: flex;
@@ -103,6 +107,7 @@
     width: 19.7rem;
     padding-left: 2rem;
     padding-top: 6rem;
+    height: 12rem;
   }
 
   .icon-search{

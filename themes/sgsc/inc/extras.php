@@ -29,8 +29,7 @@ function sgsc_programs_hero () {
 	$hero = CFS()->get( 'program_image' );		
 	$program_hero = "
 		.program-hero {
-			background: url($hero) bottom/cover no-repeat;
-			height: 13rem;
+			background-image: url($hero);
 		}";
 
 	wp_add_inline_style( 'red-starter-style', $program_hero );

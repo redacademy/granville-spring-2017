@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main container" role="main">
+		<main id="main" class="site-main" role="main">
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<div class="program-hero">
@@ -24,15 +24,15 @@ get_header(); ?>
 							'hide_empty' => false
 						)); 
 						if (!empty($program_types)&& !is_wp_error($program_types)) : ?>
-						
-						<?php foreach ($program_types as $program_type) : ?>
-							<ul>
+
+						<ul class="program-list">						
+							<?php foreach ($program_types as $program_type) : ?>
 								<li>
 									<a href = "<?php echo get_term_link($program_type); ?>">
 									<?php echo $program_type->name; ?></a>
 								</li>
-							</ul>
-						<?php endforeach; ?>
+							<?php endforeach; ?>
+						</ul>							
 						<?php endif; ?>
 					</div>
 
