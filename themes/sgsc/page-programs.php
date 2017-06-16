@@ -11,14 +11,20 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<div class="program-hero">
-				</div>
-				
-				<header class="entry-header">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</header><!-- .entry-header -->
-				
-				<div>
+				<section class="header">
+					<div class="program-hero">
+					</div>
+					<div class="entry-header">
+						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+						<div class="donate-btn">
+							<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+				</section><!-- .entry-header -->
+
+				<div class="programs">
 					<?php $program_types = get_terms(array (
 							'taxonomy' => 'program-type',
 							'hide_empty' => false

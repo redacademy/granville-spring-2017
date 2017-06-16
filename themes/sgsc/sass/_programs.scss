@@ -1,17 +1,20 @@
 .program-hero {
   height: 19rem;
   background-position: 95% -3%;
-  background-size: 135%;
+  background-size: 150%;
   background-repeat: no-repeat;
 }
 
 .page-template-page-programs {
+  .header {
+    position: relative;
+  }
   .entry-header {
     background: hsla(0,0%,100%,.8);
     position: absolute;
     width: 100%;
     height: 7rem;
-    bottom: 22.5rem;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +24,15 @@
     font-size: 1.4rem;
     width: 9rem;
     text-align: center;
+  }
+  h5 {
+    font-family: $font__header;
+    font-size: $font_m-h1;
+  }
+  p {
+    font-family: $font__body;
+    overflow-wrap: break-word;
+    font-size: 18px;
   }
 }
 
@@ -35,10 +47,13 @@
 	li {
     background: $orange;
     width: 80%;
-		margin: 1rem;
-    padding: 3rem;
+    height: 6rem;
+    margin: 1rem;
+    border: 4px solid $orange;
     text-align: center;
-		border: 4px solid $orange;		
+    display: flex;
+    justify-content: center;
+    align-items: center;	
 	}
 	li:hover {
 		border: 4px solid black;
@@ -48,4 +63,35 @@
     text-decoration: none;
     font-size: 1.4rem;
 	}
+}
+
+.donate-btn {
+  background-color: $pink;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.3rem;
+  width: 2.3rem;
+  a {
+    text-decoration: none;
+    color: $black;
+    i {
+      padding: .4rem;
+      color: $black;
+      &:hover {
+        color: $orange;
+      }
+    }
+    p {
+      display: none;
+    }
+  }
+}
+
+.programs {
+  margin-top: 1rem;
 }

@@ -1497,7 +1497,9 @@ object {
           -ms-flex-pack: center;
               justify-content: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+          height: 2.3rem;
+          width: 2.3rem; }
           .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a {
             text-decoration: none;
             color: #000000; }
@@ -1599,7 +1601,9 @@ object {
           -ms-flex-pack: center;
               justify-content: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+          height: 2.3rem;
+          width: 2.3rem; }
           .single-gallery .content-area .site-main article .entry-header .donate-btn a {
             text-decoration: none;
             color: #000000; }
@@ -1753,15 +1757,18 @@ footer {
 .program-hero {
   height: 19rem;
   background-position: 95% -3%;
-  background-size: 135%;
+  background-size: 150%;
   background-repeat: no-repeat; }
+
+.page-template-page-programs .header {
+  position: relative; }
 
 .page-template-page-programs .entry-header {
   background: rgba(255, 255, 255, 0.8);
   position: absolute;
   width: 100%;
   height: 7rem;
-  bottom: 22.5rem;
+  bottom: 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1774,6 +1781,15 @@ footer {
   font-size: 1.4rem;
   width: 9rem;
   text-align: center; }
+
+.page-template-page-programs h5 {
+  font-family: montserrat;
+  font-size: 22px; }
+
+.page-template-page-programs p {
+  font-family: lato;
+  overflow-wrap: break-word;
+  font-size: 18px; }
 
 .program-list {
   padding: 0;
@@ -1790,13 +1806,47 @@ footer {
   .program-list li {
     background: #f5a623;
     width: 80%;
+    height: 6rem;
     margin: 1rem;
-    padding: 3rem;
+    border: 4px solid #f5a623;
     text-align: center;
-    border: 4px solid #f5a623; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
   .program-list li:hover {
     border: 4px solid black; }
   .program-list a {
     color: black;
     text-decoration: none;
     font-size: 1.4rem; }
+
+.donate-btn {
+  background-color: #F91E72;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 2.3rem;
+  width: 2.3rem; }
+  .donate-btn a {
+    text-decoration: none;
+    color: #000000; }
+    .donate-btn a i {
+      padding: .4rem;
+      color: #000000; }
+      .donate-btn a i:hover {
+        color: #f5a623; }
+    .donate-btn a p {
+      display: none; }
+
+.programs {
+  margin-top: 1rem; }
