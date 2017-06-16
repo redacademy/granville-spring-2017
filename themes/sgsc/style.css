@@ -1080,6 +1080,14 @@ object {
               color: #f5a623; }
           .home .content-area .site-main .learn-about-story .donate-btn a p {
             display: none; }
+        @media screen and (min-width: 480px) {
+          .home .content-area .site-main .learn-about-story .donate-btn {
+            height: 73px;
+            width: 224px; }
+            .home .content-area .site-main .learn-about-story .donate-btn a i {
+              font-size: 40px; }
+            .home .content-area .site-main .learn-about-story .donate-btn a p {
+              display: initial; } }
     .home .content-area .site-main .program-event-post {
       width: 100%; }
       @media screen and (min-width: 480px) {
@@ -1443,6 +1451,44 @@ object {
               display: none; }
         .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .entry-meta {
           display: none; }
+      .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .has-post-thumbnail {
+        width: 463px;
+        height: 321px;
+        background: beige; }
+        .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .has-post-thumbnail .entry-header {
+          width: 100%;
+          height: 100%;
+          display: -ms-flexbox;
+          display: flex;
+          position: relative;
+          overflow: hidden;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center; }
+          .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .has-post-thumbnail .entry-header .image-position {
+            width: 100%;
+            height: 100%; }
+            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .has-post-thumbnail .entry-header .image-position img {
+              min-height: 100%;
+              max-height: 100%;
+              width: auto;
+              left: 50%;
+              top: 70%;
+              transform: translate(-50%, -70%);
+              max-width: none;
+              position: absolute; }
+          .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .has-post-thumbnail .entry-header .entry-title {
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: center;
+                justify-content: center;
+            -ms-flex-align: center;
+                align-items: center; }
 
 /*--------------------------------------------------------------
 # Single-Gallery Page
