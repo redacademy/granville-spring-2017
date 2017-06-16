@@ -888,7 +888,8 @@ object {
   border: none;
   padding-left: 0;
   padding-right: 0;
-  max-width: 172px; }
+  max-width: 172px;
+  min-width: 22.3px; }
 
 .search-form input {
   display: none;
