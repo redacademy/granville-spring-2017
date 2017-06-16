@@ -76,6 +76,34 @@
           display: none;
         }
       }
+    }
+  }
+  
+  // Donate-btn with text "Donate"
+  @mixin text-donate {
+    .donate-btn {
+      background-color: $pink;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: $black;
+        i {
+          padding: .4rem;
+          color: $black;
+          &:hover {
+            color: $orange;
+          }
+        }
+        p {
+          display: none;
+        }
+      }
       @media screen and (min-width: $mobile_width) {
         height: 73px;
         width: 224px;
@@ -91,10 +119,25 @@
     }
   }
   
+  // Mixin for hover-state: hover, active, focus 
   @mixin hover-state {
     &:hover,
     &:active,
     &:focus {
       @content;
+    }
+  }
+  
+  //Mixin for orange header title with donate btn
+  @mixin page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: $orange;
+    width: 100%;
+    @include m-donate;
+    .entry-meta {
+      display: none;
     }
   }
