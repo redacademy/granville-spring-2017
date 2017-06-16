@@ -369,21 +369,59 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #000000;
   font-family: merriweather, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.75; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: montserrat;
+  font-weight: normal;
+  font-style: normal; }
+
+h1 {
+  font-size: 22px; }
+  @media screen and (min-width: 480px) {
+    h1 {
+      font-size: 40px; } }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px; }
+  @media screen and (min-width: 480px) {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 36px; } }
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-size: 12px;
+  font-family: lato;
+  font-weight: normal;
+  font-style: normal; }
+  @media screen and (min-width: 480px) {
+    p {
+      font-size: 24px; } }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -403,16 +441,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
