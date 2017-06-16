@@ -1441,7 +1441,8 @@ object {
             align-items: center;
         position: relative;
         background: #f5a623;
-        width: 100%; }
+        width: 100%;
+        color: #000000; }
         .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn {
           background-color: #F91E72;
           position: absolute;
@@ -1466,44 +1467,55 @@ object {
               display: none; }
         .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .entry-meta {
           display: none; }
-      .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .has-post-thumbnail {
-        width: 463px;
-        height: 321px;
-        background: beige; }
-        .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .has-post-thumbnail .entry-header {
-          width: 100%;
-          height: 100%;
-          display: -ms-flexbox;
-          display: flex;
-          position: relative;
-          overflow: hidden;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center; }
-          .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .has-post-thumbnail .entry-header .image-position {
+      .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+        .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .has-post-thumbnail {
+          width: 463px;
+          height: 321px;
+          margin: 0;
+          background: beige; }
+          .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .has-post-thumbnail .entry-header {
             width: 100%;
-            height: 100%; }
-            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .has-post-thumbnail .entry-header .image-position img {
-              min-height: 100%;
-              max-height: 100%;
-              width: auto;
-              left: 50%;
-              top: 70%;
-              transform: translate(-50%, -70%);
-              max-width: none;
-              position: absolute; }
-          .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .has-post-thumbnail .entry-header .entry-title {
-            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-            z-index: 1;
             height: 100%;
-            width: 100%;
             display: -ms-flexbox;
             display: flex;
+            position: relative;
+            overflow: hidden;
             -ms-flex-pack: center;
                 justify-content: center;
             -ms-flex-align: center;
                 align-items: center; }
+            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .has-post-thumbnail .entry-header .image-position {
+              height: 100%; }
+              .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .has-post-thumbnail .entry-header .image-position img {
+                min-height: 100%;
+                max-height: 100%;
+                width: auto;
+                left: 50%;
+                top: 70%;
+                transform: translate(-50%, -70%);
+                max-width: none;
+                position: absolute; }
+            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .has-post-thumbnail .entry-header .entry-title {
+              background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+              z-index: 1;
+              height: 100%;
+              width: 100%;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-pack: center;
+                  justify-content: center;
+              -ms-flex-align: center;
+                  align-items: center;
+              text-decoration: none;
+              color: #000000; }
+              .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .has-post-thumbnail .entry-header .entry-title:hover {
+                color: #f5a623; }
 
 /*--------------------------------------------------------------
 # Single-Gallery Page
