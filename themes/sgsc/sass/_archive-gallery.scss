@@ -21,12 +21,12 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
+        align-items: center;
         .has-post-thumbnail {
           width: 463px;
           height: 321px;
           margin: 0;
           margin-top: 32px;
-          background: beige;
           .entry-header {
             width: 100%;
             height: 100%;
