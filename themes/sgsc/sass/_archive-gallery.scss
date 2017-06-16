@@ -1,3 +1,22 @@
 /*--------------------------------------------------------------
 # Archive-Gallery
 --------------------------------------------------------------*/
+
+.post-type-archive-gallery .content-area {
+  display: flex;
+  justify-content: center;
+  .site-main {
+    width: $d_width;
+    display: flex;
+    flex-flow: column nowrap;
+    .lastest-gallery-section {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      .page-header {
+        @include page-header;
+      }
+    }
+  }
+}

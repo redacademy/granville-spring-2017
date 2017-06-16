@@ -1080,14 +1080,6 @@ object {
               color: #f5a623; }
           .home .content-area .site-main .learn-about-story .donate-btn a p {
             display: none; }
-        @media screen and (min-width: 480px) {
-          .home .content-area .site-main .learn-about-story .donate-btn {
-            height: 73px;
-            width: 224px; }
-            .home .content-area .site-main .learn-about-story .donate-btn a i {
-              font-size: 40px; }
-            .home .content-area .site-main .learn-about-story .donate-btn a p {
-              display: initial; } }
     .home .content-area .site-main .program-event-post {
       width: 100%; }
       @media screen and (min-width: 480px) {
@@ -1397,6 +1389,61 @@ object {
 /*--------------------------------------------------------------
 # Archive-Gallery
 --------------------------------------------------------------*/
+.post-type-archive-gallery .content-area {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .post-type-archive-gallery .content-area .site-main {
+    width: 1024px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
+    .post-type-archive-gallery .content-area .site-main .lastest-gallery-section {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column;
+          flex-flow: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        position: relative;
+        background: #f5a623;
+        width: 100%; }
+        .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn {
+          background-color: #F91E72;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 3;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center; }
+          .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a {
+            text-decoration: none;
+            color: #000000; }
+            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a i {
+              padding: .4rem;
+              color: #000000; }
+              .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a i:hover {
+                color: #f5a623; }
+            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a p {
+              display: none; }
+        .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .entry-meta {
+          display: none; }
+
 /*--------------------------------------------------------------
 # Single-Gallery Page
 --------------------------------------------------------------*/
@@ -1446,14 +1493,6 @@ object {
                 color: #f5a623; }
             .single-gallery .content-area .site-main article .entry-header .donate-btn a p {
               display: none; }
-          @media screen and (min-width: 480px) {
-            .single-gallery .content-area .site-main article .entry-header .donate-btn {
-              height: 73px;
-              width: 224px; }
-              .single-gallery .content-area .site-main article .entry-header .donate-btn a i {
-                font-size: 40px; }
-              .single-gallery .content-area .site-main article .entry-header .donate-btn a p {
-                display: initial; } }
         .single-gallery .content-area .site-main article .entry-header .entry-meta {
           display: none; }
       .single-gallery .content-area .site-main article .entry-content {
