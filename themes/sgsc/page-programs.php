@@ -1,7 +1,7 @@
 <?php
 /**
- * The template for displaying all pages.
- *
+ * Template Name: Program
+ * 
  * @package RED_Starter_Theme
  */
 
@@ -11,7 +11,8 @@ get_header(); ?>
 		<main id="main" class="site-main container" role="main">
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?>
+				<div class="program-hero">
+				</div>
 				
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
