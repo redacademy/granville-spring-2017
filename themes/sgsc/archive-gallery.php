@@ -24,6 +24,7 @@ get_header(); ?>
   			 </div>
 			</header><!-- .page-header -->
 
+			<div class="gallery-album">
 			<?php while ( have_posts() ) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
@@ -47,6 +48,7 @@ get_header(); ?>
 			</article><!-- #post-## -->
 
 			<?php endwhile; ?>
+			</div>
 
 			<?php the_posts_navigation(); ?>
 
