@@ -13,13 +13,12 @@
 
 		<header class="page-header">
 			<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
-      <?php the_archive_description( '<div class="taxonomy-description">', '</div>' );?>
 		</header>
 		
-		<ul class="product-grid">
-				<?php while ( have_posts() ) : the_post(); ?>
+		<u>
+			<?php while ( have_posts() ) : the_post(); ?>
 				<li>
-					<div class="product-image">
+					<div>
 						<?php if ( has_post_thumbnail() ) : ?>
 						<?php the_post_thumbnail( 'medium' ); ?>
 						<?php endif; ?>

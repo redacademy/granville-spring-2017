@@ -36,3 +36,4 @@ function sgsc_programs_hero () {
 }
 
 add_action ( 'wp_enqueue_scripts', 'sgsc_programs_hero' );
+

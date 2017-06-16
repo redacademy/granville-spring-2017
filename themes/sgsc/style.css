@@ -1791,6 +1791,9 @@ footer {
   overflow-wrap: break-word;
   font-size: 18px; }
 
+.page-template-page-programs .entry-content {
+  padding: 0 1rem; }
+
 .program-list {
   padding: 0;
   margin: 0;
