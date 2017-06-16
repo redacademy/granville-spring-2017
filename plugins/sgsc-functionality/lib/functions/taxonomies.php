@@ -12,8 +12,8 @@ function featured_gallery_taxonomy() {
 
 	$labels = array(
 		'name'                       => 'Featured Galleries',
-		'singular_name'              => 'Geatured Gallery',
-		'menu_name'                  => 'Geatured Gallery',
+		'singular_name'              => 'Featured Gallery',
+		'menu_name'                  => 'Featured Gallery',
 		'all_items'                  => 'All Featured Galleries',
 		'parent_item'                => 'Parent Featured Gallery',
 		'parent_item_colon'          => 'Parent Featured Gallery:',
@@ -34,7 +34,7 @@ function featured_gallery_taxonomy() {
 	);
 	$args = array(
 		'labels'                     => $labels,
-		'hierarchical'               => false,
+		'hierarchical'               => true,
 		'public'                     => true,
 		'show_ui'                    => true,
 		'show_admin_column'          => true,
