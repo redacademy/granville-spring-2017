@@ -1674,7 +1674,7 @@ footer {
   .textwidget p:hover {
     color: #f5a623; }
 
-.textwidget p:last-child {
+.textwidget :last-child {
   margin-bottom: 0; }
 
 .footer-icons {
