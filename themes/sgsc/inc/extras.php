@@ -37,8 +37,6 @@ function sgsc_programs_hero () {
 
 add_action ( 'wp_enqueue_scripts', 'sgsc_programs_hero' );
 
-<<<<<<< HEAD
-=======
 
 
 /**
@@ -94,4 +92,3 @@ function sgsc_login_title( ) {
 	return 'South Granvillge Senior Center';
 }
 add_filter( 'login_headertitle', 'sgsc_login_title' );
->>>>>>> gallery
