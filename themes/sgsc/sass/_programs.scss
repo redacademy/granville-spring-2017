@@ -47,6 +47,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  
+  @media screen and (min-width: 480px) {
+    flex-flow: row wrap;
+  }
+
 	li {
     background: $orange;
     width: 80%;
@@ -57,7 +62,28 @@
     display: flex;
     justify-content: center;
     align-items: center;	
+    
+    @media screen and (min-width: 480px) {
+      width: initial;
+      margin: 2rem 0 2rem 2rem;
+      height: 10rem;
+      flex: 0 1 46.8%;
+    }
 	}
+  
+  li:nth-child(odd) {
+    @media screen and (min-width: 480px){
+    margin: 2rem 2rem 2rem 0;
+    }
+  }
+
+  li:last-child {
+    @media screen and (min-width: 480px){
+    margin: 2rem 0;
+    flex: 100%;
+    }
+  }
+
 	li:hover {
 		border: 4px solid black;
 	}
@@ -97,4 +123,8 @@
 
 .programs {
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+
 }

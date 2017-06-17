@@ -33,8 +33,11 @@
 }
 
 .container {
-	width: 1024px;
-	margin: auto;
+	min-width: 320px;
+	@media (min-width: $d_width)  {
+		width: 1024px;
+		margin: auto;
+	}
 }
 
 /* Asides */
