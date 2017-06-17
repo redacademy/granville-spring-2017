@@ -9,54 +9,103 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			
+			<section class="featured-gallery-section">
+				<?php if ( have_posts() ) : ?>
+					<header class="page-header">
+						<h1 class="page-title">Our Featured Gallery</h1>
+							<div class="donate-btn">
+								<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+									<i class="fa fa-heart-o" aria-hidden="true">
+										<p>Donate</p>
+									</i>
+									</a>
+						</div>
+					</header><!-- .page-header -->
+
+					<div class="gallery-album">
+					<?php $args = array( 
+          'taxonomy' => 'featured_gallery', 
+          'order' => 'ASC', 
+          'posts_per_page' => 5 
+        );
+          $featured_gallery = get_posts( $args ); ?>
+          <?php foreach ( $featured_gallery as $galleries ) : setup_postdata( $galleries ); ?>
+                    <?php the_post_thumbnail(); ?>
+                          <h3><?php the_title(); ?></h3>
+              <?php endforeach; wp_reset_postdata(); ?>
+
+					<h1>break me up</h1>
+						<?php while ( have_posts() ) : the_post(); ?>
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+								<header class="entry-header">
+									<?php if ( has_post_thumbnail() ) : ?>
+										<a href="<?php echo sprintf(esc_url( get_post_permalink() ) ) ?>">
+											<?php the_post_thumbnail( 'large' ); ?>
+										</a>	
+									<?php endif; ?>
+									<div class="entry-title">
+										<p><?php the_title(); ?></p>
+									</div>
+								</header><!-- .entry-header -->
+							</article><!-- #post-## -->
+						<?php endwhile; ?>
+					</div>
+					<?php the_posts_navigation(); ?>
+				<?php else : ?>
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php endif; ?>
+					<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'this-is-a-test-2-gallery' )) ) ?>">asdfasdfasdfasdfsdafwf</a>
+			</section>
+
+
 			<section class="lastest-gallery-section">
-				
-		<?php if ( have_posts() ) : ?>
+				<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">Lastest Gallery Albums</h1>
-				  <div class="donate-btn">
-						<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
-							<i class="fa fa-heart-o" aria-hidden="true">
-								<p>Donate</p>
-							</i>
+					<header class="page-header">
+						<h1 class="page-title">Latest Gallery Albums</h1>
+							<div class="donate-btn">
+								<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+									<i class="fa fa-heart-o" aria-hidden="true">
+										<p>Donate</p>
+									</i>
+									</a>
+						</div>
+					</header><!-- .page-header -->
+
+					<div class="gallery-album">
+					<?php while ( have_posts() ) : the_post(); ?>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<header class="entry-header">
+							<div class="image-position">		 
+								<?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail( 'full' ); ?>
+								<?php endif; ?>
+							</div>
+
+							<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
+								<?php the_title( sprintf( '<h2 >', esc_url( get_permalink() ) ), '</h2>' ); ?>
 							</a>
-  			 </div>
-			</header><!-- .page-header -->
 
-			<div class="gallery-album">
-			<?php while ( have_posts() ) : the_post(); ?>
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="entry-header">
-					 <div class="image-position">		 
-						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'full' ); ?>
-						<?php endif; ?>
-					 </div>
+								<?php if ( 'post' === get_post_type() ) : ?>
+								<div class="entry-meta">
+									<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+								</div><!-- .entry-meta -->
+							<?php endif; ?>
+						</header><!-- .entry-header -->
 
-					<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
-						<?php the_title( sprintf( '<h2 >', esc_url( get_permalink() ) ), '</h2>' ); ?>
-					</a>
+					</article><!-- #post-## -->
 
-						<?php if ( 'post' === get_post_type() ) : ?>
-						<div class="entry-meta">
-							<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-						</div><!-- .entry-meta -->
-					<?php endif; ?>
-				</header><!-- .entry-header -->
+					<?php endwhile; ?>
+					</div>
 
-			</article><!-- #post-## -->
+					<?php the_posts_navigation(); ?>
 
-			<?php endwhile; ?>
-			</div>
+				<?php else : ?>
 
-			<?php the_posts_navigation(); ?>
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+				<?php endif; ?>
 
 			</section>
 		</main><!-- #main -->

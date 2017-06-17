@@ -13,8 +13,14 @@ $orange: #f5a623;
 $blue: #45cdcb;
 $pink: #F91E72;
 // Typography
-$font__header: montserrat;
-$font__body: lato;
+$font__header: montserrat,
+merriweather,
+sans-serif;
+;
+$font__body: lato,
+novecentosanswide,
+sans-serif;
+;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 //desktop font size
@@ -59,10 +65,8 @@ $color-grey-medium: #808080;
 $color-border-solid: #e1e1e1;
 $color-border-dash: #c8c8c8;
 // Typography
-$font__main: merriweather,
-sans-serif;
-$font__accent: novecentosanswide,
-sans-serif;
+$font__main: $font__header;
+$font__accent: $font__body;
 $font__code: Monaco,
 Consolas,
 "Andale Mono",

@@ -370,7 +370,7 @@ input,
 select,
 textarea {
   color: #000000;
-  font-family: merriweather, sans-serif;
+  font-family: montserrat, merriweather, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.75; }
@@ -383,7 +383,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: montserrat;
+  font-family: montserrat, merriweather, sans-serif;
   font-weight: normal;
   font-style: normal; }
 
@@ -411,7 +411,7 @@ h6 {
 p {
   margin-bottom: 1.5rem;
   font-size: 12px;
-  font-family: lato;
+  font-family: lato, novecentosanswide, sans-serif;
   font-weight: normal;
   font-style: normal; }
   @media screen and (min-width: 480px) {
@@ -942,7 +942,7 @@ object {
   outline: none;
   border: 2px solid #f5a623;
   border-radius: 25px;
-  font-family: montserrat; }
+  font-family: montserrat, merriweather, sans-serif; }
 
 .menu .fa {
   font-size: 2rem; }
@@ -1469,6 +1469,52 @@ object {
     display: flex;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
+    .post-type-archive-gallery .content-area .site-main .featured-gallery-section {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column;
+          flex-flow: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        position: relative;
+        background: #f5a623;
+        width: 100%;
+        color: #000000; }
+        .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn {
+          background-color: #F91E72;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 3;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center;
+          height: 2.3rem;
+          width: 2.3rem; }
+          .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a {
+            text-decoration: none;
+            color: #000000; }
+            .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a i {
+              padding: .4rem;
+              color: #000000; }
+              .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a i:hover {
+                color: #f5a623; }
+            .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a p {
+              display: none; }
+        .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .entry-meta {
+          display: none; }
     .post-type-archive-gallery .content-area .site-main .lastest-gallery-section {
       display: -ms-flexbox;
       display: flex;
@@ -1521,13 +1567,14 @@ object {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
         -ms-flex-pack: distribute;
-            justify-content: space-around; }
+            justify-content: space-around;
+        -ms-flex-align: center;
+            align-items: center; }
         .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .has-post-thumbnail {
           width: 463px;
           height: 321px;
           margin: 0;
-          margin-top: 32px;
-          background: beige; }
+          margin-top: 32px; }
           .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .has-post-thumbnail .entry-header {
             width: 100%;
             height: 100%;
@@ -1545,6 +1592,7 @@ object {
                 min-height: 100%;
                 max-height: 100%;
                 width: auto;
+                min-width: 100%;
                 left: 50%;
                 top: 70%;
                 transform: translate(-50%, -70%);
@@ -1669,7 +1717,7 @@ footer {
 
 .textwidget {
   width: 125px;
-  font-family: lato;
+  font-family: lato, novecentosanswide, sans-serif;
   font-size: 12px; }
   .textwidget p:hover {
     color: #f5a623; }
@@ -1706,7 +1754,7 @@ footer {
   text-align: left;
   padding-left: 16px;
   margin-bottom: 25px;
-  font-family: lato;
+  font-family: lato, novecentosanswide, sans-serif;
   font-size: 10px; }
 
 @media all and (min-width: 480px) {
@@ -1786,11 +1834,11 @@ footer {
   text-align: center; }
 
 .page-template-page-programs h5 {
-  font-family: montserrat;
+  font-family: montserrat, merriweather, sans-serif;
   font-size: 22px; }
 
 .page-template-page-programs p {
-  font-family: lato;
+  font-family: lato, novecentosanswide, sans-serif;
   overflow-wrap: break-word;
   font-size: 18px; }
 
