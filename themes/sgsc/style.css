@@ -1466,6 +1466,50 @@ object {
     display: flex;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
+    .post-type-archive-gallery .content-area .site-main .featured-gallery-section {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column;
+          flex-flow: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        position: relative;
+        background: #f5a623;
+        width: 100%;
+        color: #000000; }
+        .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn {
+          background-color: #F91E72;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 3;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center; }
+          .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a {
+            text-decoration: none;
+            color: #000000; }
+            .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a i {
+              padding: .4rem;
+              color: #000000; }
+              .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a i:hover {
+                color: #f5a623; }
+            .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a p {
+              display: none; }
+        .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .entry-meta {
+          display: none; }
     .post-type-archive-gallery .content-area .site-main .lastest-gallery-section {
       display: -ms-flexbox;
       display: flex;
@@ -1541,6 +1585,7 @@ object {
                 min-height: 100%;
                 max-height: 100%;
                 width: auto;
+                min-width: 100%;
                 left: 50%;
                 top: 70%;
                 transform: translate(-50%, -70%);

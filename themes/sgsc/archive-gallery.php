@@ -26,32 +26,29 @@ get_header(); ?>
 					</header><!-- .page-header -->
 
 					<div class="gallery-album">
-					<?php while ( have_posts() ) : the_post(); ?>
 
-							<?php $product_types = get_terms(
-              	array( 
-									'taxonomy' => 'featured-gallery',
-									'hide_empty' => 0,
-              	)); 
-							if ( !empty($product_types) && !is_wp_error($product_types)) : ?>
-								<?php foreach ( $product_types as $product_type ) : ?>
-									<a href="<?php echo get_term_link($product_type); ?>">
-										<p>
-											<?php echo $product_type->name;?>
-										</p>							
-									</a>
-									<?php the_post_thumbnail(); ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+								<header class="entry-header">
+									<?php if ( has_post_thumbnail() ) : ?>
+										<a href="<?php echo sprintf(esc_url( get_post_permalink() ) ) ?>">
+											<?php the_post_thumbnail( 'large' ); ?>
+										</a>	
+									<?php endif; ?>
+									<div class="entry-title">
+										<p><?php the_title(); ?></p>
+										<p>$<?php echo CFS()->get( 'price' ); ?></p>
+									</div>
+								</header><!-- .entry-header -->
 
-									<?php endforeach; ?>
-								<?php endif; ?>
-
-
-					<?php endwhile; ?>
+							</article><!-- #post-## -->
+						<?php endwhile; ?>
 					</div>
 					<?php the_posts_navigation(); ?>
 				<?php else : ?>
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 				<?php endif; ?>
+					<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'this-is-a-test-2-gallery' )) ) ?>">asdfasdfasdfasdfsdafwf</a>
 			</section>
 
 			<section class="lastest-gallery-section">
