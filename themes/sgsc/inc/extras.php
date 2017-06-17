@@ -43,15 +43,14 @@ add_action ( 'wp_enqueue_scripts', 'sgsc_programs_hero' );
  * Changing the number of posts per page on Archive-Gallery
  */
 
-function inhabitent_modify_archive_queries( $query ) {
+function sgsc_modify_archive_queries( $query ) {
     if ( is_post_type_archive( 'gallery' )  || $query->is_tax( 'featured-gallery' )&& !is_admin() && $query->is_main_query() ) {
-        // Display 50 posts for a custom post type called 'movie'
-        $query->set( 'posts_per_page', 2);
-				$query->set( 'orderby', 'title' );
+        $query->set( 'posts_per_page', 8);
+				$query->set( 'orderby', 'date' );
 				$query->set ( 'order', 'ASC' );
 		}
 }
-add_action( 'pre_get_posts', 'inhabitent_modify_archive_queries' );
+add_action( 'pre_get_posts', 'sgsc_modify_archive_queries' );
 
 
 /**

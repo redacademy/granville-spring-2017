@@ -11,9 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			
 			<section class="featured-gallery-section">
-				
 				<?php if ( have_posts() ) : ?>
-
 					<header class="page-header">
 						<h1 class="page-title">Our Featured Gallery</h1>
 							<div class="donate-btn">
@@ -26,7 +24,18 @@ get_header(); ?>
 					</header><!-- .page-header -->
 
 					<div class="gallery-album">
+					<?php $args = array( 
+          'taxonomy' => 'featured_gallery', 
+          'order' => 'ASC', 
+          'posts_per_page' => 5 
+        );
+          $featured_gallery = get_posts( $args ); ?>
+          <?php foreach ( $featured_gallery as $galleries ) : setup_postdata( $galleries ); ?>
+                    <?php the_post_thumbnail(); ?>
+                          <h3><?php the_title(); ?></h3>
+              <?php endforeach; wp_reset_postdata(); ?>
 
+					<h1>break me up</h1>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<header class="entry-header">
@@ -37,10 +46,8 @@ get_header(); ?>
 									<?php endif; ?>
 									<div class="entry-title">
 										<p><?php the_title(); ?></p>
-										<p>$<?php echo CFS()->get( 'price' ); ?></p>
 									</div>
 								</header><!-- .entry-header -->
-
 							</article><!-- #post-## -->
 						<?php endwhile; ?>
 					</div>
@@ -50,6 +57,7 @@ get_header(); ?>
 				<?php endif; ?>
 					<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'this-is-a-test-2-gallery' )) ) ?>">asdfasdfasdfasdfsdafwf</a>
 			</section>
+
 
 			<section class="lastest-gallery-section">
 				<?php if ( have_posts() ) : ?>
