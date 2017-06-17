@@ -52,3 +52,44 @@ function inhabitent_modify_archive_queries( $query ) {
 		}
 }
 add_action( 'pre_get_posts', 'inhabitent_modify_archive_queries' );
+
+
+/**
+ * change to sgsc login logo
+ */
+function sgsc_login_logo() {
+     echo '<style type="text/css">         
+         h1 a {
+					 background-image:url('.get_stylesheet_directory_uri().'/assets/images/desktop-logo.svg) !important; 
+					 height: 220px !important; 
+					 background-position: center !important; 
+					 background-size: contain !important; 
+					 width: 100% !important;} 
+
+				#login .button.button-primary {
+					background-color: #f5a623;
+					text-shadow: none;
+					border: #f5a623;
+					box-shadow: none;}                           
+     </style>';
+		 
+}
+add_action('login_head', 'sgsc_login_logo');
+
+/**
+ * SGSC login logo url
+ */
+
+function sgsc_login_logo_url( $url ) {
+	return home_url();
+}
+add_filter( 'login_headerurl', 'sgsc_login_logo_url' );
+
+/**
+ * sgsc login logo tile
+ */
+
+function sgsc_login_title( ) {
+	return 'South Granvillge Senior Center';
+}
+add_filter( 'login_headertitle', 'sgsc_login_title' );
