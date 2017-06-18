@@ -12,7 +12,7 @@
 }
 
 .entry-title {
-    margin: 0;
+    margin: auto;
 }
 
 .entry-content {
@@ -33,20 +33,22 @@
     width: 300px;
     background-color: rgba(255,255,255,0.8); 
     h2 {
-    font-family: $font__header;
-    font-size: $font_d-body;
-    width: 163px;
-    margin: auto;   
-    text-align: center;
-    padding-top: 38px;
-    padding-bottom: 11px;
-    line-height: 29px;
+        font-family: $font__header;
+        font-size: $font_d-body;
+        width: 163px;
+        height: 58px;
+        margin: auto;
+        margin-top: 38px;   
+        text-align: center;
+        padding-bottom: 11px;
+        line-height: 29px;
     }  
     p {
         font-family: $font__body;
         font-size: $font_d-sub-body;
         width: 163px;
         margin: auto;
+        margin-top: 11px;
         line-height: 22px;
     }
 }

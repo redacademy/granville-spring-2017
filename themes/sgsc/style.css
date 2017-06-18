@@ -1938,7 +1938,7 @@ footer {
   margin: auto; }
 
 .entry-title {
-  margin: 0; }
+  margin: auto; }
 
 .entry-content {
   margin: 0; }
@@ -1961,9 +1961,10 @@ footer {
     font-family: montserrat, merriweather, sans-serif;
     font-size: 24px;
     width: 163px;
+    height: 58px;
     margin: auto;
+    margin-top: 38px;
     text-align: center;
-    padding-top: 38px;
     padding-bottom: 11px;
     line-height: 29px; }
   .rectangle p {
@@ -1971,4 +1972,5 @@ footer {
     font-size: 18px;
     width: 163px;
     margin: auto;
+    margin-top: 11px;
     line-height: 22px; }
