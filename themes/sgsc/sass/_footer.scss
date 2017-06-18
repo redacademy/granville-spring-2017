@@ -56,12 +56,11 @@ footer {
     padding-left: 16px;
         margin-bottom: 25px;
         font-family: $font__body;
-        font-size: 10px;
-    
+        font-size: 10px;    
 }
 
 
-@media all and (min-width: $mobile_width) {
+@media all and (min-width: $desktop-view) {
 
 .textwidget {
     display: flex;
@@ -112,8 +111,9 @@ footer {
 
 .copywrite {
     text-align: left;
-    padding: 0 35px;
+    padding-left: 35px;
+    p {
     font-size: 14px;
-}
-
+    }
+    }
 }

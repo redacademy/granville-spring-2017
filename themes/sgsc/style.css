@@ -1757,7 +1757,7 @@ footer {
   font-family: lato, novecentosanswide, sans-serif;
   font-size: 10px; }
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 600px) {
   .textwidget {
     display: -ms-flexbox;
     display: flex; }
@@ -1799,8 +1799,9 @@ footer {
     width: 50px; }
   .copywrite {
     text-align: left;
-    padding: 0 35px;
-    font-size: 14px; } }
+    padding-left: 35px; }
+    .copywrite p {
+      font-size: 14px; } }
 
 .page-template-page-about .entry-title {
   display: none; }
