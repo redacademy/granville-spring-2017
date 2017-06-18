@@ -9,24 +9,34 @@ get_the_title();
 
 <!--<?php echo CFS()->get(); ?>-->
 
-			<?php while ( have_posts() ) : the_post(); ?>
+  <?php if ( has_post_thumbnail() ) {
+        the_post_thumbnail();
+        } 
+        the_content();?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+			<!--<?php while ( have_posts() ) : the_post(); ?>-->
 
-				<div class="new-member">
-					<h2><?php echo CFS()->get( 'new_member' );	?></h2>
-					<p><?php echo CFS()->get( 'new_member_text' );	?></p>
-				</div>
-				<div class="membership-renewal">
-					<h2><?php echo CFS()->get( 'membership_renewal' );	?></h2>
-					<p><?php echo CFS()->get( 'membership_renewal_text' );	?></p>
-				</div>	
-				<div class="volunteer">
-					<h2><?php echo CFS()->get( 'volunteer_opportunities' );	?></h2>
-					<p><?php echo CFS()->get( 'volunteer_opportunities_text' );	?></p>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+ 
+				<div class="join-bg-image">
 				</div>
 
-			<?php endwhile; // End of the loop. ?>
+				<div class="join-us-section">
+					<div class="new-member rectangle">
+						<h2><?php echo CFS()->get( 'new_member' );	?></h2>
+						<p><?php echo CFS()->get( 'new_member_text' );	?></p>
+					</div>
+					<div class="membership-renewal rectangle">
+						<h2><?php echo CFS()->get( 'membership_renewal' );	?></h2>
+						<p><?php echo CFS()->get( 'membership_renewal_text' );	?></p>
+					</div>	
+					<div class="volunteer rectangle">
+						<h2><?php echo CFS()->get( 'volunteer_opportunities' );	?></h2>
+						<p><?php echo CFS()->get( 'volunteer_opportunities_text' );	?></p>
+					</div>
+				</div>
+
+			<!--<?php endwhile; // End of the loop. ?>-->
 
 
 

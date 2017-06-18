@@ -1923,3 +1923,52 @@ footer {
 
 .programs {
   margin-top: 1rem; }
+
+#post-18 {
+  margin: 0; }
+
+.entry-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: #f5a623;
+  height: 160px;
+  width: 1024px;
+  margin: auto; }
+
+.entry-title {
+  margin: 0; }
+
+.entry-content {
+  margin: 0; }
+
+.join-us-section {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 1024px;
+  background-image: url("../../assets/images/149-46.jpg");
+  margin-bottom: 28px; }
+
+.rectangle {
+  height: 356px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.8); }
+  .rectangle h2 {
+    font-family: montserrat, merriweather, sans-serif;
+    font-size: 24px;
+    width: 163px;
+    margin: auto;
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 11px;
+    line-height: 29px; }
+  .rectangle p {
+    font-family: lato, novecentosanswide, sans-serif;
+    font-size: 18px;
+    width: 163px;
+    margin: auto;
+    line-height: 22px; }
