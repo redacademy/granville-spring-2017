@@ -23,7 +23,7 @@
         color: $white;
       }
       @media screen and (min-width: $mobile_width) {
-        display: inline-block;
+        display: flex;
       }
       p {
         padding: $m_padding;

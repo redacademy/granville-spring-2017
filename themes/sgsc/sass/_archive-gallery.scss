@@ -29,9 +29,9 @@
         .gallery-album {
           display: flex;
           flex-flow: row wrap;
-          justify-content: space-around;
+          justify-content: space-between;
           align-items: center;
-          .has-post-thumbnail {
+          .gallery {
             width: 463px;
             height: 321px;
             margin: 0;
