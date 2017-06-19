@@ -25,17 +25,31 @@ get_header(); ?>
 				<?php endif; ?>
 
 					<div class="gallery-album">
-					<?php $args = get_terms( 
-						array(
-          'taxonomy' => 'featured-gallery', 
-					'orderby' => 'date',
-          'order' => 'ASC', 
-					'hide_empty' => 0,
-					'posts_per_page' => 3
-        ));
-				if ( !empty($args) && !is_wp_error($args)) :?>
+					<?php 
 					
-          <?php foreach ( $args as $arg ) : setup_postdata( $arg ); ?>
+				// 	$args = get_terms( 
+				// 		array(
+        //   'taxonomy' => 'featured-gallery', 
+				// 	'orderby' => 'date',
+        //   'order' => 'ASC', 
+				// 	'hide_empty' => 0,
+				// 	'posts_per_page' => 3
+        // ));
+
+				global $post;
+
+				$args = array(
+					'posts_per_page' 	=> 1,
+					'post_type' 			=> 'gallery',
+					'category'		=> 0
+				);
+
+				$posts_array = get_posts( $args );
+
+
+				if ( !empty($posts_array) && !is_wp_error($posts_array)) :?>
+					
+          <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
 						<?php the_post_thumbnail('full'); ?>
 						<h3><?php the_title(); ?></h3>
 					<?php endforeach; wp_reset_postdata(); ?>
