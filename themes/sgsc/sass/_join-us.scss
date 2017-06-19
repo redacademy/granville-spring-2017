@@ -9,6 +9,7 @@
     height: 118px;
     width: $mobile_width;
     margin: auto;
+    @include page-header;
 }
 
 .entry-title {

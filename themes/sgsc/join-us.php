@@ -15,7 +15,29 @@ get_the_title();
 
 			<!--<?php while ( have_posts() ) : the_post(); ?>-->
 
-					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<header class="entry-header">
+							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+							 	<div class="donate-btn">
+								 	<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+									<i class="fa fa-heart-o" aria-hidden="true">
+							 			<p>Donate</p>
+							 		</i>
+							 		</a>
+							 </div>
+						</header><!-- .entry-header -->
+
+						<div class="entry-content">
+							<?php the_content(); ?>
+							<?php
+								wp_link_pages( array(
+									'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+									'after'  => '</div>',
+								) );
+							?>
+						</div><!-- .entry-content -->
+					</article><!-- #post-## -->
+
 
 					<div class="join-us-section">
 						<div class="new-member rectangle">

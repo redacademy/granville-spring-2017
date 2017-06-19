@@ -1936,7 +1936,41 @@ footer {
   background: #f5a623;
   height: 118px;
   width: 480px;
-  margin: auto; }
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative;
+  background: #f5a623;
+  width: 100%;
+  color: #000000; }
+  .entry-header .donate-btn {
+    background-color: #F91E72;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 2.3rem;
+    width: 2.3rem; }
+    .entry-header .donate-btn a {
+      text-decoration: none;
+      color: #000000; }
+      .entry-header .donate-btn a i {
+        padding: .4rem;
+        color: #000000; }
+        .entry-header .donate-btn a i:hover {
+          color: #f5a623; }
+      .entry-header .donate-btn a p {
+        display: none; }
+  .entry-header .entry-meta {
+    display: none; }
 
 .entry-title {
   margin: auto; }
