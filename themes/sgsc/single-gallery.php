@@ -43,6 +43,7 @@ get_header(); ?>
 
 			<footer class="entry-footer">
 				<?php red_starter_entry_footer(); ?>
+				<a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'gallery' )) ) ?>"><p>Return</p></a>
 			</footer><!-- .entry-footer -->
 		</article><!-- #post-## -->
 

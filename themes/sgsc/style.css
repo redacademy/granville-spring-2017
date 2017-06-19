@@ -1100,8 +1100,7 @@ object {
             color: #ffffff; }
           @media screen and (min-width: 480px) {
             .home .content-area .site-main .learn-about-story .front-learn .m-button {
-              display: -ms-flexbox;
-              display: flex; } }
+              display: inline-block; } }
           .home .content-area .site-main .learn-about-story .front-learn .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
@@ -1200,8 +1199,7 @@ object {
             color: #ffffff; }
           @media screen and (min-width: 480px) {
             .home .content-area .site-main .program-event-post .front-program .m-button {
-              display: -ms-flexbox;
-              display: flex; } }
+              display: inline-block; } }
           .home .content-area .site-main .program-event-post .front-program .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
@@ -1298,8 +1296,7 @@ object {
             color: #ffffff; }
           @media screen and (min-width: 480px) {
             .home .content-area .site-main .feature-gallery .front-gallery .m-button {
-              display: -ms-flexbox;
-              display: flex; } }
+              display: inline-block; } }
           .home .content-area .site-main .feature-gallery .front-gallery .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
@@ -1383,8 +1380,7 @@ object {
             color: #ffffff; }
           @media screen and (min-width: 480px) {
             .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button {
-              display: -ms-flexbox;
-              display: flex; } }
+              display: inline-block; } }
           .home .content-area .site-main .intro-involved-join .involve-pillar .involved-join .front-involved .m-button p {
             padding: 0.3rem 1.5rem;
             border: 2px #000000 solid;
@@ -1623,11 +1619,14 @@ object {
   -ms-flex-pack: center;
       justify-content: center; }
   .single-gallery .content-area .site-main {
-    width: 1024px;
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
+    @media screen and (min-width: 480px) {
+      .single-gallery .content-area .site-main {
+        width: 1024px; } }
     .single-gallery .content-area .site-main article {
       margin: 0; }
       .single-gallery .content-area .site-main article .entry-header {
@@ -1638,7 +1637,35 @@ object {
         -ms-flex-align: center;
             align-items: center;
         position: relative;
-        background: #f5a623; }
+        background: #f5a623;
+        width: 100%;
+        color: #000000; }
+        .single-gallery .content-area .site-main article .entry-header .donate-btn {
+          background-color: #F91E72;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 3;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center;
+          height: 2.3rem;
+          width: 2.3rem; }
+          .single-gallery .content-area .site-main article .entry-header .donate-btn a {
+            text-decoration: none;
+            color: #000000; }
+            .single-gallery .content-area .site-main article .entry-header .donate-btn a i {
+              padding: .4rem;
+              color: #000000; }
+              .single-gallery .content-area .site-main article .entry-header .donate-btn a i:hover {
+                color: #f5a623; }
+            .single-gallery .content-area .site-main article .entry-header .donate-btn a p {
+              display: none; }
+        .single-gallery .content-area .site-main article .entry-header .entry-meta {
+          display: none; }
         .single-gallery .content-area .site-main article .entry-header img {
           display: none; }
         .single-gallery .content-area .site-main article .entry-header .donate-btn {
@@ -1668,29 +1695,56 @@ object {
         .single-gallery .content-area .site-main article .entry-header .entry-meta {
           display: none; }
       .single-gallery .content-area .site-main article .entry-content {
-        width: 1024px; }
+        width: 100%; }
         .single-gallery .content-area .site-main article .entry-content .gallery {
           display: -ms-flexbox;
           display: flex;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
           -ms-flex-flow: column wrap;
-              flex-flow: column wrap; }
+              flex-flow: column wrap;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center; }
+          @media screen and (min-width: 480px) {
+            .single-gallery .content-area .site-main article .entry-content .gallery {
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+              -ms-flex-flow: row wrap;
+                  flex-flow: row wrap;
+              margin-bottom: 0; } }
           .single-gallery .content-area .site-main article .entry-content .gallery figure {
             display: -ms-flexbox;
             display: flex;
             margin: 0;
             padding: 0;
-            height: 321px;
-            width: 463px;
-            background: gainsboro; }
+            height: 208px;
+            min-width: 100%;
+            max-width: none;
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden; }
+            @media screen and (min-width: 480px) {
+              .single-gallery .content-area .site-main article .entry-content .gallery figure {
+                width: 463px;
+                height: 321px;
+                min-width: initial;
+                margin-bottom: 35px; } }
             .single-gallery .content-area .site-main article .entry-content .gallery figure .gallery-icon {
-              height: 321px;
-              width: 463px;
+              width: 100%;
               position: relative; }
               .single-gallery .content-area .site-main article .entry-content .gallery figure .gallery-icon a {
                 pointer-events: none;
                 cursor: default; }
+                .single-gallery .content-area .site-main article .entry-content .gallery figure .gallery-icon a img {
+                  min-height: 100%;
+                  max-height: 150%;
+                  width: auto;
+                  min-width: 100%;
+                  left: 50%;
+                  top: 70%;
+                  transform: translate(-50%, -70%);
+                  max-width: none;
+                  position: absolute; }
         .single-gallery .content-area .site-main article .entry-content h1,
         .single-gallery .content-area .site-main article .entry-content h2,
         .single-gallery .content-area .site-main article .entry-content h3,
@@ -1700,6 +1754,34 @@ object {
         .single-gallery .content-area .site-main article .entry-content p,
         .single-gallery .content-area .site-main article .entry-content form {
           display: none; }
+    .single-gallery .content-area .site-main .m-button {
+      text-decoration: none;
+      color: #000000;
+      display: none; }
+      .single-gallery .content-area .site-main .m-button:hover, .single-gallery .content-area .site-main .m-button:active, .single-gallery .content-area .site-main .m-button:focus {
+        color: #ffffff; }
+      @media screen and (min-width: 480px) {
+        .single-gallery .content-area .site-main .m-button {
+          display: inline-block; } }
+      .single-gallery .content-area .site-main .m-button p {
+        padding: 0.3rem 1.5rem;
+        border: 2px #000000 solid;
+        margin: 0; }
+        .single-gallery .content-area .site-main .m-button p:hover, .single-gallery .content-area .site-main .m-button p:active, .single-gallery .content-area .site-main .m-button p:focus {
+          border: 2px #000000 solid #f5a623;
+          background: #f5a623;
+          z-index: 2;
+          opacity: 1; }
+        @media screen and (min-width: 480px) {
+          .single-gallery .content-area .site-main .m-button p {
+            display: -ms-flexbox;
+            display: flex;
+            padding: 0.4rem 3rem; } }
+    .single-gallery .content-area .site-main .m-button {
+      display: inline-block; }
+      @media screen and (min-width: 480px) {
+        .single-gallery .content-area .site-main .m-button p {
+          padding: 0rem 1.5rem; } }
 
 footer {
   max-width: 1024px;

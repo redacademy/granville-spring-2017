@@ -1,65 +1,99 @@
-/*--------------------------------------------------------------
+  /*--------------------------------------------------------------
 # Single-Gallery Page
 --------------------------------------------------------------*/
-
-.single-gallery .content-area {
-  display: flex;
-  justify-content: center;
-  .site-main {
-    width: $d_width;
+  
+  .single-gallery .content-area {
     display: flex;
-    flex-flow: column nowrap;
-    article {
-      margin: 0;
-      .entry-header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        background: $orange;
-        img {
-          display: none;
-        }
-        @include m-donate;
-        .entry-meta {
-          display: none;
-        }
-      }
-      .entry-content {
+    justify-content: center;
+    .site-main {
+      width: 100%;
+      @media screen and (min-width: $mobile_width) {
         width: $d_width;
-        .gallery {
-          display: flex;
-          justify-content: space-around;
-          flex-flow: column wrap;
-          figure {
+      }
+      display: flex;
+      flex-flow: column nowrap;
+      article {
+        margin: 0;
+        .entry-header {
+          @include page-header;
+          img {
+            display: none;
+          }
+          @include m-donate;
+          .entry-meta {
+            display: none;
+          }
+        }
+        .entry-content {
+          width: 100%;
+          .gallery {
             display: flex;
-            margin: 0;
-            padding: 0;
-            height: 321px;
-            width: 463px;
-            background: gainsboro;
-            .gallery-icon {
-              height: 321px;
-              width: 463px;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            @media screen and (min-width: $mobile_width) {
+              justify-content: space-between;
+              flex-flow: row wrap;
+              margin-bottom: 0;
+            }
+            figure {
+              display: flex;
+              margin: 0;
+              padding: 0;
+              height: 208px;
+              min-width: 100%;
+              max-width: none;
+              margin-top: 10px;
               position: relative;
-              a {
-                pointer-events: none;
-                cursor: default;
+              overflow: hidden;
+              @media screen and (min-width: $mobile_width) {
+                width: 463px;
+                height: 321px;
+                min-width: initial;
+                margin-bottom: 35px;
+              }
+              .gallery-icon {
+                width: 100%;
+                position: relative;
+                a {
+                  pointer-events: none;
+                  cursor: default;
+                  img {
+                    min-height: 100%;
+                    max-height: 150%;
+                    width: auto;
+                    min-width: 100%;
+                    left: 50%;
+                    top: 70%;
+                    transform: translate(-50%, -70%);
+                    max-width: none;
+                    position: absolute;
+                    @media screen and (min-width: $mobile_width) {}
+                  }
+                }
               }
             }
           }
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6,
+          p,
+          form {
+            display: none;
+          }
         }
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        form {
-          display: none;
+      }
+      @include m-button;
+      .m-button {
+        display: inline-block;
+        p {
+          @media screen and (min-width: $mobile_width) {
+            padding: 0rem 1.5rem;
+          }
         }
       }
     }
   }
-}
