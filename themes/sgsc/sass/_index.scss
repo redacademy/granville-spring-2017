@@ -1,5 +1,5 @@
   /*--------------------------------------------------------------
-# Blog-Post
+# Single-Gallery Page
 --------------------------------------------------------------*/
   
   .blog .content-area {
@@ -14,85 +14,42 @@
       flex-flow: column nowrap;
       .site-header {
         margin: 0;
-        background: black;
         @include page-header;
-        .entry-header {
-          @include m-donate;
-          img {
-            display: none;
-          }
-          .entry-meta {
-            display: none;
-          }
-        }
-        .entry-content {
-          width: 100%;
-          .gallery {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            @media screen and (min-width: $mobile_width) {
-              justify-content: space-between;
-              flex-flow: row wrap;
-              margin-bottom: 0;
-            }
-            figure {
-              display: flex;
-              margin: 0;
-              padding: 0;
-              height: 208px;
-              min-width: 100%;
-              max-width: none;
-              margin-top: 10px;
-              position: relative;
-              overflow: hidden;
-              @media screen and (min-width: $mobile_width) {
-                width: 463px;
-                height: 321px;
-                min-width: initial;
-                margin-bottom: 35px;
-              }
-              .gallery-icon {
-                width: 100%;
-                position: relative;
-                a {
-                  pointer-events: none;
-                  cursor: default;
-                  img {
-                    min-height: 100%;
-                    max-height: 150%;
-                    width: auto;
-                    min-width: 100%;
-                    left: 50%;
-                    top: 70%;
-                    transform: translate(-50%, -70%);
-                    max-width: none;
-                    position: absolute;
-                    @media screen and (min-width: $mobile_width) {}
-                  }
-                }
-              }
-            }
-          }
-          h1,
-          h2,
-          h3,
-          h4,
-          h5,
-          h6,
-          p,
-          form {
-            display: none;
-          }
-        }
+        @include m-donate;
       }
-      @include m-button;
-      .m-button {
-        display: inline-block;
-        p {
-          @media screen and (min-width: $mobile_width) {
-            padding: 0rem 1.5rem;
+      article {
+        .image-position {
+          width: 445px;
+          height: 321px;
+          display: flex;
+          position: relative;
+          overflow: hidden;
+          justify-content: center;
+          align-items: center;
+          img {
+            min-height: 100%;
+            max-height: 100%;
+            width: auto;
+            min-width: 100%;
+            left: 50%;
+            top: 70%;
+            transform: translate(-50%, -70%);
+            max-width: none;
+            position: absolute;
+          }
+        }
+        .entry-title {
+          background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+          z-index: 1;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: $black;
+          &:hover {
+            color: $orange;
           }
         }
       }
