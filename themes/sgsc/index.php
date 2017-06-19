@@ -13,8 +13,16 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
+				<header class="site-header">
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1>Blog Post</h1>
+					<div class="donate-btn">
+  				 	<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+  				 		<i class="fa fa-heart-o" aria-hidden="true">
+  				 			<p>Donate</p>
+  				 		</i>
+  				 		</a>
+  				 </div>
 				</header>
 			<?php endif; ?>
 

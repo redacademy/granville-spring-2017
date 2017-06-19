@@ -39,14 +39,9 @@ get_header(); ?>
 						<?php the_post_thumbnail('full'); ?>
 						<h3><?php the_title(); ?></h3>
 					<?php endforeach; wp_reset_postdata(); ?>
-
-					<h1>break me up</h1>
-
 					</div>
-					<?php the_posts_navigation(); ?>
 				<?php else : ?>
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
-					<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'this-is-a-test-2-gallery' )) ) ?>">asdfasdfasdfasdfsdafwf</a>
 				<?php endif; ?>
 					
 			</section>
