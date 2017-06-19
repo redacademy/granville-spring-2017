@@ -37,12 +37,14 @@ get_header(); ?>
 						<?php endif; ?>
 					</div>
 					<div class="entry-title">
-						<?php the_title( sprintf( '<h2 ><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+						<a href="%s" rel="bookmark">
+							<?php the_title( sprintf( '<h2>', esc_url( get_permalink() ) ), '</h2>' ); ?>
 
-						<?php if ( 'post' === get_post_type() ) : ?>
-						<div class="entry-meta">
-							<?php red_starter_posted_on(); ?>
-						</div><!-- .entry-meta -->
+							<?php if ( 'post' === get_post_type() ) : ?>
+							<div class="entry-meta">
+								<?php red_starter_posted_on(); ?>
+							</div><!-- .entry-meta -->
+						</a>
 					</div>
 					<?php endif; ?>
 				</header><!-- .entry-header -->

@@ -36,12 +36,18 @@ get_header(); ?>
 				// 	'posts_per_page' => 3
         // ));
 
-				global $post;
+				// global $post;
 
 				$args = array(
 					'posts_per_page' 	=> 1,
 					'post_type' 			=> 'gallery',
-					'category'		=> 0
+					'tax_query'       => array(
+						array(
+							'taxonomy' => 'featured-gallery',
+							'field'		 => 'slug',
+							'terms'    => 'featured'
+						)
+					)
 				);
 
 				$posts_array = get_posts( $args );

@@ -17,15 +17,22 @@
         @include page-header;
         @include m-donate;
       }
-      article {
-        .image-position {
+      article .entry-header {
+        width: 100%;
+        height: 321px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        border: $border transparent;
+        @include hover-state {
+          border: $border;
+        }
+        @media screen and (min-width: $mobile_width) {
           width: 445px;
-          height: 321px;
-          display: flex;
-          position: relative;
-          overflow: hidden;
-          justify-content: center;
-          align-items: center;
+        }
+        .image-position {
           img {
             min-height: 100%;
             max-height: 100%;
@@ -36,20 +43,37 @@
             transform: translate(-50%, -70%);
             max-width: none;
             position: absolute;
+            z-index: -1
           }
         }
         .entry-title {
-          background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
           z-index: 1;
           height: 100%;
           width: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
-          text-decoration: none;
-          color: $black;
-          &:hover {
-            color: $orange;
+          flex-flow: column nowrap;
+          a {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column nowrap;
+            color: $black;
+            text-decoration: none;
+            @include hover-state {
+              color: $orange;
+            }
+            h2 {
+              font-size: $font_m-h1;
+              margin-bottom: 0;
+            }
+          }
+          .entry-meta {
+            display: flex;
           }
         }
       }
