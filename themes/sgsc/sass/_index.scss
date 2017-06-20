@@ -7,11 +7,14 @@
     justify-content: center;
     .site-main {
       width: 100%;
-      @media screen and (min-width: $mobile_width) {
-        width: $d_width;
-      }
       display: flex;
       flex-flow: column nowrap;
+      @media screen and (min-width: $mobile_width) {
+        width: $d_width;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
       .site-header {
         margin: 0;
         @include page-header;
@@ -25,10 +28,7 @@
         overflow: hidden;
         justify-content: center;
         align-items: center;
-        border: $border transparent;
-        @include hover-state {
-          border: $border;
-        }
+        margin-top: 32px;
         @media screen and (min-width: $mobile_width) {
           width: 445px;
         }
@@ -43,7 +43,6 @@
             transform: translate(-50%, -70%);
             max-width: none;
             position: absolute;
-            z-index: -1
           }
         }
         .entry-title {
@@ -56,6 +55,7 @@
           flex-flow: column nowrap;
           a {
             width: 100%;
+            @include border;
             height: 100%;
             background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
             display: flex;

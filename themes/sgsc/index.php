@@ -15,7 +15,7 @@ get_header(); ?>
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header class="site-header">
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					<h1>Blog Post</h1>
+					<h1>Blog Posts</h1>
 					<div class="donate-btn">
   				 	<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
   				 		<i class="fa fa-heart-o" aria-hidden="true">
@@ -37,7 +37,7 @@ get_header(); ?>
 						<?php endif; ?>
 					</div>
 					<div class="entry-title">
-						<a href="%s" rel="bookmark">
+						<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
 							<?php the_title( sprintf( '<h2>', esc_url( get_permalink() ) ), '</h2>' ); ?>
 
 							<?php if ( 'post' === get_post_type() ) : ?>

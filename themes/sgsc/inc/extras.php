@@ -92,3 +92,29 @@ function sgsc_login_title( ) {
 	return 'South Granvillge Senior Center';
 }
 add_filter( 'login_headertitle', 'sgsc_login_title' );
+
+// Remove Post (index.php) Categories and Tags
+function myprefix_remove_tax() {
+    register_taxonomy('category', array());
+    register_taxonomy('post_tag', array());
+}
+add_action('init', 'myprefix_remove_tax');
+
+/**
+ * sgsc front-page hero image
+ */
+function home_background() {
+ wp_enqueue_style(
+	'custom-style',
+	get_template_directory_uri() . '/build/css/style.min.css'
+	);
+	$background = CFS()->get( 'background_image' ); 
+	$custom_css = "
+		.learn-about-story{
+			background: linear-gradient(rgba(0,0,0, .4),rgba(0,0,0, .4)), url({$background}), no-repeat;
+		background-size: cover, cover;
+    background-position: center center;
+		}";
+	wp_add_inline_style( 'custom-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'home_background' );
