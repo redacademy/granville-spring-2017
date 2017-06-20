@@ -20,6 +20,7 @@
       color: $black;
       border: $p_border transparent;
       display: none;
+      width: initial;
       @include hover-state {
         color: $white;
       }
@@ -116,6 +117,7 @@
           }
           p {
             display: initial;
+            font-size: 40px;
           }
         }
       }

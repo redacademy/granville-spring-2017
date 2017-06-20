@@ -43,7 +43,7 @@ get_header(); ?>
         <div class="intro-event-blog">
           <div class="front-events">
             <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'event' )) ) ?>">
-              <h1>Upcomming Events</h1></a>
+              <h1>Upcoming Events</h1></a>
           </div>
 
           <div class="front-blog">
@@ -94,7 +94,7 @@ get_header(); ?>
         <div class="involve-pillar">
           <div class="involved-join">        
             <h1>Get Involved</h1>
-            <p>We are committed to maintaining a welcoming, friendly, and open community space for low income adults 55+ and the community members who support them.</p>
+            <p>We are committed to maintain a welcoming, friendly, and open community space for low income adults 55+ and the community members who support them.</p>
             <div class="front-involved">
               <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
                 <p>Donate</p></a>
