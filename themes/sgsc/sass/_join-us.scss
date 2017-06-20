@@ -45,20 +45,35 @@
     }
 }
 
-
+.new-member, .membership-renewal, .volunteer, .rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
 
 .new-member, .membership-renewal, .volunteer {
+    
         h2 {
-        font-family: $font__header;
-        font-size: $font_d-body;
-        width: 163px;
-        height: 58px;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 29px;
-    }  
-    p {
-        display: none;
+            font-family: $font__header;
+            font-size: $font_m-h2;
+            width: 163px;
+            height: 58px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 29px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }  
+    // p {
+    //     display: none;
+    // }
+}
+
+.page-template-join-us {
+    // TODO check for desktop
+.rectangle    p {
+        display:none;
     }
 }
 

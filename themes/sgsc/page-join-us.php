@@ -13,7 +13,7 @@ get_the_title();
         } 
         the_content();?>
 
-			<!--<?php while ( have_posts() ) : the_post(); ?>-->
+			<?php while ( have_posts() ) : the_post(); ?>
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<header class="entry-header">
@@ -49,13 +49,12 @@ get_the_title();
 							<p><?php echo CFS()->get( 'membership_renewal_text' );	?></p>
 						</div>	
 						<div class="volunteer rectangle">
+							<a class="m-button" href="<?php echo get_post_type_archive_link( 'volunteer' ); ?>">
 							<h2><?php echo CFS()->get( 'volunteer_opportunities' );	?></h2>
-							<p><?php echo CFS()->get( 'volunteer_opportunities_text' );	?></p>
+							<p><?php echo CFS()->get( 'volunteer_opportunities_text' );	?></p></a>
 						</div>
 					</div>
 
 			<!--<?php endwhile; // End of the loop. ?>-->
-
-
 
 <?php get_footer(); ?>

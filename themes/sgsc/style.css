@@ -2004,14 +2004,28 @@ footer {
   .rectangle:hover {
     border: 4px solid #000000; }
 
+.new-member, .membership-renewal, .volunteer, .rectangle {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
 .new-member h2, .membership-renewal h2, .volunteer h2 {
   font-family: montserrat, merriweather, sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   width: 163px;
   height: 58px;
   margin: 0 auto;
   text-align: center;
-  line-height: 29px; }
+  line-height: 29px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
-.new-member p, .membership-renewal p, .volunteer p {
+.page-template-join-us .rectangle p {
   display: none; }
