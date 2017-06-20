@@ -23,12 +23,13 @@
 .join-us-section {
     display: flex;
     margin: 0 auto;
-    justify-content: space-between;
     flex-direction: column;
     max-width: $mobile-width;
     background-image: url("../../assets/images/149-46.jpg");
     background-repeat: no-repeat;
-    height: 750px;
+    min-height: 250px;
+    max-height: 750px;
+    padding-bottom: 21px;
     background-position: 60%;    
 }
 
@@ -38,6 +39,7 @@
     box-sizing: border-box;
     max-width: $mobile-width;
     flex-direction: column;
+    text-decoration: none;
     background-color: rgba(255,255,255,0.8); 
     border: 4px solid rgba(255,255,255,0.0);
     &:hover {
@@ -52,10 +54,12 @@
 } 
 
 .new-member, .membership-renewal, .volunteer {
-    
+    margin-top: 21px; 
         h2 {
             font-family: $font__header;
             font-size: $font_m-h2;
+            color: $black;
+            text-decoration: none;
             width: 163px;
             height: 58px;
             margin: 0 auto;
@@ -65,9 +69,6 @@
             justify-content: center;
             align-items: center;
         }  
-    // p {
-    //     display: none;
-    // }
 }
 
 .page-template-join-us {

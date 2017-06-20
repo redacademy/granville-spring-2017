@@ -13,18 +13,23 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+
+				<h1 class="entry-header">Join Us</h1>
+
+		
 			</header> <!--.page-header -->
 
 			<?php /* Start the Loop */ ?>
+			<div class="join-us-section">
 			<?php while ( have_posts() ) : the_post(); ?>
+				
+				<?php if ( has_post_thumbnail() ) : ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+				<?php endif; ?>
+				<?php the_title( sprintf( '<a class="volunteer rectangle" href="%s" rel="bookmark"><h2>', esc_url( get_permalink() ) ), '</h2></a>' ); ?>
+				<?php if ( 'post' === get_post_type() ) : ?>
+			
+				<?php endif; ?>
 
 			<?php endwhile; ?>
 
@@ -32,10 +37,10 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part(); ?>
 
 		<?php endif; ?>
-
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -35,7 +35,7 @@ get_the_title();
 									'after'  => '</div>',
 								) );
 							?>
-						</div><!-- .entry-content -->
+						</div> <!--.entry-content -->
 					</article><!-- #post-## -->
 
 
@@ -48,11 +48,11 @@ get_the_title();
 							<h2><?php echo CFS()->get( 'membership_renewal' );	?></h2>
 							<p><?php echo CFS()->get( 'membership_renewal_text' );	?></p>
 						</div>	
-						<div class="volunteer rectangle">
-							<a class="m-button" href="<?php echo get_post_type_archive_link( 'volunteer' ); ?>">
+						<!--<div class="volunteer rectangle">-->
+							<a class="volunteer rectangle" href="<?php echo get_post_type_archive_link( 'volunteer' ); ?>">
 							<h2><?php echo CFS()->get( 'volunteer_opportunities' );	?></h2>
 							<p><?php echo CFS()->get( 'volunteer_opportunities_text' );	?></p></a>
-						</div>
+						<!--</div>-->
 					</div>
 
 			<!--<?php endwhile; // End of the loop. ?>-->
