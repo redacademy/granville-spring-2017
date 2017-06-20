@@ -39,7 +39,7 @@ get_header(); ?>
 				// global $post;
 
 				$args = array(
-					'posts_per_page' 	=> 1,
+					'posts_per_page' 	=> 3,
 					'post_type' 			=> 'gallery',
 					'tax_query'       => array(
 						array(
@@ -56,8 +56,18 @@ get_header(); ?>
 				if ( !empty($posts_array) && !is_wp_error($posts_array)) :?>
 					
           <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-						<?php the_post_thumbnail('full'); ?>
-						<h3><?php the_title(); ?></h3>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					
+						<header class="entry-header">
+							<div class="image-position">
+								<?php the_post_thumbnail('full'); ?>
+							</div>
+								<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
+									<h2><?php the_title(); ?></h2>
+								</a>
+						</header>
+					</article><!-- #post-## -->
+						
 					<?php endforeach; wp_reset_postdata(); ?>
 					</div>
 				<?php else : ?>

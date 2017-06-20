@@ -138,9 +138,21 @@
     position: relative;
     background: $orange;
     width: 100%;
+    min-height: 118px;
+    @media screen and (min-width: $mobile_width) {
+      min-height: 160px;
+    }
     color: $black;
     @include m-donate;
     .entry-meta {
       display: none;
+    }
+  }
+  
+  //Mixin for thin-regular-border
+  @mixin border {
+    border: $border_transparent;
+    @include hover-state {
+      border: $border;
     }
   }
