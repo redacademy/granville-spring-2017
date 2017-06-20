@@ -92,3 +92,10 @@ function sgsc_login_title( ) {
 	return 'South Granvillge Senior Center';
 }
 add_filter( 'login_headertitle', 'sgsc_login_title' );
+
+// Remove Post (index.php) Categories and Tags
+function myprefix_remove_tax() {
+    register_taxonomy('category', array());
+    register_taxonomy('post_tag', array());
+}
+add_action('init', 'myprefix_remove_tax');

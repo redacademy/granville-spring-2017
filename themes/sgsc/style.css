@@ -1471,7 +1471,13 @@ object {
         flex-flow: column nowrap; }
     @media screen and (min-width: 480px) {
       .blog .content-area .site-main {
-        width: 1024px; } }
+        width: 1024px;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-align: center;
+            align-items: center; } }
     .blog .content-area .site-main .site-header {
       margin: 0;
       display: -ms-flexbox;
@@ -1549,9 +1555,7 @@ object {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center;
-      border: 4px #000000 solid transparent; }
-      .blog .content-area .site-main article .entry-header:hover, .blog .content-area .site-main article .entry-header:active, .blog .content-area .site-main article .entry-header:focus {
-        border: 4px #000000 solid; }
+      margin-top: 32px; }
       @media screen and (min-width: 480px) {
         .blog .content-area .site-main article .entry-header {
           width: 445px; } }
@@ -1564,8 +1568,7 @@ object {
         top: 70%;
         transform: translate(-50%, -70%);
         max-width: none;
-        position: absolute;
-        z-index: -1; }
+        position: absolute; }
       .blog .content-area .site-main article .entry-header .entry-title {
         z-index: 1;
         height: 100%;
@@ -1580,6 +1583,7 @@ object {
             flex-flow: column nowrap; }
         .blog .content-area .site-main article .entry-header .entry-title a {
           width: 100%;
+          border: 4px transparent solid;
           height: 100%;
           background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
           display: -ms-flexbox;
@@ -1592,6 +1596,8 @@ object {
               flex-flow: column nowrap;
           color: #000000;
           text-decoration: none; }
+          .blog .content-area .site-main article .entry-header .entry-title a:hover, .blog .content-area .site-main article .entry-header .entry-title a:active, .blog .content-area .site-main article .entry-header .entry-title a:focus {
+            border: 4px #000000 solid; }
           .blog .content-area .site-main article .entry-header .entry-title a:hover, .blog .content-area .site-main article .entry-header .entry-title a:active, .blog .content-area .site-main article .entry-header .entry-title a:focus {
             color: #f5a623; }
           .blog .content-area .site-main article .entry-header .entry-title a h2 {
@@ -2254,7 +2260,11 @@ footer {
   position: relative;
   background: #f5a623;
   width: 100%;
+  min-height: 118px;
   color: #000000; }
+  @media screen and (min-width: 480px) {
+    .entry-header {
+      min-height: 160px; } }
   .entry-header .donate-btn {
     background-color: #F91E72;
     position: absolute;
