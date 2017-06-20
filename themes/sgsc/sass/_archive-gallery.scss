@@ -1,80 +1,139 @@
-/*--------------------------------------------------------------
+    /*--------------------------------------------------------------
 # Archive-Gallery
 --------------------------------------------------------------*/
-
-.post-type-archive-gallery .content-area {
-  display: flex;
-  justify-content: center;
-  .site-main {
-    width: $d_width;
-    display: flex;
-    flex-flow: column nowrap;
-    .featured-gallery-section {
+    
+    .post-type-archive-gallery .content-area {
       display: flex;
-      flex-flow: column;
       justify-content: center;
-      align-items: center;
-      .page-header {
-        @include page-header;
-      }
-    }
-    .lastest-gallery-section {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
-      .page-header {
-        @include page-header;
-      }
-      .gallery-album {
+      .site-main {
+        width: $d_width;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: center;
-        .has-post-thumbnail {
-          width: 463px;
-          height: 321px;
-          margin: 0;
-          margin-top: 32px;
-          .entry-header {
-            width: 100%;
-            height: 100%;
+        flex-flow: column nowrap;
+        .featured-gallery-section {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 32px;
+          .page-header {
+            @include page-header;
+          }
+          .gallery-album {
             display: flex;
-            position: relative;
-            overflow: hidden;
-            justify-content: center;
+            flex-flow: row wrap;
+            justify-content: space-between;
             align-items: center;
-            .image-position {
-              height: 100%;
-              img {
-                min-height: 100%;
-                max-height: 100%;
-                width: auto;
-                min-width: 100%;
-                left: 50%;
-                top: 70%;
-                transform: translate(-50%, -70%);
-                max-width: none;
-                position: absolute;
+            width: 100%;
+            .gallery {
+              width: 100%;
+              height: 320px;
+              margin: 0;
+              margin-top: 32px;
+              @include border;
+              .entry-header {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                position: relative;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+                .image-position {
+                  height: 100%;
+                  img {
+                    min-height: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    min-width: 100%;
+                    left: 50%;
+                    top: 70%;
+                    transform: translate(-50%, -70%);
+                    max-width: none;
+                    position: absolute;
+                  }
+                }
+                .entry-title {
+                  background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+                  z-index: 1;
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-decoration: none;
+                  color: $black;
+                  &:hover {
+                    color: $orange;
+                  }
+                  h2 {
+                    font-size: $font_m-h1;
+                  }
+                }
               }
             }
-            .entry-title {
-              background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
-              z-index: 1;
-              height: 100%;
+          }
+        }
+        .lastest-gallery-section {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          .page-header {
+            @include page-header;
+          }
+          .gallery-album {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            .gallery {
               width: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              text-decoration: none;
-              color: $black;
-              &:hover {
-                color: $orange;
+              height: 321px;
+              margin: 0;
+              margin-top: 32px;
+              @include border;
+              @media screen and (min-width: $mobile_width) {
+                width: 463px;
+              }
+              .entry-header {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                position: relative;
+                overflow: hidden;
+                justify-content: center;
+                align-items: center;
+                .image-position {
+                  height: 100%;
+                  img {
+                    min-height: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    min-width: 100%;
+                    left: 50%;
+                    top: 70%;
+                    transform: translate(-50%, -70%);
+                    max-width: none;
+                    position: absolute;
+                  }
+                }
+                .entry-title {
+                  background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+                  z-index: 1;
+                  height: 100%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-decoration: none;
+                  color: $black;
+                  &:hover {
+                    color: $orange;
+                  }
+                }
               }
             }
           }
         }
       }
     }
-  }
-}

@@ -22,40 +22,58 @@ get_header(); ?>
 									</a>
 						</div>
 					</header><!-- .page-header -->
+				<?php endif; ?>
 
 					<div class="gallery-album">
-					<?php $args = array( 
-          'taxonomy' => 'featured_gallery', 
-          'order' => 'ASC', 
-          'posts_per_page' => 5 
-        );
-          $featured_gallery = get_posts( $args ); ?>
-          <?php foreach ( $featured_gallery as $galleries ) : setup_postdata( $galleries ); ?>
-                    <?php the_post_thumbnail(); ?>
-                          <h3><?php the_title(); ?></h3>
-              <?php endforeach; wp_reset_postdata(); ?>
+					<?php 
+					
+				// 	$args = get_terms( 
+				// 		array(
+        //   'taxonomy' => 'featured-gallery', 
+				// 	'orderby' => 'date',
+        //   'order' => 'ASC', 
+				// 	'hide_empty' => 0,
+				// 	'posts_per_page' => 3
+        // ));
 
-					<h1>break me up</h1>
-						<?php while ( have_posts() ) : the_post(); ?>
-							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-								<header class="entry-header">
-									<?php if ( has_post_thumbnail() ) : ?>
-										<a href="<?php echo sprintf(esc_url( get_post_permalink() ) ) ?>">
-											<?php the_post_thumbnail( 'large' ); ?>
-										</a>	
-									<?php endif; ?>
-									<div class="entry-title">
-										<p><?php the_title(); ?></p>
-									</div>
-								</header><!-- .entry-header -->
-							</article><!-- #post-## -->
-						<?php endwhile; ?>
+				// global $post;
+
+				$args = array(
+					'posts_per_page' 	=> 3,
+					'post_type' 			=> 'gallery',
+					'tax_query'       => array(
+						array(
+							'taxonomy' => 'featured-gallery',
+							'field'		 => 'slug',
+							'terms'    => 'featured'
+						)
+					)
+				);
+
+				$posts_array = get_posts( $args );
+
+
+				if ( !empty($posts_array) && !is_wp_error($posts_array)) :?>
+					
+          <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					
+						<header class="entry-header">
+							<div class="image-position">
+								<?php the_post_thumbnail('full'); ?>
+							</div>
+								<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
+									<h2><?php the_title(); ?></h2>
+								</a>
+						</header>
+					</article><!-- #post-## -->
+						
+					<?php endforeach; wp_reset_postdata(); ?>
 					</div>
-					<?php the_posts_navigation(); ?>
 				<?php else : ?>
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 				<?php endif; ?>
-					<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'this-is-a-test-2-gallery' )) ) ?>">asdfasdfasdfasdfsdafwf</a>
+					
 			</section>
 
 
@@ -99,7 +117,12 @@ get_header(); ?>
 					<?php endwhile; ?>
 					</div>
 
-					<?php the_posts_navigation(); ?>
+					<?php the_posts_navigation(
+						array (
+            'next_text'=> __( 'next chapter:' ),
+            'prev_text'=> __( 'prev chapter:' )
+						)
+					); ?>
 
 				<?php else : ?>
 
