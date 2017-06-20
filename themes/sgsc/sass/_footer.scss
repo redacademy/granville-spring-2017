@@ -15,9 +15,14 @@ footer {
     width: 125px;
     font-family: $font__body;
     font-size: 12px;
-        & p:hover{
+        & a:hover{
         color: $orange;
     }
+}
+
+.textwidget a {
+    color: black;
+    text-decoration: none;
 }
 
 .textwidget :last-child {

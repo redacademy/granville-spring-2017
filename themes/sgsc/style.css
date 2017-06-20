@@ -2029,8 +2029,12 @@ footer {
   width: 125px;
   font-family: lato, novecentosanswide, sans-serif;
   font-size: 12px; }
-  .textwidget p:hover {
+  .textwidget a:hover {
     color: #f5a623; }
+
+.textwidget a {
+  color: black;
+  text-decoration: none; }
 
 .textwidget :last-child {
   margin-bottom: 0; }
