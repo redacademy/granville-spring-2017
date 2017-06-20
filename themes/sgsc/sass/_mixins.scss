@@ -18,6 +18,7 @@
     .m-button {
       text-decoration: none;
       color: $black;
+      border: $p_border transparent;
       display: none;
       @include hover-state {
         color: $white;
