@@ -12,12 +12,19 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			
 
-				<h1 class="entry-header">Join Us</h1>
-
-		
-			</header> <!--.page-header -->
+				
+					<header class="entry-header">
+								<h1 class="entry-header">Join Us</h1>
+								<div class="donate-btn">
+								<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+								<i class="fa fa-heart-o" aria-hidden="true">
+									<p>Donate</p>
+								</i>
+								</a>
+							</div>
+					</header><!-- .entry-header -->
 
 			<?php /* Start the Loop */ ?>
 			<div class="join-us-section">

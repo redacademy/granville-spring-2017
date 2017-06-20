@@ -2254,7 +2254,11 @@ footer {
   position: relative;
   background: #f5a623;
   width: 100%;
+  min-height: 118px;
   color: #000000; }
+  @media screen and (min-width: 480px) {
+    .entry-header {
+      min-height: 160px; } }
   .entry-header .donate-btn {
     background-color: #F91E72;
     position: absolute;
@@ -2344,3 +2348,13 @@ footer {
 
 .page-template-join-us .rectangle p {
   display: none; }
+
+.volunteer-post {
+  margin: 20px 25px; }
+
+.volunteer-title {
+  font-size: 16px;
+  font-weight: 300; }
+
+.volunteer-content {
+  font-size: 12px; }
