@@ -37,6 +37,7 @@
           .front-learn {
             position: absolute;
             bottom: 0;
+            left: 0;
             height: 138px;
             width: 100%;
             display: flex;
@@ -202,6 +203,7 @@
               align-items: center;
               flex-flow: column nowrap;
               bottom: 0;
+              left: 0;
               height: 138px;
               width: 100%;
               background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));

@@ -1080,6 +1080,7 @@ object {
       .home .content-area .site-main .learn-about-story .front-learn {
         position: absolute;
         bottom: 0;
+        left: 0;
         height: 138px;
         width: 100%;
         display: -ms-flexbox;
@@ -1334,6 +1335,7 @@ object {
           -ms-flex-flow: column nowrap;
               flex-flow: column nowrap;
           bottom: 0;
+          left: 0;
           height: 138px;
           width: 100%;
           background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)); }
