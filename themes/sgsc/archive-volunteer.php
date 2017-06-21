@@ -18,7 +18,7 @@ get_header(); ?>
 					<header class="entry-header">
 								<h1 class="entry-header">Join Us</h1>
 								<div class="donate-btn">
-								<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+								<a href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
 								<i class="fa fa-heart-o" aria-hidden="true">
 									<p>Donate</p>
 								</i>
