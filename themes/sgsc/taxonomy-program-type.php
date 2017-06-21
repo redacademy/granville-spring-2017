@@ -6,29 +6,40 @@
  */
 
  get_header(); ?>
- 	<div id="primary" class="content-area">
+ 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main" role="main">
 		
 		<?php if ( have_posts() ) : ?>
 
-		<header class="page-header">
-			<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
-		</header>
-		
-		<u>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<li>
-					<div>
-						<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'medium' ); ?>
-						<?php endif; ?>
+			<section class="header">
+				<div class="program-hero">
+					<div class="donate-btn">
+						<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+						<i class="fa fa-heart-o" aria-hidden="true"></i>
+						</a>
 					</div>
-					<?php the_title( '<h3>', '</h3>' ); ?>
-					<?php echo CFS()->get( 'information' ); ?>
-					<?php the_content( '<p>', '</p>' ); ?>
-				</li>
-				<?php endwhile; ?>
-			</ul>	
+				</div>
+				<div class="entry-header">
+					<?php the_archive_title ( '<h1 class="page-title">', '</h1>' ); ?>
+				</div>
+			</section>
+		
+			<ul class="program-grid">
+				<?php while ( have_posts() ) : the_post(); ?>
+					<li>
+						<div class="program-img">
+							<?php if ( has_post_thumbnail() ) : ?>
+							<?php the_post_thumbnail( 'medium' ); ?>
+							<?php endif; ?>
+						</div>
+						<div class="program-info">
+							<?php the_title( '<h3>', '</h3>' ); ?>
+							<?php echo CFS()->get( 'information' ); ?>
+							<?php the_content( '<p>', '</p>' ); ?>
+						</div>
+					</li>
+					<?php endwhile; ?>
+				</ul>	
 
 		<?php the_posts_navigation(); ?>
 

@@ -139,6 +139,31 @@
   margin-top: 1rem;
 }
 
+.tax-program-type {
+  .program-hero {
+    position: relative;
+  }
+
+  .donate-btn {
+    bottom: -7.4rem;
+  }
+
+  .program-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  
+  .program-img {
+    text-align: center;
+  }
+
+  .program-info {
+    padding: 1.5rem;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .page-template-page-programs .donate-btn {
     height: 4.5rem;

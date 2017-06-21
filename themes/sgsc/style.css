@@ -2323,6 +2323,24 @@ footer {
 .programs {
   margin-top: 1rem; }
 
+.tax-program-type .program-hero {
+  position: relative; }
+
+.tax-program-type .donate-btn {
+  bottom: -7.4rem; }
+
+.tax-program-type .program-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem; }
+
+.tax-program-type .program-img {
+  text-align: center; }
+
+.tax-program-type .program-info {
+  padding: 1.5rem; }
+
 @media screen and (min-width: 480px) {
   .page-template-page-programs .donate-btn {
     height: 4.5rem;

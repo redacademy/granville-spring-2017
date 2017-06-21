@@ -22,7 +22,7 @@ function red_starter_body_classes( $classes ) {
 add_filter( 'body_class', 'red_starter_body_classes' );
 
 function sgsc_programs_hero () {
-	if ( ! is_page_template( 'page-programs.php' ) || is_tax( 'program-type' ) ) {
+	if ( ! is_page_template( 'page-programs.php' ) && is_tax( 'program-type' ) ) {
 		return;
 	}
 	
