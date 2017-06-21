@@ -64,6 +64,9 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 				<?php endwhile; // End of the loop. ?>
 			</article>
+			<div id="load-event-calendar">
+			</div>
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

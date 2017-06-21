@@ -19,6 +19,7 @@
       $mobileMenu.toggleClass('menu-visible');
       $overlay.toggleClass('overlay-open');
       $backButton.css('display', 'none');
-    })
+    });
   });
+
 })(jQuery);

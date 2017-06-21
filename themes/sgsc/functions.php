@@ -120,6 +120,9 @@ function red_starter_scripts() {
 	// Toggle-able search form
 	wp_enqueue_script( 'sgsc_serach_form', get_template_directory_uri() . '/build/js/search-form.min.js', array('jquery'), '20170614', true );
 
+	//events plugin on page
+	wp_enqueue_script( 'sgsc_events_embed', get_template_directory_uri() . '/build/js/events.min.js', array('jquery'), '20170621', true );
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
