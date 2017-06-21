@@ -111,7 +111,7 @@ function home_background() {
 	$background = CFS()->get( 'background_image' ); 
 	$custom_css = "
 		.learn-about-story{
-			background: linear-gradient(rgba(0,0,0, .4),rgba(0,0,0, .4)), url({$background}), no-repeat;
+			background: url({$background}), no-repeat;
 		background-size: cover, cover;
     background-position: center center;
 		}";
