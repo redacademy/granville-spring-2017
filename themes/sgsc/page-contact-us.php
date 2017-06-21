@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages.
  *
- * @package SGSC_Theme
+ * @package SCSG_Theme
  */
 
 get_header(); ?>
