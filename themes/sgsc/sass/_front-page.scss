@@ -6,9 +6,12 @@
       display: flex;
       justify-content: center;
       .site-main {
-        width: $d_width;
+        width: 100%;
         display: flex;
         flex-flow: column nowrap;
+        @media screen and (min-width: $mobile_width) {
+          width: $d_width;
+        }
         article {
           margin: 0;
         }

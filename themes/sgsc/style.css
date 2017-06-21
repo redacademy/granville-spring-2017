@@ -1045,11 +1045,14 @@ object {
   -ms-flex-pack: center;
       justify-content: center; }
   .home .content-area .site-main {
-    width: 1024px;
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
+    @media screen and (min-width: 480px) {
+      .home .content-area .site-main {
+        width: 1024px; } }
     .home .content-area .site-main article {
       margin: 0; }
     .home .content-area .site-main .learn-about-story {
@@ -2429,3 +2432,64 @@ footer {
 
 .volunteer-content {
   font-size: 12px; }
+
+/*--------------------------------------------------------------
+# Contact-us-Page
+--------------------------------------------------------------*/
+.page-id-51 .content-area {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .page-id-51 .content-area .site-main {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
+    .page-id-51 .content-area .site-main article {
+      margin: 0; }
+      .page-id-51 .content-area .site-main article header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        position: relative;
+        background: #f5a623;
+        width: 100%;
+        min-height: 118px;
+        color: #000000; }
+        @media screen and (min-width: 480px) {
+          .page-id-51 .content-area .site-main article header {
+            min-height: 160px; } }
+        .page-id-51 .content-area .site-main article header .donate-btn {
+          background-color: #F91E72;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 3;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center;
+          height: 2.3rem;
+          width: 2.3rem; }
+          .page-id-51 .content-area .site-main article header .donate-btn a {
+            text-decoration: none;
+            color: #000000; }
+            .page-id-51 .content-area .site-main article header .donate-btn a i {
+              padding: .4rem;
+              color: #000000; }
+              .page-id-51 .content-area .site-main article header .donate-btn a i:hover {
+                color: #f5a623; }
+            .page-id-51 .content-area .site-main article header .donate-btn a p {
+              display: none; }
+        .page-id-51 .content-area .site-main article header .entry-meta {
+          display: none; }
+    @media screen and (min-width: 480px) {
+      .page-id-51 .content-area .site-main {
+        width: 1024px; } }
