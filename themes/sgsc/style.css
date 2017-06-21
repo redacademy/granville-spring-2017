@@ -1568,13 +1568,15 @@ object {
             justify-content: center;
         -ms-flex-align: center;
             align-items: center;
-        height: 2.3rem;
-        width: 2.3rem; }
+        height: 5rem;
+        width: 5rem; }
         .blog .content-area .site-main .site-header .donate-btn a {
           text-decoration: none;
-          color: #000000; }
+          color: #000000;
+          font-size: 4rem; }
           .blog .content-area .site-main .site-header .donate-btn a i {
-            padding: .4rem;
+            font-weight: lighter;
+            padding: .5rem;
             color: #000000; }
             .blog .content-area .site-main .site-header .donate-btn a i:hover {
               color: #f5a623; }
@@ -1594,13 +1596,15 @@ object {
             justify-content: center;
         -ms-flex-align: center;
             align-items: center;
-        height: 2.3rem;
-        width: 2.3rem; }
+        height: 5rem;
+        width: 5rem; }
         .blog .content-area .site-main .site-header .donate-btn a {
           text-decoration: none;
-          color: #000000; }
+          color: #000000;
+          font-size: 4rem; }
           .blog .content-area .site-main .site-header .donate-btn a i {
-            padding: .4rem;
+            font-weight: lighter;
+            padding: .5rem;
             color: #000000; }
             .blog .content-area .site-main .site-header .donate-btn a i:hover {
               color: #f5a623; }
@@ -1720,13 +1724,15 @@ object {
               justify-content: center;
           -ms-flex-align: center;
               align-items: center;
-          height: 2.3rem;
-          width: 2.3rem; }
+          height: 5rem;
+          width: 5rem; }
           .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a {
             text-decoration: none;
-            color: #000000; }
+            color: #000000;
+            font-size: 4rem; }
             .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a i {
-              padding: .4rem;
+              font-weight: lighter;
+              padding: .5rem;
               color: #000000; }
               .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a i:hover {
                 color: #f5a623; }
@@ -1828,13 +1834,15 @@ object {
               justify-content: center;
           -ms-flex-align: center;
               align-items: center;
-          height: 2.3rem;
-          width: 2.3rem; }
+          height: 5rem;
+          width: 5rem; }
           .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a {
             text-decoration: none;
-            color: #000000; }
+            color: #000000;
+            font-size: 4rem; }
             .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a i {
-              padding: .4rem;
+              font-weight: lighter;
+              padding: .5rem;
               color: #000000; }
               .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a i:hover {
                 color: #f5a623; }
@@ -1947,13 +1955,15 @@ object {
               justify-content: center;
           -ms-flex-align: center;
               align-items: center;
-          height: 2.3rem;
-          width: 2.3rem; }
+          height: 5rem;
+          width: 5rem; }
           .single-gallery .content-area .site-main article .entry-header .donate-btn a {
             text-decoration: none;
-            color: #000000; }
+            color: #000000;
+            font-size: 4rem; }
             .single-gallery .content-area .site-main article .entry-header .donate-btn a i {
-              padding: .4rem;
+              font-weight: lighter;
+              padding: .5rem;
               color: #000000; }
               .single-gallery .content-area .site-main article .entry-header .donate-btn a i:hover {
                 color: #f5a623; }
@@ -1975,13 +1985,15 @@ object {
               justify-content: center;
           -ms-flex-align: center;
               align-items: center;
-          height: 2.3rem;
-          width: 2.3rem; }
+          height: 5rem;
+          width: 5rem; }
           .single-gallery .content-area .site-main article .entry-header .donate-btn a {
             text-decoration: none;
-            color: #000000; }
+            color: #000000;
+            font-size: 4rem; }
             .single-gallery .content-area .site-main article .entry-header .donate-btn a i {
-              padding: .4rem;
+              font-weight: lighter;
+              padding: .5rem;
               color: #000000; }
               .single-gallery .content-area .site-main article .entry-header .donate-btn a i:hover {
                 color: #f5a623; }
@@ -2382,13 +2394,15 @@ footer {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    height: 2.3rem;
-    width: 2.3rem; }
+    height: 5rem;
+    width: 5rem; }
     .entry-header .donate-btn a {
       text-decoration: none;
-      color: #000000; }
+      color: #000000;
+      font-size: 4rem; }
       .entry-header .donate-btn a i {
-        padding: .4rem;
+        font-weight: lighter;
+        padding: .5rem;
         color: #000000; }
         .entry-header .donate-btn a i:hover {
           color: #f5a623; }
@@ -2574,13 +2588,15 @@ footer {
               justify-content: center;
           -ms-flex-align: center;
               align-items: center;
-          height: 2.3rem;
-          width: 2.3rem; }
+          height: 5rem;
+          width: 5rem; }
           .page-id-51 .content-area .site-main article header .donate-btn a {
             text-decoration: none;
-            color: #000000; }
+            color: #000000;
+            font-size: 4rem; }
             .page-id-51 .content-area .site-main article header .donate-btn a i {
-              padding: .4rem;
+              font-weight: lighter;
+              padding: .5rem;
               color: #000000; }
               .page-id-51 .content-area .site-main article header .donate-btn a i:hover {
                 color: #f5a623; }
