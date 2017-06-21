@@ -14,7 +14,7 @@
 			<section class="header">
 				<div class="program-hero">
 					<div class="donate-btn">
-						<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+						<a href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
 						<i class="fa fa-heart-o" aria-hidden="true"></i>
 						</a>
 					</div>

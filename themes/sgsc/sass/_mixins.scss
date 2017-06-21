@@ -48,7 +48,7 @@
   // Donate-btn 
   // Example
   // 	<div class="donate-btn">
-  // 	<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+  // 	<a href="<?php echo esc_url( get_permalink((get_page_by_path( 'donate' )) ) ?>">
   // 		<i class="fa fa-heart-o" aria-hidden="true">
   // 			<p>Donate</p>
   // 		</i>
@@ -66,11 +66,20 @@
       align-items: center;
       height: 2.3rem;
       width: 2.3rem;
+      @media screen and (min-width: $mobile_width) {
+        height: 5rem;
+        width: 5rem;
+      }
       a {
         text-decoration: none;
         color: $black;
+        font-size: 1rem;
+        @media screen and (min-width: $mobile_width) {
+          font-size: 4rem;
+        }
         i {
-          padding: .4rem;
+          font-weight: lighter;
+          padding: .5rem;
           color: $black;
           &:hover {
             color: $orange;

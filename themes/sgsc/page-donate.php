@@ -17,7 +17,7 @@ get_header(); ?>
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				 	<div class="donate-btn">
-  				 	<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+  				 	<a href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
   				 		<i class="fa fa-heart-o" aria-hidden="true">
   				 			<p>Donate</p>
   				 		</i>
@@ -29,25 +29,25 @@ get_header(); ?>
 				</header>
 
 				<div class="entry-content">
-					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'large' ); ?>
-					<?php endif; ?>
 
 					<?php the_content(); ?>
+					<div class="image-position">
+						<div class="image">			
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail( 'large' ); ?>
+							<?php endif; ?>
+						</div>
+						<div class="margin"></div>
+					</div>
 					<?php
 						wp_link_pages( array(
 							'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
 							'after'  => '</div>',
 						) );
 					?>
-				</div><!-- .entry-content -->
-
-				<footer class="entry-footer">
-					<?php red_starter_entry_footer(); ?>
-				</footer><!-- .entry-footer -->
-			</article><!-- #post-## -->
-
-		<?php endwhile; // End of the loop. ?>
+				</div>
+			</article>
+		<?php endwhile; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -20,7 +20,7 @@ get_header(); ?>
 
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				<div class="donate-btn">
-					<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+					<a href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
 						<i class="fa fa-heart-o" aria-hidden="true">
 							<p>Donate</p>
 						</i>
@@ -43,7 +43,7 @@ get_header(); ?>
 
 			<footer class="entry-footer">
 				<?php red_starter_entry_footer(); ?>
-				<a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'gallery' )) ) ?>"><p>Return</p></a>
+				<a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'gallery' )) ) ?>"><p>Return</p></a>
 			</footer><!-- .entry-footer -->
 		</article><!-- #post-## -->
 

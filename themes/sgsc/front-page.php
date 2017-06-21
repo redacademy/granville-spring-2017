@@ -19,10 +19,10 @@ get_header(); ?>
           <section id="post-<?php the_ID(); ?>"class="learn-about-story">
             <div class="front-learn">
               <h1>Learn About Our Mission and Our Story</h1>
-              <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
+              <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'about' )) ) ?>"><p>More</p></a>
             </div>
             <div class="donate-btn">
-              <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+              <a href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
                 <i class="fa fa-heart-o" aria-hidden="true">
                   <p>Donate</p>
                 </i>
@@ -34,10 +34,10 @@ get_header(); ?>
       <section class="program-event-post">
 
         <div class="front-program">
-          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'programs' )) ) ?>">
+          <a href="<?php echo esc_url( get_permalink(get_page_by_path( 'programs' )) ) ?>">
             <h1>Discover Our Programs</h1></a>
           <p>We have a multitude of programs to keep you healthy, active and connected.</p>
-          <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
+          <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'programs' )) ) ?>"><p>More</p></a>
         </div>
 
         <div class="intro-event-blog">
@@ -47,7 +47,7 @@ get_header(); ?>
           </div>
 
           <div class="front-blog">
-            <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'blog' )) ) ?>">
+            <a href="<?php echo esc_url( get_permalink(get_page_by_path( 'blog' )) ) ?>">
               <h1>Lastest Blog Posts</h1></a>
           </div>
         </div>
@@ -96,7 +96,7 @@ get_header(); ?>
             <h1>Get Involved</h1>
             <p>We are committed to maintain a welcoming, friendly, and open community space for low income adults 55+ and the community members who support them.</p>
             <div class="front-involved">
-              <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
+              <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
                 <p>Donate</p></a>
               <a class="m-button"href="<?php echo esc_url( get_permalink(get_page_by_title( 'advertise' )) ) ?>">
                 <p>Advertise</p></a>
@@ -106,7 +106,7 @@ get_header(); ?>
           </div>
         </div>
         <div class="front-join">
-          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'join us' )) ) ?>">
+          <a href="<?php echo esc_url( get_permalink(get_page_by_path( 'join-us' )) ) ?>">
             <h1>Join Us or Volunteer</h1>
             <p>Join the South Granville Seniors Centre and be a part of our fantastic community! </p>
           </a>

@@ -37,6 +37,7 @@
           .front-learn {
             position: absolute;
             bottom: 0;
+            left: 0;
             height: 138px;
             width: 100%;
             display: flex;
@@ -202,6 +203,7 @@
               align-items: center;
               flex-flow: column nowrap;
               bottom: 0;
+              left: 0;
               height: 138px;
               width: 100%;
               background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
@@ -239,7 +241,7 @@
               justify-content: space-around;
               align-items: center;
               width: 100%;
-              border: $p_border 4px $white;
+              border: $border $pink;
               @include hover-state {
                 border: $p_border 4px;
               }
