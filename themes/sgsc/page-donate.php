@@ -40,14 +40,9 @@ get_header(); ?>
 							'after'  => '</div>',
 						) );
 					?>
-				</div><!-- .entry-content -->
-
-				<footer class="entry-footer">
-					<?php red_starter_entry_footer(); ?>
-				</footer><!-- .entry-footer -->
-			</article><!-- #post-## -->
-
-		<?php endwhile; // End of the loop. ?>
+				</div>
+			</article>
+		<?php endwhile; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
