@@ -22,7 +22,7 @@ function red_starter_body_classes( $classes ) {
 add_filter( 'body_class', 'red_starter_body_classes' );
 
 function sgsc_programs_hero () {
-	if ( ! is_page_template( 'page-programs.php' ) || is_tax( 'program-type' ) ) {
+	if ( ! is_page_template( 'page-programs.php' ) && is_tax( 'program-type' ) ) {
 		return;
 	}
 	
@@ -118,3 +118,14 @@ function home_background() {
 	wp_add_inline_style( 'custom-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'home_background' );
+
+// change program taxonomy titles
+
+function sgsc_change_archive_titles( $title ) {
+		if( is_tax( 'program-type' )) {
+			$title = single_term_title('', false);
+		}
+		return $title;
+};
+
+add_filter( 'get_the_archive_title', 'sgsc_change_archive_titles');
