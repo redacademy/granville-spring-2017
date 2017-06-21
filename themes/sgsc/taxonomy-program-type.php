@@ -33,7 +33,7 @@
 							<?php endif; ?>
 						</div>
 						<div class="program-info">
-							<?php the_title( '<h3>', '</h3>' ); ?>
+							<?php the_title( '<h5>', '</h5>' ); ?>
 							<?php echo CFS()->get( 'information' ); ?>
 							<?php the_content( '<p>', '</p>' ); ?>
 						</div>
@@ -48,11 +48,13 @@
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
-		<h2>Calendar of Programs</h2>
-		<p>	Join us! We have a multitude of programs to keep you healthy, active and connected. We offer hot lunches, as well as exercise, self-care, educational, and social programs that are affordable and open to participants of all abilities and skill levels.</p>
-		<p>Check out the program descriptions, call us at 604-732-0812 for more information, or drop-in to try out a class! Have an idea for a program? Email Alex at akorotchenko@southgranvilleseniors.ca.</p>
-		<p>Download the Calendar Here</p>
+		
+		<section class="calendar-program">
+			<h2>Calendar of Programs</h2>
+			<p>	Join us! We have a multitude of programs to keep you healthy, active and connected. We offer hot lunches, as well as exercise, self-care, educational, and social programs that are affordable and open to participants of all abilities and skill levels.</p>
+			<p>Check out the program descriptions, call us at 604-732-0812 for more information, or drop-in to try out a class! Have an idea for a program? Email Alex at akorotchenko@southgranvilleseniors.ca.</p>
+			<p>Download the Calendar Here</p>
+		</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
