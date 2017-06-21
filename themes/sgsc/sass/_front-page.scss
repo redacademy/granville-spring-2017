@@ -239,7 +239,7 @@
               justify-content: space-around;
               align-items: center;
               width: 100%;
-              border: $p_border 4px $white;
+              border: $border $pink;
               @include hover-state {
                 border: $p_border 4px;
               }
