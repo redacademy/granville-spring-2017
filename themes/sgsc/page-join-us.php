@@ -40,10 +40,10 @@ get_the_title();
 
 
 					<div class="join-us-section">
-						<div class="new-member rectangle">
+						<a class="new-member rectangle" href="/assets/documents/membership-application-form.pdf" target="_blank">
 							<h2><?php echo CFS()->get( 'new_member' );	?></h2>
 							<p><?php echo CFS()->get( 'new_member_text' );	?></p>
-						</div>
+						</a>
 						<div class="membership-renewal rectangle">
 							<h2><?php echo CFS()->get( 'membership_renewal' );	?></h2>
 							<p><?php echo CFS()->get( 'membership_renewal_text' );	?></p>

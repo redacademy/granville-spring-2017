@@ -2461,14 +2461,8 @@ footer {
   display: none; }
 
 @media all and (min-width: 600px) {
-  #post-18 {
-    margin: 0; }
-  .entry-title {
-    margin: auto; }
   .entry-header {
     width: 1024px; }
-  .entry-content {
-    margin: 0; }
   .join-us-section {
     display: -ms-flexbox;
     display: flex;
