@@ -2196,6 +2196,11 @@ footer {
   background-position: 95% -3%;
   background-size: 150%;
   background-repeat: no-repeat; }
+  @media screen and (min-width: 480px) {
+    .program-hero {
+      height: 22.25rem;
+      background-position: 51% 6%;
+      background-size: 100%; } }
 
 .page-template-page-programs .header {
   position: relative; }
@@ -2218,6 +2223,11 @@ footer {
   font-size: 1.4rem;
   width: 9rem;
   text-align: center; }
+  @media screen and (min-width: 480px) {
+    .page-template-page-programs .entry-title {
+      font-weight: 400;
+      font-size: 40px;
+      width: 100%; } }
 
 .page-template-page-programs h5 {
   font-family: montserrat, merriweather, sans-serif;
@@ -2281,6 +2291,9 @@ footer {
     color: black;
     text-decoration: none;
     font-size: 1.4rem; }
+    @media screen and (min-width: 480px) {
+      .program-list a {
+        font-size: 2.5rem; } }
 
 .donate-btn {
   background-color: #F91E72;
@@ -2309,6 +2322,11 @@ footer {
 
 .programs {
   margin-top: 1rem; }
+
+@media screen and (min-width: 480px) {
+  .page-template-page-programs .donate-btn {
+    height: 4.5rem;
+    width: 4.5rem; } }
 
 #post-18 {
   margin: 0; }
@@ -2486,7 +2504,21 @@ footer {
 .volunteer-content {
   font-size: 12px; }
 
-<<<<<<< HEAD
+@media all and (min-width: 600px) {
+  .volunteer-post {
+    margin: 20px 25px; }
+  .volunteer-title {
+    font-size: 16px;
+    font-weight: 300; }
+  .volunteer-header {
+    width: 1024px;
+    margin: auto;
+    column-count: 2; }
+  .volunteer-content p {
+    column-count: 2;
+    column-width: 512px;
+    font-size: 18px; } }
+
 /*--------------------------------------------------------------
 # Contact-us-Page
 --------------------------------------------------------------*/
@@ -2547,19 +2579,3 @@ footer {
     @media screen and (min-width: 480px) {
       .page-id-51 .content-area .site-main {
         width: 1024px; } }
-=======
-@media all and (min-width: 600px) {
-  .volunteer-post {
-    margin: 20px 25px; }
-  .volunteer-title {
-    font-size: 16px;
-    font-weight: 300; }
-  .volunteer-header {
-    width: 1024px;
-    margin: auto;
-    column-count: 2; }
-  .volunteer-content p {
-    column-count: 2;
-    column-width: 512px;
-    font-size: 18px; } }
->>>>>>> 5f489a1440030778bc62e4adf4ffd145c1a496a9
