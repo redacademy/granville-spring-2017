@@ -71,16 +71,16 @@
         }  
 }
 
-.page-template-join-us {
-    // TODO check for desktop
-.rectangle    p {
-        display:none;
-    }
+
+.rectangle p {
+        display: none;
 }
+
 
 
 @media all and (min-width: $desktop-view) {
 
+ 
 .entry-header {
     width: $d_width;
 }
@@ -136,7 +136,7 @@
     }
 }
 
-.page-template-join-us .rectangle p {
+.rectangle p {
     display: initial;
 }
 

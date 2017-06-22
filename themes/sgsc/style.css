@@ -2525,7 +2525,7 @@ footer {
     -ms-flex-align: center;
         align-items: center; }
 
-.page-template-join-us .rectangle p {
+.rectangle p {
   display: none; }
 
 @media all and (min-width: 600px) {
@@ -2571,7 +2571,7 @@ footer {
     margin: auto;
     margin-top: 11px;
     line-height: 22px; }
-  .page-template-join-us .rectangle p {
+  .rectangle p {
     display: initial; } }
 
 .volunteer-post {
