@@ -13,47 +13,15 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header class="site-header">
+				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					<h1>Blog Posts</h1>
-					<?php if ( 'post' === get_post_type() ) : ?>
-						<div class="entry-meta">
-							<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-						</div><!-- .entry-meta -->
-					<?php endif; ?>
-					<div class="donate-btn">
-  				 	<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
-  				 		<i class="fa fa-heart-o" aria-hidden="true">
-  				 			<p>Donate</p>
-  				 		</i>
-  				 		</a>
-  				 </div>
 				</header>
 			<?php endif; ?>
 
+			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="entry-header">
-					<div class="image-position">
-						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'large' ); ?>
-						<?php endif; ?>
-					</div>
-					<div class="entry-title">
-						<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
-							<?php the_title( sprintf( '<h2>', esc_url( get_permalink() ) ), '</h2>' ); ?>
-
-							<?php if ( 'post' === get_post_type() ) : ?>
-							<div class="entry-meta">
-								<?php red_starter_posted_on(); ?>
-							</div><!-- .entry-meta -->
-						</a>
-					</div>
-					<?php endif; ?>
-				</header><!-- .entry-header -->
-			</article><!-- #post-## -->
-
+				<?php get_template_part( 'template-parts/content' ); ?>
 
 			<?php endwhile; ?>
 

@@ -36,7 +36,7 @@ get_header(); ?>
 				if ( !empty($posts_array) && !is_wp_error($posts_array)) :?>
 					
           <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-					<?php $is_featured =	CFS()->get( 'pojopdsajpf' ) ?>
+					<?php $is_featured =	CFS()->get( 'featured_image' ) ?>
 					<?php if ($is_featured == 1) :?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
