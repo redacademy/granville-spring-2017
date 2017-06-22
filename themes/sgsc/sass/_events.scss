@@ -2,6 +2,17 @@
 	width: initial;
 }
 
-.tribe-mobile .tribe-events-page-title {
-	background-color: $orange;
+.events-archive {
+	.title-events-archive {
+		position: relative;
+	}
+
+	.events-title {
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 7.3rem;
+    background-color: #f5a623;
+	}
 }
