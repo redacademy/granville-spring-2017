@@ -27,10 +27,9 @@ get_header(); ?>
 					<div class="gallery-album">
 					<?php 
 				$args = array(
-					'post_type' 			=> 'gallery',
-					// 'post_per_archive_page' => 3,
-					'offset'					=> 0,
-					'posts_per_page' => 3
+					'post_type' 				=> 'gallery',
+					'posts_per_page'	 	=> 3,
+					'orderby'						=> 'modified'
 				);
 				$posts_array 	= get_posts( $args );
 

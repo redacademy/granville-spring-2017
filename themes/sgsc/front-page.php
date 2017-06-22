@@ -58,30 +58,26 @@ get_header(); ?>
 				<?php $args = array(
 					'posts_per_page' 	=> 1,
 					'post_type' 			=> 'gallery',
-					'tax_query'       => array(
-						array(
-							'taxonomy' => 'featured-gallery',
-							'field'		 => 'slug',
-							'terms'    => 'featured'
-						)
-					)
+          'orderby'						=> 'modified'
 				);
 				$posts_array = get_posts( $args );
 				if ( !empty($posts_array) && !is_wp_error($posts_array)) :?>
 					
           <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <?php $is_featured =	CFS()->get( 'pojopdsajpf' ) ?>
+					  <?php if ($is_featured == 1) :?>
+              <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-            <div class="image-position">
-              <?php the_post_thumbnail('full'); ?>
-            </div>
-            <div class="bottom-banner">
-              <h1><?php the_title(); ?></h1>
-              <a class="m-button" href="<?php echo esc_url( get_permalink()) ?>"><p>More</p></a>
-            </div>
+                <div class="image-position">
+                  <?php the_post_thumbnail('full'); ?>
+                </div>
+                <div class="bottom-banner">
+                  <h1><?php the_title(); ?></h1>
+                  <a class="m-button" href="<?php echo esc_url( get_permalink()) ?>"><p>More</p></a>
+                </div>
 
-					</article>
-						
+					    </article>
+            <?php endif ?>
 					<?php endforeach; wp_reset_postdata(); ?>
 				<?php else : ?>
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
