@@ -2877,3 +2877,20 @@ footer {
     @media screen and (min-width: 480px) {
       .page-id-51 .content-area .site-main {
         width: 1024px; } }
+
+.events-archive .entry-content {
+  width: initial; }
+
+.events-archive .title-events-archive {
+  position: relative; }
+
+.events-archive .events-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw;
+  height: 7.3rem;
+  background-color: #f5a623; }
