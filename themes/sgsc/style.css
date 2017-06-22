@@ -2895,3 +2895,9 @@ footer {
     @media screen and (min-width: 480px) {
       .page-id-51 .content-area .site-main {
         width: 1024px; } }
+
+.events-archive .entry-content {
+  width: initial; }
+
+.tribe-mobile .tribe-events-page-title {
+  background-color: #f5a623; }
