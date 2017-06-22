@@ -13,13 +13,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 } ?>
 
-<!-- Event Image -->
-<?php if (has_post_thumbnail()) {
-	echo tribe_event_featured_image( null, 'large' );
-} else { ?>
-	<img src="<?php bloginfo('template_directory'); ?>/assets/images/desktop-logo.svg" alt="<?php the_title(); ?>" />
-<?php } 
+<section class="event-header">
+	<div class="event-bar"></div>
+	<!-- Event Image -->
+	<?php if (has_post_thumbnail()) {
+		echo tribe_event_featured_image( null, 'large' );
+	} else { ?>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/images/desktop-logo.svg" alt="<?php the_title(); ?>" />
+	<?php } ?>
 
+	<!-- Event Title -->
+
+	<?php do_action( 'tribe_events_before_the_event_title' ) ?>
+	<h2 class="tribe-events-list-event-title">
+		<?php the_title() ?>
+	</h2>
+	<?php do_action( 'tribe_events_after_the_event_title' ) ?>
+</section>
+
+
+<?php 
 // Setup an array of venue details for use later in the template
 $venue_details = tribe_get_venue_details();
 
@@ -30,12 +43,6 @@ $has_venue_address = ( ! empty( $venue_details['address'] ) ) ? ' location' : ''
 $organizer = tribe_get_organizer();
 
 ?>
-<!-- Event Title -->
-<?php do_action( 'tribe_events_before_the_event_title' ) ?>
-<h2 class="tribe-events-list-event-title">
-		<?php the_title() ?>
-</h2>
-<?php do_action( 'tribe_events_after_the_event_title' ) ?>
 
 <!-- Event Meta -->
 <?php do_action( 'tribe_events_before_the_meta' ) ?>

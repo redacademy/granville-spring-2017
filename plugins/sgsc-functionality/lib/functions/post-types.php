@@ -97,7 +97,7 @@ function custom_program() {
 		'label'                 => 'Program',
 		'description'           => 'A recurring program or event',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields', ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
