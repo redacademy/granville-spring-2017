@@ -1941,6 +1941,7 @@ object {
               color: #000000; }
               .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .gallery .entry-header .entry-title:hover {
                 color: #f5a623; }
+<<<<<<< HEAD
 
 /*--------------------------------------------------------------
 # Single-Gallery Page
@@ -2251,11 +2252,228 @@ input.wpcf7-submit {
   font-size: 12px;
   color: #000; }
 =======
+=======
+
+/*--------------------------------------------------------------
+# Single-Gallery Page
+--------------------------------------------------------------*/
+.single-gallery .content-area {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .single-gallery .content-area .site-main {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
+    @media screen and (min-width: 480px) {
+      .single-gallery .content-area .site-main {
+        width: 1024px; } }
+    .single-gallery .content-area .site-main article {
+      margin: 0; }
+      .single-gallery .content-area .site-main article .entry-header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        position: relative;
+        background: #f5a623;
+        width: 100%;
+        min-height: 118px;
+        color: #000000; }
+        @media screen and (min-width: 480px) {
+          .single-gallery .content-area .site-main article .entry-header {
+            min-height: 160px; } }
+        .single-gallery .content-area .site-main article .entry-header .donate-btn {
+          background-color: #F91E72;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 3;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center;
+          height: 2.3rem;
+          width: 2.3rem; }
+          @media screen and (min-width: 480px) {
+            .single-gallery .content-area .site-main article .entry-header .donate-btn {
+              height: 5rem;
+              width: 5rem; } }
+          .single-gallery .content-area .site-main article .entry-header .donate-btn a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 1rem; }
+            @media screen and (min-width: 480px) {
+              .single-gallery .content-area .site-main article .entry-header .donate-btn a {
+                font-size: 4rem; } }
+            .single-gallery .content-area .site-main article .entry-header .donate-btn a i {
+              font-weight: lighter;
+              padding: .5rem;
+              color: #000000; }
+              .single-gallery .content-area .site-main article .entry-header .donate-btn a i:hover {
+                color: #f5a623; }
+            .single-gallery .content-area .site-main article .entry-header .donate-btn a p {
+              display: none; }
+        .single-gallery .content-area .site-main article .entry-header .entry-meta {
+          display: none; }
+        .single-gallery .content-area .site-main article .entry-header img {
+          display: none; }
+        .single-gallery .content-area .site-main article .entry-header .donate-btn {
+          background-color: #F91E72;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 3;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center;
+          height: 2.3rem;
+          width: 2.3rem; }
+          @media screen and (min-width: 480px) {
+            .single-gallery .content-area .site-main article .entry-header .donate-btn {
+              height: 5rem;
+              width: 5rem; } }
+          .single-gallery .content-area .site-main article .entry-header .donate-btn a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 1rem; }
+            @media screen and (min-width: 480px) {
+              .single-gallery .content-area .site-main article .entry-header .donate-btn a {
+                font-size: 4rem; } }
+            .single-gallery .content-area .site-main article .entry-header .donate-btn a i {
+              font-weight: lighter;
+              padding: .5rem;
+              color: #000000; }
+              .single-gallery .content-area .site-main article .entry-header .donate-btn a i:hover {
+                color: #f5a623; }
+            .single-gallery .content-area .site-main article .entry-header .donate-btn a p {
+              display: none; }
+        .single-gallery .content-area .site-main article .entry-header .entry-meta {
+          display: none; }
+      .single-gallery .content-area .site-main article .entry-content {
+        width: 100%; }
+        .single-gallery .content-area .site-main article .entry-content .gallery {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center; }
+          @media screen and (min-width: 480px) {
+            .single-gallery .content-area .site-main article .entry-content .gallery {
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+              -ms-flex-flow: row wrap;
+                  flex-flow: row wrap;
+              margin-bottom: 0; } }
+          .single-gallery .content-area .site-main article .entry-content .gallery figure {
+            display: -ms-flexbox;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            height: 208px;
+            min-width: 100%;
+            max-width: none;
+            margin-top: 10px;
+            position: relative;
+            overflow: hidden; }
+            @media screen and (min-width: 480px) {
+              .single-gallery .content-area .site-main article .entry-content .gallery figure {
+                width: 463px;
+                height: 321px;
+                min-width: initial;
+                margin-bottom: 35px; } }
+            .single-gallery .content-area .site-main article .entry-content .gallery figure .gallery-icon {
+              width: 100%;
+              position: relative; }
+              .single-gallery .content-area .site-main article .entry-content .gallery figure .gallery-icon a {
+                pointer-events: none;
+                cursor: default; }
+                .single-gallery .content-area .site-main article .entry-content .gallery figure .gallery-icon a img {
+                  min-height: 100%;
+                  max-height: 150%;
+                  width: auto;
+                  min-width: 100%;
+                  left: 50%;
+                  top: 70%;
+                  transform: translate(-50%, -70%);
+                  max-width: none;
+                  position: absolute; }
+        .single-gallery .content-area .site-main article .entry-content h1,
+        .single-gallery .content-area .site-main article .entry-content h2,
+        .single-gallery .content-area .site-main article .entry-content h3,
+        .single-gallery .content-area .site-main article .entry-content h4,
+        .single-gallery .content-area .site-main article .entry-content h5,
+        .single-gallery .content-area .site-main article .entry-content h6,
+        .single-gallery .content-area .site-main article .entry-content p,
+        .single-gallery .content-area .site-main article .entry-content form {
+          display: none; }
+    .single-gallery .content-area .site-main .m-button {
+      text-decoration: none;
+      color: #000000;
+      border: 2px #000000 solid transparent;
+      display: none;
+      width: initial; }
+      .single-gallery .content-area .site-main .m-button:hover, .single-gallery .content-area .site-main .m-button:active, .single-gallery .content-area .site-main .m-button:focus {
+        color: #ffffff; }
+      @media screen and (min-width: 480px) {
+        .single-gallery .content-area .site-main .m-button {
+          display: -ms-flexbox;
+          display: flex; } }
+      .single-gallery .content-area .site-main .m-button p {
+        padding: 0.3rem 1.5rem;
+        border: 2px #000000 solid;
+        margin: 0; }
+        .single-gallery .content-area .site-main .m-button p:hover, .single-gallery .content-area .site-main .m-button p:active, .single-gallery .content-area .site-main .m-button p:focus {
+          border: 2px #000000 solid #f5a623;
+          background: #f5a623;
+          z-index: 2;
+          opacity: 1; }
+        @media screen and (min-width: 480px) {
+          .single-gallery .content-area .site-main .m-button p {
+            display: -ms-flexbox;
+            display: flex;
+            padding: 0rem 3rem; } }
+    .single-gallery .content-area .site-main .m-button {
+      display: inline-block; }
+      @media screen and (min-width: 480px) {
+        .single-gallery .content-area .site-main .m-button p {
+          padding: 0rem 1.5rem; } }
+
+#popmake-286 {
+  padding: 0; }
+
+.mc4wp-checkbox {
+  display: none; }
+
+#popmake-286 button {
+  right: initial;
+  top: initial;
+  bottom: 45px; }
+
+.pum-content h1 {
+  text-align: center;
+>>>>>>> program
   font-family: montserrat, merriweather, sans-serif;
   font-size: 22px;
   color: #000000;
   background: #45cdcb; }
+<<<<<<< HEAD
 >>>>>>> feature-gallery
+=======
+>>>>>>> program
 
 footer {
   max-width: 1024px;
@@ -2404,6 +2622,25 @@ footer {
       font-weight: 400;
       font-size: 40px;
       width: 100%; } }
+<<<<<<< HEAD
+
+.page-template-page-programs h5 {
+  font-family: montserrat, merriweather, sans-serif;
+  font-size: 22px; }
+
+.page-template-page-programs p {
+  font-family: lato, novecentosanswide, sans-serif;
+  overflow-wrap: break-word;
+  font-size: 18px; }
+
+.page-template-page-programs .entry-content {
+  padding: 0 1rem; }
+
+.program-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+=======
 
 .page-template-page-programs h5 {
   font-family: montserrat, merriweather, sans-serif;
@@ -2425,6 +2662,64 @@ footer {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media screen and (min-width: 480px) {
+    .program-list {
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; } }
+  .program-list li {
+    background: #f5a623;
+    width: 80%;
+    height: 6rem;
+    margin: 1rem;
+    border: 4px solid #f5a623;
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    @media screen and (min-width: 480px) {
+      .program-list li {
+        width: initial;
+        margin: 2rem 0 2rem 2rem;
+        height: 10rem;
+        -ms-flex: 0 1 46.8%;
+            flex: 0 1 46.8%; } }
+  @media screen and (min-width: 480px) {
+    .program-list li:nth-child(odd) {
+      margin: 2rem 2rem 2rem 0; } }
+  @media screen and (min-width: 480px) {
+    .program-list li:last-child {
+      margin: 2rem 0;
+      -ms-flex: 100%;
+          flex: 100%; } }
+  .program-list li:hover {
+    border: 4px solid black; }
+  .program-list a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem; }
+    @media screen and (min-width: 480px) {
+      .program-list a {
+        font-size: 2.5rem; } }
+
+.donate-btn {
+  background-color: #F91E72;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+>>>>>>> program
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+<<<<<<< HEAD
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
@@ -2522,6 +2817,49 @@ footer {
     height: 4.5rem;
     width: 4.5rem; } }
 
+=======
+  -ms-flex-align: center;
+      align-items: center;
+  height: 2.3rem;
+  width: 2.3rem; }
+  .donate-btn a {
+    text-decoration: none;
+    color: #000000; }
+    .donate-btn a i {
+      padding: .4rem;
+      color: #000000; }
+      .donate-btn a i:hover {
+        color: #f5a623; }
+    .donate-btn a p {
+      display: none; }
+
+.programs {
+  margin-top: 1rem; }
+
+.tax-program-type .program-hero {
+  position: relative; }
+
+.tax-program-type .donate-btn {
+  bottom: -7.4rem; }
+
+.tax-program-type .program-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem; }
+
+.tax-program-type .program-img {
+  text-align: center; }
+
+.tax-program-type .program-info {
+  padding: 1.5rem; }
+
+@media screen and (min-width: 480px) {
+  .page-template-page-programs .donate-btn {
+    height: 4.5rem;
+    width: 4.5rem; } }
+
+>>>>>>> program
 #post-18 {
   margin: 0; }
 
@@ -2998,7 +3336,10 @@ footer {
 .events-archive .entry-content {
   width: initial; }
 
-<<<<<<< HEAD
+.events-archive .event-header {
+  display: -ms-flexbox;
+  display: flex; }
+
 .events-archive .title-events-archive {
   position: relative; }
 
@@ -3011,7 +3352,5 @@ footer {
       align-items: center;
   width: 100vw;
   height: 7.3rem;
-=======
-.tribe-mobile .tribe-events-page-title {
->>>>>>> feature-gallery
+
   background-color: #f5a623; }

@@ -3,6 +3,10 @@
 }
 
 .events-archive {
+	.event-header {
+		display: flex;
+	}
+	
 	.title-events-archive {
 		position: relative;
 	}
