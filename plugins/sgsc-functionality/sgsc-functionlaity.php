@@ -4,7 +4,7 @@
  * @package   South Granville Senior Centre Functionality
  * @author    Eric Liddle <eric.liddle@gmail.com>
  * @license   GPL-2.0+
- * @copyright 2015 Your Name or Company
+ * @copyright 2017 South Granville Senior Center
  *
  * @wordpress-plugin
  * Plugin Name: South Granville Senior Centre Functionality

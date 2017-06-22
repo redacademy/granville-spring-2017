@@ -1,3 +1,3 @@
-# RED Functionality Plugin
+# SGSC Functionality Plugin
 
-A template for a WordPress functionality plugin for RED Academy students.
+A template for a WordPress functionality plugin for South Granvillge Senior Center.

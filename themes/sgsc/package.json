@@ -1,7 +1,7 @@
 {
   "name": "redstarter",
   "version": "1.0.0",
-  "description": "A starter theme for RED students, based on Underscores.",
+  "description": "A theme for SGSC, based on Underscores.",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {

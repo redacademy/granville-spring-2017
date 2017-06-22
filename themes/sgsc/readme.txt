@@ -1,4 +1,4 @@
-=== RED Starter Theme ===
+=== South Granvillge Senior Center Theme ===
 
 Contributors: automattic
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
@@ -9,7 +9,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called RED Starter Theme, or underscores.
+A theme called SGSC Theme, or underscores.
 
 == Description ==
 

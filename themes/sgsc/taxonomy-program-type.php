@@ -2,7 +2,7 @@
 /**
  * The template for displaying product pages.
  *
- * @package RED_Starter_Theme
+ * @package SGSC_Theme
  */
 
  get_header(); ?>

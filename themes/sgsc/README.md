@@ -1,6 +1,6 @@
-# RED Starter
+# SGSC Starter
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A WordPress theme for South Granvillge Senior Center, forked from Underscores.
 
 ## Installation
 

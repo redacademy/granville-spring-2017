@@ -2,7 +2,7 @@
 /**
 * Template Name: Archive Volunteer Template
  *
- * @package RED_Starter_Theme
+ * @package SGSC_Theme
  */
 
 get_header(); ?>

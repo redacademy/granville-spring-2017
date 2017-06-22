@@ -1,22 +1,22 @@
-        /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Contact-us-Page
 --------------------------------------------------------------*/
-        
-        .page-id-51 .content-area {
-          display: flex;
-          justify-content: center;
-          .site-main {
-            display: flex;
-            width: 100%;
-            flex-flow: column nowrap;
-            article {
-              margin: 0;
-              header {
-                @include page-header;
-              }
-            }
-            @media screen and (min-width: $mobile_width) {
-              width: $d_width;
-            }
-          }
-        }
+
+.page-id-51 .content-area {
+  display: flex;
+  justify-content: center;
+  .site-main {
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    article {
+      margin: 0;
+      header {
+        @include page-header;
+      }
+    }
+    @media screen and (min-width: $mobile_width) {
+      width: $d_width;
+    }
+  }
+}
