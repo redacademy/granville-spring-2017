@@ -33,6 +33,7 @@ get_header(); ?>
 
 			<div class="entry-content">
 				<?php the_content(); ?>
+				<?php CFS()->get( 'my_file' ); ?>
 				<?php
 					wp_link_pages( array(
 						'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
