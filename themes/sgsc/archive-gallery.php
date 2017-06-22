@@ -39,8 +39,9 @@ get_header(); ?>
 				// global $post;
 
 				$args = array(
-					'posts_per_page' 	=> 3,
 					'post_type' 			=> 'gallery',
+					'posts_per_page' 	=> 3,
+					'posts_per_archive_page' => 3,
 					'tax_query'       => array(
 						array(
 							'taxonomy' => 'featured-gallery',
