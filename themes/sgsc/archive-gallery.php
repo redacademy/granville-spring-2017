@@ -27,14 +27,17 @@ get_header(); ?>
 					<div class="gallery-album">
 					<?php 
 				$args = array(
-					'post_type' 			=> 'gallery'
+					'post_type' 			=> 'gallery',
+					// 'post_per_archive_page' => 3,
+					'offset'					=> 0,
+					'posts_per_page' => 3
 				);
 				$posts_array 	= get_posts( $args );
 
 				if ( !empty($posts_array) && !is_wp_error($posts_array)) :?>
 					
           <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-				<?php $is_featured =	CFS()->get( 'pojopdsajpf' ) ?>
+					<?php $is_featured =	CFS()->get( 'pojopdsajpf' ) ?>
 					<?php if ($is_featured == 1) :?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
