@@ -26,39 +26,18 @@ get_header(); ?>
 
 					<div class="gallery-album">
 					<?php 
-					
-				// 	$args = get_terms( 
-				// 		array(
-        //   'taxonomy' => 'featured-gallery', 
-				// 	'orderby' => 'date',
-        //   'order' => 'ASC', 
-				// 	'hide_empty' => 0,
-				// 	'posts_per_page' => 3
-        // ));
-
-				// global $post;
-
 				$args = array(
-					'post_type' 			=> 'gallery',
-					'posts_per_page' 	=> 3,
-					'posts_per_archive_page' => 3,
-					'tax_query'       => array(
-						array(
-							'taxonomy' => 'featured-gallery',
-							'field'		 => 'slug',
-							'terms'    => 'featured'
-						)
-					)
+					'post_type' 			=> 'gallery'
 				);
-
-				$posts_array = get_posts( $args );
-
+				$posts_array 	= get_posts( $args );
 
 				if ( !empty($posts_array) && !is_wp_error($posts_array)) :?>
 					
           <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+				<?php $is_featured =	CFS()->get( 'pojopdsajpf' ) ?>
+					<?php if ($is_featured == 1) :?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					
+
 						<header class="entry-header">
 							<div class="image-position">
 								<?php the_post_thumbnail('full'); ?>
@@ -68,7 +47,7 @@ get_header(); ?>
 								</a>
 						</header>
 					</article><!-- #post-## -->
-						
+						<?php endif ?>
 					<?php endforeach; wp_reset_postdata(); ?>
 					</div>
 				<?php else : ?>

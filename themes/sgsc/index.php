@@ -16,6 +16,11 @@ get_header(); ?>
 				<header class="site-header">
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 					<h1>Blog Posts</h1>
+					<?php if ( 'post' === get_post_type() ) : ?>
+						<div class="entry-meta">
+							<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+						</div><!-- .entry-meta -->
+					<?php endif; ?>
 					<div class="donate-btn">
   				 	<a href="<?php echo esc_url( get_permalink(get_page_by_title( 'donate' )) ) ?>">
   				 		<i class="fa fa-heart-o" aria-hidden="true">
@@ -26,7 +31,6 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
