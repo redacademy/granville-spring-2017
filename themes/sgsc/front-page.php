@@ -54,7 +54,6 @@ get_header(); ?>
       </section>
 
 
-      <section class="feature-gallery">
 				<?php $args = array(
 					'posts_per_page' 	=> 1,
 					'post_type' 			=> 'gallery',
@@ -62,9 +61,10 @@ get_header(); ?>
 				);
 				$posts_array = get_posts( $args );
 				if ( !empty($posts_array) && !is_wp_error($posts_array)) :?>
+       <section class="feature-gallery">
 					
           <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-            <?php $is_featured =	CFS()->get( 'pojopdsajpf' ) ?>
+            <?php $is_featured =	CFS()->get( 'featured_image' ) ?>
 					  <?php if ($is_featured == 1) :?>
               <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -81,8 +81,8 @@ get_header(); ?>
 					<?php endforeach; wp_reset_postdata(); ?>
 				<?php else : ?>
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
+         </section>
 				<?php endif; ?>
-      </section>
 
 
       <section class="intro-involved-join">

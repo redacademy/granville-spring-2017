@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function red_starter_body_classes( $classes ) {
+function sgsc_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -19,7 +19,7 @@ function red_starter_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'red_starter_body_classes' );
+add_filter( 'body_class', 'sgsc_body_classes' );
 
 function sgsc_programs_hero () {
 	if ( ! is_page_template( 'page-programs.php' ) && is_tax( 'program-type' ) ) {
@@ -32,7 +32,7 @@ function sgsc_programs_hero () {
 			background-image: url($hero);
 		}";
 
-	wp_add_inline_style( 'red-starter-style', $program_hero );
+	wp_add_inline_style( 'sgsc-style', $program_hero );
 }
 
 add_action ( 'wp_enqueue_scripts', 'sgsc_programs_hero' );
@@ -60,7 +60,7 @@ function sgsc_login_logo() {
      echo '<style type="text/css">         
          h1 a {
 					 background-image:url('.get_stylesheet_directory_uri().'/assets/images/desktop-logo.svg) !important; 
-					 height: 220px !important; 
+					 height: 160px !important; 
 					 background-position: center !important; 
 					 background-size: contain !important; 
 					 width: 100% !important;} 

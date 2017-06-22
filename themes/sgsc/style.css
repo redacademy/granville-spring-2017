@@ -2141,11 +2141,15 @@ object {
           padding: 0rem 1.5rem; } }
 
 #popmake-286 {
+<<<<<<< HEAD
   padding: 0;
   height: 350px;
   width: 290px;
   border: 3px solid #000;
   background-color: #fff; }
+=======
+  padding: 0; }
+>>>>>>> feature-gallery
 
 .mc4wp-checkbox {
   display: none; }
@@ -2157,6 +2161,7 @@ object {
 
 .pum-content h1 {
   text-align: center;
+<<<<<<< HEAD
   font-family: montserrat,merriweather,sans-serif;
   font-size: 22px;
   color: #000;
@@ -2245,6 +2250,12 @@ input.wpcf7-submit {
   font-family: lato,novecentosanswide,sans-serif;
   font-size: 12px;
   color: #000; }
+=======
+  font-family: montserrat, merriweather, sans-serif;
+  font-size: 22px;
+  color: #000000;
+  background: #45cdcb; }
+>>>>>>> feature-gallery
 
 footer {
   max-width: 1024px;
@@ -2987,6 +2998,7 @@ footer {
 .events-archive .entry-content {
   width: initial; }
 
+<<<<<<< HEAD
 .events-archive .title-events-archive {
   position: relative; }
 
@@ -2999,4 +3011,7 @@ footer {
       align-items: center;
   width: 100vw;
   height: 7.3rem;
+=======
+.tribe-mobile .tribe-events-page-title {
+>>>>>>> feature-gallery
   background-color: #f5a623; }
