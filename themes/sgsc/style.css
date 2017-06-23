@@ -942,7 +942,12 @@ object {
   outline: none;
   border: 2px solid #f5a623;
   border-radius: 25px;
-  font-family: montserrat, merriweather, sans-serif; }
+  font-family: montserrat, merriweather, sans-serif;
+  right: 0;
+  top: 50px;
+  position: absolute;
+  width: 85%;
+  line-height: 3; }
 
 .menu .fa {
   font-size: 2rem; }
