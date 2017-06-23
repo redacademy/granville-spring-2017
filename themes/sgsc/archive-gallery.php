@@ -37,18 +37,18 @@ get_header(); ?>
 					
           <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
 					<?php $is_featured =	CFS()->get( 'featured_image' ) ?>
-					<?php if ($is_featured == 1) :?>
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<?php if ($is_featured == 1) :?>
+						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-						<header class="entry-header">
-							<div class="image-position">
-								<?php the_post_thumbnail('full'); ?>
-							</div>
-								<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
-									<h2><?php the_title(); ?></h2>
-								</a>
-						</header>
-					</article><!-- #post-## -->
+							<header class="entry-header">
+								<div class="image-position">
+									<?php the_post_thumbnail('full'); ?>
+								</div>
+									<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
+										<h2><?php the_title(); ?></h2>
+									</a>
+							</header>
+						</article><!-- #post-## -->
 						<?php endif ?>
 					<?php endforeach; wp_reset_postdata(); ?>
 					</div>
@@ -78,9 +78,14 @@ get_header(); ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<header class="entry-header">
 							<div class="image-position">		 
-								<?php if ( has_post_thumbnail() ) : ?>
-									<?php the_post_thumbnail( 'full' ); ?>
-								<?php endif; ?>
+								<?php
+								$fields = CFS()->get( 'gallery' );
+								foreach ( $fields as $field ):?>
+									<?php $featured =$field['featured_image'] ?>
+										<?php if ( $featured == 1 ):?>
+											<img src="<?php echo $field['upload_image'] ?>">
+										<?php endif ?>
+								<?php endforeach?>
 							</div>
 
 							<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
@@ -88,10 +93,10 @@ get_header(); ?>
 							</a>
 
 								<?php if ( 'post' === get_post_type() ) : ?>
-								<div class="entry-meta">
-									<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-								</div><!-- .entry-meta -->
-							<?php endif; ?>
+									<div class="entry-meta">
+										<?php red_starter_posted_on(); ?>
+									</div><!-- .entry-meta -->
+								<?php endif; ?>
 						</header><!-- .entry-header -->
 
 					</article><!-- #post-## -->
