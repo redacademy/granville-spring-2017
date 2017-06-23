@@ -2365,6 +2365,41 @@ footer {
 .page-template-page-about .entry-title {
   display: none; }
 
+.entry-content h1 {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1024px;
+  height: 140px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: rgba(1, 255, 255, 0.8); }
+
+.entry-content a {
+  color: #000000;
+  text-decoration: none; }
+
+.about-header {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 194px; }
+
+.entry-content p {
+  background: #f5a623;
+  width: 417px;
+  height: 6rem;
+  border: 4px solid #f5a623;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: auto; }
+
 .program-hero {
   height: 19rem;
   background-position: 95% -3%;

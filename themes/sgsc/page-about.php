@@ -11,12 +11,17 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container" role="main">
       <?php if ( has_post_thumbnail() ) {
-        the_post_thumbnail();
-        } 
-        the_content();?>
+        $header_image = get_the_post_thumbnail_url();
+        } ?>
+        <!--the_content();?>-->
+
+		<div class="about-header" style="background-image: url(<?php echo $header_image ?>); background-size: cover; background-position: center;">
+
+		</div>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php get_template_part( 'template-parts/content', 'about' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
