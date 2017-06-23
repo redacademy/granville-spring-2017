@@ -94,4 +94,21 @@
 	#tribe-events .tribe-events-content {
 		padding: 0 1rem;
 	}
+
+	.tribe-events-sub-nav {
+		display: flex;
+    justify-content: center;
+	}
+	
+	.tribe-events-nav-right, .tribe-events-nav-left {
+		a {
+			background: none;
+			color: black;
+			font-size: 2rem;
+			font-family: $font__body;
+		}
+		a:hover {
+			color: $orange;
+		}
+	}
 }

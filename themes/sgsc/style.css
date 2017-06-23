@@ -3069,3 +3069,18 @@ footer {
 
 .events-archive #tribe-events .tribe-events-content {
   padding: 0 1rem; }
+
+.events-archive .tribe-events-sub-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.events-archive .tribe-events-nav-right a, .events-archive .tribe-events-nav-left a {
+  background: none;
+  color: black;
+  font-size: 2rem;
+  font-family: lato, novecentosanswide, sans-serif; }
+
+.events-archive .tribe-events-nav-right a:hover, .events-archive .tribe-events-nav-left a:hover {
+  color: #f5a623; }
