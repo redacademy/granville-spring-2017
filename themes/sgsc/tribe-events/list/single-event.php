@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php if (has_post_thumbnail()) {
 		echo tribe_event_featured_image( null, 'large' );
 	} else { ?>
-		<img src="<?php bloginfo('template_directory'); ?>/assets/images/desktop-logo.svg" alt="<?php the_title(); ?>" />
+		<img src="<?php bloginfo('template_directory'); ?>/assets/images/desktop-logo.svg" alt="<?php the_title(); ?>" class="event-backup-img" />
 	<?php } ?>
 
 	<!-- Event Title -->

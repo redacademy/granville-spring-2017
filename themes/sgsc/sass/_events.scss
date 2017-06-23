@@ -5,10 +5,52 @@
 .events-archive {
 	.event-header {
 		display: flex;
+		height: 13rem;
+		position: relative;
 	}
 	
+	.tribe-events-list-event-title {
+		position: absolute;
+    right: 0;
+		top: 0;
+    width: 5rem;
+    background: $orange;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+		margin: 0;
+		text-align: center;
+    font-weight: lighter;
+	}
+	
+	.tribe-events-event-image {
+		width: 100% !important;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+
+		&img {
+			height: auto;
+			position: absolute;
+			width: 23rem;
+			left: 0;
+			max-width: none;
+			bottom: 0;
+		}
+	}
+	.event-backup-img {
+		height: 100%;
+    padding: 1rem;
+	}
+
+	.event-bar {
+		width: 1.5rem;
+		background-color: $blue;
+		z-index: 1;
+	}
+
 	.title-events-archive {
 		position: relative;
+		margin-bottom: 2rem;		
 	}
 
 	.events-title {
@@ -18,5 +60,37 @@
     width: 100vw;
     height: 7.3rem;
     background-color: #f5a623;
+	}
+
+	.type-tribe_events {
+		border: none;
+		padding: 0;
+	}
+
+	.tribe-events-event-meta {
+		border: none;
+		background: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.tribe-events-venue-details {
+		border: none;
+		margin: 0;
+	}
+
+	.tribe-events-event-cost {
+		display: inline;
+		float: left;
+	}
+	.tribe-events-event-cost span {
+		border: none;
+		background: none;
+		font-weight: normal;
+		text-align: left;
+	}
+
+	#tribe-events .tribe-events-content {
+		padding: 0 1rem;
 	}
 }
