@@ -112,4 +112,10 @@
 			color: $orange;
 		}
 	}
+
+	@media screen and (min-width: 480px) {
+		.events-title {
+			width: initial;
+		}
+	}
 }

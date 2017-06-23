@@ -3145,3 +3145,7 @@ footer {
 
 .events-archive .tribe-events-nav-right a:hover, .events-archive .tribe-events-nav-left a:hover {
   color: #f5a623; }
+
+@media screen and (min-width: 480px) {
+  .events-archive .events-title {
+    width: initial; } }
