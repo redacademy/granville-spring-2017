@@ -78,7 +78,6 @@ add_action('login_head', 'sgsc_login_logo');
 /**
  * SGSC login logo url
  */
-
 function sgsc_login_logo_url( $url ) {
 	return home_url();
 }
@@ -87,13 +86,14 @@ add_filter( 'login_headerurl', 'sgsc_login_logo_url' );
 /**
  * sgsc login logo tile
  */
-
 function sgsc_login_title( ) {
 	return 'South Granvillge Senior Center';
 }
 add_filter( 'login_headertitle', 'sgsc_login_title' );
 
-// Remove Post (index.php) Categories and Tags
+/**
+ * Remove Post (index.php) Categories and Tags
+ */
 function myprefix_remove_tax() {
     register_taxonomy('category', array());
     register_taxonomy('post_tag', array());
@@ -158,3 +158,12 @@ function filter_tribe_all_occurences ($wp_query) {
 
 	return $wp_query;
 }
+
+/**
+ * Remove Post (archieve-gallery.php) Default Featured_Images
+ */
+function my_custom_init() {
+	remove_post_type_support( 'gallery', 'thumbnail' );
+}
+
+add_action( 'init', 'my_custom_init' );

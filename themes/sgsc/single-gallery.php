@@ -1,65 +1,89 @@
 <?php
 /**
- * The template for displaying all single posts.
- *
- * @package SGSC_Theme
- */
+* The template for displaying all single posts.
+*
+* @package SGSC_Theme
+*/
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+	<?php while ( have_posts() ) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<header class="entry-header">
-				<?php if ( has_post_thumbnail() ) : ?>
-					<?php the_post_thumbnail( 'large' ); ?>
-				<?php endif; ?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<header class="entry-header">
+			<?php if ( has_post_thumbnail() ) : ?>
+				<?php the_post_thumbnail( 'large' ); ?>
+			<?php endif; ?>
 
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				<div class="donate-btn">
-					<a href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
-						<i class="fa fa-heart-o" aria-hidden="true">
-							<p>Donate</p>
-						</i>
-					</a>
-				</div>
-				<div class="entry-meta">
-					<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-				</div><!-- .entry-meta -->
-			</header><!-- .entry-header -->
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<div class="donate-btn">
+				<a href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
+					<i class="fa fa-heart-o" aria-hidden="true">
+						<p>Donate</p>
+					</i>
+				</a>
+			</div>
+			<div class="entry-meta">
+				<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+			</div><!-- .entry-meta -->
+		</header><!-- .entry-header -->
 
-			<div class="entry-content">
-				<?php the_content(); ?>
-				<?php CFS()->get( 'my_file' ); ?>
+		<div class="entry-content">
+
+
+
+
+
+<!--get images from CFS loop-->
+			<div class="gallery">
+
 				<?php
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-						'after'  => '</div>',
-					) );
-				?>
-			</div><!-- .entry-content -->
+				$fields = CFS()->get( 'gallery' );
+				foreach ( $fields as $field ):?>
+					<div class="thumbnail">
+						<img src="<?php echo $field['upload_image'] ?>">
+					</div>
+				<?php endforeach ?>
+			</div>
 
-			<footer class="entry-footer">
-				<?php red_starter_entry_footer(); ?>
-				<a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'gallery' )) ) ?>"><p>Return</p></a>
-			</footer><!-- .entry-footer -->
-		</article><!-- #post-## -->
+				<!--// echo $field['featured_image'];
 
-			<?php the_post_navigation(); ?>
+<!--echo CFS()->get( 'featured_gallery' );-->
+
+
+
+
+
 
 			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+					'after'  => '</div>',
+				) );
 			?>
+		</div><!-- .entry-content -->
 
-		<?php endwhile; // End of the loop. ?>
+		<footer class="entry-footer">
+			<?php red_starter_entry_footer(); ?>
+			<a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'gallery' )) ) ?>"><p>Return</p></a>
+		</footer><!-- .entry-footer -->
+	</article><!-- #post-## -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		<?php the_post_navigation(); ?>
+
+		<?php
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
+		?>
+
+	<?php endwhile; // End of the loop. ?>
+
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

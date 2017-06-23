@@ -14,7 +14,7 @@
       flex-flow: column;
       justify-content: center;
       align-items: center;
-      margin-bottom: 32px;
+      margin-bottom: $margin-d;
       .page-header {
         @include page-header;
       }
@@ -28,7 +28,7 @@
           width: 100%;
           height: 320px;
           margin: 0;
-          margin-top: 32px;
+          margin-top: $margin-d;
           @include border;
           .entry-header {
             width: 100%;
@@ -90,10 +90,10 @@
           width: 100%;
           height: 321px;
           margin: 0;
-          margin-top: 32px;
+          margin-top: $margin-d;
           @include border;
           @media screen and (min-width: $mobile_width) {
-            width: 463px;
+            width: $image-d-width;
           }
           .entry-header {
             width: 100%;
