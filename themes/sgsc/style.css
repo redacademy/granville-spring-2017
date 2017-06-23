@@ -2066,7 +2066,7 @@ object {
               -ms-flex-flow: row wrap;
                   flex-flow: row wrap;
               margin-bottom: 0; } }
-          .single-gallery .content-area .site-main article .entry-content .gallery figure {
+          .single-gallery .content-area .site-main article .entry-content .gallery .thumbnail {
             display: -ms-flexbox;
             display: flex;
             margin: 0;
@@ -2078,27 +2078,21 @@ object {
             position: relative;
             overflow: hidden; }
             @media screen and (min-width: 480px) {
-              .single-gallery .content-area .site-main article .entry-content .gallery figure {
-                width: 463px;
+              .single-gallery .content-area .site-main article .entry-content .gallery .thumbnail {
+                width: 496px;
                 height: 321px;
                 min-width: initial;
-                margin-bottom: 35px; } }
-            .single-gallery .content-area .site-main article .entry-content .gallery figure .gallery-icon {
-              width: 100%;
-              position: relative; }
-              .single-gallery .content-area .site-main article .entry-content .gallery figure .gallery-icon a {
-                pointer-events: none;
-                cursor: default; }
-                .single-gallery .content-area .site-main article .entry-content .gallery figure .gallery-icon a img {
-                  min-height: 100%;
-                  max-height: 150%;
-                  width: auto;
-                  min-width: 100%;
-                  left: 50%;
-                  top: 70%;
-                  transform: translate(-50%, -70%);
-                  max-width: none;
-                  position: absolute; }
+                margin-bottom: 32px; } }
+            .single-gallery .content-area .site-main article .entry-content .gallery .thumbnail img {
+              min-height: 100%;
+              max-height: 150%;
+              width: auto;
+              min-width: 100%;
+              left: 50%;
+              top: 70%;
+              transform: translate(-50%, -70%);
+              max-width: none;
+              position: absolute; }
         .single-gallery .content-area .site-main article .entry-content h1,
         .single-gallery .content-area .site-main article .entry-content h2,
         .single-gallery .content-area .site-main article .entry-content h3,
