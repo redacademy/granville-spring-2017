@@ -39,7 +39,6 @@
 						<div class="overlay overlay-slidedown">
 							<button id="back-button" class="back-visible">Back</button>
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-							<?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_class' => 'mobile-menu', 'menu-visible' ) ); ?>
 						</div>
 					</nav>
 					<div>

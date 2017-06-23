@@ -24,15 +24,7 @@ function sgsc_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
-		'mobile' => esc_html( 'Mobile Menu' ),
 	) );
-
-	//add mobile menu
-	function wdm_register_mobile_menu() {
-    add_theme_support( 'nav-menus' );
-    register_nav_menus( array('mobile-menu' => __( 'Mobile Menu', 'wdm' )) );
-	}
-	add_action( 'init', 'wdm_register_mobile_menu' );
 
 	// Switch search form, comment form, and comments to output valid HTML5.
 	add_theme_support( 'html5', array(

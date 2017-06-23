@@ -4,7 +4,7 @@
 
     var $hamburger = $('.menu-toggle'),
         $content = $('.site-content'),
-        $mobileMenu = $('.mobile-menu'),
+        $mobileMenu = $('.nav-menu'),
         $overlay = $('.overlay'),
         $backButton = $('#back-button');
 

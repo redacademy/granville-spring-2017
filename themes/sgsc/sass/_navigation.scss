@@ -102,6 +102,9 @@ a {
 
 .nav-menu {
 	display: none;
+	li:first-child {
+		display: none;
+	}
 }
 
 /* Small menu. */
@@ -162,10 +165,13 @@ a {
 		margin: 1rem;
     padding: 3rem;
     text-align: center;
-		border: 4px solid $orange;		
+		border: 4px solid $orange;	
 	}
 	li:hover {
 		border: 4px solid black;
+	}
+	li:first-child {
+		display: initial;
 	}
 	a {
 		color: black;
