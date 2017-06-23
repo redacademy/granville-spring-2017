@@ -3020,7 +3020,8 @@ footer {
 
 .events-archive .event-backup-img {
   height: 100%;
-  padding: 1rem; }
+  padding: 1rem;
+  opacity: 0.5; }
 
 .events-archive .event-bar {
   width: 1.5rem;
