@@ -2632,3 +2632,48 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     .events-archive #tribe-events .tribe-events-content {
       padding: 0 1rem;
     }
+  width: 100vw;
+  height: 7.3rem;
+  background-color: #f5a623; }
+
+.events-archive .type-tribe_events {
+  border: none;
+  padding: 0; }
+
+.events-archive .tribe-events-event-meta {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0; }
+
+.events-archive .tribe-events-venue-details {
+  border: none;
+  margin: 0; }
+
+.events-archive .tribe-events-event-cost {
+  display: inline;
+  float: left; }
+
+.events-archive .tribe-events-event-cost span {
+  border: none;
+  background: none;
+  font-weight: normal;
+  text-align: left; }
+
+.events-archive #tribe-events .tribe-events-content {
+  padding: 0 1rem; }
+
+.events-archive .tribe-events-sub-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.events-archive .tribe-events-nav-right a, .events-archive .tribe-events-nav-left a {
+  background: none;
+  color: black;
+  font-size: 2rem;
+  font-family: lato, novecentosanswide, sans-serif; }
+
+.events-archive .tribe-events-nav-right a:hover, .events-archive .tribe-events-nav-left a:hover {
+  color: #f5a623; }
