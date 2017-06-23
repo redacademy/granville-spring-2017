@@ -129,3 +129,13 @@ function sgsc_change_archive_titles( $title ) {
 };
 
 add_filter( 'get_the_archive_title', 'sgsc_change_archive_titles');
+
+
+/**
+ * Remove Post (archieve-gallery.php) Default Featured_Images
+ */
+function my_custom_init() {
+	remove_post_type_support( 'gallery', 'thumbnail' );
+}
+
+add_action( 'init', 'my_custom_init' );
