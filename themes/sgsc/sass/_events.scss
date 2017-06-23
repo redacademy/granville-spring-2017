@@ -13,13 +13,14 @@
 		position: absolute;
     right: 0;
 		top: 0;
-    width: 5rem;
+    width: 5.2rem;
     background: $orange;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 		margin: 0;
 		text-align: center;
     font-weight: lighter;
+		hyphens: auto;
 	}
 	
 	.tribe-events-event-image {
@@ -40,6 +41,7 @@
 	.event-backup-img {
 		height: 100%;
     padding: 1rem;
+		opacity: 0.3;
 	}
 
 	.event-bar {
