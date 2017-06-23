@@ -35,22 +35,22 @@ get_header(); ?>
 				<?php $displays = CFS()->get( 'featured_gallery' )?>
 					<?php if ($displays == 1) :?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
-						<div class="image-position">
-								<?php
-								$fields = CFS()->get( 'gallery' );
-								foreach ( $fields as $field ):?>
-									<?php $featured =$field['featured_image'] ?>
-										<?php if ( $featured == 1 ):?>
-											<img src="<?php echo $field['upload_image'] ?>">
-										<?php endif ?>
-								<?php endforeach?>
-						</div>
-							<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
-								<h2><?php the_title(); ?></h2>
-							</a>
-					</header>
-				</article><!-- #post-## -->
+						<header class="entry-header">
+							<div class="image-position">
+									<?php
+									$fields = CFS()->get( 'gallery' );
+									foreach ( $fields as $field ):?>
+										<?php $featured =$field['featured_image'] ?>
+											<?php if ( $featured == 1 ):?>
+												<img src="<?php echo $field['upload_image'] ?>">
+											<?php endif ?>
+									<?php endforeach?>
+							</div>
+								<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
+									<h2><?php the_title(); ?></h2>
+								</a>
+						</header>
+					</article><!-- #post-## -->
 					<?php endif ?>
 				<?php endforeach; ?>
 			</div>

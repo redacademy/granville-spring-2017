@@ -54,35 +54,41 @@ get_header(); ?>
       </section>
 
 
-				<?php $args = array(
+
+       <section class="feature-gallery">
+
+        <?php $args = array(
 					'posts_per_page' 	=> 1,
 					'post_type' 			=> 'gallery',
           'orderby'						=> 'modified'
 				);
 				$posts_array = get_posts( $args );
-				if ( !empty($posts_array) && !is_wp_error($posts_array)) :?>
-       <section class="feature-gallery">
-					
-          <?php foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-            <?php $is_featured =	CFS()->get( 'featured_image' ) ?>
-					  <?php if ($is_featured == 1) :?>
-              <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
 
-                <div class="image-position">
-                  <?php the_post_thumbnail('full'); ?>
-                </div>
-                <div class="bottom-banner">
-                  <h1><?php the_title(); ?></h1>
+				<?php $displays = CFS()->get( 'featured_gallery' )?>
+					<?php if ($displays == 1) :?>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+							<div class="image-position">
+									<?php
+									$fields = CFS()->get( 'gallery' );
+									foreach ( $fields as $field ):?>
+										<?php $featured =$field['featured_image'] ?>
+											<?php if ( $featured == 1 ):?>
+												<img src="<?php echo $field['upload_image'] ?>">
+											<?php endif ?>
+									<?php endforeach?>
+							</div>
+              <div class="bottom-banner">
+									<h2><?php the_title(); ?></h2>
                   <a class="m-button" href="<?php echo esc_url( get_permalink()) ?>"><p>More</p></a>
-                </div>
+              </div>
 
-					    </article>
-            <?php endif ?>
-					<?php endforeach; wp_reset_postdata(); ?>
-				<?php else : ?>
-					<?php get_template_part( 'template-parts/content', 'none' ); ?>
+					</article><!-- #post-## -->
+					<?php endif ?>
+				<?php endforeach; ?>
          </section>
-				<?php endif; ?>
+
 
 
       <section class="intro-involved-join">

@@ -180,6 +180,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+            position: relative;
             .image-position {
               height: 100%;
               z-index: 1;
@@ -193,6 +194,9 @@
                 transform: translate(-50%, -70%);
                 max-width: none;
                 position: absolute;
+                @media screen and (min-width: $mobile_width) {
+                  max-height: 130%;
+                }
               }
             }
             .bottom-banner {
@@ -211,7 +215,7 @@
               .m-button {
                 display: flex;
               }
-              h1 {
+              h2 {
                 text-align: center;
                 margin: 0;
               }
@@ -241,10 +245,7 @@
               justify-content: space-around;
               align-items: center;
               width: 100%;
-              border: $border $pink;
-              @include hover-state {
-                border: $p_border 4px;
-              }
+              border: $border $white;
               h1 {
                 margin: 0;
               }
@@ -255,6 +256,7 @@
                 width: 76%;
                 height: 297px;
                 justify-content: space-around;
+                border: $border $pink;
                 p,
                 h1 {
                   padding: 0 60px;
@@ -266,6 +268,9 @@
                   display: flex;
                   font-size: $font_d-sub-body;
                 }
+                @include hover-state {
+                  border: $p_border 4px;
+                }
               }
               .front-involved {
                 display: flex;
@@ -276,6 +281,7 @@
                 .m-button {
                   background: $pink;
                   border: none;
+                  display: flex;
                   p {
                     border: none;
                     line-height: initial;
