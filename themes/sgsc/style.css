@@ -1670,6 +1670,9 @@ object {
               color: #f5a623; }
           .blog .content-area .site-main .site-header .donate-btn a p {
             display: none; }
+    @media screen and (min-width: 480px) {
+      .blog .content-area .site-main article {
+        width: 48%; } }
     .blog .content-area .site-main article .entry-header {
       width: 100%;
       height: 321px;
@@ -1682,9 +1685,6 @@ object {
       -ms-flex-align: center;
           align-items: center;
       margin-top: 32px; }
-      @media screen and (min-width: 480px) {
-        .blog .content-area .site-main article .entry-header {
-          width: 496px; } }
       .blog .content-area .site-main article .entry-header .image-position img {
         min-height: 100%;
         max-height: 100%;
