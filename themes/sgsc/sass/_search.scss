@@ -10,7 +10,7 @@
     width: 100%;
     flex-flow: column nowrap;
     article {
-      margin: 0;
+      margin-top: $margin-d;
       header {
         @include page-header;
       }
@@ -18,5 +18,32 @@
     @media screen and (min-width: $mobile_width) {
       width: $d_width;
     }
+  }
+}
+
+.search .page-title {
+  text-transform: uppercase;
+  border-bottom: $black 2px solid;
+  padding: $margin-d*2 0 16px 0;
+}
+
+.search .entry-title {
+  a {
+    color: $black;
+    text-decoration: none;
+    @include hover-state {
+      color: $orange;
+    }
+  }
+}
+
+.search .entry-meta {
+  display: flex;
+}
+
+.search {
+  @include m-button;
+  .m-button {
+    display: inline-block;
   }
 }
