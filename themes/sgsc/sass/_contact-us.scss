@@ -20,3 +20,27 @@
     }
   }
 }
+
+.page-id-51 .entry-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  @media screen and (min-width: $mobile_width) {
+    margin-bottom: 50px;
+  }
+  .contactus {
+    padding: $margin-d;
+    width: 100%;
+    @media screen and (min-width: $mobile_width) {
+      width: 450px;
+    }
+  }
+  p {
+    font-size: $font_d-sub-body;
+  }
+  iframe {
+    @media screen and (min-width: $mobile_width) {
+      margin: $margin-d;
+    }
+  }
+}

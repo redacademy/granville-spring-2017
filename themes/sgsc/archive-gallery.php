@@ -92,13 +92,8 @@ get_header(); ?>
 
 						<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
 							<?php the_title( sprintf( '<h2 >', esc_url( get_permalink() ) ), '</h2>' ); ?>
+							<p><?php red_starter_posted_on(); ?></p>
 						</a>
-
-							<?php if ( 'post' === get_post_type() ) : ?>
-								<div class="entry-meta">
-									<?php red_starter_posted_on(); ?>
-								</div><!-- .entry-meta -->
-							<?php endif; ?>
 					</header><!-- .entry-header -->
 
 				</article><!-- #post-## -->
