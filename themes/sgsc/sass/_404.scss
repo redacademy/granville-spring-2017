@@ -1,0 +1,70 @@
+/**
+  ** 404 page
+  */
+
+.error404 .content-area {
+  display: flex;
+  justify-content: center;
+  .site-main {
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    article {
+      margin: 0;
+      header {
+        @include page-header;
+      }
+    }
+    @media screen and (min-width: $mobile_width) {
+      width: $d_width;
+    }
+  }
+}
+
+.error-404 {
+  margin: $margin-d;
+  h1 {
+    color: $orange;
+  }
+}
+
+.error-404 .page-content {
+  p {
+    margin: $margin-d;
+    padding-right: $margin-d;
+  }
+}
+
+.search-form1 {
+  fieldset {
+    border-radius: 50px;
+    width: 20rem;
+    margin: $margin-d;
+    @include hover-state {
+      border: $orange 1px solid;
+    }
+    @media screen and (min-width: $mobile_width) {
+      width: 470px;
+    }
+    .search-field1 {
+      border: none;
+      outline: none;
+      padding-top: 5px;
+      width: 90%;
+    }
+  }
+}
+
+.error-404 .widget {
+  color: $orange;
+  ul {
+    color: $black;
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+    @include hover-state {
+      color: $orange;
+    }
+  }
+}

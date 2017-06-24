@@ -3228,3 +3228,107 @@ footer {
       width: 1024px; } }
   .single .site-main article {
     margin: 0; }
+
+/**
+  ** 404 page
+  */
+.error404 .content-area {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .error404 .content-area .site-main {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap; }
+    .error404 .content-area .site-main article {
+      margin: 0; }
+      .error404 .content-area .site-main article header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        position: relative;
+        background: #f5a623;
+        width: 100%;
+        min-height: 118px;
+        color: #000000; }
+        @media screen and (min-width: 480px) {
+          .error404 .content-area .site-main article header {
+            min-height: 160px; } }
+        .error404 .content-area .site-main article header .donate-btn {
+          background-color: #F91E72;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 3;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center;
+          height: 2.3rem;
+          width: 2.3rem; }
+          @media screen and (min-width: 480px) {
+            .error404 .content-area .site-main article header .donate-btn {
+              height: 5rem;
+              width: 5rem; } }
+          .error404 .content-area .site-main article header .donate-btn a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 1rem; }
+            @media screen and (min-width: 480px) {
+              .error404 .content-area .site-main article header .donate-btn a {
+                font-size: 4rem; } }
+            .error404 .content-area .site-main article header .donate-btn a i {
+              font-weight: lighter;
+              padding: .5rem;
+              color: #000000; }
+              .error404 .content-area .site-main article header .donate-btn a i:hover {
+                color: #f5a623; }
+            .error404 .content-area .site-main article header .donate-btn a p {
+              display: none; }
+        .error404 .content-area .site-main article header .entry-meta {
+          display: none; }
+    @media screen and (min-width: 480px) {
+      .error404 .content-area .site-main {
+        width: 1024px; } }
+
+.error-404 {
+  margin: 32px; }
+  .error-404 h1 {
+    color: #f5a623; }
+
+.error-404 .page-content p {
+  margin: 32px;
+  padding-right: 32px; }
+
+.search-form1 fieldset {
+  border-radius: 50px;
+  width: 20rem;
+  margin: 32px; }
+  .search-form1 fieldset:hover, .search-form1 fieldset:active, .search-form1 fieldset:focus {
+    border: #f5a623 1px solid; }
+  @media screen and (min-width: 480px) {
+    .search-form1 fieldset {
+      width: 470px; } }
+  .search-form1 fieldset .search-field1 {
+    border: none;
+    outline: none;
+    padding-top: 5px;
+    width: 90%; }
+
+.error-404 .widget {
+  color: #f5a623; }
+  .error-404 .widget ul {
+    color: #000000; }
+  .error-404 .widget a {
+    text-decoration: none;
+    color: #000000; }
+    .error-404 .widget a:hover, .error-404 .widget a:active, .error-404 .widget a:focus {
+      color: #f5a623; }

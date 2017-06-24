@@ -20,31 +20,26 @@ get_header(); ?>
 				<div class="page-content">
 					<p><?php echo esc_html( 'It looks like everything` was found at this location. Maybe try one of the links below or a search?' ); ?></p>
 
-					<?php get_search_form(); ?>
+				<form role="search" method="get" class="search-form1" action="<?php echo home_url( '/' ); ?>">
+					<fieldset>
+						<div class="search-submit">
+							<span class="icon-search1" aria-hidden="true">
+								<i class="fa fa-search"></i>
+							</span>
+							<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
+						</div>
+						<label>
+							<input type="search1\" class="search-field1" placeholder="Search..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+						</label>
+					</fieldset>
+				</form>
+
 
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
-					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
+					<?php if ( red_starter_categorized_blog() ) : ?>
 
-					<?php
-						$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
+					<?php endif; ?>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
