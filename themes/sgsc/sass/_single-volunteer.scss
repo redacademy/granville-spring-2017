@@ -1,38 +1,32 @@
 .volunteer-post {
-    margin: 20px 25px;
+  margin: 20px 25px;
 }
 
 .volunteer-title {
-    font-size: $font_m-h2;
-    font-weight: 300;
+  font-size: $font_m-h2;
+  font-weight: 300;
 }
 
 .volunteer-content {
-    font-size: $font_m-body;
+  font-size: $font_m-body;
 }
-
 
 @media all and (min-width: $desktop-view) {
-
-.volunteer-post {
+  .volunteer-post {
     margin: 20px 25px;
-}
-
-.volunteer-title {
+  }
+  .volunteer-title {
     font-size: $font_m-h2;
     font-weight: 300;
-}
-
-.volunteer-header {
+  }
+  .volunteer-header {
     width: $d_width;
     margin: auto;
     column-count: 2;
-}
-
-.volunteer-content p {
+  }
+  .volunteer-content p {
     column-count: 2;
     column-width: 512px;
     font-size: $font_d-sub-body;
-}
-
+  }
 }
