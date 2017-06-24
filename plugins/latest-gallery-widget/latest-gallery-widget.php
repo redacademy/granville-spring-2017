@@ -57,6 +57,7 @@ class Latest_Galleries_Widget extends WP_Widget {
           <?php endfor;?>
         </select>
         </p>
+        <p>Please make sure that there are galleries catergorized as events to make them generate in the widget!</p>
       <?php
       }
      
@@ -75,7 +76,9 @@ class Latest_Galleries_Widget extends WP_Widget {
       global $post;
       add_image_size( 'gallery_widget_size', 320, 190, false );
       $galleries = new WP_Query();
-      $galleries->query('post_type=gallery&posts_per_page=' . $numberOfGalleries );
+      $galleries->query("post_type=gallery
+        && CFS()->get( 'event_gallery' )
+        & posts_per_page=" . $numberOfGalleries );
       if($galleries->found_posts > 0) {
         echo '<ul class="gallery-widget">';
           while ($galleries->have_posts()) {
