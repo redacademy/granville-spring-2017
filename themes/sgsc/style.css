@@ -3250,19 +3250,23 @@ footer {
 .events-archive .widget-title {
   background-color: #45cdcb;
   width: 100%;
-  height: auto;
-  padding: 30% 0;
+  height: 20rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
   font-size: 2.25rem;
-  line-height: 2.5rem; }
+  line-height: 2.5rem;
+  padding: 0 1rem; }
 
 .events-archive .gallery-widget-img {
   position: relative;
-  object-fit: cover;
   margin: 2rem 0px; }
   .events-archive .gallery-widget-img img {
     width: 100%;
-    height: 300px; }
+    height: 300px;
+    object-fit: cover; }
   .events-archive .gallery-widget-img a {
     position: absolute;
     width: 100%;
@@ -3274,12 +3278,50 @@ footer {
     padding: 37% 0;
     font-size: 1.5rem; }
 
+.events-archive .tribe-events-after-html {
+  display: none; }
+
 @media screen and (min-width: 480px) {
   .events-archive .events-title {
-    width: initial; }
+    width: initial;
+    height: 10rem; }
   .events-archive .site-content {
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    width: 1024px;
+    margin: 0 auto;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .events-archive #primary {
+    -ms-flex: 0 1 60%;
+        flex: 0 1 60%; }
+  .events-archive #secondary {
+    -ms-flex: 0 1 35%;
+        flex: 0 1 35%;
+    margin-top: 10.2rem; }
+  .events-archive .title-events-archive {
+    width: 166.6%; }
+  .events-archive .tribe-events-page-title {
+    font-size: 2.5rem;
+    margin: 0; }
+  .events-archive .event-header {
+    height: 20rem; }
+  .events-archive .event-bar {
+    width: 2rem; }
+  .events-archive .widget-title {
+    height: 20rem; }
+  .events-archive .tribe-events-list-event-title {
+    height: 12.5rem;
+    width: 9.5rem;
+    font-size: 1.5rem;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex; }
+  .events-archive .gallery-widget-img img {
+    height: 11.6rem; }
+  .events-archive .gallery-widget-img a {
+    padding: 22% 0; } }
 
 /*--------------------------------------------------------------
 # Single-Page
