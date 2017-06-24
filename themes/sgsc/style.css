@@ -1046,7 +1046,24 @@ object {
   .menu {
     height: 4rem;
     -ms-flex-item-align: end;
-        align-self: flex-end; } }
+        align-self: flex-end; }
+  .search-form fieldset {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 190px;
+    min-width: 22.3px; }
+  .search-form input {
+    display: none;
+    outline: none;
+    border: 2px solid #f5a623;
+    border-radius: 25px;
+    font-family: montserrat, merriweather, sans-serif;
+    right: 0;
+    top: 5px;
+    position: initial;
+    width: 165px;
+    line-height: 1.75; } }
 
 /*--------------------------------------------------------------
 # Front-Page

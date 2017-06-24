@@ -153,5 +153,27 @@
     height: 4rem;
     align-self: flex-end;
   }
-  
+
+.search-form {
+  fieldset {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 190px;
+  min-width: 22.3px;
+  }
+  input {
+    display: none;
+    outline: none;
+    border: 2px solid $orange;
+    border-radius: 25px;
+    font-family: $font__header;
+    right: 0;
+    top: 5px;
+    position: initial;
+    width: 165px;
+    line-height: 1.75;
+  }
+}
+
 }
