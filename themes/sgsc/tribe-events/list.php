@@ -24,3 +24,9 @@ do_action( 'tribe_events_before_template' );
 
 <?php
 do_action( 'tribe_events_after_template' ); ?>
+
+</article>
+</main>
+</div>
+
+<?php get_sidebar() ?>

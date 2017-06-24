@@ -161,12 +161,3 @@ function filter_tribe_all_occurences ($wp_query) {
 
 	return $wp_query;
 }
-
-/**
- * Remove Post (archieve-gallery.php) Default Featured_Images
- */
-function my_custom_init() {
-	remove_post_type_support( 'gallery', 'thumbnail' );
-}
-
-add_action( 'init', 'my_custom_init' );
