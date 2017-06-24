@@ -1,345 +1,354 @@
-    /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Front-Page
 --------------------------------------------------------------*/
-    
-    .home .content-area {
+
+.home .content-area {
+  display: flex;
+  justify-content: center;
+  .site-main {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    @media screen and (min-width: $mobile_width) {
+      width: $d_width;
+    }
+    article {
+      margin: 0;
+    }
+  }
+}
+
+.home .learn-about-story {
+  display: flex;
+  height: 276px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  @media screen and (min-width: $mobile_width) {
+    height: 386px;
+  }
+  img {
+    height: 276px;
+    width: 100%;
+    object-fit: cover;
+    @media screen and (min-width: $mobile_width) {
+      height: 386px;
+      position: absolute;
+    }
+  }
+  .front-learn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 138px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+    h1 {
+      margin: 0;
+      padding-bottom: .5rem;
+      text-align: center;
+    }
+    @include m-button;
+    .m-button {
+      display: flex;
+    }
+    @media screen and (min-width: $mobile_width) {
+      height: 174px;
+    }
+  }
+  @include text-donate;
+}
+
+.home .program-event-post {
+  width: 100%;
+  @media screen and (min-width: $mobile_width) {
+    display: flex;
+    padding: 32px 0;
+    justify-content: space-between;
+  }
+  .front-program,
+  .front-events,
+  .front-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $orange;
+    height: 138px;
+    width: 100%;
+    @media screen and (min-width: $mobile_width) {
+      height: 386px;
+    }
+    a {
+      text-decoration: none;
+      height: 100%;
+      width: 100%;
+      color: $black;
       display: flex;
       justify-content: center;
-      .site-main {
-        width: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        @media screen and (min-width: $mobile_width) {
-          width: $d_width;
-        }
-        article {
-          margin: 0;
-        }
-        .learn-about-story {
-          display: flex;
-          height: 276px;
-          flex-flow: column nowrap;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          width: 100%;
-          @media screen and (min-width: $mobile_width) {
-            height: 386px;
-          }
-          img {
-            height: 276px;
-            width: 100%;
-            @media screen and (min-width: $mobile_width) {
-              height: 386px;
-              position: absolute;
-            }
-          }
-          .front-learn {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 138px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            align-items: center;
-            background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
-            h1 {
-              margin: 0;
-              padding-bottom: .5rem;
-              text-align: center;
-            }
-            @include m-button;
-            .m-button {
-              display: flex;
-            }
-            @media screen and (min-width: $mobile_width) {
-              height: 174px;
-            }
-          }
-          @include text-donate;
-        }
-        .program-event-post {
-          width: 100%;
-          @media screen and (min-width: $mobile_width) {
-            display: flex;
-            padding: 32px 0;
-            justify-content: space-between;
-          }
-          .front-program,
-          .front-events,
-          .front-blog {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: $orange;
-            height: 138px;
-            width: 100%;
-            @media screen and (min-width: $mobile_width) {
-              height: 386px;
-            }
-            a {
-              text-decoration: none;
-              height: 100%;
-              width: 100%;
-              color: $black;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
-          }
-          .front-program {
-            border: $p_border 4px $orange;
-            align-items: flex-start;
-            @include hover-state {
-              border: $p_border 4px;
-            }
-            @include m-button;
-            h1,
-            p,
-            a {
-              margin: 0;
-            }
-            .m-button {
-              p {
-                @include hover-state {
-                  background: $blue;
-                  color: $white;
-                }
-              }
-            }
-            p {
-              display: none;
-              padding: 0 60px;
-            }
-            @media screen and (min-width: $mobile_width) {
-              width: 53%;
-              height: 288px;
-              flex-flow: column nowrap;
-              justify-content: flex-start;
-              p {
-                display: inline-block;
-              }
-              a {
-                padding-left: 60px;
-                justify-content: flex-start;
-              }
-            }
-          }
-          .intro-event-blog {
-            @media screen and (min-width: $mobile_width) {
-              display: flex;
-              justify-content: space-between;
-              flex-flow: column nowrap;
-              width: 43%;
-            }
-            .front-events {
-              border: $p_border 4px $blue;
-              background: $blue;
-              @include hover-state {
-                border: $p_border 4px;
-              }
-              @media screen and (min-width: $mobile_width) {
-                width: 100%;
-                height: 129px;
-                text-align: center;
-              }
-            }
-            .front-blog {
-              border: $p_border 4px $white;
-              background: $white;
-              @include hover-state {
-                border: $p_border 4px;
-              }
-              @media screen and (min-width: $mobile_width) {
-                width: 100%;
-                height: 129px;
-                background: $blue;
-                text-align: center;
-              }
-            }
-          }
-        }
-        .feature-gallery {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          height: 276px;
-          width: 100%;
-          @media screen and (min-width: $mobile_width) {
-            height: 356px;
-          }
-          article {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column nowrap;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            position: relative;
-            .image-position {
-              height: 100%;
-              z-index: 1;
-              img {
-                min-height: 100%;
-                max-height: 100%;
-                width: auto;
-                min-width: 100%;
-                left: 50%;
-                top: 70%;
-                transform: translate(-50%, -70%);
-                max-width: none;
-                position: absolute;
-                @media screen and (min-width: $mobile_width) {
-                  max-height: 130%;
-                }
-              }
-            }
-            .bottom-banner {
-              z-index: 2;
-              position: absolute;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-flow: column nowrap;
-              bottom: 0;
-              left: 0;
-              height: 138px;
-              width: 100%;
-              background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
-              @include m-button;
-              .m-button {
-                display: flex;
-              }
-              h2 {
-                text-align: center;
-                margin: 0;
-              }
-              @media screen and (min-width: $mobile_width) {
-                height: 174px;
-                justify-content: space-around;
-              }
-            }
-          }
-        }
-        .intro-involved-join {
-          @media screen and (min-width: $mobile_width) {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            padding: 32px 0;
-          }
-          .involve-pillar {
-            @media screen and (min-width: $mobile_width) {
-              width: 53%;
-              display: flex;
-            }
-            .involved-join {
-              height: 138px;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-around;
-              align-items: center;
-              width: 100%;
-              border: $border $white;
-              h1 {
-                margin: 0;
-              }
-              p {
-                display: none;
-              }
-              @media screen and (min-width: $mobile_width) {
-                width: 76%;
-                height: 297px;
-                justify-content: space-around;
-                border: $border $pink;
-                p,
-                h1 {
-                  padding: 0 60px;
-                  margin: 0;
-                }
-                p {
-                  line-height: 120%;
-                  text-align: center;
-                  display: flex;
-                  font-size: $font_d-sub-body;
-                }
-                @include hover-state {
-                  border: $p_border 4px;
-                }
-              }
-              .front-involved {
-                display: flex;
-                flex-flow: row wrap;
-                width: 100%;
-                justify-content: space-around;
-                @include m-button;
-                .m-button {
-                  background: $pink;
-                  border: none;
-                  display: flex;
-                  p {
-                    border: none;
-                    line-height: initial;
-                    display: flex;
-                    padding: .7rem 2rem;
-                    font-size: $font_m-h2;
-                    @include hover-state {
-                      border: none;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          .pillar {
-            display: none;
-            @media screen and (min-width: $mobile_width) {
-              width: 24%;
-              height: 297px;
-              background: $pink;
-              display: flex;
-            }
-          }
-        }
-        .front-join {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+      align-items: center;
+    }
+  }
+  .front-program {
+    border: $p_border 4px $orange;
+    align-items: flex-start;
+    @include hover-state {
+      border: $p_border 4px;
+    }
+    @include m-button;
+    h1,
+    p,
+    a {
+      margin: 0;
+    }
+    .m-button {
+      p {
+        @include hover-state {
           background: $blue;
-          height: 138px;
-          width: 100%;
-          border: $p_border 4px $blue;
+          color: $white;
+        }
+      }
+    }
+    p {
+      display: none;
+      padding: 0 60px;
+    }
+    @media screen and (min-width: $mobile_width) {
+      width: 53%;
+      height: 288px;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      p {
+        display: inline-block;
+      }
+      a {
+        padding-left: 60px;
+        justify-content: flex-start;
+      }
+    }
+  }
+  .intro-event-blog {
+    @media screen and (min-width: $mobile_width) {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: column nowrap;
+      width: 43%;
+    }
+    .front-events {
+      border: $p_border 4px $blue;
+      background: $blue;
+      @include hover-state {
+        border: $p_border 4px;
+      }
+      @media screen and (min-width: $mobile_width) {
+        width: 100%;
+        height: 129px;
+        text-align: center;
+      }
+    }
+    .front-blog {
+      border: $p_border 4px $white;
+      background: $white;
+      @include hover-state {
+        border: $p_border 4px;
+      }
+      @media screen and (min-width: $mobile_width) {
+        width: 100%;
+        height: 129px;
+        background: $blue;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.home .feature-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 276px;
+  width: 100%;
+  @media screen and (min-width: $mobile_width) {
+    height: 356px;
+  }
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column nowrap;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    .image-position {
+      height: 100%;
+      z-index: 1;
+      img {
+        min-height: 100%;
+        max-height: 100%;
+        width: auto;
+        min-width: 100%;
+        object-fit: cover;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -70%);
+        max-width: none;
+        position: absolute;
+        @media screen and (min-width: $mobile_width) {
+          max-height: 130%;
+        }
+      }
+    }
+    .bottom-banner {
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      bottom: 0;
+      left: 0;
+      height: 138px;
+      width: 100%;
+      background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+      @include m-button;
+      .m-button {
+        display: flex;
+      }
+      h2 {
+        text-align: center;
+        margin: 0;
+      }
+      @media screen and (min-width: $mobile_width) {
+        height: 174px;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+.home .intro-involved-join {
+  @media screen and (min-width: $mobile_width) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 32px 0;
+  }
+}
+
+.home .involve-pillar {
+  @media screen and (min-width: $mobile_width) {
+    width: 53%;
+    display: flex;
+  }
+  .involved-join {
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: $border $white;
+    h1 {
+      margin: 0;
+    }
+    p {
+      display: none;
+    }
+    @media screen and (min-width: $mobile_width) {
+      width: 76%;
+      height: 297px;
+      justify-content: space-around;
+      border: $border $pink;
+      p,
+      h1 {
+        padding: 0 60px;
+        margin: 0;
+      }
+      p {
+        line-height: 120%;
+        text-align: center;
+        display: flex;
+        font-size: $font_d-sub-body;
+      }
+      @include hover-state {
+        border: $p_border 4px;
+      }
+    }
+    .front-involved {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      justify-content: space-around;
+      @include m-button;
+      .m-button {
+        background: $pink;
+        border: none;
+        display: flex;
+        p {
+          border: none;
+          line-height: initial;
+          display: flex;
+          padding: .7rem 2rem;
+          font-size: $font_m-h2;
           @include hover-state {
-            border: $p_border 4px;
-          }
-          p {
-            display: none;
-          }
-          a {
-            text-decoration: none;
-            height: 100%;
-            width: 100%;
-            color: $black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column nowrap;
-          }
-          @media screen and (min-width: $mobile_width) {
-            height: 297px;
-            width: 43%;
-            flex-flow: column nowrap;
-            p {
-              display: flex;
-              width: 70%;
-              text-align: center;
-            }
+            border: none;
           }
         }
       }
     }
+  }
+}
+
+.home .pillar {
+  display: none;
+  @media screen and (min-width: $mobile_width) {
+    width: 24%;
+    height: 297px;
+    background: $pink;
+    display: flex;
+  }
+}
+
+.home .front-join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $blue;
+  height: 138px;
+  width: 100%;
+  border: $p_border 4px $blue;
+  @include hover-state {
+    border: $p_border 4px;
+  }
+  p {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+  @media screen and (min-width: $mobile_width) {
+    height: 297px;
+    width: 43%;
+    flex-flow: column nowrap;
+    p {
+      display: flex;
+      width: 70%;
+      text-align: center;
+    }
+  }
+}

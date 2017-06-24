@@ -30,7 +30,7 @@
         align-items: center;
         margin-top: 32px;
         @media screen and (min-width: $mobile_width) {
-          width: 445px;
+          width: $image-d-width;
         }
         .image-position {
           img {
@@ -38,6 +38,7 @@
             max-height: 100%;
             width: auto;
             min-width: 100%;
+            object-fit: cover;
             left: 50%;
             top: 70%;
             transform: translate(-50%, -70%);
