@@ -22,7 +22,7 @@ function sgsc_body_classes( $classes ) {
 add_filter( 'body_class', 'sgsc_body_classes' );
 
 function sgsc_programs_hero () {
-	if ( ! is_page_template( 'page-programs.php' ) && is_tax( 'program-type' ) ) {
+	if ( ! is_page_template( 'page-programs.php' ) || is_tax( 'program-type' ) ) {
 		return;
 	}
 	
@@ -30,7 +30,10 @@ function sgsc_programs_hero () {
 	$program_hero = "
 		.program-hero {
 			background-image: url($hero);
-		}";
+		}
+		.program-type-hero {
+			background-image: url($hero)
+			}";
 
 	wp_add_inline_style( 'sgsc-style', $program_hero );
 }
