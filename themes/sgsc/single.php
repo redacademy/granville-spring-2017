@@ -28,9 +28,6 @@ get_header(); ?>
 				</header>
 
 				<div class="entry-content">
-					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'large' ); ?>
-					<?php endif; ?>
 
 					<?php the_content(); ?>
 					<?php

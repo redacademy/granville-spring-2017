@@ -30,7 +30,7 @@
         align-items: center;
         margin-top: 32px;
         @media screen and (min-width: $mobile_width) {
-          width: 445px;
+          width: $image-d-width;
         }
         .image-position {
           img {
