@@ -1733,243 +1733,246 @@ object {
     display: flex;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
-    .post-type-archive-gallery .content-area .site-main .featured-gallery-section {
+
+.post-type-archive-gallery .featured-gallery-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 32px; }
+  .post-type-archive-gallery .featured-gallery-section .page-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    position: relative;
+    background: #f5a623;
+    width: 100%;
+    min-height: 118px;
+    color: #000000; }
+    @media screen and (min-width: 480px) {
+      .post-type-archive-gallery .featured-gallery-section .page-header {
+        min-height: 160px; } }
+    .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn {
+      background-color: #F91E72;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-flow: column;
-          flex-flow: column;
       -ms-flex-pack: center;
           justify-content: center;
       -ms-flex-align: center;
           align-items: center;
-      margin-bottom: 32px; }
-      .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: center;
-            align-items: center;
-        position: relative;
-        background: #f5a623;
-        width: 100%;
-        min-height: 118px;
-        color: #000000; }
+      height: 2.3rem;
+      width: 2.3rem; }
+      @media screen and (min-width: 480px) {
+        .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn {
+          height: 5rem;
+          width: 5rem; } }
+      .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1rem; }
         @media screen and (min-width: 480px) {
-          .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header {
-            min-height: 160px; } }
-        .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn {
-          background-color: #F91E72;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          z-index: 3;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center;
-          height: 2.3rem;
-          width: 2.3rem; }
-          @media screen and (min-width: 480px) {
-            .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn {
-              height: 5rem;
-              width: 5rem; } }
-          .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a {
-            text-decoration: none;
-            color: #000000;
-            font-size: 1rem; }
-            @media screen and (min-width: 480px) {
-              .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a {
-                font-size: 4rem; } }
-            .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a i {
-              font-weight: lighter;
-              padding: .5rem;
-              color: #000000; }
-              .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a i:hover {
-                color: #f5a623; }
-            .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .donate-btn a p {
-              display: none; }
-        .post-type-archive-gallery .content-area .site-main .featured-gallery-section .page-header .entry-meta {
+          .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a {
+            font-size: 4rem; } }
+        .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a i {
+          font-weight: lighter;
+          padding: .5rem;
+          color: #000000; }
+          .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a i:hover {
+            color: #f5a623; }
+        .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a p {
           display: none; }
-      .post-type-archive-gallery .content-area .site-main .featured-gallery-section .gallery-album {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-        -ms-flex-align: center;
-            align-items: center;
-        width: 100%; }
-        .post-type-archive-gallery .content-area .site-main .featured-gallery-section .gallery-album .gallery {
-          width: 100%;
-          height: 320px;
-          margin: 0;
-          margin-top: 32px;
-          border: 4px transparent solid; }
-          .post-type-archive-gallery .content-area .site-main .featured-gallery-section .gallery-album .gallery:hover, .post-type-archive-gallery .content-area .site-main .featured-gallery-section .gallery-album .gallery:active, .post-type-archive-gallery .content-area .site-main .featured-gallery-section .gallery-album .gallery:focus {
-            border: 4px #000000 solid; }
-          .post-type-archive-gallery .content-area .site-main .featured-gallery-section .gallery-album .gallery .entry-header {
-            width: 100%;
-            height: 100%;
-            display: -ms-flexbox;
-            display: flex;
-            position: relative;
-            overflow: hidden;
-            -ms-flex-pack: center;
-                justify-content: center;
-            -ms-flex-align: center;
-                align-items: center; }
-            .post-type-archive-gallery .content-area .site-main .featured-gallery-section .gallery-album .gallery .entry-header .image-position {
-              height: 100%; }
-              .post-type-archive-gallery .content-area .site-main .featured-gallery-section .gallery-album .gallery .entry-header .image-position img {
-                min-height: 100%;
-                max-height: 100%;
-                width: auto;
-                min-width: 100%;
-                left: 50%;
-                top: 70%;
-                transform: translate(-50%, -70%);
-                max-width: none;
-                object-fit: cover;
-                position: absolute; }
-            .post-type-archive-gallery .content-area .site-main .featured-gallery-section .gallery-album .gallery .entry-header .entry-title {
-              background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-              z-index: 1;
-              height: 100%;
-              width: 100%;
-              display: -ms-flexbox;
-              display: flex;
-              -ms-flex-pack: center;
-                  justify-content: center;
-              -ms-flex-align: center;
-                  align-items: center;
-              text-decoration: none;
-              color: #000000; }
-              .post-type-archive-gallery .content-area .site-main .featured-gallery-section .gallery-album .gallery .entry-header .entry-title:hover {
-                color: #f5a623; }
-              .post-type-archive-gallery .content-area .site-main .featured-gallery-section .gallery-album .gallery .entry-header .entry-title h2 {
-                font-size: 22px; }
-    .post-type-archive-gallery .content-area .site-main .lastest-gallery-section {
+    .post-type-archive-gallery .featured-gallery-section .page-header .entry-meta {
+      display: none; }
+
+.post-type-archive-gallery .gallery-album {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%; }
+  .post-type-archive-gallery .gallery-album .gallery {
+    width: 100%;
+    height: 320px;
+    margin: 0;
+    margin-top: 32px;
+    border: 4px transparent solid; }
+    .post-type-archive-gallery .gallery-album .gallery:hover, .post-type-archive-gallery .gallery-album .gallery:active, .post-type-archive-gallery .gallery-album .gallery:focus {
+      border: 4px #000000 solid; }
+    .post-type-archive-gallery .gallery-album .gallery .entry-header {
+      width: 100%;
+      height: 100%;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      position: relative;
+      overflow: hidden;
       -ms-flex-pack: center;
           justify-content: center;
       -ms-flex-align: center;
           align-items: center; }
-      .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header {
+      .post-type-archive-gallery .gallery-album .gallery .entry-header .image-position {
+        height: 100%; }
+        .post-type-archive-gallery .gallery-album .gallery .entry-header .image-position img {
+          min-height: 100%;
+          max-height: 100%;
+          width: auto;
+          min-width: 100%;
+          left: 50%;
+          top: 70%;
+          transform: translate(-50%, -70%);
+          max-width: none;
+          object-fit: cover;
+          position: absolute; }
+      .post-type-archive-gallery .gallery-album .gallery .entry-header .entry-title {
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+        z-index: 1;
+        height: 100%;
+        width: 100%;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: center;
             justify-content: center;
         -ms-flex-align: center;
             align-items: center;
-        position: relative;
-        background: #f5a623;
-        width: 100%;
-        min-height: 118px;
+        text-decoration: none;
         color: #000000; }
+        .post-type-archive-gallery .gallery-album .gallery .entry-header .entry-title:hover {
+          color: #f5a623; }
+        .post-type-archive-gallery .gallery-album .gallery .entry-header .entry-title h2 {
+          font-size: 22px; }
+
+.post-type-archive-gallery .lastest-gallery-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .post-type-archive-gallery .lastest-gallery-section .page-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    position: relative;
+    background: #f5a623;
+    width: 100%;
+    min-height: 118px;
+    color: #000000; }
+    @media screen and (min-width: 480px) {
+      .post-type-archive-gallery .lastest-gallery-section .page-header {
+        min-height: 160px; } }
+    .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn {
+      background-color: #F91E72;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      height: 2.3rem;
+      width: 2.3rem; }
+      @media screen and (min-width: 480px) {
+        .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn {
+          height: 5rem;
+          width: 5rem; } }
+      .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1rem; }
         @media screen and (min-width: 480px) {
-          .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header {
-            min-height: 160px; } }
-        .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn {
-          background-color: #F91E72;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          z-index: 3;
+          .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a {
+            font-size: 4rem; } }
+        .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a i {
+          font-weight: lighter;
+          padding: .5rem;
+          color: #000000; }
+          .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a i:hover {
+            color: #f5a623; }
+        .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a p {
+          display: none; }
+    .post-type-archive-gallery .lastest-gallery-section .page-header .entry-meta {
+      display: none; }
+  .post-type-archive-gallery .lastest-gallery-section .gallery-album {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
+    .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery {
+      width: 100%;
+      height: 321px;
+      margin: 0;
+      margin-top: 32px;
+      border: 4px transparent solid; }
+      .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery:hover, .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery:active, .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery:focus {
+        border: 4px #000000 solid; }
+      @media screen and (min-width: 480px) {
+        .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery {
+          width: 496px; } }
+      .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header {
+        width: 100%;
+        height: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
+        .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .image-position {
+          height: 100%; }
+          .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .image-position img {
+            min-height: 100%;
+            max-height: 100%;
+            width: auto;
+            object-fit: cover;
+            min-width: 100%;
+            left: 50%;
+            top: 70%;
+            transform: translate(-50%, -70%);
+            max-width: none;
+            position: absolute; }
+        .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .entry-title {
+          background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+          z-index: 1;
+          height: 100%;
+          width: 100%;
           display: -ms-flexbox;
           display: flex;
           -ms-flex-pack: center;
               justify-content: center;
           -ms-flex-align: center;
               align-items: center;
-          height: 2.3rem;
-          width: 2.3rem; }
-          @media screen and (min-width: 480px) {
-            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn {
-              height: 5rem;
-              width: 5rem; } }
-          .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a {
-            text-decoration: none;
-            color: #000000;
-            font-size: 1rem; }
-            @media screen and (min-width: 480px) {
-              .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a {
-                font-size: 4rem; } }
-            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a i {
-              font-weight: lighter;
-              padding: .5rem;
-              color: #000000; }
-              .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a i:hover {
-                color: #f5a623; }
-            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .donate-btn a p {
-              display: none; }
-        .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .page-header .entry-meta {
-          display: none; }
-      .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-        -ms-flex-align: center;
-            align-items: center; }
-        .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .gallery {
-          width: 100%;
-          height: 321px;
-          margin: 0;
-          margin-top: 32px;
-          border: 4px transparent solid; }
-          .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .gallery:hover, .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .gallery:active, .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .gallery:focus {
-            border: 4px #000000 solid; }
-          @media screen and (min-width: 480px) {
-            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .gallery {
-              width: 496px; } }
-          .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .gallery .entry-header {
-            width: 100%;
-            height: 100%;
-            display: -ms-flexbox;
-            display: flex;
-            position: relative;
-            overflow: hidden;
-            -ms-flex-pack: center;
-                justify-content: center;
-            -ms-flex-align: center;
-                align-items: center; }
-            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .gallery .entry-header .image-position {
-              height: 100%; }
-              .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .gallery .entry-header .image-position img {
-                min-height: 100%;
-                max-height: 100%;
-                width: auto;
-                object-fit: cover;
-                min-width: 100%;
-                left: 50%;
-                top: 70%;
-                transform: translate(-50%, -70%);
-                max-width: none;
-                position: absolute; }
-            .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .gallery .entry-header .entry-title {
-              background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-              z-index: 1;
-              height: 100%;
-              width: 100%;
-              display: -ms-flexbox;
-              display: flex;
-              -ms-flex-pack: center;
-                  justify-content: center;
-              -ms-flex-align: center;
-                  align-items: center;
-              text-decoration: none;
-              color: #000000; }
-              .post-type-archive-gallery .content-area .site-main .lastest-gallery-section .gallery-album .gallery .entry-header .entry-title:hover {
-                color: #f5a623; }
+          text-decoration: none;
+          color: #000000; }
+          .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .entry-title:hover {
+            color: #f5a623; }
 
 /*--------------------------------------------------------------
 # Single-Gallery Page
