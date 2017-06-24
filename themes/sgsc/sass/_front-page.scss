@@ -29,6 +29,7 @@
           img {
             height: 276px;
             width: 100%;
+            object-fit: cover;
             @media screen and (min-width: $mobile_width) {
               height: 386px;
               position: absolute;
@@ -189,6 +190,7 @@
                 max-height: 100%;
                 width: auto;
                 min-width: 100%;
+                object-fit: cover;
                 left: 50%;
                 top: 70%;
                 transform: translate(-50%, -70%);
