@@ -15,7 +15,7 @@ get_header(); ?>
         } ?>
         <!--the_content();?>-->
 
-		<div class="about-header" style="background-image: url(<?php echo $header_image ?>); background-size: cover; background-position: center;">
+		<div class="about-header" style="background-image: url(<?php echo $header_image ?>); background-size: cover; height: 353px; background-position: center;">
 
 		</div>
 
