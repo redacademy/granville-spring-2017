@@ -46,7 +46,7 @@ class Latest_Galleries_Widget extends WP_Widget {
       }
       ?>
         <p>
-        <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'realty_widget'); ?></label>
+        <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'gallery_widget'); ?></label>
         <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
         </p>
         <p>
@@ -77,11 +77,11 @@ class Latest_Galleries_Widget extends WP_Widget {
       $galleries = new WP_Query();
       $galleries->query('post_type=gallery&posts_per_page=' . $numberOfGalleries );
       if($galleries->found_posts > 0) {
-        echo '<ul class="realty_widget">';
+        echo '<ul class="gallery-widget">';
           while ($galleries->have_posts()) {
             $galleries->the_post();
-            $image = (has_post_thumbnail($post->ID)) ? get_the_post_thumbnail($post->ID, 'realty_widget_size') : '<div class="noThumb"></div>';
-            $listItem = '<li>' . $image;
+            $image = (has_post_thumbnail($post->ID)) ? get_the_post_thumbnail($post->ID, 'gallery-widget-size') : '<div class="noThumb"></div>';
+            $listItem = '<li class="gallery-widget-img">' . $image;
             $listItem .= '<a href="' . get_permalink() . '">';
             $listItem .= get_the_title() . '</a>';
             echo $listItem;

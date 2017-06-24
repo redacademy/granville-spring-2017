@@ -113,9 +113,55 @@
 		}
 	}
 
-	@media screen and (min-width: 480px) {
+	#tribe-events .tribe-events-button, .tribe-events-button {
+		background-color: initial;
+		color: black;
+		font-family: $font__body;
+		text-align: left;
+	}
+
+	.gallery-widget {
+		margin: 0;
+    padding: 0;
+    list-style: none;
+	}
+
+	.widget-title {
+		background-color: #45cdcb;
+    width: 100%;
+    height: auto;
+    padding: 30% 0;
+    text-align: center;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+	}
+
+	.gallery-widget-img {
+		position: relative;
+		img {
+			object-fit: cover;
+		}
+		a {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			text-align: center;
+			text-decoration: none;
+			color: black;
+			background: linear-gradient(hsla(0,0%,100%,.8),hsla(0,0%,100%,.8));
+			padding: 29% 0;
+			font-size: 1.5rem;
+		}
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.events-archive {
 		.events-title {
 			width: initial;
+		}
+		.site-content {
+			display: flex;
 		}
 	}
 }
