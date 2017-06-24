@@ -47,7 +47,7 @@ get_header(); ?>
           </div>
 
           <div class="front-blog">
-            <a href="<?php echo esc_url( get_permalink(get_page_by_path( 'blog' )) ) ?>">
+            <a href="<?php echo CFS()->get( 'newsletter' )?>" download >
               <h1>Download Newsletter</h1></a>
           </div>
         </div>

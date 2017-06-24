@@ -54,6 +54,8 @@
       margin: 0;
       padding-bottom: .5rem;
       text-align: center;
+      height: 70px;
+      overflow: hidden;
     }
     @include m-button;
     .m-button {
@@ -101,6 +103,11 @@
     @include hover-state {
       border: $p_border 4px;
     }
+    h1 {
+      @include hover-state {
+        color: $white;
+      }
+    }
     @include m-button;
     h1,
     p,
@@ -110,8 +117,8 @@
     .m-button {
       p {
         @include hover-state {
-          background: $blue;
-          color: $white;
+          background: $white;
+          color: $orange;
         }
       }
     }
@@ -119,17 +126,19 @@
       display: none;
       padding: 0 60px;
     }
+    @media screen and (min-width: $d_width) {
+      p {
+        display: inline-block;
+      }
+    }
     @media screen and (min-width: $mobile_width) {
       width: 53%;
       height: 288px;
       flex-flow: column nowrap;
       justify-content: flex-start;
-      p {
-        display: inline-block;
-      }
       a {
         padding-left: 60px;
-        justify-content: flex-start;
+        justify-content: center;
       }
     }
   }
@@ -145,6 +154,9 @@
       background: $blue;
       @include hover-state {
         border: $p_border 4px;
+        h1 {
+          color: $white;
+        }
       }
       @media screen and (min-width: $mobile_width) {
         width: 100%;
@@ -157,6 +169,9 @@
       background: $white;
       @include hover-state {
         border: $p_border 4px;
+        h1 {
+          color: $white;
+        }
       }
       @media screen and (min-width: $mobile_width) {
         width: 100%;
@@ -261,9 +276,18 @@
     border: $border $white;
     h1 {
       margin: 0;
+      text-align: center;
     }
     p {
       display: none;
+    }
+    @media screen and (min-width: $d_width) {
+      p {
+        line-height: 120%;
+        text-align: center;
+        display: flex;
+        font-size: $font_d-sub-body;
+      }
     }
     @media screen and (min-width: $mobile_width) {
       width: 76%;
@@ -274,12 +298,6 @@
       h1 {
         padding: 0 60px;
         margin: 0;
-      }
-      p {
-        line-height: 120%;
-        text-align: center;
-        display: flex;
-        font-size: $font_d-sub-body;
       }
       @include hover-state {
         border: $p_border 4px;
@@ -343,15 +361,18 @@
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
+    text-align: center;
   }
-  @media screen and (min-width: $mobile_width) {
-    height: 297px;
-    width: 43%;
-    flex-flow: column nowrap;
+  @media screen and (min-width: $d_width) {
     p {
       display: flex;
       width: 70%;
       text-align: center;
     }
+  }
+  @media screen and (min-width: $mobile_width) {
+    height: 297px;
+    width: 43%;
+    flex-flow: column nowrap;
   }
 }
