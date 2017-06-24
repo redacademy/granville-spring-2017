@@ -4,10 +4,13 @@ Description: This widget displays the most recent galleries.
 Version: 0.1
 Author: Kat Solberg
 License: GPLv2
-*/
-?>
+*/ 
 
-<?php
+// Prevent direct file access
+if ( ! defined ( 'ABSPATH' ) ) {
+	exit;
+}
+
 class Latest_Galleries_Widget extends WP_Widget {
      
     function __construct() {
@@ -90,13 +93,8 @@ class Latest_Galleries_Widget extends WP_Widget {
       }
     }
 }
-?>
 
-<?php
 function register_latest_galleries_widget() {
- 
-    register_widget( 'Latest_Galleries_Widget' );
- 
+  register_widget( 'Latest_Galleries_Widget' );
 }
-add_action( 'widgets_init', 'register_latest_galleries_widget' );
-?>
+add_action( 'widgets_init', 'register_latest_galleries_widget' ); ?>
