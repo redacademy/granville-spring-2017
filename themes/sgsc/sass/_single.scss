@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------
+# Single-Page
+--------------------------------------------------------------*/
+
+.single .content-area {
+  display: flex;
+  justify-content: center;
+}
+
+.single .site-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  @media screen and (min-width: $mobile_width) {
+    width: $d_width;
+  }
+  article {
+    margin: 0;
+  }
+}
