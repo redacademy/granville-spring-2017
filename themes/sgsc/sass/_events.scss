@@ -69,7 +69,7 @@
 		padding: 0;
 	}
 
-	.tribe-events-event-meta {
+	.tribe-events-event-meta span {
 		border: none;
 		background: none;
 		margin: 0;
@@ -80,10 +80,17 @@
 		border: none;
 		margin: 0;
 	}
-
+	.tribe-events-list .tribe-events-event-cost {
+		float: initial;
+	}
 	.tribe-events-event-cost {
-		display: inline;
-		float: left;
+		clear: both;		
+		margin-left: 3rem;
+    font-size: 1.5rem;
+		span {
+			padding: 0;
+			display: inline;
+		}
 	}
 	.tribe-events-event-cost span {
 		border: none;
@@ -162,6 +169,20 @@
 	.tribe-events-after-html {
 		display: none;
 	}
+	.event-pagination {
+		display: flex;
+		align-items: center;
+		.fa {
+			font-size: 4rem;
+			padding: 0 0.5rem;
+		}
+	}
+	a.tribe-events-ical.tribe-events-button {
+		float: none;
+    margin-left: 3rem;
+    font-size: 1rem;
+    padding: 0;
+	}
 }
 
 @media screen and (min-width: 480px) {
@@ -202,7 +223,7 @@
 		.tribe-events-list-event-title {
 			height: 12.5rem;
 			width: 9.5rem;
-			font-size: 1.5rem;
+			font-size: 1.8rem;
 			align-items: center;
 			display: flex;
 		}
@@ -213,6 +234,14 @@
 			a {
 				padding: 22% 0;
 			}
+		}
+		.tribe-events-event-meta {
+			margin-left: 3rem;
+			font-size: 1.6rem;
+			font-weight: 500;
+		}
+		#tribe-events .tribe-events-content {
+			padding: 0 0 0 3rem;
 		}
 	}
 }

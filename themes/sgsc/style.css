@@ -3198,7 +3198,7 @@ footer {
   border: none;
   padding: 0; }
 
-.events-archive .tribe-events-event-meta {
+.events-archive .tribe-events-event-meta span {
   border: none;
   background: none;
   margin: 0;
@@ -3208,9 +3208,16 @@ footer {
   border: none;
   margin: 0; }
 
+.events-archive .tribe-events-list .tribe-events-event-cost {
+  float: initial; }
+
 .events-archive .tribe-events-event-cost {
-  display: inline;
-  float: left; }
+  clear: both;
+  margin-left: 3rem;
+  font-size: 1.5rem; }
+  .events-archive .tribe-events-event-cost span {
+    padding: 0;
+    display: inline; }
 
 .events-archive .tribe-events-event-cost span {
   border: none;
@@ -3281,6 +3288,21 @@ footer {
 .events-archive .tribe-events-after-html {
   display: none; }
 
+.events-archive .event-pagination {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .events-archive .event-pagination .fa {
+    font-size: 4rem;
+    padding: 0 0.5rem; }
+
+.events-archive a.tribe-events-ical.tribe-events-button {
+  float: none;
+  margin-left: 3rem;
+  font-size: 1rem;
+  padding: 0; }
+
 @media screen and (min-width: 480px) {
   .events-archive .events-title {
     width: initial;
@@ -3313,7 +3335,7 @@ footer {
   .events-archive .tribe-events-list-event-title {
     height: 12.5rem;
     width: 9.5rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     -ms-flex-align: center;
         align-items: center;
     display: -ms-flexbox;
@@ -3321,7 +3343,13 @@ footer {
   .events-archive .gallery-widget-img img {
     height: 11.6rem; }
   .events-archive .gallery-widget-img a {
-    padding: 22% 0; } }
+    padding: 22% 0; }
+  .events-archive .tribe-events-event-meta {
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    font-weight: 500; }
+  .events-archive #tribe-events .tribe-events-content {
+    padding: 0 0 0 3rem; } }
 
 /*--------------------------------------------------------------
 # Single-Page

@@ -23,8 +23,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php if ( tribe_has_previous_event() ) : ?>
 		<li class="<?php echo esc_attr( tribe_left_navigation_classes() ); ?>" aria-label="previous events link">
-			<a class="fa fa-angle-left" href="<?php echo esc_url( tribe_get_listview_prev_link() ); ?>" rel="prev">
-
+			<a href="<?php echo esc_url( tribe_get_listview_prev_link() ); ?>" rel="prev">
+				<p class="event-pagination">
+					<i class="fa fa-angle-left" aria-hidden="true"></i>
+					Prev
+				</p>					
 			</a>
 
 		</li><!-- .tribe-events-nav-left -->
@@ -33,7 +36,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<!-- Right Navigation -->
 	<?php if ( tribe_has_next_event() ) : ?>
 		<li class="<?php echo esc_attr( tribe_right_navigation_classes() ); ?>" aria-label="next events link">
-			<a class="fa fa-angle-right" aria-hidden="true" href="<?php echo esc_url( tribe_get_listview_next_link() ); ?>" rel="next"></a>
+			<a href="<?php echo esc_url( tribe_get_listview_next_link() ); ?>" rel="next">
+				<p class="event-pagination">Next
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</p>
+			</a>
 		</li><!-- .tribe-events-nav-right -->
 	<?php endif; ?>
 </ul>
