@@ -2442,28 +2442,43 @@ footer {
     padding: 34px 0;
     background: rgba(255, 255, 255, 0.81); }
 
-@media all and (min-width: 480px) {
-  .page-template-page-about .entry-header h1 {
-    margin: 0;
-    position: absolute;
-    bottom: 0px;
+.page-template-page-about .entry-content a {
+  color: #000000;
+  text-decoration: none; }
+
+.page-template-page-about .about-links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .page-template-page-about .about-links p {
+    background: #f5a623;
+    width: 277px;
+    height: 96px;
+    border: 4px solid #f5a623;
+    text-align: center;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 34px 0;
-    background: rgba(255, 255, 255, 0.8); }
-  .about-links {
+    -ms-flex-align: center;
+        align-items: center;
+    margin: 32px 0 0 0;
+    font-family: montserrat, merriweather, sans-serif;
+    font-size: 22px; }
+
+.page-template-page-about .about-links p:hover {
+  border: 4px solid #000000; }
+
+@media all and (min-width: 480px) {
+  .page-template-page-about .about-links {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .entry-content a {
-    color: #000000;
-    text-decoration: none; }
-  .about-links p {
+  .page-template-page-about .about-links p {
     background: #f5a623;
     width: 417px;
     height: 150px;
@@ -2476,10 +2491,10 @@ footer {
     -ms-flex-align: center;
         align-items: center;
     margin: 63px 0 0 0; }
-    .about-links p:nth-child(even) {
+    .page-template-page-about .about-links p:nth-child(even) {
       margin-left: 63px;
       margin-right: 31.5px; }
-    .about-links p:nth-child(odd) {
+    .page-template-page-about .about-links p:nth-child(odd) {
       margin-right: 63px;
       margin-left: 31.5px; } }
 
