@@ -224,9 +224,6 @@
         transform: translate(-50%, -70%);
         max-width: none;
         position: absolute;
-        @media screen and (min-width: $mobile_width) {
-          max-height: 130%;
-        }
       }
     }
     .bottom-banner {
