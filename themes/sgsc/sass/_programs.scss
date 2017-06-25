@@ -140,12 +140,19 @@
 }
 
 .tax-program-type {
-  .program-hero {
+  .header {
     position: relative;
   }
 
+  .entry-header {
+    height: 7.3rem;
+    background-color: $orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .donate-btn {
-    bottom: -7.4rem;
+    bottom: 0;
   }
 
   .program-grid {
@@ -156,11 +163,64 @@
   }
   
   .program-img {
-    text-align: center;
+    background-color: #45cdcb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .program-info {
-    padding: 1.5rem;
+    padding: 0 1.5rem;
+    font-family: $font__body;
+    margin: 1.5rem 0;
+    p {
+      font-size: 1rem;
+    }
+  }
+  .program-meta p {
+    margin: 0;
+  }
+  h5 {
+    font-family: $font__body;
+    margin: 0;
+    font-size: 1.6rem;
+  }
+  .calendar-program {
+    padding: 1rem;
+    padding-bottom: 0;    
+    p {
+      font-size: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  .program-back-btn {
+    p {
+      border: solid 2px black;
+      width: 6rem;
+      height: 2rem;
+      margin-left: 1rem;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      font-family: $font__header;
+      font-size: 1.1rem;
+      &:hover {
+        background-color: $orange;
+        border-color: $orange;
+      }
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      &:visited {
+        color: black;
+      }
+      &:hover {
+        color: white;
+      }
+    }
   }
 }
 
@@ -170,3 +230,4 @@
     width: 4.5rem;
   }
 }
+

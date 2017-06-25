@@ -6,7 +6,7 @@
  */
 
  get_header(); ?>
- 	<div id="primary" class="content-area container">
+ 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		
 		<?php if ( have_posts() ) : ?>
@@ -34,7 +34,9 @@
 						</div>
 						<div class="program-info">
 							<?php the_title( '<h5>', '</h5>' ); ?>
-							<?php echo CFS()->get( 'information' ); ?>
+							<div class="program-meta">
+								<p><?php echo CFS()->get( 'information' ); ?></o>
+							</div>
 							<?php the_content( '<p>', '</p>' ); ?>
 						</div>
 					</li>
@@ -55,6 +57,12 @@
 			<p>Check out the program descriptions, call us at 604-732-0812 for more information, or drop-in to try out a class! Have an idea for a program? Email Alex at akorotchenko@southgranvilleseniors.ca.</p>
 			<p>Download the Newsletter Here</p>
 		</section>
+		
+		<div class="program-back-btn">
+			<a href="<?php echo esc_url( get_permalink (get_page_by_path('programs'))) ?>">
+				<p>Back</p>
+			</a>
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
