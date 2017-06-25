@@ -3,7 +3,7 @@
  * Template Name: About
  *
  *
- * @package SGSC_Theme
+ * @package  SGSC_Theme
  */
 
 get_header(); ?>
