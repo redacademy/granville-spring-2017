@@ -2,6 +2,8 @@
   margin: 0;
 }
 
+.page-template-page-join-us {
+
 .entry-header {
   display: flex;
   justify-content: center;
@@ -79,8 +81,13 @@
 .rectangle p {
   display: none;
 }
+}
 
 @media all and (min-width: $desktop-view) {
+
+
+
+  .page-template-page-join-us {
   .entry-header {
     width: $d_width;
   }
@@ -133,4 +140,5 @@
   .rectangle p {
     display: initial;
   }
+}
 }
