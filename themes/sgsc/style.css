@@ -1064,6 +1064,7 @@ object {
     position: initial;
     width: 165px;
     line-height: 1.75; } }
+        /*align-self: flex-end; } }*/
 
 /*--------------------------------------------------------------
 # Front-Page
@@ -1319,7 +1320,7 @@ object {
     .home .program-event-post .intro-event-blog .front-blog:hover, .home .program-event-post .intro-event-blog .front-blog:active, .home .program-event-post .intro-event-blog .front-blog:focus {
       border: 2px #000000 solid 4px; }
       .home .program-event-post .intro-event-blog .front-blog:hover h1, .home .program-event-post .intro-event-blog .front-blog:active h1, .home .program-event-post .intro-event-blog .front-blog:focus h1 {
-        color: #ffffff; }
+        color: #f5a623; }
     @media screen and (min-width: 480px) {
       .home .program-event-post .intro-event-blog .front-blog {
         width: 100%;
@@ -1327,11 +1328,15 @@ object {
         background: #45cdcb;
         text-align: center; }
         .home .program-event-post .intro-event-blog .front-blog h1 {
-          font-size: 39px; } }
+          font-size: 39px; }
+        .home .program-event-post .intro-event-blog .front-blog:hover h1, .home .program-event-post .intro-event-blog .front-blog:active h1, .home .program-event-post .intro-event-blog .front-blog:focus h1 {
+          color: #ffffff; } }
 
-.home .feature-gallery {
+.post-type-archive-gallery .featured-gallery-section {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -2418,32 +2423,36 @@ footer {
     .copywrite p {
       font-size: 14px; } }
 
-.page-template-page-about .entry-header {
-  max-width: 480px;
-  margin: 0 auto;
-  height: 305px;
-  position: relative; }
-  @media screen and (min-width: 480px) {
-    .page-template-page-about .entry-header {
-      max-width: 1024px;
-      height: 353px; } }
-  .page-template-page-about .entry-header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1; }
-  .page-template-page-about .entry-header h1 {
-    margin: 0;
-    position: absolute;
-    bottom: 0px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    width: 100%;
-    padding: 34px 0;
-    background: rgba(255, 255, 255, 0.8); }
+.page-template-page-about .entry-title {
+  display: none; }
+
+.about-content h1 {
+  display: -ms-flexbox;
+  display: flex;
+  width: 1024px;
+  height: 140px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: rgba(1, 255, 255, 0.8);
+  margin: 0; }
+
+.about-links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.about-content a {
+  color: #000000;
+  text-decoration: none; }
+
+.about-header {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 194px; }
 
 @media all and (min-width: 480px) {
   .about-links {
@@ -3205,15 +3214,36 @@ footer {
   border: none;
   background: none;
   margin: 0;
-  padding: 0; }
+  padding: 1rem;
+  font-weight: normal; }
+  .events-archive .tribe-events-event-meta a {
+    color: black; }
+  .events-archive .tribe-events-event-meta a:hover {
+    color: #f5a623; }
+  .events-archive .tribe-events-event-meta a:visited {
+    color: black; }
+
+.events-archive .tribe-event-schedule-details {
+  padding: 0;
+  font-size: 1.3rem; }
 
 .events-archive .tribe-events-venue-details {
   border: none;
-  margin: 0; }
+  margin: 0;
+  padding: 0;
+  font-size: 1rem; }
+
+.events-archive .tribe-events-list .tribe-events-event-cost {
+  float: initial; }
 
 .events-archive .tribe-events-event-cost {
-  display: inline;
-  float: left; }
+  clear: both;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  display: inline-block; }
+  .events-archive .tribe-events-event-cost span {
+    padding: 0;
+    display: inline; }
 
 .events-archive .tribe-events-event-cost span {
   border: none;
@@ -3223,6 +3253,8 @@ footer {
 
 .events-archive #tribe-events .tribe-events-content {
   padding: 0 1rem; }
+  .events-archive #tribe-events .tribe-events-content p {
+    font-size: 1.1rem; }
 
 .events-archive .tribe-events-sub-nav {
   display: -ms-flexbox;
@@ -3253,19 +3285,19 @@ footer {
 .events-archive .widget-title {
   background-color: #45cdcb;
   width: 100%;
-  height: auto;
-  padding: 30% 0;
+  height: 20rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   text-align: center;
   font-size: 2.25rem;
   line-height: 2.5rem; }
 
 .events-archive .gallery-widget-img {
-  position: relative;
-  object-fit: cover;
-  margin: 2rem 0px; }
+  position: relative; }
   .events-archive .gallery-widget-img img {
-    width: 100%;
-    height: 300px; }
+    object-fit: cover; }
   .events-archive .gallery-widget-img a {
     position: absolute;
     width: 100%;
@@ -3277,12 +3309,80 @@ footer {
     padding: 37% 0;
     font-size: 1.5rem; }
 
+.events-archive .tribe-events-after-html {
+  display: none; }
+
+.events-archive .event-pagination {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .events-archive .event-pagination .fa {
+    font-size: 4rem;
+    padding: 0 0.5rem; }
+
+.events-archive a.tribe-events-ical.tribe-events-button {
+  float: none;
+  margin-left: 3rem;
+  font-size: 1rem;
+  padding: 0; }
+
+@media screen and (min-width: 480px) {
+  .events-archive .events-title {
+    width: initial;
+    height: 10rem; }
+  .events-archive .site-content {
+    display: -ms-flexbox;
+    display: flex;
+    width: 1024px;
+    margin: 0 auto;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .events-archive #primary {
+    -ms-flex: 0 1 60%;
+        flex: 0 1 60%; }
+  .events-archive #secondary {
+    -ms-flex: 0 1 35%;
+        flex: 0 1 35%;
+    margin-top: 10.2rem; }
+  .events-archive .title-events-archive {
+    width: 166.6%; }
+  .events-archive .tribe-events-page-title {
+    font-size: 2.5rem;
+    margin: 0; }
+  .events-archive .event-header {
+    height: 20rem; }
+  .events-archive .event-bar {
+    width: 2rem; }
+  .events-archive .widget-title {
+    height: 20rem; }
+  .events-archive .tribe-events-list-event-title {
+    height: 12.5rem;
+    width: 9.5rem;
+    font-size: 1.8rem;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex; }
+  .events-archive .gallery-widget-img img {
+    height: 11.6rem; }
+  .events-archive .gallery-widget-img a {
+    padding: 29% 0;
+    font-size: 1.5rem; }
+
 @media screen and (min-width: 480px) {
   .events-archive .events-title {
     width: initial; }
   .events-archive .site-content {
     display: -ms-flexbox;
     display: flex; } }
+    padding: 22% 0; }
+  .events-archive .tribe-events-event-meta {
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    font-weight: 500; }
+  .events-archive #tribe-events .tribe-events-content {
+    padding: 0 0 0 3rem; } 
 
 /*--------------------------------------------------------------
 # Single-Page

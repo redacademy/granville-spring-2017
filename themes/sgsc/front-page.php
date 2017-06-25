@@ -63,21 +63,17 @@ get_header(); ?>
           'orderby'						=> 'modified'
 				);
 				$posts_array = get_posts( $args );
-				foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
-
+				foreach ( $posts_array as $post ) :setup_postdata( $post ); ?>
 				<?php $displays = CFS()->get( 'featured_gallery' )?>
+        				<?php echo $displays?>
+
+
 					<?php if ($displays == 1) :?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 							<div class="image-position">
-									<?php
-									$fields = CFS()->get( 'gallery' );
-									foreach ( $fields as $field ):?>
-										<?php $featured =$field['featured_image'] ?>
-											<?php if ( $featured == 1 ):?>
-												<img src="<?php echo $field['upload_image'] ?>">
-											<?php endif ?>
-									<?php endforeach?>
+                <?php the_post_thumbnail('full'); ?>
+
 							</div>
               <div class="bottom-banner">
 									<h2><?php the_title(); ?></h2>
@@ -85,8 +81,9 @@ get_header(); ?>
               </div>
 
 					</article><!-- #post-## -->
+
 					<?php endif ?>
-				<?php endforeach; ?>
+				<?php endforeach;?>
          </section>
 
 

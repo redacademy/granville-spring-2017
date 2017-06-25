@@ -170,7 +170,7 @@
       @include hover-state {
         border: $p_border 4px;
         h1 {
-          color: $white;
+          color: $orange;
         }
       }
       @media screen and (min-width: $mobile_width) {
@@ -180,6 +180,11 @@
         text-align: center;
         h1 {
           font-size: 39px;
+        }
+        @include hover-state {
+          h1 {
+            color: $white;
+          }
         }
       }
     }
@@ -219,9 +224,6 @@
         transform: translate(-50%, -70%);
         max-width: none;
         position: absolute;
-        @media screen and (min-width: $mobile_width) {
-          max-height: 130%;
-        }
       }
     }
     .bottom-banner {
