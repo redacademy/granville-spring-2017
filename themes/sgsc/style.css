@@ -1064,7 +1064,6 @@ object {
     position: initial;
     width: 165px;
     line-height: 1.75; } }
-        /*align-self: flex-end; } }*/
 
 /*--------------------------------------------------------------
 # Front-Page
@@ -1332,11 +1331,9 @@ object {
         .home .program-event-post .intro-event-blog .front-blog:hover h1, .home .program-event-post .intro-event-blog .front-blog:active h1, .home .program-event-post .intro-event-blog .front-blog:focus h1 {
           color: #ffffff; } }
 
-.post-type-archive-gallery .featured-gallery-section {
+.home .feature-gallery {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -1374,9 +1371,6 @@ object {
         transform: translate(-50%, -70%);
         max-width: none;
         position: absolute; }
-        @media screen and (min-width: 480px) {
-          .home .feature-gallery article .image-position img {
-            max-height: 130%; } }
     .home .feature-gallery article .bottom-banner {
       z-index: 2;
       position: absolute;
@@ -2423,38 +2417,46 @@ footer {
     .copywrite p {
       font-size: 14px; } }
 
-.page-template-page-about .entry-title {
-  display: none; }
-
-.about-content h1 {
-  display: -ms-flexbox;
-  display: flex;
-  width: 1024px;
-  height: 140px;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  background-color: rgba(1, 255, 255, 0.8);
-  margin: 0; }
-
-.about-links {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.about-content a {
-  color: #000000;
-  text-decoration: none; }
-
-.about-header {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 194px; }
+.page-template-page-about .entry-header {
+  max-width: 480px;
+  margin: 0 auto;
+  height: 305px;
+  position: relative; }
+  @media screen and (min-width: 480px) {
+    .page-template-page-about .entry-header {
+      max-width: 1024px;
+      height: 353px; } }
+  .page-template-page-about .entry-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1; }
+  .page-template-page-about .entry-header h1 {
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    padding: 34px 0;
+    background: rgba(255, 255, 255, 0.81); }
 
 @media all and (min-width: 480px) {
+  .page-template-page-about .entry-header h1 {
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 34px 0;
+    background: rgba(255, 255, 255, 0.8); }
   .about-links {
     display: -ms-flexbox;
     display: flex;
@@ -3292,11 +3294,15 @@ footer {
       align-items: center;
   text-align: center;
   font-size: 2.25rem;
-  line-height: 2.5rem; }
+  line-height: 2.5rem;
+  padding: 0 1rem; }
 
 .events-archive .gallery-widget-img {
-  position: relative; }
+  position: relative;
+  margin: 2rem 0px; }
   .events-archive .gallery-widget-img img {
+    width: 100%;
+    height: 300px;
     object-fit: cover; }
   .events-archive .gallery-widget-img a {
     position: absolute;
@@ -3367,22 +3373,13 @@ footer {
   .events-archive .gallery-widget-img img {
     height: 11.6rem; }
   .events-archive .gallery-widget-img a {
-    padding: 29% 0;
-    font-size: 1.5rem; }
-
-@media screen and (min-width: 480px) {
-  .events-archive .events-title {
-    width: initial; }
-  .events-archive .site-content {
-    display: -ms-flexbox;
-    display: flex; } }
     padding: 22% 0; }
   .events-archive .tribe-events-event-meta {
     margin-left: 3rem;
     font-size: 1.6rem;
     font-weight: 500; }
   .events-archive #tribe-events .tribe-events-content {
-    padding: 0 0 0 3rem; } 
+    padding: 0 0 0 3rem; } }
 
 /*--------------------------------------------------------------
 # Single-Page
