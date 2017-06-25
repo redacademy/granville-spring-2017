@@ -33,18 +33,13 @@ get_header(); ?>
 				foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
 
 				<?php $displays = CFS()->get( 'featured_gallery' )?>
-					<?php if ($displays == 1) :?>
+				
+				<?php if ($displays == 1) :?>
+				<?php echo $displays?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<header class="entry-header">
 							<div class="image-position">
-									<?php
-									$fields = CFS()->get( 'gallery' );
-									foreach ( $fields as $field ):?>
-										<?php $featured =$field['featured_image'] ?>
-											<?php if ( $featured == 1 ):?>
-												<img src="<?php echo $field['upload_image'] ?>">
-											<?php endif ?>
-									<?php endforeach?>
+								<?php the_post_thumbnail('full'); ?>
 							</div>
 								<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
 									<h2><?php the_title(); ?></h2>
@@ -56,8 +51,6 @@ get_header(); ?>
 			</div>
 
 		</section>
-
-
 
 
 
@@ -80,14 +73,8 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 						<div class="image-position">		 
-							<?php
-							$fields = CFS()->get( 'gallery' );
-							foreach ( $fields as $field ):?>
-								<?php $featured =$field['featured_image'] ?>
-									<?php if ( $featured == 1 ):?>
-										<img src="<?php echo $field['upload_image'] ?>">
-									<?php endif ?>
-							<?php endforeach?>
+                <?php the_post_thumbnail('full'); ?>
+
 						</div>
 
 						<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
