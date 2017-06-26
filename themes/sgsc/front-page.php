@@ -84,6 +84,8 @@ get_header(); ?>
 
 					<?php endif ?>
 				<?php endforeach;?>
+				<?php wp_reset_postdata(); ?>
+
          </section>
 
 
