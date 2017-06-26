@@ -2571,91 +2571,126 @@ footer {
       margin-right: 63px;
       margin-left: 31.5px; } }
 
-.page-template-page-about-our-team .entry-header {
-  max-width: 480px;
-  margin: 0 auto;
-  height: 275px;
-  position: relative; }
-  @media screen and (min-width: 480px) {
-    .page-template-page-about-our-team .entry-header {
-      max-width: 1024px;
-      height: 375px; } }
-  .page-template-page-about-our-team .entry-header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 65% 0%;
-    position: absolute; }
-
-.page-template-page-about-our-team .entry-title {
-  margin: 0;
-  position: absolute;
-  bottom: 0px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  width: 100%;
-  height: 118px;
-  background: #f5a623; }
-
-.page-template-page-about-our-team .entry-content p {
-  margin: 15px 22px;
-  text-indent: 15px; }
-
-.page-template-page-about-our-team .about-links {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .page-template-page-about-our-team .about-links p {
-    background: #f5a623;
-    width: 277px;
-    height: 96px;
-    border: 4px solid #f5a623;
-    text-align: center;
+.page-template-page-about-our-team {
+  margin: 0; }
+  .page-template-page-about-our-team .entry-header {
+    max-width: 480px;
+    margin: 0 auto;
+    height: 275px;
+    position: relative; }
+    @media screen and (min-width: 480px) {
+      .page-template-page-about-our-team .entry-header {
+        max-width: 1024px;
+        height: 375px; } }
+    .page-template-page-about-our-team .entry-header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 65% 0%;
+      position: absolute; }
+  .page-template-page-about-our-team .entry-title {
+    position: absolute;
+    bottom: 0px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    margin: 32px 0 0 0;
-    font-family: montserrat, merriweather, sans-serif;
-    font-size: 22px; }
-
-.page-template-page-about-our-team .about-links p:hover {
-  border: 4px solid #000000; }
-
-@media all and (min-width: 480px) {
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    height: 118px;
+    background: #f5a623;
+    margin-bottom: 0; }
+  .page-template-page-about-our-team .entry-content p {
+    margin: 15px 22px;
+    text-indent: 15px; }
   .page-template-page-about-our-team .about-links {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-  .page-template-page-about-our-team .about-links p {
-    background: #f5a623;
-    width: 417px;
-    height: 150px;
-    border: 4px solid #f5a623;
-    text-align: center;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .page-template-page-about-our-team .about-links p {
+      background: #f5a623;
+      width: 277px;
+      height: 96px;
+      border: 4px solid #f5a623;
+      text-align: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      margin: 32px 0 0 0;
+      font-family: montserrat, merriweather, sans-serif;
+      font-size: 22px; }
+  .page-template-page-about-our-team ul {
+    margin: 0;
+    padding: 0; }
+  .page-template-page-about-our-team li {
+    list-style-type: none; }
+  .page-template-page-about-our-team ul li:nth-child(odd) img {
+    padding-left: 22px;
+    background-color: #45cdcb; }
+  .page-template-page-about-our-team ul li:nth-child(even) img {
+    padding-right: 22px;
+    background-color: #45cdcb; }
+  .page-template-page-about-our-team .member-container {
+    margin: 0 22px; }
+  .page-template-page-about-our-team span.text {
+    color: #5c8edc; }
+  .page-template-page-about-our-team .member-email, .page-template-page-about-our-team .member-bio, .page-template-page-about-our-team .member-container {
+    margin-bottom: 20px; }
+  .page-template-page-about-our-team .about-back-btn p {
+    border: solid 2px black;
+    width: 6rem;
+    height: 2rem;
+    margin-left: 1rem;
+    -ms-flex-align: center;
+        align-items: center;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    margin: 63px 0 0 0; }
-    .page-template-page-about-our-team .about-links p:nth-child(even) {
-      margin-left: 63px;
-      margin-right: 31.5px; }
-    .page-template-page-about-our-team .about-links p:nth-child(odd) {
-      margin-right: 63px;
-      margin-left: 31.5px; } }
+    font-family: montserrat, merriweather, sans-serif;
+    font-size: 1.1rem; }
+    .page-template-page-about-our-team .about-back-btn p:hover {
+      background-color: #f5a623;
+      border-color: #f5a623; }
+  .page-template-page-about-our-team .about-back-btn a {
+    color: black;
+    text-decoration: none; }
+    .page-template-page-about-our-team .about-back-btn a:visited {
+      color: black; }
+    .page-template-page-about-our-team .about-back-btn a:hover {
+      color: white; }
+  @media all and (min-width: 480px) {
+    .page-template-page-about-our-team .about-links {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .page-template-page-about-our-team .about-links p {
+      background: #f5a623;
+      width: 417px;
+      height: 150px;
+      border: 4px solid #f5a623;
+      text-align: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      margin: 63px 0 0 0; }
+      .page-template-page-about-our-team .about-links p:nth-child(even) {
+        margin-left: 63px;
+        margin-right: 31.5px; }
+      .page-template-page-about-our-team .about-links p:nth-child(odd) {
+        margin-right: 63px;
+        margin-left: 31.5px; } }
 
 .program-hero {
   height: 19rem;

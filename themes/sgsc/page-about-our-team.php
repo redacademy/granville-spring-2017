@@ -34,18 +34,24 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'about' ); ?>
 
 		<?php endwhile; // End of the loop. ?>
-			<ul class="team-members">
+			<ul>
 				<?php
 					$fields = CFS()->get( 'new_member_loop' );
 					foreach ( $fields as $field ) : ?>
-					<li class="team-member"><img class="member-picture" src="<?php echo $field['team_member_picture'] ?>" alt="">
-					<h1 class="member-name"> <?php echo $field['team_member_name']; ?></h1>
-					<p class="member-position"> <?php echo $field['team_member_position']; ?></p>
-					<p class="member-email"> <?php echo $field['team_member_email']; ?></p>
-					<p class="member-bio"> <?php echo  $field['team_member_bio'] ?></p>
-					
-				<?php endforeach ?></li>
+					<li>
+						<img class="member-picture" src="<?php echo $field['team_member_picture'] ?>" alt=""/>
+						<h1 class="member-name member-container"> <?php echo $field['team_member_name']; ?></h1>
+						<p class="member-position member-container"> <?php echo $field['team_member_position']; ?></p>
+						<p class="member-email member-container"> <?php echo $field['team_member_email']; ?></p>
+						<p class="member-bio member-container"> <?php echo  $field['team_member_bio'] ?></p>
+					</li>
+				<?php endforeach ?>
 			</ul>
+			<div class="about-back-btn">
+			<a href="<?php echo esc_url( get_permalink (get_page_by_path('about'))) ?>">
+				<p>Back</p>
+			</a>
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
