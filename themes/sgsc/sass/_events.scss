@@ -211,6 +211,11 @@
 			width: initial;
 			height: 10rem;
 		}
+		.donate-btn {
+      height: 4.5rem;
+      width: 4.5rem;
+      font-size: 2.5rem;
+    }
 		.site-content {
 			display: flex;
 			width: 1024px;
@@ -222,7 +227,7 @@
 		}
 		#secondary {
 			flex: 0 1 35%;
-			margin-top: 10.2rem;
+			margin-top: 11.6rem;
 		}
 		.title-events-archive {
 			width: 166.6%;
@@ -259,9 +264,13 @@
 			margin-left: 3rem;
 			font-size: 1.6rem;
 			font-weight: 500;
+			padding-left: 0;
 		}
 		#tribe-events .tribe-events-content {
 			padding: 0 0 0 3rem;
+		}
+		.tribe-events-event-cost {
+			margin-left: 3rem;
 		}
 	}
 }
