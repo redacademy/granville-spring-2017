@@ -23,6 +23,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and(min-width: 480px) {
+      height: 10rem;
+    }
   }
   .entry-title {
     font-weight: 500;
@@ -60,12 +63,20 @@
   
   @media screen and (min-width: 480px) {
     flex-flow: row wrap;
+<<<<<<< HEAD
     justify-content: space-between;
+=======
+    justify-content: space-around;
+>>>>>>> program
   }
   
   .program-link{
     @media screen and (min-width: 480px) {
+<<<<<<< HEAD
       flex: 0 1 47%;
+=======
+      flex: 0 1 43%;
+>>>>>>> program
     }
   }
 	li {
@@ -89,7 +100,11 @@
   a:last-child {
     @media screen and (min-width: 480px){
     margin: 2rem 0;
+<<<<<<< HEAD
     flex: 100%;
+=======
+    flex: 0 1 93%;
+>>>>>>> program
     margin: 0;
     }
   }

@@ -159,3 +159,13 @@ function filter_tribe_all_occurences ($wp_query) {
 
 	return $wp_query;
 }
+
+// sort program taxonomies
+function program_type_sort() {
+	$program_types = get_terms(array (
+		'taxonomy' => 'program-type',
+		'hide_empty' => false
+		)); 
+
+
+}
