@@ -2757,7 +2757,13 @@ footer {
   @media screen and (min-width: 480px) {
     .program-list {
       -ms-flex-flow: row wrap;
-          flex-flow: row wrap; } }
+          flex-flow: row wrap;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
+  @media screen and (min-width: 480px) {
+    .program-list .program-link {
+      -ms-flex: 0 1 47%;
+          flex: 0 1 47%; } }
   .program-list li {
     background: #f5a623;
     width: 80%;
@@ -2774,18 +2780,14 @@ footer {
     @media screen and (min-width: 480px) {
       .program-list li {
         width: initial;
-        margin: 2rem 0 2rem 2rem;
         height: 10rem;
-        -ms-flex: 0 1 46.8%;
-            flex: 0 1 46.8%; } }
+        margin: 2rem 0; } }
   @media screen and (min-width: 480px) {
-    .program-list li:nth-child(odd) {
-      margin: 2rem 2rem 2rem 0; } }
-  @media screen and (min-width: 480px) {
-    .program-list li:last-child {
+    .program-list a:last-child {
       margin: 2rem 0;
       -ms-flex: 100%;
-          flex: 100%; } }
+          flex: 100%;
+      margin: 0; } }
   .program-list li:hover {
     border: 4px solid black; }
   .program-list a {

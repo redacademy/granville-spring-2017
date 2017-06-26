@@ -60,8 +60,14 @@
   
   @media screen and (min-width: 480px) {
     flex-flow: row wrap;
+    justify-content: space-between;
   }
-
+  
+  .program-link{
+    @media screen and (min-width: 480px) {
+      flex: 0 1 47%;
+    }
+  }
 	li {
     background: $orange;
     width: 80%;
@@ -75,22 +81,16 @@
     
     @media screen and (min-width: 480px) {
       width: initial;
-      margin: 2rem 0 2rem 2rem;
       height: 10rem;
-      flex: 0 1 46.8%;
+      margin: 2rem 0;
     }
 	}
-  
-  li:nth-child(odd) {
-    @media screen and (min-width: 480px){
-    margin: 2rem 2rem 2rem 0;
-    }
-  }
 
-  li:last-child {
+  a:last-child {
     @media screen and (min-width: 480px){
     margin: 2rem 0;
     flex: 100%;
+    margin: 0;
     }
   }
 
