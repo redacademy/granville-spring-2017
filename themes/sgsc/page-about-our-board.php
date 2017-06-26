@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About-Our-Partners
+ * Template Name: About-Our-Board
  *
  *
  * @package SGSC_Theme
@@ -36,14 +36,14 @@ get_header(); ?>
 		<?php endwhile; // End of the loop. ?>
 			<ul class="team-members">
 				<?php
-					$fields = CFS()->get( 'our_partners' );
+				$fields = CFS()->get( 'our_board_members' );
 					foreach ( $fields as $field ) : ?>
 					<li class="member">
-						<img class="member-picture" src="<?php echo $field['partner_picture'] ?>" alt=""/>
-						<h1 class="member-name member-container"> <?php echo $field['partner_name']; ?></h1>
-						<p class="member-position member-container"> <?php echo $field['partner_position']; ?></p>
-						<p class="member-email member-container"> <?php echo $field['partner_email']; ?></p>
-						<p class="member-bio member-container"> <?php echo  $field['partner_bio'] ?></p>
+						<img class="member-picture" src="<?php echo $field['board_member_picture`'] ?>" alt=""/>
+						<h1 class="member-name member-container"> <?php echo $field['board_member_name']; ?></h1>
+						<p class="member-position member-container"> <?php echo $field['board_member_position']; ?></p>
+						<p class="member-email member-container"> <?php echo $field['board_member_email']; ?></p>
+						<p class="member-bio member-container"> <?php echo  $field['board_member_bio'] ?></p>
 					</li>
 				<?php endforeach ?>
 			</ul>

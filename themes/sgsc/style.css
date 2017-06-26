@@ -2735,23 +2735,23 @@ footer {
     margin-bottom: 20px;
     margin-top: 40px; } }
 
-.page-template-page-about-our-team .entry-header {
+.page-template-page-about-our-board .entry-header {
   max-width: 480px;
   margin: 0 auto;
   height: 275px;
   position: relative; }
   @media screen and (min-width: 480px) {
-    .page-template-page-about-our-team .entry-header {
+    .page-template-page-about-our-board .entry-header {
       max-width: 1024px;
       height: 375px; } }
-  .page-template-page-about-our-team .entry-header img {
+  .page-template-page-about-our-board .entry-header img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 65% 0%;
     position: absolute; }
 
-.page-template-page-about-our-team .entry-title {
+.page-template-page-about-our-board .entry-title {
   position: absolute;
   bottom: 0px;
   display: -ms-flexbox;
@@ -2765,18 +2765,18 @@ footer {
   background: #f5a623;
   margin-bottom: 0; }
 
-.page-template-page-about-our-team .entry-content p {
+.page-template-page-about-our-board .entry-content p {
   margin: 15px 22px;
   text-indent: 15px; }
 
-.page-template-page-about-our-team .about-links {
+.page-template-page-about-our-board .about-links {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center; }
-  .page-template-page-about-our-team .about-links p {
+  .page-template-page-about-our-board .about-links p {
     background: #f5a623;
     width: 277px;
     height: 96px;
@@ -2792,40 +2792,40 @@ footer {
     font-family: montserrat, merriweather, sans-serif;
     font-size: 22px; }
 
-.page-template-page-about-our-team ul {
+.page-template-page-about-our-board ul {
   margin: 0;
   padding: 0; }
 
-.page-template-page-about-our-team li {
+.page-template-page-about-our-board li {
   list-style-type: none; }
 
-.page-template-page-about-our-team body {
+.page-template-page-about-our-board body {
   margin: 0; }
 
-.page-template-page-about-our-team ul li:nth-child(odd) img {
+.page-template-page-about-our-board ul li:nth-child(odd) img {
   padding-left: 22px;
   background-color: #45cdcb; }
 
-.page-template-page-about-our-team ul li:nth-child(even) img {
+.page-template-page-about-our-board ul li:nth-child(even) img {
   padding-right: 22px;
   background-color: #45cdcb; }
 
-.page-template-page-about-our-team .member-container {
+.page-template-page-about-our-board .member-container {
   margin: 0 22px; }
 
-.page-template-page-about-our-team span.text {
+.page-template-page-about-our-board span.text {
   color: #5c8edc; }
 
-.page-template-page-about-our-team .cfs-hyperlink {
+.page-template-page-about-our-board .cfs-hyperlink {
   text-decoration: none; }
 
-.page-template-page-about-our-team .member-email, .page-template-page-about-our-team .member-bio {
+.page-template-page-about-our-board .member-email, .page-template-page-about-our-board .member-bio {
   margin-bottom: 20px; }
 
-.page-template-page-about-our-team .member-picture {
+.page-template-page-about-our-board .member-picture {
   width: 100%; }
 
-.page-template-page-about-our-team .about-back-btn p {
+.page-template-page-about-our-board .about-back-btn p {
   border: solid 2px black;
   width: 6rem;
   height: 2rem;
@@ -2838,58 +2838,58 @@ footer {
       justify-content: center;
   font-family: montserrat, merriweather, sans-serif;
   font-size: 1.1rem; }
-  .page-template-page-about-our-team .about-back-btn p:hover {
+  .page-template-page-about-our-board .about-back-btn p:hover {
     background-color: #f5a623;
     border-color: #f5a623; }
 
-.page-template-page-about-our-team .about-back-btn a {
+.page-template-page-about-our-board .about-back-btn a {
   color: black;
   text-decoration: none; }
-  .page-template-page-about-our-team .about-back-btn a:visited {
+  .page-template-page-about-our-board .about-back-btn a:visited {
     color: black; }
-  .page-template-page-about-our-team .about-back-btn a:hover {
+  .page-template-page-about-our-board .about-back-btn a:hover {
     color: white; }
 
 @media all and (min-width: 480px) {
-  .page-template-page-about-our-team .entry-content {
+  .page-template-page-about-our-board .entry-content {
     column-count: 2; }
-  .page-template-page-about-our-team .our-team-paragraph {
+  .page-template-page-about-our-board .our-team-paragraph {
     font-size: 18px;
     line-height: 24px; }
-  .page-template-page-about-our-team .team-members {
+  .page-template-page-about-our-board .team-members {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-  .page-template-page-about-our-team .member {
+  .page-template-page-about-our-board .member {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%; }
-  .page-template-page-about-our-team .member-picture {
+  .page-template-page-about-our-board .member-picture {
     height: 282px;
     width: 100%;
     margin-bottom: 20px;
     margin-top: 40px; }
-  .page-template-page-about-our-team .member-name {
+  .page-template-page-about-our-board .member-name {
     font-size: 24px;
     font-weight: bold; }
-  .page-template-page-about-our-team .member-email.member-container {
+  .page-template-page-about-our-board .member-email.member-container {
     margin-bottom: 20px; }
-  .page-template-page-about-our-team .member-container {
+  .page-template-page-about-our-board .member-container {
     margin: 0 0; }
-  .page-template-page-about-our-team .member-position, .page-template-page-about-our-team .member-email, .page-template-page-about-our-team .member-bio {
+  .page-template-page-about-our-board .member-position, .page-template-page-about-our-board .member-email, .page-template-page-about-our-board .member-bio {
     font-size: 18px;
     line-height: 22px; }
-  .page-template-page-about-our-team ul li:nth-child(odd) img {
+  .page-template-page-about-our-board ul li:nth-child(odd) img {
     padding-left: 38px; }
-  .page-template-page-about-our-team ul li:nth-child(even) img {
+  .page-template-page-about-our-board ul li:nth-child(even) img {
     padding-right: 38px; }
-  .page-template-page-about-our-team .member-picture {
+  .page-template-page-about-our-board .member-picture {
     height: auto;
     max-width: 100%;
     margin-bottom: 20px;
