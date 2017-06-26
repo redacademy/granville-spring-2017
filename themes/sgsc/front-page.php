@@ -58,34 +58,33 @@ get_header(); ?>
        <section class="feature-gallery">
 
         <?php $args = array(
-					'posts_per_page' 	=> 1,
+					'posts_per_page' 	=> -1,
 					'post_type' 			=> 'gallery',
           'orderby'						=> 'modified'
 				);
 				$posts_array = get_posts( $args );
-				foreach ( $posts_array as $post ) :setup_postdata( $post ); ?>
-				<?php $displays = CFS()->get( 'featured_gallery' )?>
-        				<?php echo $displays?>
+        $i = 0;
+				foreach ( $posts_array as $post ) :setup_postdata( $post ); 
+				$displays = CFS()->get( 'featured_gallery' );
+				if ( $i < 1) {
+					if($displays == 1){ ?>
 
-
-					<?php if ($displays == 1) :?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-							<div class="image-position">
-                <?php the_post_thumbnail('full'); ?>
-
-							</div>
-              <div class="bottom-banner">
-									<h2><?php the_title(); ?></h2>
-                  <a class="m-button" href="<?php echo esc_url( get_permalink()) ?>"><p>More</p></a>
-              </div>
-
+            <div class="image-position">
+              <?php the_post_thumbnail('full'); ?>
+            </div>
+            <div class="bottom-banner">
+                <h2><?php the_title(); ?></h2>
+                <a class="m-button" href="<?php echo esc_url( get_permalink()) ?>"><p>More</p></a>
+            </div>
 					</article><!-- #post-## -->
 
-					<?php endif ?>
-				<?php endforeach;?>
-				<?php wp_reset_postdata(); ?>
-
+          <?php		
+              $i ++;
+            }
+          }?>
+          <?php endforeach;?>
+          <?php wp_reset_postdata(); ?>
          </section>
 
 
