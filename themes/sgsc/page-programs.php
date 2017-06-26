@@ -28,20 +28,20 @@ get_header(); ?>
 					<?php $program_types = get_terms(array (
 							'taxonomy' => 'program-type',
 							'hide_empty' => false
-						)); 
+					)); 
 
-					foreach($program_types as $key => $val) {
-						if($val->slug == 'information') {
-							$item = $program_types[$key];
-							unset($program_types[$key]);
-							array_push($program_types, $item); 
-							break;
-						}
-					}
+						foreach($program_types as $key => $val) {
+		if($val->slug == 'information') {
+			$item = $program_types[$key];
+			unset($program_types[$key]);
+			array_push($program_types, $item); 
+			break;
+		}
+	}
 
-						if (!empty($program_types)&& !is_wp_error($program_types)) : ?>
+					if (!empty($program_types)&& !is_wp_error($program_types)) : ?>
 
-						<ul class="program-list">						
+						<ul class="program-list">
 							<?php foreach ($program_types as $program_type) : ?>
 								<a href = "<?php echo get_term_link($program_type); ?>" class="program-link">
 									<li>
@@ -49,9 +49,9 @@ get_header(); ?>
 									</li>
 								</a>
 							<?php endforeach; ?>
-						</ul>							
-						<?php endif; ?>
-					</div>
+						</ul>
+					<?php endif; ?>
+				</div>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="entry-content">
@@ -65,8 +65,6 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 				<?php endwhile; // End of the loop. ?>
 			</article>
-			<div id="load-event-calendar">
-			</div>
 			
 		</main><!-- #main -->
 	</div><!-- #primary -->

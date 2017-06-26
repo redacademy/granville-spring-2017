@@ -23,6 +23,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and(min-width: 480px) {
+      height: 10rem;
+    }
   }
   .entry-title {
     font-weight: 500;
@@ -60,12 +63,12 @@
   
   @media screen and (min-width: 480px) {
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   .program-link{
     @media screen and (min-width: 480px) {
-      flex: 0 1 47%;
+      flex: 0 1 43%;
     }
   }
 	li {
@@ -89,7 +92,7 @@
   a:last-child {
     @media screen and (min-width: 480px){
     margin: 2rem 0;
-    flex: 100%;
+    flex: 0 1 93%;
     margin: 0;
     }
   }
