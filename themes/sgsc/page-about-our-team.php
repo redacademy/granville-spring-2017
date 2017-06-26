@@ -34,11 +34,11 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'about' ); ?>
 
 		<?php endwhile; // End of the loop. ?>
-			<ul>
+			<ul class="team-members">
 				<?php
 					$fields = CFS()->get( 'new_member_loop' );
 					foreach ( $fields as $field ) : ?>
-					<li>
+					<li class="member">
 						<img class="member-picture" src="<?php echo $field['team_member_picture'] ?>" alt=""/>
 						<h1 class="member-name member-container"> <?php echo $field['team_member_name']; ?></h1>
 						<p class="member-position member-container"> <?php echo $field['team_member_position']; ?></p>

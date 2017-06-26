@@ -2631,48 +2631,94 @@ footer {
     padding: 0; }
   .page-template-page-about-our-team li {
     list-style-type: none; }
-  .page-template-page-about-our-team ul li:nth-child(odd) img {
-    padding-left: 22px;
-    background-color: #45cdcb; }
-  .page-template-page-about-our-team ul li:nth-child(even) img {
-    padding-right: 22px;
-    background-color: #45cdcb; }
-  .page-template-page-about-our-team .member-container {
-    margin: 0 22px; }
-  .page-template-page-about-our-team span.text {
-    color: #5c8edc; }
-  .page-template-page-about-our-team .cfs-hyperlink {
-    text-decoration: none; }
-  .page-template-page-about-our-team .member-email, .page-template-page-about-our-team .member-bio {
-    margin-bottom: 20px; }
-  .page-template-page-about-our-team .member-picture {
-    width: 100%; }
-  .page-template-page-about-our-team .about-back-btn p {
-    border: solid 2px black;
-    width: 6rem;
-    height: 2rem;
-    margin-left: 1rem;
-    -ms-flex-align: center;
-        align-items: center;
+
+ul li:nth-child(odd) img {
+  padding-left: 22px;
+  background-color: #45cdcb; }
+
+ul li:nth-child(even) img {
+  padding-right: 22px;
+  background-color: #45cdcb; }
+
+.member-container {
+  margin: 0 22px; }
+
+span.text {
+  color: #5c8edc; }
+
+.cfs-hyperlink {
+  text-decoration: none; }
+
+.member-email, .member-bio {
+  margin-bottom: 20px; }
+
+.member-picture {
+  width: 100%; }
+
+.about-back-btn p {
+  border: solid 2px black;
+  width: 6rem;
+  height: 2rem;
+  margin-left: 1rem;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-family: montserrat, merriweather, sans-serif;
+  font-size: 1.1rem; }
+  .about-back-btn p:hover {
+    background-color: #f5a623;
+    border-color: #f5a623; }
+
+.about-back-btn a {
+  color: black;
+  text-decoration: none; }
+  .about-back-btn a:visited {
+    color: black; }
+  .about-back-btn a:hover {
+    color: white; }
+
+@media all and (min-width: 480px) {
+  .entry-content {
+    column-count: 2; }
+  .our-team-paragraph {
+    font-size: 18px;
+    line-height: 24px; }
+  .team-members {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    font-family: montserrat, merriweather, sans-serif;
-    font-size: 1.1rem; }
-    .page-template-page-about-our-team .about-back-btn p:hover {
-      background-color: #f5a623;
-      border-color: #f5a623; }
-  .page-template-page-about-our-team .about-back-btn a {
-    color: black;
-    text-decoration: none; }
-    .page-template-page-about-our-team .about-back-btn a:visited {
-      color: black; }
-    .page-template-page-about-our-team .about-back-btn a:hover {
-      color: white; }
-  @media all and (min-width: 480px) {
-    .page-template-page-about-our-team .entry-content {
-      column-count: 2; } }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .member {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%; }
+  .member-picture {
+    height: 282px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 40px; }
+  .member-name {
+    font-size: 24px;
+    font-weight: bold; }
+  .member-email.member-container {
+    margin-bottom: 20px; }
+  .member-container {
+    margin: 0 0; }
+  .member-position, .member-email, .member-bio {
+    font-size: 18px;
+    line-height: 22px; }
+  ul li:nth-child(odd) img {
+    padding-left: 38px; }
+  ul li:nth-child(even) img {
+    padding-right: 38px; } }
 
 .program-hero {
   height: 19rem;

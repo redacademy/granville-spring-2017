@@ -19,22 +19,21 @@
 }
 
 .entry-title {
-    position: absolute;
-    bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 118px;
-    background: $orange;
-    margin-bottom: 0;
-  }
-
-.entry-content p {
-    margin: 15px 22px;
-    text-indent: 15px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 118px;
+  background: $orange;
+  margin-bottom: 0;
 }
 
+.entry-content p {
+  margin: 15px 22px;
+  text-indent: 15px;
+}
 
 .about-links {
   display: flex;
@@ -64,6 +63,7 @@ li {
   list-style-type: none;
 }
     margin: 0;
+}
 
 ul li:nth-child(odd) img {
   padding-left: 22px;
@@ -130,33 +130,53 @@ span.text {
   column-count: 2;
 }
 
-// .page-template-page-about-our-team {
+.our-team-paragraph {
+  font-size: $font_d-sub-body;
+  line-height: 24px;
+}
 
-// }
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
 
-// .entry-content a {
-//   color: $black;
-//   text-decoration: none;
-// }
+.member {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+}
 
-// .about-links p {
-//   background: $orange;
-//   width: 417px;
-//   height: 150px;
-//   border: 4px solid $orange;
-//   text-align: center;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin: 63px 0 0 0;
-//   &:nth-child(even) {
-//     margin-left: 63px;
-//     margin-right: 31.5px;
-//   }
-//   &:nth-child(odd) {
-//     margin-right: 63px;
-//     margin-left: 31.5px;
-//   }
-// }
+.member-picture {
+  height: 282px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.member-name {
+  font-size: $font_d-body;
+  font-weight: bold;
+}
+
+.member-email.member-container {
+  margin-bottom: 20px;
+}
+
+.member-container {
+  margin: 0 0;
+}
+
+.member-position, .member-email, .member-bio {
+  font-size: $font_d-sub-body;
+  line-height: 22px;
+}
+
+ul li:nth-child(odd) img {
+  padding-left: 38px;
+}
+
+ul li:nth-child(even) img {
+  padding-right: 38px;
 }
 }
