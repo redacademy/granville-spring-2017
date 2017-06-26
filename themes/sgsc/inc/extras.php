@@ -21,20 +21,18 @@ function sgsc_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'sgsc_body_classes' );
 
+
+//program hero
 function sgsc_programs_hero () {
-	if ( ! is_page_template( 'page-programs.php' ) || is_tax( 'program-type' ) ) {
+	if ( ! is_page_template ( 'page-programs.php' )) {
 		return;
 	}
 	
-	$hero = CFS()->get( 'program_image' );		
+	$hero = CFS()->get( 'program_image' );
 	$program_hero = "
 		.program-hero {
 			background-image: url($hero);
-		}
-		.program-type-hero {
-			background-image: url($hero)
-			}";
-
+		}";
 	wp_add_inline_style( 'sgsc-style', $program_hero );
 }
 
@@ -133,7 +131,7 @@ function sgsc_change_archive_titles( $title ) {
 
 add_filter( 'get_the_archive_title', 'sgsc_change_archive_titles');
 
-//hide previous events
+// hide previous events
 
 add_filter('tribe_events_pre_get_posts', 'filter_tribe_all_occurences', 100);
 

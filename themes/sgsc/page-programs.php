@@ -32,10 +32,10 @@ get_header(); ?>
 
 					foreach($program_types as $key => $val) {
 						if($val->slug == 'information') {
-								$item = $program_types[$key];
-								unset($program_types[$key]);
-								array_push($program_types, $item); 
-								break;
+							$item = $program_types[$key];
+							unset($program_types[$key]);
+							array_push($program_types, $item); 
+							break;
 						}
 					}
 

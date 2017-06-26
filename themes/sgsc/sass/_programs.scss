@@ -228,6 +228,39 @@
   .page-template-page-programs .donate-btn {
     height: 4.5rem;
     width: 4.5rem;
+    font-size: 2.5rem;
+  }
+  .tax-program-type {
+    .donate-btn {
+      height: 4.5rem;
+      width: 4.5rem;
+      font-size: 2.5rem;
+    }
+    .content-area {
+      width: 1024px;
+      margin: auto;
+    }
+    .program-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li {
+        flex: 0 1 47%;
+      }
+    }
+    .entry-header {
+      height: 10rem;
+    }
+    .program-img {
+      height: 17rem;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+    .program-back-btn {
+      display: none;
+    }
   }
 }
 
