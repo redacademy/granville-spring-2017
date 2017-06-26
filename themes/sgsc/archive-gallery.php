@@ -55,18 +55,14 @@ get_header(); ?>
 						$i ++;
 					}
 				}?>
-
 				<?php endforeach; ?>
 				<?php wp_reset_postdata(); ?>
 			</div>
 
 		</section>
 
-
-
 		<section class="lastest-gallery-section">
 			<?php if ( have_posts() ) : ?>
-
 				<header class="page-header">
 					<h1 class="page-title">Latest Gallery Albums</h1>
 						<div class="donate-btn">
@@ -83,18 +79,18 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 						<div class="image-position">		 
-                <?php the_post_thumbnail('full'); ?>
-
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail( 'large' ); ?>
+							<?php else :?>
+								<p>Please Upload a Feature-Image</p>
+							<?php endif; ?>
 						</div>
-
 						<a class="entry-title" href="<?php echo esc_url( get_permalink() ) ?>">
 							<?php the_title( sprintf( '<h2 >', esc_url( get_permalink() ) ), '</h2>' ); ?>
 							<p><?php red_starter_posted_on(); ?></p>
 						</a>
 					</header><!-- .entry-header -->
-
 				</article><!-- #post-## -->
-
 				<?php endwhile; ?>
 				</div>
 
@@ -106,11 +102,8 @@ get_header(); ?>
 				); ?>
 
 			<?php else : ?>
-
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
 			<?php endif; ?>
-
 		</section>
 	</main><!-- #main -->
 </div><!-- #primary -->
