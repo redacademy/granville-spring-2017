@@ -8,7 +8,7 @@ A WordPress theme for South Granville Senior Center.
 
 ### Desktop- Home Page
 
-![alt text](assets/images/SGSC-Screen Shot.png "south granvillge senior center desktop screenshot")
+![alt text](assets/images/sgsc-desktop-screenshot.png "south granvillge senior center desktop screenshot")
 
 ### Mobile Width - Home Page
 
