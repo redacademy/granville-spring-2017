@@ -2099,179 +2099,181 @@ object {
         width: 1024px; } }
     .single-gallery .content-area .site-main article {
       margin: 0; }
-      .single-gallery .content-area .site-main article .entry-header {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: center;
-            align-items: center;
-        position: relative;
-        background: #f5a623;
-        width: 100%;
-        min-height: 118px;
+
+.single-gallery .entry-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: relative;
+  background: #f5a623;
+  width: 100%;
+  min-height: 118px;
+  color: #000000; }
+  @media screen and (min-width: 480px) {
+    .single-gallery .entry-header {
+      min-height: 160px; } }
+  .single-gallery .entry-header .donate-btn {
+    background-color: #F91E72;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 2.3rem;
+    width: 2.3rem; }
+    @media screen and (min-width: 480px) {
+      .single-gallery .entry-header .donate-btn {
+        height: 5rem;
+        width: 5rem; } }
+    .single-gallery .entry-header .donate-btn a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 1rem; }
+      @media screen and (min-width: 480px) {
+        .single-gallery .entry-header .donate-btn a {
+          font-size: 4rem; } }
+      .single-gallery .entry-header .donate-btn a i {
+        font-weight: lighter;
+        padding: .5rem;
         color: #000000; }
-        @media screen and (min-width: 480px) {
-          .single-gallery .content-area .site-main article .entry-header {
-            min-height: 160px; } }
-        .single-gallery .content-area .site-main article .entry-header .donate-btn {
-          background-color: #F91E72;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          z-index: 3;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center;
-          height: 2.3rem;
-          width: 2.3rem; }
-          @media screen and (min-width: 480px) {
-            .single-gallery .content-area .site-main article .entry-header .donate-btn {
-              height: 5rem;
-              width: 5rem; } }
-          .single-gallery .content-area .site-main article .entry-header .donate-btn a {
-            text-decoration: none;
-            color: #000000;
-            font-size: 1rem; }
-            @media screen and (min-width: 480px) {
-              .single-gallery .content-area .site-main article .entry-header .donate-btn a {
-                font-size: 4rem; } }
-            .single-gallery .content-area .site-main article .entry-header .donate-btn a i {
-              font-weight: lighter;
-              padding: .5rem;
-              color: #000000; }
-              .single-gallery .content-area .site-main article .entry-header .donate-btn a i:hover {
-                color: #f5a623; }
-            .single-gallery .content-area .site-main article .entry-header .donate-btn a p {
-              display: none; }
-        .single-gallery .content-area .site-main article .entry-header .entry-meta {
-          display: none; }
-        .single-gallery .content-area .site-main article .entry-header img {
-          display: none; }
-        .single-gallery .content-area .site-main article .entry-header .donate-btn {
-          background-color: #F91E72;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          z-index: 3;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center;
-          height: 2.3rem;
-          width: 2.3rem; }
-          @media screen and (min-width: 480px) {
-            .single-gallery .content-area .site-main article .entry-header .donate-btn {
-              height: 5rem;
-              width: 5rem; } }
-          .single-gallery .content-area .site-main article .entry-header .donate-btn a {
-            text-decoration: none;
-            color: #000000;
-            font-size: 1rem; }
-            @media screen and (min-width: 480px) {
-              .single-gallery .content-area .site-main article .entry-header .donate-btn a {
-                font-size: 4rem; } }
-            .single-gallery .content-area .site-main article .entry-header .donate-btn a i {
-              font-weight: lighter;
-              padding: .5rem;
-              color: #000000; }
-              .single-gallery .content-area .site-main article .entry-header .donate-btn a i:hover {
-                color: #f5a623; }
-            .single-gallery .content-area .site-main article .entry-header .donate-btn a p {
-              display: none; }
-        .single-gallery .content-area .site-main article .entry-header .entry-meta {
-          display: none; }
-      .single-gallery .content-area .site-main article .entry-content {
-        width: 100%; }
-        .single-gallery .content-area .site-main article .entry-content .gallery {
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-flow: column wrap;
-              flex-flow: column wrap;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center; }
-          @media screen and (min-width: 480px) {
-            .single-gallery .content-area .site-main article .entry-content .gallery {
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
-              -ms-flex-flow: row wrap;
-                  flex-flow: row wrap;
-              margin-bottom: 0; } }
-          .single-gallery .content-area .site-main article .entry-content .gallery .thumbnail {
-            display: -ms-flexbox;
-            display: flex;
-            margin: 0;
-            padding: 0;
-            height: 208px;
-            min-width: 100%;
-            max-width: none;
-            margin-top: 10px;
-            position: relative;
-            overflow: hidden; }
-            @media screen and (min-width: 480px) {
-              .single-gallery .content-area .site-main article .entry-content .gallery .thumbnail {
-                width: 48%;
-                height: 321px;
-                min-width: initial;
-                margin-bottom: 32px; } }
-            .single-gallery .content-area .site-main article .entry-content .gallery .thumbnail img {
-              min-height: 100%;
-              max-height: 100%;
-              width: auto;
-              object-fit: cover;
-              min-width: 100%;
-              left: 50%;
-              top: 70%;
-              transform: translate(-50%, -70%);
-              max-width: none;
-              position: absolute; }
-        .single-gallery .content-area .site-main article .entry-content h1,
-        .single-gallery .content-area .site-main article .entry-content h2,
-        .single-gallery .content-area .site-main article .entry-content h3,
-        .single-gallery .content-area .site-main article .entry-content h4,
-        .single-gallery .content-area .site-main article .entry-content h5,
-        .single-gallery .content-area .site-main article .entry-content h6,
-        .single-gallery .content-area .site-main article .entry-content p,
-        .single-gallery .content-area .site-main article .entry-content form {
-          display: none; }
-    .single-gallery .content-area .site-main .m-button {
+        .single-gallery .entry-header .donate-btn a i:hover {
+          color: #f5a623; }
+      .single-gallery .entry-header .donate-btn a p {
+        display: none; }
+  .single-gallery .entry-header .entry-meta {
+    display: none; }
+  .single-gallery .entry-header img {
+    display: none; }
+  .single-gallery .entry-header .donate-btn {
+    background-color: #F91E72;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    height: 2.3rem;
+    width: 2.3rem; }
+    @media screen and (min-width: 480px) {
+      .single-gallery .entry-header .donate-btn {
+        height: 5rem;
+        width: 5rem; } }
+    .single-gallery .entry-header .donate-btn a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 1rem; }
+      @media screen and (min-width: 480px) {
+        .single-gallery .entry-header .donate-btn a {
+          font-size: 4rem; } }
+      .single-gallery .entry-header .donate-btn a i {
+        font-weight: lighter;
+        padding: .5rem;
+        color: #000000; }
+        .single-gallery .entry-header .donate-btn a i:hover {
+          color: #f5a623; }
+      .single-gallery .entry-header .donate-btn a p {
+        display: none; }
+  .single-gallery .entry-header .entry-meta {
+    display: none; }
+
+.single-gallery .entry-content {
+  width: 100%; }
+  .single-gallery .entry-content .gallery {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .single-gallery .entry-content .gallery .m-button {
       text-decoration: none;
       color: #000000;
       border: 2px #000000 solid transparent;
       display: none;
       width: initial; }
-      .single-gallery .content-area .site-main .m-button:hover, .single-gallery .content-area .site-main .m-button:active, .single-gallery .content-area .site-main .m-button:focus {
+      .single-gallery .entry-content .gallery .m-button:hover, .single-gallery .entry-content .gallery .m-button:active, .single-gallery .entry-content .gallery .m-button:focus {
         color: #ffffff; }
       @media screen and (min-width: 480px) {
-        .single-gallery .content-area .site-main .m-button {
+        .single-gallery .entry-content .gallery .m-button {
           display: -ms-flexbox;
           display: flex; } }
-      .single-gallery .content-area .site-main .m-button p {
+      .single-gallery .entry-content .gallery .m-button p {
         padding: 0.3rem 1.5rem;
         border: 2px #000000 solid;
         margin: 0; }
-        .single-gallery .content-area .site-main .m-button p:hover, .single-gallery .content-area .site-main .m-button p:active, .single-gallery .content-area .site-main .m-button p:focus {
+        .single-gallery .entry-content .gallery .m-button p:hover, .single-gallery .entry-content .gallery .m-button p:active, .single-gallery .entry-content .gallery .m-button p:focus {
           border: 2px #000000 solid #f5a623;
           background: #f5a623;
           z-index: 2;
           opacity: 1; }
         @media screen and (min-width: 480px) {
-          .single-gallery .content-area .site-main .m-button p {
+          .single-gallery .entry-content .gallery .m-button p {
             display: -ms-flexbox;
             display: flex;
             padding: 0rem 3rem; } }
-    .single-gallery .content-area .site-main .m-button {
-      display: inline-block; }
+    @media screen and (min-width: 480px) {
+      .single-gallery .entry-content .gallery {
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+        margin-bottom: 0; } }
+    .single-gallery .entry-content .gallery .thumbnail {
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      height: 208px;
+      min-width: 100%;
+      max-width: none;
+      margin-top: 10px;
+      position: relative;
+      overflow: hidden; }
       @media screen and (min-width: 480px) {
-        .single-gallery .content-area .site-main .m-button p {
-          padding: 0rem 1.5rem; } }
+        .single-gallery .entry-content .gallery .thumbnail {
+          width: 48%;
+          height: 321px;
+          min-width: initial;
+          margin-bottom: 32px; } }
+      .single-gallery .entry-content .gallery .thumbnail img {
+        min-height: 100%;
+        max-height: 100%;
+        width: auto;
+        object-fit: cover;
+        min-width: 100%;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -70%);
+        max-width: none;
+        position: absolute; }
+  .single-gallery .entry-content h1,
+  .single-gallery .entry-content h2,
+  .single-gallery .entry-content h3,
+  .single-gallery .entry-content h4,
+  .single-gallery .entry-content h5,
+  .single-gallery .entry-content h6,
+  .single-gallery .entry-content p,
+  .single-gallery .entry-content form {
+    display: none; }
+  .single-gallery .entry-content .m-button {
+    display: inline-block; }
+    @media screen and (min-width: 480px) {
+      .single-gallery .entry-content .m-button p {
+        padding: 0rem 1.5rem; } }
 
 #popmake-286 {
   padding: 0;
