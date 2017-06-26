@@ -43,10 +43,11 @@ get_header(); ?>
 
 						<ul class="program-list">						
 							<?php foreach ($program_types as $program_type) : ?>
-								<li>
-									<a href = "<?php echo get_term_link($program_type); ?>">
-									<?php echo $program_type->name; ?></a>
-								</li>
+								<a href = "<?php echo get_term_link($program_type); ?>">
+									<li>
+										<?php echo $program_type->name; ?>
+									</li>
+								</a>
 							<?php endforeach; ?>
 						</ul>							
 						<?php endif; ?>
