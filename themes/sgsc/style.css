@@ -3671,27 +3671,6 @@ footer {
 /*--------------------------------------------------------------
 # Single-Page
 --------------------------------------------------------------*/
-.single .content-area {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-
-.single .site-main {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  width: 100%;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap; }
-  @media screen and (min-width: 480px) {
-    .single .site-main {
-      width: 1024px; } }
-  .single .site-main article {
-    margin: 0; }
-
 /**
   ** 404 page
   */
