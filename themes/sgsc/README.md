@@ -11,11 +11,12 @@ A WordPress theme for South Granville Senior Center.
 
 ### Desktop- Home Page
 
-![alt text](assets/images/sgsc-desktop-screenshot.png "south granvillge senior center desktop screenshot") { width: 1024px; }
+<img src="assets/images/sgsc-desktop-screenshot.png" width="1024px" alt="sgsc desktop screenshot">
 
 ### Mobile Width - Home Page
 
-![alt text](assets/images/sgsc-mobile-screenshot.png "south granvillge senior center mobile screenshot") { width: 370px; }
+<img src="assets/images/sgsc-mobile-screenshot.png" width="470px" alt="sgsc mobile screenshot">
+
 
 ---
 
