@@ -126,14 +126,13 @@ span.text {
 
 @media all and (min-width: 480px) {
 
-.page-template-page-about-our-team {
-
+.entry-content {
+  column-count: 2;
 }
 
-.about-links {
-  display: flex;
-  flex-wrap: wrap;
-}
+// .page-template-page-about-our-team {
+
+// }
 
 // .entry-content a {
 //   color: $black;

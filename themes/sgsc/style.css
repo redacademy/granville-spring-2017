@@ -2671,11 +2671,8 @@ footer {
     .page-template-page-about-our-team .about-back-btn a:hover {
       color: white; }
   @media all and (min-width: 480px) {
-    .page-template-page-about-our-team .about-links {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
+    .page-template-page-about-our-team .entry-content {
+      column-count: 2; } }
 
 .program-hero {
   height: 19rem;
