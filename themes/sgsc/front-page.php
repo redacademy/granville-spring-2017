@@ -71,7 +71,11 @@ get_header(); ?>
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <div class="image-position">
-              <?php the_post_thumbnail('full'); ?>
+              <?php if ( has_post_thumbnail() ) : ?>
+                <?php the_post_thumbnail( 'large' ); ?>
+              <?php else :?>
+                <p>Please Upload a Feature-Image</p>
+              <?php endif; ?>
             </div>
             <div class="bottom-banner">
                 <h2><?php the_title(); ?></h2>
