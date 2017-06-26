@@ -2720,7 +2720,12 @@ span.text {
   ul li:nth-child(odd) img {
     padding-left: 38px; }
   ul li:nth-child(even) img {
-    padding-right: 38px; } }
+    padding-right: 38px; }
+  .member-picture {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 40px; } }
 
 .program-hero {
   height: 19rem;
