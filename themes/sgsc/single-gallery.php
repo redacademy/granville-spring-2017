@@ -38,10 +38,13 @@ get_header(); ?>
 
 				<?php
 				$fields = CFS()->get( 'gallery' );
-				foreach ( $fields as $field ):?>
+				foreach ( $fields as $field ):
+				if ( !empty( $field['upload_image'] ) ):?>
 					<div class="thumbnail">
 						<img src="<?php echo $field['upload_image'] ?>">
 					</div>
+				
+				<?php endif ?>
 				<?php endforeach ?>
 			</div>
 
