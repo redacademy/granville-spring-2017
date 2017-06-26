@@ -173,3 +173,61 @@ function volunteer_post_type() {
 
 }
 add_action( 'init', 'volunteer_post_type', 0 );
+
+
+// Out Team Position Post Type
+function our_team_post_type() {
+
+	$labels = array(
+		'name'                  => 'Our Team',
+		'singular_name'         => 'Team Membver',
+		'menu_name'             => 'Our Team',
+		'name_admin_bar'        => 'Our Team',
+		'archives'              => 'Our Team Archives',
+		'attributes'            => 'Our Team Attributes',
+		'parent_item_colon'     => 'Our Team Parent Item:',
+		'all_items'             => 'All Our Team',
+		'add_new_item'          => 'Add New Team Member',
+		'add_new'               => 'Add New',
+		'new_item'              => 'New Team Member',
+		'edit_item'             => 'Edit Team Member',
+		'update_item'           => 'Update Team Member',
+		'view_item'             => 'View Team Member',
+		'view_items'            => 'View Team Members',
+		'search_items'          => 'Search Team Member',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into Volunteer',
+		'uploaded_to_this_item' => 'Uploaded to this Volunteer',
+		'items_list'            => 'Our Team list',
+		'items_list_navigation' => 'Our Team list navigation',
+		'filter_items_list'     => 'Filter Our Team list',
+	);
+	$args = array(
+		'label'                 => 'Our Team',
+		'description'           => 'Our Team Members',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'revisions', ),
+		'taxonomies'            => array( 'volunteer' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-universal-access',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,		
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'our_team', $args );
+
+}
+add_action( 'init', 'our_team_post_type', 0 );

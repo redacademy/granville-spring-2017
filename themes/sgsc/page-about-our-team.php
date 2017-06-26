@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: About-sub
+ * Template Name: About-our-team
  *
  *
  * @package SGSC_Theme

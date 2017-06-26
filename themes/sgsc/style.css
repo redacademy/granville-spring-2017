@@ -2499,7 +2499,6 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 65% 0%;
     position: absolute;
     z-index: -1; }
   .page-template-page-about .entry-header h1 {
@@ -2524,7 +2523,9 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  max-width: 1024px;
+  margin: auto; }
   .page-template-page-about .about-links p {
     background: #f5a623;
     width: 277px;
@@ -2570,24 +2571,23 @@ footer {
       margin-right: 63px;
       margin-left: 31.5px; } }
 
-.page-template-page-about-sub .entry-header {
+.page-template-page-about-our-team .entry-header {
   max-width: 480px;
   margin: 0 auto;
   height: 275px;
   position: relative; }
   @media screen and (min-width: 480px) {
-    .page-template-page-about-sub .entry-header {
+    .page-template-page-about-our-team .entry-header {
       max-width: 1024px;
       height: 375px; } }
-  .page-template-page-about-sub .entry-header img {
+  .page-template-page-about-our-team .entry-header img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 65% 0%;
-    position: absolute;
-    z-index: -1; }
+    position: absolute; }
 
-.page-template-page-about-sub .entry-title {
+.page-template-page-about-our-team .entry-title {
   margin: 0;
   position: absolute;
   bottom: 0px;
@@ -2601,18 +2601,18 @@ footer {
   height: 118px;
   background: #f5a623; }
 
-.page-template-page-about-sub .entry-content a {
-  color: #000000;
-  text-decoration: none; }
+.page-template-page-about-our-team .entry-content p {
+  margin: 15px 22px;
+  text-indent: 15px; }
 
-.page-template-page-about-sub .about-links {
+.page-template-page-about-our-team .about-links {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center; }
-  .page-template-page-about-sub .about-links p {
+  .page-template-page-about-our-team .about-links p {
     background: #f5a623;
     width: 277px;
     height: 96px;
@@ -2628,16 +2628,16 @@ footer {
     font-family: montserrat, merriweather, sans-serif;
     font-size: 22px; }
 
-.page-template-page-about-sub .about-links p:hover {
+.page-template-page-about-our-team .about-links p:hover {
   border: 4px solid #000000; }
 
 @media all and (min-width: 480px) {
-  .page-template-page-about-sub .about-links {
+  .page-template-page-about-our-team .about-links {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .page-template-page-about-sub .about-links p {
+  .page-template-page-about-our-team .about-links p {
     background: #f5a623;
     width: 417px;
     height: 150px;
@@ -2650,10 +2650,10 @@ footer {
     -ms-flex-align: center;
         align-items: center;
     margin: 63px 0 0 0; }
-    .page-template-page-about-sub .about-links p:nth-child(even) {
+    .page-template-page-about-our-team .about-links p:nth-child(even) {
       margin-left: 63px;
       margin-right: 31.5px; }
-    .page-template-page-about-sub .about-links p:nth-child(odd) {
+    .page-template-page-about-our-team .about-links p:nth-child(odd) {
       margin-right: 63px;
       margin-left: 31.5px; } }
 
