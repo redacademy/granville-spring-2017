@@ -167,5 +167,10 @@ function program_type_sort() {
 		'hide_empty' => false
 		)); 
 
-
+	if($val->slug == 'information') {
+		$item = $program_types[$key];
+		unset($program_types[$key]);
+		array_push($program_types, $item); 
+		// break;
+	}
 }

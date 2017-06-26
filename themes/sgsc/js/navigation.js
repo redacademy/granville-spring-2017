@@ -10,7 +10,7 @@
 
     $hamburger.click(function (){
       $content.css({'height': '0', 'overflow': 'hidden'});
-      $overlay.slideDown('slow');
+      $overlay.addClass('overlay-open').slideDown('slow');
       $mobileMenu.toggleClass('menu-visible');      
       $backButton.css('display', 'initial');
     });
@@ -19,6 +19,7 @@
       $overlay.slideUp('1000');
       $mobileMenu.toggleClass('menu-visible');      
       $backButton.css('display', 'none');
+      $overlay.removeClass('overlay-open');
     });
   });
 
