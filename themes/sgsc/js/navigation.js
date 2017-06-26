@@ -10,14 +10,14 @@
 
     $hamburger.click(function (){
       $content.css({'height': '0', 'overflow': 'hidden'});
-      $mobileMenu.toggleClass('menu-visible'); 
-      $overlay.toggleClass('overlay-open').slideDown(1000);
+      $overlay.slideDown('slow');
+      $mobileMenu.toggleClass('menu-visible');      
       $backButton.css('display', 'initial');
     });
     $backButton.click(function(){
       $content.css({'height': 'auto', 'overflow': 'scroll'});
-      $mobileMenu.toggleClass('menu-visible');
-      $overlay.toggleClass('overlay-open');
+      $overlay.slideUp('1000');
+      $mobileMenu.toggleClass('menu-visible');      
       $backButton.css('display', 'none');
     });
   });
