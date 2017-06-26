@@ -2415,6 +2415,7 @@ footer {
     .copywrite p {
       font-size: 14px; } }
 
+<<<<<<< HEAD
 .page-template-page-about .entry-header {
   max-width: 480px;
   margin: 0 auto;
@@ -2522,10 +2523,23 @@ footer {
   bottom: 0px;
   display: -ms-flexbox;
   display: flex;
+=======
+.page-template-page-about .entry-title {
+  display: none; }
+
+.about-content h1 {
+  position: relative;
+  bottom: 125px;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1024px;
+  height: 125px;
+>>>>>>> merge issue
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+<<<<<<< HEAD
   width: 100%;
   height: 118px;
   background: #f5a623; }
@@ -2585,6 +2599,46 @@ footer {
     .page-template-page-about-sub .about-links p:nth-child(odd) {
       margin-right: 63px;
       margin-left: 31.5px; } }
+=======
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0; }
+
+.about-links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.about-content a {
+  color: #000000;
+  text-decoration: none; }
+
+.about-header {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 194px; }
+
+.about-links p {
+  background: #f5a623;
+  width: 417px;
+  height: 150px;
+  border: 4px solid #f5a623;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 63px 0 0 0; }
+  .about-links p:nth-child(even) {
+    margin-left: 63px;
+    margin-right: 31.5px; }
+  .about-links p:nth-child(odd) {
+    margin-right: 63px;
+    margin-left: 31.5px; }
+>>>>>>> merge issue
 
 .program-hero {
   height: 19rem;
@@ -2696,6 +2750,7 @@ footer {
   bottom: 0;
   right: 0;
   z-index: 3;
+<<<<<<< HEAD
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -2779,10 +2834,13 @@ footer {
   margin-left: 1rem;
   -ms-flex-align: center;
       align-items: center;
+=======
+>>>>>>> merge issue
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+<<<<<<< HEAD
   font-family: montserrat, merriweather, sans-serif;
   font-size: 1.1rem; }
   .tax-program-type .program-back-btn p:hover {
@@ -2796,6 +2854,43 @@ footer {
     color: black; }
   .tax-program-type .program-back-btn a:hover {
     color: white; }
+=======
+  -ms-flex-align: center;
+      align-items: center;
+  height: 2.3rem;
+  width: 2.3rem; }
+  .donate-btn a {
+    text-decoration: none;
+    color: #000000; }
+    .donate-btn a i {
+      padding: .4rem;
+      color: #000000; }
+      .donate-btn a i:hover {
+        color: #f5a623; }
+    .donate-btn a p {
+      display: none; }
+
+.programs {
+  margin-top: 1rem; }
+
+.tax-program-type .program-hero {
+  position: relative; }
+
+.tax-program-type .donate-btn {
+  bottom: -7.4rem; }
+
+.tax-program-type .program-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem; }
+
+.tax-program-type .program-img {
+  text-align: center; }
+
+.tax-program-type .program-info {
+  padding: 1.5rem; }
+>>>>>>> merge issue
 
 @media screen and (min-width: 480px) {
   .page-template-page-programs .donate-btn {
@@ -2805,7 +2900,11 @@ footer {
 #post-18 {
   margin: 0; }
 
+<<<<<<< HEAD
 .page-template-page-join-us .entry-header {
+=======
+.entry-header {
+>>>>>>> merge issue
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -3535,6 +3634,7 @@ footer {
   .events-archive .gallery-widget-img img {
     height: 11.6rem; }
   .events-archive .gallery-widget-img a {
+<<<<<<< HEAD
     padding: 22% 0; }
   .events-archive .tribe-events-event-meta {
     margin-left: 3rem;
@@ -3542,6 +3642,9 @@ footer {
     font-weight: 500; }
   .events-archive #tribe-events .tribe-events-content {
     padding: 0 0 0 3rem; } }
+=======
+    padding: 22% 0; } }
+>>>>>>> merge issue
 
 /*--------------------------------------------------------------
 # Single-Page
