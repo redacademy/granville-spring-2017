@@ -6,15 +6,19 @@ A WordPress theme for South Granville Senior Center.
 
 ---
 
+
+## Screen-Shots
+
 ### Desktop- Home Page
 
-![alt text](assets/images/sgsc-desktop-screenshot.png "south granvillge senior center desktop screenshot")
+![alt text](assets/images/sgsc-desktop-screenshot.png  =1024 "south granvillge senior center desktop screenshot")
 
 ### Mobile Width - Home Page
 
-![alt text](assets/images/sgsc-mobile-screenshot.png "south granvillge senior center mobile screenshot")
+![alt text](assets/images/sgsc-mobile-screenshot.png  =370 "south granvillge senior center mobile screenshot")
 
 ---
+
 
 ## Prerequisites
 
@@ -28,6 +32,7 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 
 ---
 
+
 ## Deployment to Staging Site
 
   1. `Git pull`
@@ -35,6 +40,7 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
   3. `Deploy`
 
 ---
+
 
 ## Built With
 
@@ -49,6 +55,7 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
   - [Gulp](https://http://gulpjs.com/) - Dependency Management
 
 --- 
+
 
 ## Authors
 
