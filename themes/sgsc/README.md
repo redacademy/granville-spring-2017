@@ -1,21 +1,60 @@
-# SGSC Starter
+# South Granville Senior Center Wordpress Theme
 
-A WordPress theme for South Granvillge Senior Center, forked from Underscores.
+A WordPress theme for South Granville Senior Center.
 
-## Installation
+[Github](https://github.com/redacademy/granville-spring-2017)
 
-### 1. Download me (don't clone me!)
+---
 
-Then add me to your `wp-content` directory.
+### Desktop- Home Page
 
-### 2. Rename the `redstarter` directory
+![alt text](assets/images/SGSC-Screen Shot.png "south granvillge senior center desktop screenshot")
 
-Make sure that the theme directory name is project appropriate!
+### Mobile Width - Home Page
 
-### 3. Install the dev dependencies
+![alt text](assets/images/sgsc-mobile-screenshot.png "south granvillge senior center mobile screenshot")
+
+---
+
+## Prerequisites
+
+### 1. Download (don't clone!)
+
+Add me to your `wp-content` directory.
+
+### 2. Install the dev dependencies
 
 Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
 
-### 4. Update the proxy in `gulpfile.js`
+---
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `inhabitent.dev` to the appropriate localhost URL).
+## Deployment to Staging Site
+
+  1. `Git pull`
+  2. All Brached merged
+  3. `Deploy`
+
+---
+
+## Built With
+
+  - [Custom Field Suite](https://www.http://customfieldsuite.com/) - Wordpress plugin to add custom fields
+  - [WP Migrate DB Pro](https://deliciousbrains.com/wp-migrate-db-pro/) - Wordpress plugin to migrate databases
+  - [Contact Form 7](https://contactform7.com/) - Wordpress plugin to create forms
+  - [Contact Form 7 MailChimp Extension](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension) - Wordpress plugin to integrate Contact Form 7 with MailChimp
+  - [MailChimp for WordPress](https://mc4wp.com/#utm_source=wp-plugin&utm_medium=mailchimp-for-wp&utm_campaign=plugins-page) - Wordpress plugin to add effective sign-up methods
+  - [Popup Maker](https://wppopupmaker.com/?utm_capmaign=PluginInfo&utm_source=plugin-header&utm_medium=plugin-uri) - Wordpress plugin to create & style popups
+  - [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/) - Wordpress plugin to create events
+  - [Post Types Order](https://wordpress.org/plugins/post-types-order/) - Wordpress plugin to enable drag and drop sortable javascript capability
+  - [Gulp](https://http://gulpjs.com/) - Dependency Management
+
+--- 
+
+## Authors
+
+See also the list of [contributors](https://github.com/redacademy/granville-spring-2017/graphs/contributors/) who participated in this project.
+
+
+
+
+
