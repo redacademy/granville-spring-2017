@@ -34,7 +34,18 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'about' ); ?>
 
 		<?php endwhile; // End of the loop. ?>
-
+			<ul class="team-members">
+				<?php
+					$fields = CFS()->get( 'new_member_loop' );
+					foreach ( $fields as $field ) : ?>
+					<li class="team-member"><img class="member-picture" src="<?php echo $field['team_member_picture'] ?>" alt="">
+					<h1 class="member-name"> <?php echo $field['team_member_name']; ?></h1>
+					<p class="member-position"> <?php echo $field['team_member_position']; ?></p>
+					<p class="member-email"> <?php echo $field['team_member_email']; ?></p>
+					<p class="member-bio"> <?php echo  $field['team_member_bio'] ?></p>
+					
+				<?php endforeach ?></li>
+			</ul>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
