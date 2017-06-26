@@ -2,4 +2,25 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+
 /* Front page */
+
+.page .content-area {
+  display: flex;
+  justify-content: center;
+}
+
+.page .site-main {
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  @media screen and (min-width: $mobile_width) {
+    width: $d_width;
+    article {
+      margin: 0;
+      header {
+        @include page-header;
+      }
+    }
+  }
+}

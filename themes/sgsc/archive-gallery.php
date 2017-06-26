@@ -25,17 +25,17 @@ get_header(); ?>
 
 			<div class="gallery-album">
 				<?php $args = array(
-					'posts_per_page' 	=> 3,
+					'posts_per_page' 	=> -1,
 					'post_type' 			=> 'gallery',
           'orderby'						=> 'modified'
 				);
 				$posts_array = get_posts( $args );
-				foreach ( $posts_array as $post ) : setup_postdata( $post ); ?>
+				$i = 0;
+				foreach ( $posts_array as $post ) : setup_postdata( $post );
+				$displays = CFS()->get( 'featured_gallery' );
+				if ( $i < 3) {
+					if($displays == 1){ ?>
 
-				<?php $displays = CFS()->get( 'featured_gallery' )?>
-				
-				<?php if ($displays == 1) :?>
-				<?php echo $displays?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<header class="entry-header">
 							<div class="image-position">
@@ -46,8 +46,14 @@ get_header(); ?>
 								</a>
 						</header>
 					</article><!-- #post-## -->
-					<?php endif ?>
+
+				<?php		
+						$i ++;
+					}
+				}?>
+
 				<?php endforeach; ?>
+				<?php wp_reset_postdata(); ?>
 			</div>
 
 		</section>
