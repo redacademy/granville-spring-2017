@@ -10,8 +10,8 @@
 
     $hamburger.click(function (){
       $content.css({'height': '0', 'overflow': 'hidden'});
-      $mobileMenu.toggleClass('menu-visible');      
-      $overlay.toggleClass('overlay-open');
+      $mobileMenu.toggleClass('menu-visible'); 
+      $overlay.toggleClass('overlay-open').slideDown(1000);
       $backButton.css('display', 'initial');
     });
     $backButton.click(function(){
