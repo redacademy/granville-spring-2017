@@ -1,150 +1,77 @@
 #post-18 {
   margin: 0;
 }
-
 .page-template-page-join-us, .post-type-archive-volunteer {
-
-.donate-btn {
-      background-color: $pink;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 2.3rem;
-      width: 2.3rem;
-      @media screen and (min-width: $mobile_width) {
-        height: 5rem;
-        width: 5rem;
-      }
-      a {
-        text-decoration: none;
-        color: $black;
-        font-size: 1rem;
-        @media screen and (min-width: $mobile_width) {
-          font-size: 4rem;
-        }
-        i {
-          font-weight: lighter;
-          padding: .5rem;
-          color: $black;
-          &:hover {
-            color: $orange;
-          }
-        }
-        p {
-          display: none;
-        }
-      }
-    }
-
-.entry-header {
-  display: flex;
-  justify-content: center;
-  background: $orange;
-  height: 118px;
-  width: $mobile_width;
-  max-width: 1024px;
-  margin: auto;
-  @include page-header;
-}
-
-.entry-title {
-  margin: auto;
-}
-
-.entry-content {
-  margin: 0;
-}
-
-.join-us-section {
-  display: flex;
-  margin: 0;
-  flex-direction: column;
-  max-width: $mobile-width;
-  background-image: url("../../assets/images/149-46.jpg");
-  background-repeat: no-repeat;
-  min-height: 250px;
-  max-height: 750px;
-  padding-bottom: 21px;
-  background-position: 60%;
-}
-
-  
-
-.rectangle {
-  height: 208px;
-  max-width: $mobile-width;
-  box-sizing: border-box;
-  max-width: $mobile-width;
-  flex-direction: column;
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 4px solid rgba(255, 255, 255, 0.0);
-  &:hover {
-    border: 4px solid $black;
-  }
-}
-
-.new-member,
-.membership-renewal,
-.volunteer,
-.rectangle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.new-member,
-.membership-renewal,
-.volunteer {
-  margin-top: 21px;
-  h2 {
-    font-family: $font__header;
-    font-size: 19px;
-    color: $black;
-    text-decoration: none;
-    width: 163px;
-    height: 58px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 29px;
+  .donate-btn {
+    background-color: $pink;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 2.3rem;
+    width: 2.3rem;
+    @media screen and (min-width: $mobile_width) {
+      height: 5rem;
+      width: 5rem;
+    }
+    a {
+      text-decoration: none;
+      color: $black;
+      font-size: 1rem;
+      @media screen and (min-width: $mobile_width) {
+        font-size: 4rem;
+      }
+      i {
+        font-weight: lighter;
+        padding: .5rem;
+        color: $black;
+        &:hover {
+          color: $orange;
+        }
+      }
+      p {
+        display: none;
+      }
+    }
   }
-}
-
-.rectangle p {
-  display: none;
-}
-}
-
-@media all and (min-width: $mobile_width) {
-  .page-template-page-join-us, .post-type-archive-volunteer {
-
   .entry-header {
-    width: $d_width;
+    display: flex;
+    justify-content: center;
+    background: $orange;
+    height: 118px;
+    width: $mobile_width;
+    max-width: 1024px;
+    margin: auto;
+    @include page-header;
+  }
+  .entry-title {
+    margin: auto;
+  }
+  .entry-content {
+    margin: 0;
   }
   .join-us-section {
     display: flex;
-    padding-bottom: initial;
-    margin: 0 auto;
-    justify-content: space-between;
-    width: $d-width;
+    margin: 0;
+    flex-direction: column;
+    max-width: $mobile-width;
     background-image: url("../../assets/images/149-46.jpg");
-    margin-bottom: 28px;
-    max-width: none;
-    flex-direction: row;
-    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    max-height: 750px;
+    padding-bottom: 21px;
+    background-position: 60%;
   }
   .rectangle {
-    margin-top: initial;
-    height: 356px;
+    height: 208px;
+    max-width: $mobile-width;
     box-sizing: border-box;
-    width: 300px;
+    max-width: $mobile-width;
+    flex-direction: column;
+    text-decoration: none;
     background-color: rgba(255, 255, 255, 0.8);
     border: 4px solid rgba(255, 255, 255, 0.0);
     &:hover {
@@ -153,30 +80,89 @@
   }
   .new-member,
   .membership-renewal,
+  .volunteer,
+  .rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .new-member,
+  .membership-renewal,
   .volunteer {
+    margin-top: 21px;
     h2 {
       font-family: $font__header;
-      font-size: $font_d-body;
+      font-size: 19px;
+      color: $black;
+      text-decoration: none;
       width: 163px;
       height: 58px;
-      margin: 38px auto 11px auto;
+      margin: 0 auto;
       text-align: center;
-      padding-bottom: 11px;
       line-height: 29px;
-    }
-    p {
-      font-family: $font__body;
-      font-size: $font_d-sub-body;
-      color: black;
-      width: 163px;
-      margin: auto;
-      margin-top: 11px;
-      line-height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   .rectangle p {
-    display: initial;
+    display: none;
   }
-  
 }
+
+@media all and (min-width: $mobile_width) {
+  .page-template-page-join-us, .post-type-archive-volunteer {
+    .entry-header {
+      width: $d_width;
+    }
+    .join-us-section {
+      display: flex;
+      padding-bottom: initial;
+      margin: 0 auto;
+      justify-content: space-between;
+      width: $d-width;
+      background-image: url("../../assets/images/149-46.jpg");
+      margin-bottom: 28px;
+      max-width: none;
+      flex-direction: row;
+      background-size: 100%;
+    }
+    .rectangle {
+      margin-top: initial;
+      height: 356px;
+      box-sizing: border-box;
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 4px solid rgba(255, 255, 255, 0.0);
+      &:hover {
+        border: 4px solid $black;
+      }
+    }
+    .new-member,
+    .membership-renewal,
+    .volunteer {
+      h2 {
+        font-family: $font__header;
+        font-size: $font_d-body;
+        width: 163px;
+        height: 58px;
+        margin: 38px auto 11px auto;
+        text-align: center;
+        padding-bottom: 11px;
+        line-height: 29px;
+      }
+      p {
+        font-family: $font__body;
+        font-size: $font_d-sub-body;
+        color: black;
+        width: 163px;
+        margin: auto;
+        margin-top: 11px;
+        line-height: 22px;
+      }
+    }
+    .rectangle p {
+      display: initial;
+    }
+  }
 }

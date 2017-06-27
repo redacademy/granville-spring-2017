@@ -1,42 +1,40 @@
 .volunteer-template-default {
-
   .donate-btn {
-      background-color: $pink;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 2.3rem;
-      width: 2.3rem;
+    background-color: $pink;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.3rem;
+    width: 2.3rem;
+    @media screen and (min-width: $mobile_width) {
+      height: 5rem;
+      width: 5rem;
+    }
+    a {
+      text-decoration: none;
+      color: $black;
+      font-size: 1rem;
       @media screen and (min-width: $mobile_width) {
-        height: 5rem;
-        width: 5rem;
+        font-size: 4rem;
       }
-      a {
-        text-decoration: none;
+      i {
+        font-weight: lighter;
+        padding: .5rem;
         color: $black;
-        font-size: 1rem;
-        @media screen and (min-width: $mobile_width) {
-          font-size: 4rem;
+        &:hover {
+          color: $orange;
         }
-        i {
-          font-weight: lighter;
-          padding: .5rem;
-          color: $black;
-          &:hover {
-            color: $orange;
-          }
-        }
-        p {
-          display: none;
-        }
+      }
+      p {
+        display: none;
       }
     }
-
-.entry-header {
+  }
+  .entry-header {
   display: flex;
   justify-content: center;
   background: $orange;
@@ -45,25 +43,17 @@
   max-width: 1024px;
   margin: auto;
   @include page-header;
-}
-
-.entry-title {
+  }
+  .entry-title {
   margin: auto;
-}
-
-  // .volunteer-title h1 {
-  //   text-align: center;
-  // }
-
+  }
   .volunteer-post {
     margin: 20px 25px;
   }
-
   .volunteer-title {
     font-size: $font_m-h2;
     text-align: center;
   }
-
   .volunteer-header {
     h1 {
       font-family: $font__body;
@@ -71,11 +61,9 @@
       font-size: 24px;      
     }
   }
-
   .volunteer-content {
     font-size: $font_m-h2;
   }
-
   @media all and (min-width: $desktop-view) {
     .volunteer-post {
       margin: 20px 25px;
@@ -96,7 +84,6 @@
       display: flex;
       justify-content: space-between;
     }
-
     .csColumn {
       display: flex;
       flex-wrap: wrap;

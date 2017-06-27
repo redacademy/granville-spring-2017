@@ -102,24 +102,20 @@
     z-index: 10;
     justify-content: flex-start;
   }
-
   .logo-header {
     display: flex;
     position: absolute;
     align-items: flex-start;
   }
-
   .logo-text {
     width: 19.7rem;
     padding-left: 2rem;
     padding-top: 6rem;
     height: 12rem;
   }
-
   .icon-search{
     cursor: pointer;
   }
-
   .main-navigation {
     padding-bottom: 0.9rem;
     justify-content: flex-end;
@@ -138,46 +134,39 @@
     align-self: flex-end;
     padding-bottom: 3rem;
   }
-  
   .logo-img {
     height: 11rem;
   }
-
   .icon-search .fa-search {
     font-size: 1.5rem;
   }
-
   .menu {
     height: 4rem;
     width: 98%;
     align-self: flex-end;
   }
-
-
-    .site-header .menu .overlay.desktopWidth {
-      display: block !important;
+  .site-header .menu .overlay.desktopWidth {
+    display: block !important;
+  }
+  .search-form {
+    fieldset {
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 190px;
+      min-width: 22.3px;
     }
-  
-
-.search-form {
-  fieldset {
-  border: none;
-  padding-left: 0;
-  padding-right: 0;
-  max-width: 190px;
-  min-width: 22.3px;
+    input {
+      display: none;
+      outline: none;
+      border: 2px solid $orange;
+      border-radius: 25px;
+      font-family: $font__header;
+      right: 0;
+      top: 5px;
+      position: initial;
+      width: 165px;
+      line-height: 1.75;
+    }
   }
-  input {
-    display: none;
-    outline: none;
-    border: 2px solid $orange;
-    border-radius: 25px;
-    font-family: $font__header;
-    right: 0;
-    top: 5px;
-    position: initial;
-    width: 165px;
-    line-height: 1.75;
-  }
-}
 }

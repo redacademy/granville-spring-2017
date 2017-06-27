@@ -77,7 +77,6 @@ class Latest_Galleries_Widget extends WP_Widget {
       add_image_size( 'gallery_widget_size', 320, 190, false );
       $galleries = new WP_Query();
       $galleries->query("post_type=gallery
-        && CFS()->get( 'event_gallery' )
         & posts_per_page=" . $numberOfGalleries );
       if($galleries->found_posts > 0) {
         echo '<ul class="gallery-widget">';

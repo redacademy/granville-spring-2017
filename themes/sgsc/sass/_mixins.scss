@@ -1,171 +1,171 @@
-  // Rem output with px fallback
-  @mixin font-size($sizeValue: 1) {
-    font-size: ($sizeValue * 16) * 1px;
-    font-size: $sizeValue * 1rem;
-  }
-  
-  // Center block
-  @mixin center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  // "more" button
-  // Example
-  // <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
-  @mixin m-button {
-    .m-button {
-      text-decoration: none;
-      color: $black;
-      border: $p_border transparent;
-      display: none;
-      width: initial;
-      @include hover-state {
-        color: $white;
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+  font-size: ($sizeValue * 16) * 1px;
+  font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// "more" button
+// Example
+// <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_title( 'about' )) ) ?>"><p>More</p></a>
+@mixin m-button {
+  .m-button {
+    text-decoration: none;
+    color: $black;
+    border: $p_border transparent;
+    display: none;
+    width: initial;
+    @include hover-state {
+      color: $white;
+    }
+    @media screen and (min-width: $mobile_width) {
+      display: flex;
+    }
+    p {
+      padding: $m_padding;
+      border: $p_border;
+      margin: 0;
+      @include hover-state() {
+        border: $p_border $orange;
+        background: $orange;
+        z-index: 2;
+        opacity: 1;
       }
       @media screen and (min-width: $mobile_width) {
         display: flex;
-      }
-      p {
-        padding: $m_padding;
-        border: $p_border;
-        margin: 0;
-        @include hover-state() {
-          border: $p_border $orange;
-          background: $orange;
-          z-index: 2;
-          opacity: 1;
-        }
-        @media screen and (min-width: $mobile_width) {
-          display: flex;
-          padding: $d_padding;
-        }
+        padding: $d_padding;
       }
     }
   }
-  
-  // Donate-btn 
-  // Example
-  // 	<div class="donate-btn">
-  // 	<a href="<?php echo esc_url( get_permalink((get_page_by_path( 'donate' )) ) ?>">
-  // 		<i class="fa fa-heart-o" aria-hidden="true">
-  // 			<p>Donate</p>
-  // 		</i>
-  // 		</a>
-  // </div>
-  @mixin m-donate {
-    .donate-btn {
-      background-color: $pink;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 2.3rem;
-      width: 2.3rem;
-      @media screen and (min-width: $mobile_width) {
-        height: 5rem;
-        width: 5rem;
-      }
-      a {
-        text-decoration: none;
-        color: $black;
-        font-size: 1rem;
-        @media screen and (min-width: $mobile_width) {
-          font-size: 4rem;
-        }
-        i {
-          font-weight: lighter;
-          padding: .5rem;
-          color: $black;
-          &:hover {
-            color: $orange;
-          }
-        }
-        p {
-          display: none;
-        }
-      }
-    }
-  }
-  
-  // Donate-btn with text "Donate"
-  @mixin text-donate {
-    .donate-btn {
-      background-color: $pink;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      a {
-        text-decoration: none;
-        color: $black;
-        display: flex;
-        i {
-          padding: .4rem;
-          color: $black;
-          &:hover {
-            color: $orange;
-          }
-        }
-        p {
-          display: none;
-        }
-      }
-      @media screen and (min-width: $mobile_width) {
-        height: 73px;
-        width: 224px;
-        a {
-          i {
-            font-size: 40px;
-          }
-          p {
-            display: initial;
-            font-size: 40px;
-          }
-        }
-      }
-    }
-  }
-  
-  // Mixin for hover-state: hover, active, focus 
-  @mixin hover-state {
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
-    }
-  }
-  
-  //Mixin for orange header title with donate btn
-  @mixin page-header {
+}
+
+// Donate-btn 
+// Example
+// 	<div class="donate-btn">
+// 	<a href="<?php echo esc_url( get_permalink((get_page_by_path( 'donate' )) ) ?>">
+// 		<i class="fa fa-heart-o" aria-hidden="true">
+// 			<p>Donate</p>
+// 		</i>
+// 		</a>
+// </div>
+@mixin m-donate {
+  .donate-btn {
+    background-color: $pink;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    background: $orange;
-    width: 100%;
-    min-height: 118px;
+    height: 2.3rem;
+    width: 2.3rem;
     @media screen and (min-width: $mobile_width) {
-      min-height: 160px;
+      height: 5rem;
+      width: 5rem;
     }
-    color: $black;
-    @include m-donate;
-    .entry-meta {
-      display: none;
+    a {
+      text-decoration: none;
+      color: $black;
+      font-size: 1rem;
+      @media screen and (min-width: $mobile_width) {
+        font-size: 4rem;
+      }
+      i {
+        font-weight: lighter;
+        padding: .5rem;
+        color: $black;
+        &:hover {
+          color: $orange;
+        }
+      }
+      p {
+        display: none;
+      }
     }
   }
-  
-  //Mixin for thin-regular-border
-  @mixin border {
-    border: $border_transparent;
-    @include hover-state {
-      border: $border;
+}
+
+// Donate-btn with text "Donate"
+@mixin text-donate {
+  .donate-btn {
+    background-color: $pink;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: $black;
+      display: flex;
+      i {
+        padding: .4rem;
+        color: $black;
+        &:hover {
+          color: $orange;
+        }
+      }
+      p {
+        display: none;
+      }
+    }
+    @media screen and (min-width: $mobile_width) {
+      height: 73px;
+      width: 224px;
+      a {
+        i {
+          font-size: 40px;
+        }
+        p {
+          display: initial;
+          font-size: 40px;
+        }
+      }
     }
   }
+}
+
+// Mixin for hover-state: hover, active, focus 
+@mixin hover-state {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}
+
+//Mixin for orange header title with donate btn
+@mixin page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: $orange;
+  width: 100%;
+  min-height: 118px;
+  @media screen and (min-width: $mobile_width) {
+    min-height: 160px;
+  }
+  color: $black;
+  @include m-donate;
+  .entry-meta {
+    display: none;
+  }
+}
+
+//Mixin for thin-regular-border
+@mixin border {
+  border: $border_transparent;
+  @include hover-state {
+    border: $border;
+  }
+}

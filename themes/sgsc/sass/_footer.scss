@@ -1,248 +1,237 @@
 //popup
 
 #popmake-286 {
-    padding: 0;
-    height: 350px;
-    width: 290px;
-    border: 3px solid $black;
-    background-color: $white;
+	padding: 0;
+	height: 350px;
+	width: 290px;
+	border: 3px solid $black;
+	background-color: $white;
 }
 
 .mc4wp-checkbox { 
-    display: none;
+	display: none;
 }
 
 #popmake-286 button {
-    right: initial;
-    top: initial;
-    bottom: 45px;
+	right: initial;
+	top: initial;
+	bottom: 45px;
 }
 
 .pum-content h1 {
-    text-align: center;
-    font-family: montserrat,merriweather,sans-serif;
-    font-size: 22px;
-    color: $black;
-    background: $blue;
-    margin: 0;
+	text-align: center;
+	font-family: montserrat,merriweather,sans-serif;
+	font-size: 22px;
+	color: $black;
+	background: $blue;
+	margin: 0;
 }
 
 .popup-head p {
-    margin: 0;
+	margin: 0;
 }
 
 .popup-head {
-    background: $blue;
-    padding-top: 15px;
-    padding-bottom: 15px;
+	background: $blue;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .popup-body {
-    width: 224px;
-    height: 76px;
-    text-align: center;
-    margin: auto;
+	width: 224px;
+	height: 76px;
+	text-align: center;
+	margin: auto;
 }
 
 .popup-body p {
-    font-family: montserrat,merriweather,sans-serif;
-    font-size: 16px;
-    color: $black;
+	font-family: montserrat,merriweather,sans-serif;
+	font-size: 16px;
+	color: $black;
 }
 
 #popmake-286 button {
-    right: 0;
-    top: auto;
-    bottom: 24px;
-    left: 24px;
-    background: none;
-    border: none;
-    color: $black;
-    font-family: lato,novecentosanswide,sans-serif;
-    font-weight: 400;
-    padding: 0;
+	right: 0;
+	top: auto;
+	bottom: 24px;
+	left: 24px;
+	background: none;
+	border: none;
+	color: $black;
+	font-family: lato,novecentosanswide,sans-serif;
+	font-weight: 400;
+	padding: 0;
 }
 
 input.wpcf7-text {
-    border: 2px solid $black;
-    border-radius: 0;
-    background-color: #d8d8d8;
+	border: 2px solid $black;
+	border-radius: 0;
+	background-color: #d8d8d8;
 }
 
 .wpcf7-text, input.wpcf7-text {
-    height: 28px;
-    width: 224px;
+	height: 28px;
+	width: 224px;
 }
 
 .popup-send {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    padding-top: 20px;
-    padding-right: 15px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	padding-top: 20px;
+	padding-right: 15px;
 }
 
 input.wpcf7-submit {
-    font-family: montserrat,merriweather,sans-serif;
-    background: #fff;
-    border: 2px solid $black;
-    width: 81px;
-    padding: 0;
-    border-radius: 0;
-    color: $black;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
+	font-family: montserrat,merriweather,sans-serif;
+	background: #fff;
+	border: 2px solid $black;
+	width: 81px;
+	padding: 0;
+	border-radius: 0;
+	color: $black;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
 }
 
 #popmake-286 button {
-    right: 0;
-    top: auto;
-    bottom: 24px;
-    left: 24px;
-    background: none;
-    border: none;
-    color: $black;
-    font-family: lato,novecentosanswide,sans-serif;
-    font-weight: 400;
-    padding: 0;
+	right: 0;
+	top: auto;
+	bottom: 24px;
+	left: 24px;
+	background: none;
+	border: none;
+	color: $black;
+	font-family: lato,novecentosanswide,sans-serif;
+	font-weight: 400;
+	padding: 0;
 }
 
 .popup-entry {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-    font-family: lato,novecentosanswide,sans-serif;
-    font-size: 12px;
-    color: $black;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-align: center;
+	align-items: center;
+	font-family: lato,novecentosanswide,sans-serif;
+	font-size: 12px;
+	color: $black;
 }
 
 
 footer {
-    max-width: 1024px;
-    margin: auto;
+	max-width: 1024px;
+	margin: auto;
 }
 
 .site-info {
-    margin-left: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    color: $black;
+	margin-left: 16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	color: $black;
 }
 
 .textwidget {
-    width: 125px;
-    font-family: $font__body;
-    font-size: 12px;
-        & a:hover{
-        color: $orange;
-    }
+	width: 125px;
+	font-family: $font__body;
+	font-size: 12px;
+			& a:hover{
+			color: $orange;
+	}
 }
 
 .textwidget a {
-    color: black;
-    font-weight: 300;
-    text-decoration: none;
+	color: black;
+	font-weight: 300;
+	text-decoration: none;
 }
 
 .textwidget :last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
-
 .footer-icons {
-    display: flex;
-    align-items: flex-end;
+	display: flex;
+	align-items: flex-end;
 }
 
 .footer-widget {
-    display: flex;
+	display: flex;
 }
 
 .facebook {
-    background-image: url("../../assets/images/facebook-circle-sm.svg");
-    background-repeat: no-repeat; 
-    margin-right: 10px;
-    height: 36px;
-    width: 36px
+	background-image: url("../../assets/images/facebook-circle-sm.svg");
+	background-repeat: no-repeat; 
+	margin-right: 10px;
+	height: 36px;
+	width: 36px
 }
 
 .twitter {
-    background-image: url("../../assets/images/twitter-circle-sm.svg");
-    background-repeat: no-repeat; 
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 36px;
-    width: 36px
+	background-image: url("../../assets/images/twitter-circle-sm.svg");
+	background-repeat: no-repeat; 
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 36px;
+	width: 36px
 }
 
 .copywrite {
-    text-align: left;
-    padding-left: 16px;
-        margin-bottom: 25px;
-        font-family: $font__body;
-        font-size: 10px;    
+	text-align: left;
+	padding-left: 16px;
+			margin-bottom: 25px;
+			font-family: $font__body;
+			font-size: 10px;    
 }
-
 
 @media all and (min-width: $desktop-view) {
-
-.textwidget {
-    display: flex;
-}
-
-.site-info {
-    padding-left: 35px;
-    padding-top: 20px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    color: $black;
-    justify-content: flex-start;
-    
-}
-
-.textwidget {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-width: 526px;
-    p {
-        width: 175px;
-        font-size: $font_d-sub-body;
-        margin: 0;
-    }
-}
-
-
-.footer-icons {
-    display: flex;
-    align-items: flex-end;
-}
-
-.facebook {
-    background-image: url("../../assets/images/facebook-circle-lg.svg");
-    height: 50px;
-    width: 50px
-}
-
-.twitter {
-    background-image: url("../../assets/images/twitter-circle-lg.svg");
-    height: 50px;
-    width: 50px
-}
-
-
-.copywrite {
-    text-align: left;
-    padding-left: 35px;
-    p {
-    font-size: 14px;
-    }
-    }
+	.textwidget {
+		display: flex;
+	}
+	.site-info {
+		padding-left: 35px;
+		padding-top: 20px;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		color: $black;
+		justify-content: flex-start;
+		
+	}
+	.textwidget {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		min-width: 526px;
+		p {
+				width: 175px;
+				font-size: $font_d-sub-body;
+				margin: 0;
+		}
+	}
+	.footer-icons {
+		display: flex;
+		align-items: flex-end;
+	}
+	.facebook {
+		background-image: url("../../assets/images/facebook-circle-lg.svg");
+		height: 50px;
+		width: 50px
+	}
+	.twitter {
+		background-image: url("../../assets/images/twitter-circle-lg.svg");
+		height: 50px;
+		width: 50px
+	}
+	.copywrite {
+		text-align: left;
+		padding-left: 35px;
+		p {
+		font-size: 14px;
+		}
+	}
 }
