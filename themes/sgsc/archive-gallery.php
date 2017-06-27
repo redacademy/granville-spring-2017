@@ -97,9 +97,12 @@ get_header(); ?>
 				<?php endwhile; ?>
 				</div>
 
-			<?php the_posts_navigation(); ?>
-
-
+			<?php the_posts_navigation(
+				array(
+					'next_text'          => '<i class="fa fa-angle-left" aria-hidden="true"></i>Prev',
+					'prev_text'          => 'More<i class="fa fa-angle-right" aria-hidden="true"></i>'
+					)); ?>
+			
 
 			<?php else : ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>

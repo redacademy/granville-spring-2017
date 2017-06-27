@@ -155,3 +155,35 @@
       }
     }
   }
+  
+  .post-type-archive-gallery .nav-links {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    margin: $margin-d;
+    a {
+      width: 80px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: $black;
+      @include hover-state {
+        color: $orange;
+      }
+      @media screen and (min-width: $mobile_width) {
+        font-size: $font_d-body;
+      }
+    }
+    .nav-previous {
+      margin: 0 $margin-d*1.5;
+      display: flex;
+      flex-flow: row nowrap;
+    }
+    .nav-next {
+      margin: 0 $margin-d*1.5;
+    }
+    .fa {
+      font-size: 70px;
+      padding: 10px;
+      font-weight: 300;
+    }
+  }
