@@ -178,3 +178,14 @@ function filter_tribe_all_occurences ($wp_query) {
 
 	return $wp_query;
 }
+function change_program_type ($program_types) {
+		foreach($program_types as $key => $val) {
+			if($val->slug == 'information') {
+				$item = $program_types[$key];
+				unset($program_types[$key]);
+				array_push($program_types, $item); 
+				return $program_types;
+				break;
+			}
+		}
+}

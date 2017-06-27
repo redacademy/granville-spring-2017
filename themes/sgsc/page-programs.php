@@ -26,25 +26,16 @@ get_header(); ?>
 
 				<div class="programs">
 					
-					<?php $program_types = get_terms(array (
+					<?php $program_list = get_terms(array (
 							'taxonomy' => 'program-type',
 							'hide_empty' => false
 					)); 
-
-					foreach($program_types as $key => $val) {
-						if($val->slug == 'information') {
-							$item = $program_types[$key];
-							unset($program_types[$key]);
-							array_push($program_types, $item); 
-							break;
-						}
-					}
+					$program_list = change_program_type($program_list);
 					
-					if (!empty($program_types)&& !is_wp_error($program_types)) : ?>
-
+					if (!empty($program_list)&& !is_wp_error($program_list)) : ?>
 
 						<ul class="program-list">
-							<?php foreach ($program_types as $program_type) : ?>
+							<?php foreach ($program_list as $program_type) : ?>
 								<a href = "<?php echo get_term_link($program_type); ?>" class="program-link">
 									<li>
 										<?php echo $program_type->name; ?>
