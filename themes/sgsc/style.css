@@ -2756,51 +2756,49 @@ footer {
 @media all and (min-width: 480px) {
   .page-template-page-about-our-team .entry-header img {
     object-position: 45% 0%; }
-  .page-template-page-about-our-team .entry-content P {
+  .entry-content P {
     font-style: lato, novecentosanswide, sans-serif;
-    font-size: 18px; }
-  .page-template-page-about-our-team .our-team-paragraph {
     font-size: 18px;
     line-height: 24px; }
-  .page-template-page-about-our-team .team-members {
+  .entry-content .team-members {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-  .page-template-page-about-our-team .member {
+  .entry-content .member {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%; }
-  .page-template-page-about-our-team .member-picture {
+  .entry-content .member-picture {
     height: 282px;
     width: 100%;
     margin-bottom: 20px;
     margin-top: 40px; }
-  .page-template-page-about-our-team .member-name {
+  .entry-content .member-name {
     font-size: 24px;
     font-weight: bold; }
-  .page-template-page-about-our-team .member-email.member-container {
+  .entry-content .member-email.member-container {
     margin-bottom: 20px; }
-  .page-template-page-about-our-team .member-container {
+  .entry-content .member-container {
     margin: 0 0; }
-  .page-template-page-about-our-team .member-position, .page-template-page-about-our-team .member-email, .page-template-page-about-our-team .member-bio {
+  .entry-content .member-position, .entry-content .member-email, .entry-content .member-bio {
     font-size: 18px;
     line-height: 22px; }
-  .page-template-page-about-our-team ul li:nth-child(odd) img {
+  .entry-content ul li:nth-child(odd) img {
     padding-left: 38px; }
-  .page-template-page-about-our-team ul li:nth-child(even) img {
+  .entry-content ul li:nth-child(even) img {
     padding-right: 38px; }
-  .page-template-page-about-our-team .member-picture {
+  .entry-content .member-picture {
     height: auto;
     max-width: 100%;
     margin-bottom: 20px;
     margin-top: 40px; }
-  .page-template-page-about-our-team .about-back-btn {
+  .entry-content .about-back-btn {
     display: none; } }
 
 .page-template-page-about-our-board .donate-btn {
@@ -4238,8 +4236,8 @@ footer {
         font-size: 24px; } }
 
 /**
-  ** 404 page
-  */
+** 404 page
+*/
 .error404 .content-area {
   display: -ms-flexbox;
   display: flex;
@@ -4476,20 +4474,19 @@ footer {
     object-fit: cover;
     object-position: 65% 0%;
     position: absolute; }
-
-.page-template-page-about-partners .entry-title {
-  position: absolute;
-  bottom: 0px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  width: 100%;
-  height: 118px;
-  background: #f5a623;
-  margin-bottom: 0; }
+  .page-template-page-about-partners .entry-header .entry-title {
+    position: absolute;
+    bottom: 0px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    height: 118px;
+    background: #f5a623;
+    margin-bottom: 0; }
 
 .page-template-page-about-partners .entry-content p {
   margin: 15px 22px;
