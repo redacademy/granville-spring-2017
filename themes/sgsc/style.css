@@ -3196,7 +3196,7 @@ footer {
 #post-18 {
   margin: 0; }
 
-.page-template-page-join-us .donate-btn {
+.page-template-page-join-us .donate-btn, .post-type-archive-volunteer .donate-btn {
   background-color: #F91E72;
   position: absolute;
   bottom: 0;
@@ -3211,26 +3211,26 @@ footer {
   height: 2.3rem;
   width: 2.3rem; }
   @media screen and (min-width: 480px) {
-    .page-template-page-join-us .donate-btn {
+    .page-template-page-join-us .donate-btn, .post-type-archive-volunteer .donate-btn {
       height: 5rem;
       width: 5rem; } }
-  .page-template-page-join-us .donate-btn a {
+  .page-template-page-join-us .donate-btn a, .post-type-archive-volunteer .donate-btn a {
     text-decoration: none;
     color: #000000;
     font-size: 1rem; }
     @media screen and (min-width: 480px) {
-      .page-template-page-join-us .donate-btn a {
+      .page-template-page-join-us .donate-btn a, .post-type-archive-volunteer .donate-btn a {
         font-size: 4rem; } }
-    .page-template-page-join-us .donate-btn a i {
+    .page-template-page-join-us .donate-btn a i, .post-type-archive-volunteer .donate-btn a i {
       font-weight: lighter;
       padding: .5rem;
       color: #000000; }
-      .page-template-page-join-us .donate-btn a i:hover {
+      .page-template-page-join-us .donate-btn a i:hover, .post-type-archive-volunteer .donate-btn a i:hover {
         color: #f5a623; }
-    .page-template-page-join-us .donate-btn a p {
+    .page-template-page-join-us .donate-btn a p, .post-type-archive-volunteer .donate-btn a p {
       display: none; }
 
-.page-template-page-join-us .entry-header {
+.page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -3249,9 +3249,9 @@ footer {
   min-height: 118px;
   color: #000000; }
   @media screen and (min-width: 480px) {
-    .page-template-page-join-us .entry-header {
+    .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
       min-height: 160px; } }
-  .page-template-page-join-us .entry-header .donate-btn {
+  .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-volunteer .entry-header .donate-btn {
     background-color: #F91E72;
     position: absolute;
     bottom: 0;
@@ -3266,34 +3266,34 @@ footer {
     height: 2.3rem;
     width: 2.3rem; }
     @media screen and (min-width: 480px) {
-      .page-template-page-join-us .entry-header .donate-btn {
+      .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-volunteer .entry-header .donate-btn {
         height: 5rem;
         width: 5rem; } }
-    .page-template-page-join-us .entry-header .donate-btn a {
+    .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-volunteer .entry-header .donate-btn a {
       text-decoration: none;
       color: #000000;
       font-size: 1rem; }
       @media screen and (min-width: 480px) {
-        .page-template-page-join-us .entry-header .donate-btn a {
+        .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-volunteer .entry-header .donate-btn a {
           font-size: 4rem; } }
-      .page-template-page-join-us .entry-header .donate-btn a i {
+      .page-template-page-join-us .entry-header .donate-btn a i, .post-type-archive-volunteer .entry-header .donate-btn a i {
         font-weight: lighter;
         padding: .5rem;
         color: #000000; }
-        .page-template-page-join-us .entry-header .donate-btn a i:hover {
+        .page-template-page-join-us .entry-header .donate-btn a i:hover, .post-type-archive-volunteer .entry-header .donate-btn a i:hover {
           color: #f5a623; }
-      .page-template-page-join-us .entry-header .donate-btn a p {
+      .page-template-page-join-us .entry-header .donate-btn a p, .post-type-archive-volunteer .entry-header .donate-btn a p {
         display: none; }
-  .page-template-page-join-us .entry-header .entry-meta {
+  .page-template-page-join-us .entry-header .entry-meta, .post-type-archive-volunteer .entry-header .entry-meta {
     display: none; }
 
-.page-template-page-join-us .entry-title {
+.page-template-page-join-us .entry-title, .post-type-archive-volunteer .entry-title {
   margin: auto; }
 
-.page-template-page-join-us .entry-content {
+.page-template-page-join-us .entry-content, .post-type-archive-volunteer .entry-content {
   margin: 0; }
 
-.page-template-page-join-us .join-us-section {
+.page-template-page-join-us .join-us-section, .post-type-archive-volunteer .join-us-section {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
@@ -3307,7 +3307,7 @@ footer {
   padding-bottom: 21px;
   background-position: 60%; }
 
-.page-template-page-join-us .rectangle {
+.page-template-page-join-us .rectangle, .post-type-archive-volunteer .rectangle {
   height: 208px;
   max-width: 480px;
   box-sizing: border-box;
@@ -3317,13 +3317,16 @@ footer {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.8);
   border: 4px solid rgba(255, 255, 255, 0); }
-  .page-template-page-join-us .rectangle:hover {
+  .page-template-page-join-us .rectangle:hover, .post-type-archive-volunteer .rectangle:hover {
     border: 4px solid #000000; }
 
 .page-template-page-join-us .new-member,
 .page-template-page-join-us .membership-renewal,
 .page-template-page-join-us .volunteer,
-.page-template-page-join-us .rectangle {
+.page-template-page-join-us .rectangle, .post-type-archive-volunteer .new-member,
+.post-type-archive-volunteer .membership-renewal,
+.post-type-archive-volunteer .volunteer,
+.post-type-archive-volunteer .rectangle {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -3333,11 +3336,15 @@ footer {
 
 .page-template-page-join-us .new-member,
 .page-template-page-join-us .membership-renewal,
-.page-template-page-join-us .volunteer {
+.page-template-page-join-us .volunteer, .post-type-archive-volunteer .new-member,
+.post-type-archive-volunteer .membership-renewal,
+.post-type-archive-volunteer .volunteer {
   margin-top: 21px; }
   .page-template-page-join-us .new-member h2,
   .page-template-page-join-us .membership-renewal h2,
-  .page-template-page-join-us .volunteer h2 {
+  .page-template-page-join-us .volunteer h2, .post-type-archive-volunteer .new-member h2,
+  .post-type-archive-volunteer .membership-renewal h2,
+  .post-type-archive-volunteer .volunteer h2 {
     font-family: montserrat, merriweather, sans-serif;
     font-size: 16px;
     color: #000000;
@@ -3354,7 +3361,7 @@ footer {
     -ms-flex-align: center;
         align-items: center; }
 
-.page-template-page-join-us .rectangle p {
+.page-template-page-join-us .rectangle p, .post-type-archive-volunteer .rectangle p {
   display: none; }
 
 @media all and (min-width: 600px) {
@@ -4159,72 +4166,70 @@ footer {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  .search .content-area .page-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    position: relative;
+    background: #f5a623;
+    width: 100%;
+    min-height: 118px;
+    color: #000000; }
+    @media screen and (min-width: 480px) {
+      .search .content-area .page-header {
+        min-height: 160px; } }
+    .search .content-area .page-header .donate-btn {
+      background-color: #F91E72;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      height: 2.3rem;
+      width: 2.3rem; }
+      @media screen and (min-width: 480px) {
+        .search .content-area .page-header .donate-btn {
+          height: 5rem;
+          width: 5rem; } }
+      .search .content-area .page-header .donate-btn a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1rem; }
+        @media screen and (min-width: 480px) {
+          .search .content-area .page-header .donate-btn a {
+            font-size: 4rem; } }
+        .search .content-area .page-header .donate-btn a i {
+          font-weight: lighter;
+          padding: .5rem;
+          color: #000000; }
+          .search .content-area .page-header .donate-btn a i:hover {
+            color: #f5a623; }
+        .search .content-area .page-header .donate-btn a p {
+          display: none; }
+    .search .content-area .page-header .entry-meta {
+      display: none; }
   .search .content-area .site-main {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
-    .search .content-area .site-main article {
-      margin-top: 32px; }
-      .search .content-area .site-main article header {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: center;
-            align-items: center;
-        position: relative;
-        background: #f5a623;
-        width: 100%;
-        min-height: 118px;
-        color: #000000; }
-        @media screen and (min-width: 480px) {
-          .search .content-area .site-main article header {
-            min-height: 160px; } }
-        .search .content-area .site-main article header .donate-btn {
-          background-color: #F91E72;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          z-index: 3;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center;
-          height: 2.3rem;
-          width: 2.3rem; }
-          @media screen and (min-width: 480px) {
-            .search .content-area .site-main article header .donate-btn {
-              height: 5rem;
-              width: 5rem; } }
-          .search .content-area .site-main article header .donate-btn a {
-            text-decoration: none;
-            color: #000000;
-            font-size: 1rem; }
-            @media screen and (min-width: 480px) {
-              .search .content-area .site-main article header .donate-btn a {
-                font-size: 4rem; } }
-            .search .content-area .site-main article header .donate-btn a i {
-              font-weight: lighter;
-              padding: .5rem;
-              color: #000000; }
-              .search .content-area .site-main article header .donate-btn a i:hover {
-                color: #f5a623; }
-            .search .content-area .site-main article header .donate-btn a p {
-              display: none; }
-        .search .content-area .site-main article header .entry-meta {
-          display: none; }
     @media screen and (min-width: 480px) {
       .search .content-area .site-main {
         width: 1024px; } }
 
 .search .page-title {
   text-transform: uppercase;
-  border-bottom: #000000 2px solid;
-  padding: 64px 0 16px 0; }
+  text-align: center;
+  border-bottom: #000000 2px solid; }
 
 .search .entry-title a {
   color: #000000;
@@ -4235,6 +4240,13 @@ footer {
 .search .entry-meta {
   display: -ms-flexbox;
   display: flex; }
+
+.search #search-results {
+  padding: 1rem 1rem 0 1rem; }
+
+.search article {
+  border-bottom: 2px solid black;
+  padding-bottom: 2rem; }
 
 .search .m-button {
   text-decoration: none;

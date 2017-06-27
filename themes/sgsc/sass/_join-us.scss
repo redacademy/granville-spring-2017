@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-.page-template-page-join-us {
+.page-template-page-join-us, .post-type-archive-volunteer {
 
 .donate-btn {
       background-color: $pink;
@@ -120,9 +120,6 @@
 }
 
 @media all and (min-width: $desktop-view) {
-
-
-
   .page-template-page-join-us {
   .entry-header {
     width: $d_width;

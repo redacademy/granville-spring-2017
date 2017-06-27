@@ -5,42 +5,48 @@
 .search .content-area {
   display: flex;
   justify-content: center;
+  .page-header {
+    @include page-header;
+  }
   .site-main {
     display: flex;
     width: 100%;
     flex-flow: column nowrap;
-    article {
-      margin-top: $margin-d;
-      header {
-        @include page-header;
-      }
-    }
+
     @media screen and (min-width: $mobile_width) {
       width: $d_width;
     }
   }
 }
 
-.search .page-title {
-  text-transform: uppercase;
-  border-bottom: $black 2px solid;
-  padding: $margin-d*2 0 16px 0;
-}
 
-.search .entry-title {
-  a {
-    color: $black;
-    text-decoration: none;
-    @include hover-state {
-      color: $orange;
+.search {
+  .page-title {
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: $black 2px solid;
+  }
+  .entry-title {
+    a {
+      color: $black;
+      text-decoration: none;
+      @include hover-state {
+        color: $orange;
+      }
     }
   }
+  .entry-meta {
+    display: flex;
+  }
+  #search-results {
+    padding: 1rem 1rem 0 1rem;
+  }
+  article {
+    border-bottom: 2px solid black;
+    padding-bottom: 2rem;
+  }
 }
-
-.search .entry-meta {
-  display: flex;
-}
-
+ 
 .search {
   @include m-button;
   .m-button {
