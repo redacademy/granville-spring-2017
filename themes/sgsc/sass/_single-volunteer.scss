@@ -1,32 +1,107 @@
-.volunteer-post {
-  margin: 20px 25px;
+.volunteer-template-default {
+
+  .donate-btn {
+      background-color: $pink;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2.3rem;
+      width: 2.3rem;
+      @media screen and (min-width: $mobile_width) {
+        height: 5rem;
+        width: 5rem;
+      }
+      a {
+        text-decoration: none;
+        color: $black;
+        font-size: 1rem;
+        @media screen and (min-width: $mobile_width) {
+          font-size: 4rem;
+        }
+        i {
+          font-weight: lighter;
+          padding: .5rem;
+          color: $black;
+          &:hover {
+            color: $orange;
+          }
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+
+.entry-header {
+  display: flex;
+  justify-content: center;
+  background: $orange;
+  height: 118px;
+  width: $mobile_width;
+  max-width: 1024px;
+  margin: auto;
+  @include page-header;
 }
 
-.volunteer-title {
-  font-size: $font_m-h2;
-  font-weight: 300;
+.entry-title {
+  margin: auto;
 }
 
-.volunteer-content {
-  font-size: $font_m-body;
-}
+  // .volunteer-title h1 {
+  //   text-align: center;
+  // }
 
-@media all and (min-width: $desktop-view) {
   .volunteer-post {
     margin: 20px 25px;
   }
+
   .volunteer-title {
     font-size: $font_m-h2;
-    font-weight: 300;
+    text-align: center;
   }
+
   .volunteer-header {
-    width: $d_width;
-    margin: auto;
-    column-count: 2;
+    h1 {
+      font-family: $font__body;
+      font-weight: bold;
+      font-size: 24px;      
+    }
   }
-  .volunteer-content p {
-    column-count: 2;
-    column-width: 512px;
-    font-size: $font_d-sub-body;
+
+  .volunteer-content {
+    font-size: $font_m-h2;
+  }
+
+  @media all and (min-width: $desktop-view) {
+    .volunteer-post {
+      margin: 20px 25px;
+    }
+    .volunteer-title {
+      font-size: $font_m-h2;
+      font-weight: 300;
+    }
+    .volunteer-header {
+      width: $d_width;
+      margin: auto;
+    }
+    .volunteer-content p {
+      column-width: 512px;
+      font-size: $font_d-sub-body;
+    }
+    .csRow {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .csColumn {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      flex-basis: 45%;
+    }
   }
 }

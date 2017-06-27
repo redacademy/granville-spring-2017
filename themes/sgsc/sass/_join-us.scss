@@ -46,6 +46,7 @@
   background: $orange;
   height: 118px;
   width: $mobile_width;
+  max-width: 1024px;
   margin: auto;
   @include page-header;
 }
@@ -60,7 +61,7 @@
 
 .join-us-section {
   display: flex;
-  margin: 0 auto;
+  margin: 0;
   flex-direction: column;
   max-width: $mobile-width;
   background-image: url("../../assets/images/149-46.jpg");
@@ -70,6 +71,8 @@
   padding-bottom: 21px;
   background-position: 60%;
 }
+
+  
 
 .rectangle {
   height: 208px;
@@ -119,8 +122,9 @@
 }
 }
 
-@media all and (min-width: $desktop-view) {
-  .page-template-page-join-us {
+@media all and (min-width: $mobile_width) {
+  .page-template-page-join-us, .post-type-archive-volunteer {
+
   .entry-header {
     width: $d_width;
   }
@@ -173,5 +177,6 @@
   .rectangle p {
     display: initial;
   }
+  
 }
 }
