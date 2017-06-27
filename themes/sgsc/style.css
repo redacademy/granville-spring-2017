@@ -839,6 +839,11 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+blockquote {
+  color: #F91E72;
+  font-family: montserrat, merriweather, sans-serif;
+  font-size: 1.5rem; }
+
 @media (min-width: 1024px) {
   .container {
     min-width: 1024px;
@@ -4370,7 +4375,7 @@ footer {
   .page-template-page-about-sub .content-area {
     margin-top: 10rem; }
     .page-template-page-about-sub .content-area p {
-      font-size: 1.5rem; }
+      font-size: 1.15rem; }
     .page-template-page-about-sub .content-area h5 {
       margin: 0; }
     .page-template-page-about-sub .content-area ul {

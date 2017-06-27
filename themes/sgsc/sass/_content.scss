@@ -32,6 +32,12 @@
 	margin: 0 0 $base__space-unit;
 }
 
+blockquote {
+	color: $pink;
+	font-family: $font__main;
+	font-size: 1.5rem;
+}
+
 .container {
 	@media (min-width: $d_width)  {
 		min-width: 1024px;
@@ -54,3 +60,4 @@
 .bypostauthor {
 	display: block;
 }
+
