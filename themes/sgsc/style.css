@@ -4296,6 +4296,10 @@ footer {
   margin: 15px 22px;
   text-indent: 15px; }
 
+.page-template-page-about-partners .linkhighlight a {
+  color: #5C8EDC;
+  text-decoration: none; }
+
 .page-template-page-about-partners .about-links {
   display: -ms-flexbox;
   display: flex;
@@ -4321,8 +4325,8 @@ footer {
 
 .page-template-page-about-partners .partners-title {
   font-size: 22px;
-  font-family: lato, novecentosanswide, sans-serif;
-  margin: 0 22px; }
+  font-family: montserrat, merriweather, sans-serif;
+  margin: 10px 22px; }
 
 .page-template-page-about-partners .partner-companies {
   list-style: none;
@@ -4350,11 +4354,59 @@ footer {
   height: auto; }
 
 .page-template-page-about-partners .partner-name {
-  min-height: 42px; }
+  font-family: lato, novecentosanswide, sans-serif;
+  min-width: 112px;
+  height: 42px;
+  margin: 0 0 24px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .page-template-page-about-partners .logo-container {
-  min-height: 112px;
-  width: auto; }
+  height: 112px;
+  object-fit: scale-down; }
+
+.about-back-btn p {
+  border: solid 2px black;
+  width: 6rem;
+  height: 2rem;
+  margin-left: 1rem;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-family: montserrat, merriweather, sans-serif;
+  font-size: 1.1rem; }
+  .about-back-btn p:hover {
+    background-color: #f5a623;
+    border-color: #f5a623; }
+
+.about-back-btn a {
+  color: black;
+  text-decoration: none; }
+  .about-back-btn a:visited {
+    color: black; }
+  .about-back-btn a:hover {
+    color: white; }
+
+@media all and (min-width: 480px) {
+  .page-template-page-about-partners .entry-content p {
+    font-size: 18px; }
+  .page-template-page-about-partners .individual-partner, .page-template-page-about-partners .partner-container {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
+  .page-template-page-about-partners .partner-name {
+    font-size: 16px; }
+  .page-template-page-about-partners .logo-container {
+    min-width: 165px; }
+  .page-template-page-about-partners .about-back-btn {
+    display: none; } }
 
 .page-template-page-about-sub .site-content {
   width: 100%; }
