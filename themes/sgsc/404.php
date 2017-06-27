@@ -18,7 +18,7 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like everything` was found at this location. Maybe try one of the links below or a search?' ); ?></p>
+					<p><?php echo esc_html( 'Unfortunately, that page does not exist. Please check your URL or try to search below.' ); ?> </p>
 
 				<form role="search" method="get" class="search-form1" action="<?php echo home_url( '/' ); ?>">
 					<fieldset>
