@@ -26,12 +26,10 @@
       background: rgba(255,255,255,0.81);
     }
   }
-
   .entry-content a {
     color: $black;
     text-decoration: none;
   }
-
   .about-links {
     display: flex;
     flex-flow: column nowrap;
@@ -61,7 +59,6 @@
 
 @media all and (min-width: 480px) {
   .page-template-page-about {
-
     .entry-content {
       width: 1024px;
       margin: auto;
@@ -71,7 +68,6 @@
       flex-flow: row wrap;
       justify-content: space-around;
     }
-
     .about-links {
       p {
         flex: 0 1 43%;
