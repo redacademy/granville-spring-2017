@@ -53,7 +53,7 @@ get_header(); ?>
       <?php $args = array(
         'posts_per_page' 	=> -1,
         'post_type' 			=> 'gallery',
-        'orderby'						=> 'modified'
+        'orderby'					=> 'modified'
       );
       $posts_array = get_posts( $args );
       $i = 0;

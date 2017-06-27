@@ -62,7 +62,5 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 
 See also the list of [contributors](https://github.com/redacademy/granville-spring-2017/graphs/contributors/) who participated in this project.
 
-
-
-
-
+## Things to Note:
+  - The newsletter pop-up is designed to work with a MailChimp API key.  Please insert the appropriate API to make it work!
