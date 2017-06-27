@@ -39,7 +39,7 @@ get_header(); ?>
 				$fields = CFS()->get( 'our_board_members' );
 					foreach ( $fields as $field ) : ?>
 					<li class="member">
-						<img class="member-picture" src="<?php echo $field['board_member_picture`'] ?>" alt=""/>
+						<img class="member-picture" src="<?php echo $field['board_member_picture'] ?>" alt=""/>
 						<h1 class="member-name member-container"> <?php echo $field['board_member_name']; ?></h1>
 						<p class="member-position member-container"> <?php echo $field['board_member_position']; ?></p>
 						<p class="member-email member-container"> <?php echo $field['board_member_email']; ?></p>
