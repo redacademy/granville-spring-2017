@@ -10,7 +10,6 @@
 
 .search-field {
   width: 135px;
-
 }
 
 .search-submit {
@@ -92,12 +91,12 @@
     display: flex;
     justify-content: space-between;
     height: 13rem;  
-    width: 1024px;
+    max-width: 1024px;
     a {
       color: black;
     }
     a:hover {
-      color: $color__link-hover;
+      color: $orange;
     }
   }
   .logo {
@@ -175,5 +174,4 @@
     line-height: 1.75;
   }
 }
-
 }

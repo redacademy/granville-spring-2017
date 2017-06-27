@@ -816,6 +816,10 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+@media screen and (min-width: 480px) {
+  html {
+    min-width: 1024px; } }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -1080,11 +1084,11 @@ object {
     -ms-flex-pack: justify;
         justify-content: space-between;
     height: 13rem;
-    width: 1024px; }
+    max-width: 1024px; }
     .site-header a {
       color: black; }
     .site-header a:hover {
-      color: midnightblue; }
+      color: #f5a623; }
   .logo {
     z-index: 10;
     -ms-flex-pack: start;
