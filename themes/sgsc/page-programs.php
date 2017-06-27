@@ -30,16 +30,16 @@ get_header(); ?>
 							'hide_empty' => false
 					)); 
 
-						foreach($program_types as $key => $val) {
-						
-						if($val->slug == 'information') {
-							$item = $program_types[$key];
-							unset($program_types[$key]);
-							array_push($program_types, $item); 
-							break;
-						}
-					}
+					// foreach($program_types as $key => $val) {
+					// 	if($val->slug == 'information') {
+					// 		$item = $program_types[$key];
+					// 		unset($program_types[$key]);
+					// 		array_push($program_types, $item); 
+					// 		break;
+					// 	}
 
+					program_type_sort();
+					
 					if (!empty($program_types)&& !is_wp_error($program_types)) : ?>
 
 						<ul class="program-list">

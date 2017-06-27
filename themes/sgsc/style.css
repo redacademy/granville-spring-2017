@@ -3156,35 +3156,28 @@ footer {
     color: white; }
 
 @media screen and (min-width: 480px) {
-  .page-template-page-programs
-.tax-program-type .donate-btn {
+  .tax-program-type .donate-btn {
     height: 4.5rem;
     width: 4.5rem;
     font-size: 2.5rem; }
-  .page-template-page-programs
-.tax-program-type .content-area {
+  .tax-program-type .content-area {
     width: 1024px;
     margin: auto; }
-  .page-template-page-programs
-.tax-program-type .program-grid {
+  .tax-program-type .program-grid {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    .page-template-page-programs
-.tax-program-type .program-grid li {
+    .tax-program-type .program-grid li {
       -ms-flex: 0 1 47%;
           flex: 0 1 47%; }
-  .page-template-page-programs
-.tax-program-type .entry-header {
+  .tax-program-type .entry-header {
     height: 10rem; }
-  .page-template-page-programs
-.tax-program-type .program-img {
+  .tax-program-type .program-img {
     height: 17rem; }
-    .page-template-page-programs
-.tax-program-type .program-img img {
+    .tax-program-type .program-img img {
       height: 100%;
       width: auto; } }
 
