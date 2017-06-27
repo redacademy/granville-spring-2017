@@ -25,22 +25,23 @@ get_header(); ?>
 				</section><!-- .entry-header -->
 
 				<div class="programs">
+					
 					<?php $program_types = get_terms(array (
 							'taxonomy' => 'program-type',
 							'hide_empty' => false
 					)); 
 
-					// foreach($program_types as $key => $val) {
-					// 	if($val->slug == 'information') {
-					// 		$item = $program_types[$key];
-					// 		unset($program_types[$key]);
-					// 		array_push($program_types, $item); 
-					// 		break;
-					// 	}
-
-					program_type_sort();
+					foreach($program_types as $key => $val) {
+						if($val->slug == 'information') {
+							$item = $program_types[$key];
+							unset($program_types[$key]);
+							array_push($program_types, $item); 
+							break;
+						}
+					}
 					
 					if (!empty($program_types)&& !is_wp_error($program_types)) : ?>
+
 
 						<ul class="program-list">
 							<?php foreach ($program_types as $program_type) : ?>
