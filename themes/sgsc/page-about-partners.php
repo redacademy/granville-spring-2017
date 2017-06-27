@@ -34,19 +34,54 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'about' ); ?>
 
 		<?php endwhile; // End of the loop. ?>
-			<ul class="team-members">
+            <h2 class="partners-title">Major Funding Partners</h2>
+			<ul class="partner-companies">
 				<?php
-				$fields = CFS()->get( 'our_board_members' );
+				$fields = CFS()->get( 'major_funding_partners' );
 					foreach ( $fields as $field ) : ?>
-					<li class="member">
-						<img class="member-picture" src="<?php echo $field['board_member_picture'] ?>" alt=""/>
-						<h1 class="member-name member-container"> <?php echo $field['board_member_name']; ?></h1>
-						<p class="member-position member-container"> <?php echo $field['board_member_position']; ?></p>
-						<p class="member-email member-container"> <?php echo $field['board_member_email']; ?></p>
-						<p class="member-bio member-container"> <?php echo  $field['board_member_bio'] ?></p>
+					<li class="individual-partner partner-container">
+						<img class="partner-logo logo-container" src="<?php echo $field['partner_logo'] ?>" alt=""/>
+						<p class="partner-name"> <?php echo $field['partner_name']; ?></h1>
+                    </li>
+				<?php endforeach ?>
+			</ul>
+
+            <h2 class="partners-title">Program Partners</h2>
+            <ul class="partner-companies">
+				<?php
+				$fields = CFS()->get( 'program_partners' );
+					foreach ( $fields as $field ) : ?>
+					<li class="individual-partner partner-container">
+						<img class="partner-logo logo-container" src="<?php echo $field['program_logo'] ?>" alt=""/>
+						<p class="partner-name"> <?php echo $field['program_name']; ?></h1>
 					</li>
 				<?php endforeach ?>
 			</ul>
+
+            <h2 class="partners-title">Program Partners: Internships</h2>
+            <ul class="partner-companies">
+				<?php
+				$fields = CFS()->get( 'program_partners_internships' );
+					foreach ( $fields as $field ) : ?>
+					<li class="individual-partner partner-container">
+						<img class="partner-logo logo-container" src="<?php echo $field['internship_logo'] ?>" alt=""/>
+						<p class="partner-name"> <?php echo $field['internship_name']; ?></h1>
+					</li>
+				<?php endforeach ?>
+			</ul>
+
+            <h2 class="partners-title">Sponsorships</h2>
+            <ul class="partner-companies">
+				<?php
+				$fields = CFS()->get( 'sponsorships' );
+					foreach ( $fields as $field ) : ?>
+					<li class="individual-partner partner-container">
+						<img class="partner-logo logo-container" src="<?php echo $field['sponsorship_logo'] ?>" alt=""/>
+						<p class="partner-name"> <?php echo $field['sponsorship_name']; ?></h1>
+					</li>
+				<?php endforeach ?>
+			</ul>
+
 			<div class="about-back-btn">
 			<a href="<?php echo esc_url( get_permalink (get_page_by_path('about'))) ?>">
 				<p>Back</p>

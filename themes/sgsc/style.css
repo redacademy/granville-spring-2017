@@ -4269,23 +4269,38 @@ footer {
 .search .m-button {
   display: inline-block; }
 
+<<<<<<< HEAD
 .page-template-page-about-our-team .entry-header {
+=======
+.page-template-page-about-partners .entry-header {
+>>>>>>> added imgs for partners, and styled partners page
   max-width: 480px;
   margin: 0 auto;
   height: 275px;
   position: relative; }
   @media screen and (min-width: 480px) {
+<<<<<<< HEAD
     .page-template-page-about-our-team .entry-header {
       max-width: 1024px;
       height: 375px; } }
   .page-template-page-about-our-team .entry-header img {
+=======
+    .page-template-page-about-partners .entry-header {
+      max-width: 1024px;
+      height: 375px; } }
+  .page-template-page-about-partners .entry-header img {
+>>>>>>> added imgs for partners, and styled partners page
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 65% 0%;
     position: absolute; }
 
+<<<<<<< HEAD
 .page-template-page-about-our-team .entry-title {
+=======
+.page-template-page-about-partners .entry-title {
+>>>>>>> added imgs for partners, and styled partners page
   position: absolute;
   bottom: 0px;
   display: -ms-flexbox;
@@ -4299,18 +4314,30 @@ footer {
   background: #f5a623;
   margin-bottom: 0; }
 
+<<<<<<< HEAD
 .page-template-page-about-our-team .entry-content p {
   margin: 15px 22px;
   text-indent: 15px; }
 
 .page-template-page-about-our-team .about-links {
+=======
+.page-template-page-about-partners .entry-content p {
+  margin: 15px 22px;
+  text-indent: 15px; }
+
+.page-template-page-about-partners .about-links {
+>>>>>>> added imgs for partners, and styled partners page
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center; }
+<<<<<<< HEAD
   .page-template-page-about-our-team .about-links p {
+=======
+  .page-template-page-about-partners .about-links p {
+>>>>>>> added imgs for partners, and styled partners page
     background: #f5a623;
     width: 277px;
     height: 96px;
@@ -4326,6 +4353,7 @@ footer {
     font-family: montserrat, merriweather, sans-serif;
     font-size: 22px; }
 
+<<<<<<< HEAD
 .page-template-page-about-sub .site-content {
   width: 100%; }
 
@@ -4381,3 +4409,41 @@ footer {
       margin: 0; }
     .page-template-page-about-sub .content-area ul {
       font-size: 1.5rem; } }
+=======
+.page-template-page-about-partners .partners-title {
+  font-size: 22px;
+  font-family: lato, novecentosanswide, sans-serif;
+  margin: 0 22px; }
+
+.page-template-page-about-partners .partner-companies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 22px; }
+
+.page-template-page-about-partners .individual-partner, .page-template-page-about-partners .partner-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin: auto; }
+
+.page-template-page-about-partners .partner-logo img {
+  min-width: auto;
+  height: auto; }
+
+.page-template-page-about-partners .partner-name {
+  min-height: 42px; }
+
+.page-template-page-about-partners .logo-container {
+  min-height: 112px;
+  width: auto; }
+>>>>>>> added imgs for partners, and styled partners page
