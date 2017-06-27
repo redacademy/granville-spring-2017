@@ -1,0 +1,70 @@
+.page-template-page-about-sub {
+  .site-content {
+    width: 100%
+  }
+  .entry-header {
+    height: 17rem;
+    position: relative;
+    img {
+      object-fit: cover;
+      width: auto;
+      height: 100%
+    }
+  }
+  .entry-title {
+    position: absolute;
+    bottom: 0;
+    height: 7rem;
+    background-color: $orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+  .entry-content {
+    padding: 0 1.3rem;
+    p {
+      font-size: 1rem;
+    }
+    ul {
+      margin: 0;
+      font-family: $font__body;
+    }
+  }
+}
+
+@media screen and (min-width:480px) {
+  .page-template-page-about-sub {
+    .site-content {
+      width: 1024px;
+      margin: auto;
+    }
+    .donate-btn {
+      bottom: 0.4rem;
+    }
+    .entry-title {
+      height: 10rem;
+      bottom: -9.6rem;
+    }
+    .entry-header {
+      height: initial;
+      img {
+        height: 22rem;
+      }
+    }
+    .content-area {
+      margin-top: 10rem;
+      p {
+        font-size: 1.5rem;
+      }
+      h5 {
+        margin: 0;
+      }
+      ul {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+

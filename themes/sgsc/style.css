@@ -738,6 +738,8 @@ a {
     display: block; }
   .nav-menu {
     display: initial; }
+  .menu-item a:hover {
+    color: #f5a623; }
   #menu-mobile-menu {
     display: none; } }
 
@@ -3123,7 +3125,7 @@ footer {
   .tax-program-type .calendar-program h2 {
     font-size: 1.5rem; }
 
-.tax-program-type .program-back-btn p {
+.program-back-btn p {
   border: solid 2px black;
   width: 6rem;
   height: 2rem;
@@ -3136,16 +3138,16 @@ footer {
       justify-content: center;
   font-family: montserrat, merriweather, sans-serif;
   font-size: 1.1rem; }
-  .tax-program-type .program-back-btn p:hover {
+  .program-back-btn p:hover {
     background-color: #f5a623;
     border-color: #f5a623; }
 
-.tax-program-type .program-back-btn a {
+.program-back-btn a {
   color: black;
   text-decoration: none; }
-  .tax-program-type .program-back-btn a:visited {
+  .program-back-btn a:visited {
     color: black; }
-  .tax-program-type .program-back-btn a:hover {
+  .program-back-btn a:hover {
     color: white; }
 
 @media screen and (min-width: 480px) {
@@ -3179,16 +3181,15 @@ footer {
     .page-template-page-programs
 .tax-program-type .program-img img {
       height: 100%;
-      width: auto; }
-  .page-template-page-programs
-.tax-program-type .program-back-btn {
-    display: none; } }
+      width: auto; } }
 
 @media screen and (min-width: 480px) {
   .donate-btn {
     height: 4.5rem;
     width: 4.5rem;
-    font-size: 2.5rem; } }
+    font-size: 2.5rem; }
+  .program-back-btn {
+    display: none; } }
 
 #post-18 {
   margin: 0; }
@@ -4319,3 +4320,58 @@ footer {
     margin: 32px 0 0 0;
     font-family: montserrat, merriweather, sans-serif;
     font-size: 22px; }
+
+.page-template-page-about-sub .site-content {
+  width: 100%; }
+
+.page-template-page-about-sub .entry-header {
+  height: 17rem;
+  position: relative; }
+  .page-template-page-about-sub .entry-header img {
+    object-fit: cover;
+    width: auto;
+    height: 100%; }
+
+.page-template-page-about-sub .entry-title {
+  position: absolute;
+  bottom: 0;
+  height: 7rem;
+  background-color: #f5a623;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0;
+  width: 100%; }
+
+.page-template-page-about-sub .entry-content {
+  padding: 0 1.3rem; }
+  .page-template-page-about-sub .entry-content p {
+    font-size: 1rem; }
+  .page-template-page-about-sub .entry-content ul {
+    margin: 0;
+    font-family: lato, novecentosanswide, sans-serif; }
+
+@media screen and (min-width: 480px) {
+  .page-template-page-about-sub .site-content {
+    width: 1024px;
+    margin: auto; }
+  .page-template-page-about-sub .donate-btn {
+    bottom: 0.4rem; }
+  .page-template-page-about-sub .entry-title {
+    height: 10rem;
+    bottom: -9.6rem; }
+  .page-template-page-about-sub .entry-header {
+    height: initial; }
+    .page-template-page-about-sub .entry-header img {
+      height: 22rem; }
+  .page-template-page-about-sub .content-area {
+    margin-top: 10rem; }
+    .page-template-page-about-sub .content-area p {
+      font-size: 1.5rem; }
+    .page-template-page-about-sub .content-area h5 {
+      margin: 0; }
+    .page-template-page-about-sub .content-area ul {
+      font-size: 1.5rem; } }
