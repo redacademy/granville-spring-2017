@@ -39,7 +39,7 @@ get_header(); ?>
       </div>
       <div class="intro-event-blog">
         <div class="front-events">
-          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'event' )) ) ?>">
+          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'events' )) ) ?>">
             <h1>Upcoming Events</h1></a>
         </div>
         <div class="front-blog">

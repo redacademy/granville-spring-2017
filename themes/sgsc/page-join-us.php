@@ -44,14 +44,14 @@ get_the_title();
 						<?php echo CFS()->get( 'first_name' ); ?>
 
 
-						<a class="new-member rectangle" href="/assets/documents/membership-application-form.pdf" target="_blank">
+						<a class="new-member rectangle" href="<?php echo CFS() ->get('membership_form'); ?>" download>
 							<h2><?php echo CFS()->get( 'new_member' );	?></h2>
 							<p><?php echo CFS()->get( 'new_member_text' );	?></p>
 						</a>
-						<div class="membership-renewal rectangle">
+						<a class="membership-renewal rectangle" href="<?php echo CFS() ->get('volunteer_website') ?>">
 							<h2><?php echo CFS()->get( 'membership_renewal' );	?></h2>
 							<p><?php echo CFS()->get( 'membership_renewal_text' );	?></p>
-						</div>	
+						</a>	
 						<!--<div class="volunteer rectangle">-->
 							<a class="volunteer rectangle" href="<?php echo get_post_type_archive_link( 'volunteer' ); ?>">
 							<h2><?php echo CFS()->get( 'volunteer_opportunities' );	?></h2>
