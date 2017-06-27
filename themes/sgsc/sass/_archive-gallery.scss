@@ -75,6 +75,7 @@
             font-size: $font_m-h1;
             @media screen and (min-width: $mobile_width) {
               font-size: $font_d-h2;
+              margin: 0;
             }
           }
         }
@@ -146,6 +147,7 @@
               font-size: $font_m-h1;
               @media screen and (min-width: $mobile_width) {
                 font-size: $font_d-h2;
+                margin: 0;
               }
             }
           }

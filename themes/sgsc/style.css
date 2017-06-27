@@ -1972,7 +1972,8 @@ object {
           font-size: 22px; }
           @media screen and (min-width: 480px) {
             .post-type-archive-gallery .gallery-album .gallery .entry-header .entry-title h2 {
-              font-size: 36px; } }
+              font-size: 36px;
+              margin: 0; } }
 
 .post-type-archive-gallery .lastest-gallery-section {
   display: -ms-flexbox;
@@ -2099,7 +2100,8 @@ object {
             font-size: 22px; }
             @media screen and (min-width: 480px) {
               .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .entry-title p {
-                font-size: 36px; } }
+                font-size: 36px;
+                margin: 0; } }
 
 /*--------------------------------------------------------------
 # Single-Gallery Page
