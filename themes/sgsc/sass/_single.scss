@@ -22,4 +22,10 @@
       width: $d_width;
     }
   }
+  p {
+    font-size: $font_m-h2;
+    @media screen and (min-width: $mobile_width) {
+      font-size: $font_d-body;
+    }
+  }
 }

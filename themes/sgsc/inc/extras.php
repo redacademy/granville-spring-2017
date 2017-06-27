@@ -45,14 +45,33 @@ add_action ( 'wp_enqueue_scripts', 'sgsc_programs_hero' );
  */
 
 function sgsc_modify_archive_queries( $query ) {
-    if ( is_post_type_archive( 'gallery' ) && !is_admin() && $query->is_main_query() ) {
-        $query->set( 'posts_per_page', 8);
-				$query->set( 'orderby', 'date' );
-				$query->set ( 'order', 'DESC' );
-		}
+    // if ( is_post_type_archive( 'gallery' ) && !is_admin() && $query->is_main_query() ) {
+    //     $query->set( 'posts_per_page', 8);
+		// 		$query->set( 'orderby', 'date' );
+		// 		$query->set ( 'order', 'DESC' );
+		// }
+    if ( is_post_type_archive( 'gallery' ) && !is_admin() && $query->is_main_query() ) {		
+    $ppp = 8;
+    $offset = -6;
+    if (!$query->is_paged()) {
+      $query->set('posts_per_page',$offset + $ppp);
+    } else {
+      $offset = $offset + ( ($query->query_vars['paged']-1) * $ppp );
+      $query->set('posts_per_page',$ppp);
+      $query->set('offset',$offset);
+    }
+  }
 }
 add_action( 'pre_get_posts', 'sgsc_modify_archive_queries' );
 
+function homepage_offset_pagination( $found_posts, $query ) {
+    $offset = -6;
+    if ( is_post_type_archive( 'gallery' ) && !is_admin() && $query->is_main_query() ) {		
+        $found_posts = $found_posts - $offset;
+    }
+    return $found_posts;
+}
+add_filter( 'found_posts', 'homepage_offset_pagination', 10, 2 );
 
 /**
  * change to sgsc login logo

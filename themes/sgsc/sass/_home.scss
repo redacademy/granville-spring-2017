@@ -17,6 +17,7 @@
       }
       .site-header {
         margin: 0;
+        height: 160px;
         @include page-header;
         @include m-donate;
       }

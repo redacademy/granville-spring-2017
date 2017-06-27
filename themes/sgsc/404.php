@@ -34,9 +34,6 @@ get_header(); ?>
 					</fieldset>
 				</form>
 
-
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
 					<?php if ( red_starter_categorized_blog() ) : ?>
 
 					<?php endif; ?>

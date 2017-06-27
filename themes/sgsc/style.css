@@ -1259,7 +1259,9 @@ object {
         align-items: center; }
     .home .learn-about-story .donate-btn a {
       text-decoration: none;
-      color: #000000; }
+      color: #000000;
+      display: -ms-flexbox;
+      display: flex; }
       .home .learn-about-story .donate-btn a i {
         padding: .4rem;
         color: #000000; }
@@ -1687,6 +1689,7 @@ object {
             align-items: center; } }
     .blog .content-area .site-main .site-header {
       margin: 0;
+      height: 160px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
@@ -1970,7 +1973,8 @@ object {
           font-size: 22px; }
           @media screen and (min-width: 480px) {
             .post-type-archive-gallery .gallery-album .gallery .entry-header .entry-title h2 {
-              font-size: 36px; } }
+              font-size: 36px;
+              margin: 0; } }
 
 .post-type-archive-gallery .lastest-gallery-section {
   display: -ms-flexbox;
@@ -2093,6 +2097,12 @@ object {
           color: #000000; }
           .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .entry-title:hover {
             color: #f5a623; }
+          .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .entry-title p {
+            font-size: 22px; }
+            @media screen and (min-width: 480px) {
+              .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .entry-title p {
+                font-size: 36px;
+                margin: 0; } }
 
 /*--------------------------------------------------------------
 # Single-Gallery Page
@@ -2561,7 +2571,6 @@ footer {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
   .page-template-page-about .about-links p {
-<<<<<<< HEAD
     -ms-flex: 0 1 43%;
         flex: 0 1 43%;
     height: 10rem;
@@ -2570,26 +2579,6 @@ footer {
   .page-template-page-about .about-links a {
     padding: 3rem 3rem;
     font-size: 2.5rem; } }
-=======
-    background: #f5a623;
-    width: 417px;
-    height: 150px;
-    border: 4px solid #f5a623;
-    text-align: center;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    margin: 63px 0 0 0; }
-    .page-template-page-about .about-links p:nth-child(even) {
-      margin-left: 63px;
-      margin-right: 31.5px; }
-    .page-template-page-about .about-links p:nth-child(odd) {
-      margin-right: 63px;
-      margin-left: 31.5px; } }
->>>>>>> post
 
 .page-template-page-about-our-team .entry-header {
   max-width: 480px;
@@ -2924,17 +2913,10 @@ footer {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-<<<<<<< HEAD
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%; }
   .page-template-page-about-our-board .member-picture {
     height: auto;
-=======
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%; }
-  .page-template-page-about-our-board .member-picture {
-    height: 282px;
->>>>>>> post
     width: 100%;
     margin-bottom: 20px;
     margin-top: 40px; }
@@ -4190,6 +4172,11 @@ footer {
     @media screen and (min-width: 480px) {
       .single-post .content-area .site-main {
         width: 1024px; } }
+  .single-post .content-area p {
+    font-size: 16px; }
+    @media screen and (min-width: 480px) {
+      .single-post .content-area p {
+        font-size: 24px; } }
 
 /**
   ** 404 page
