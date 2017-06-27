@@ -2891,11 +2891,10 @@ footer {
     color: white; }
 
 @media all and (min-width: 480px) {
-  .page-template-page-about-our-board .entry-content {
-    column-count: 2; }
-  .page-template-page-about-our-board .our-team-paragraph {
-    font-size: 18px;
-    line-height: 24px; }
+  .page-template-page-about-our-board .entry-header img {
+    object-position: 45% 0%; }
+  .page-template-page-about-our-board .board-p-1, .page-template-page-about-our-board .board-p-2 {
+    font-size: 18px; }
   .page-template-page-about-our-board .team-members {
     display: -ms-flexbox;
     display: flex;
@@ -2908,8 +2907,8 @@ footer {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%; }
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%; }
   .page-template-page-about-our-board .member-picture {
     height: auto;
     width: 100%;

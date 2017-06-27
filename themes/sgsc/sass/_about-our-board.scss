@@ -169,14 +169,14 @@ span.text {
 
 .page-template-page-about-our-board {
 
+  .entry-header {
+      img {
+        object-position: 45% 0%;
+      }
+    }
 
-  .entry-content {
-    column-count: 2;
-  }
-
-  .our-team-paragraph {
+  .board-p-1, .board-p-2 {
     font-size: $font_d-sub-body;
-    line-height: 24px;
   }
 
   .team-members {
@@ -188,7 +188,7 @@ span.text {
   .member {
     display: flex;
     flex-direction: column;
-    flex-basis: 45%;
+    flex-basis: 47%;
   }
 
   .member-picture {
