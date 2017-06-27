@@ -29,7 +29,7 @@ get_header(); ?>
           </a>
       </div>
     </section>
-
+    
     <section class="program-event-post">
       <div class="front-program">
         <a href="<?php echo esc_url( get_permalink(get_page_by_path( 'programs' )) ) ?>">
@@ -39,7 +39,7 @@ get_header(); ?>
       </div>
       <div class="intro-event-blog">
         <div class="front-events">
-          <a href="<?php echo esc_url( get_permalink(get_page_by_title( 'events' )) ) ?>">
+          <a href="<?php echo esc_url (get_home_url()) ?>/events">
             <h1>Upcoming Events</h1></a>
         </div>
         <div class="front-blog">
