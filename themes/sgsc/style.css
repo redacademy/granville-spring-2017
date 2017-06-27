@@ -359,7 +359,7 @@ th {
   src: url("../../assets/fonts/montserrat-thin-webfont.eot");
   src: url("../../assets/fonts/montserrat-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-thin-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-thin-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-thin-webfont.ttf") format("truetype"), url("../../assets/fonts/montserrat-thin-webfont.svg#montserratthin") format("svg");
   font-weight: 100;
-  font-style: normal; }
+  font-style: normal;}
 
 /*--------------------------------------------------------------
 # Typography
