@@ -153,6 +153,14 @@
         object-position: 45% 0%;
       }
     }
+
+  .entry-content {
+    P {
+      font-style: $font__body;
+      font-size: $font_d-sub-body;
+    }
+  }
+
   .board-p-1, .board-p-2 {
     font-size: $font_d-sub-body;
   }

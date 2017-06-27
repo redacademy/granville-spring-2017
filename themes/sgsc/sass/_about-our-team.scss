@@ -120,14 +120,11 @@
         object-position: 45% 0%;
       }
     }
-    .entry-content {
-      column-count: 2;
-      p {
-        font-size: $font__body;
-        font-size: $font_d-sub-body;
-      }
-    }
-    .our-team-paragraph {
+  }
+
+  .entry-content {
+    P {
+      font-style: $font__body;
       font-size: $font_d-sub-body;
       line-height: 24px;
     }

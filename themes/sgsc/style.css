@@ -1054,7 +1054,7 @@ object {
   border-radius: 25px;
   font-family: montserrat, merriweather, sans-serif;
   right: 0;
-  top: 3px;
+  top: 50px;
   position: absolute;
   width: 85%;
   line-height: 3; }
@@ -2756,11 +2756,9 @@ footer {
 @media all and (min-width: 480px) {
   .page-template-page-about-our-team .entry-header img {
     object-position: 45% 0%; }
-  .page-template-page-about-our-team .entry-content {
-    column-count: 2; }
-    .page-template-page-about-our-team .entry-content P {
-      font-size: lato, novecentosanswide, sans-serif;
-      font-size: 18px; }
+  .page-template-page-about-our-team .entry-content P {
+    font-style: lato, novecentosanswide, sans-serif;
+    font-size: 18px; }
   .page-template-page-about-our-team .our-team-paragraph {
     font-size: 18px;
     line-height: 24px; }
@@ -2957,6 +2955,9 @@ footer {
 @media all and (min-width: 480px) {
   .page-template-page-about-our-board .entry-header img {
     object-position: 45% 0%; }
+  .page-template-page-about-our-board .entry-content P {
+    font-style: lato, novecentosanswide, sans-serif;
+    font-size: 18px; }
   .page-template-page-about-our-board .board-p-1, .page-template-page-about-our-board .board-p-2 {
     font-size: 18px; }
   .page-template-page-about-our-board .team-members {
