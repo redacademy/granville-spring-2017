@@ -40,6 +40,10 @@ get_the_title();
 
 
 					<div class="join-us-section">
+
+						<?php echo CFS()->get( 'first_name' ); ?>
+
+
 						<a class="new-member rectangle" href="/assets/documents/membership-application-form.pdf" target="_blank">
 							<h2><?php echo CFS()->get( 'new_member' );	?></h2>
 							<p><?php echo CFS()->get( 'new_member_text' );	?></p>

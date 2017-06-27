@@ -1,10 +1,47 @@
 .page-template-page-about-our-board {
 
+
+.donate-btn {
+      background-color: $pink;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2.3rem;
+      width: 2.3rem;
+      @media screen and (min-width: $mobile_width) {
+        height: 5rem;
+        width: 5rem;
+      }
+      a {
+        text-decoration: none;
+        color: $black;
+        font-size: 1rem;
+        @media screen and (min-width: $mobile_width) {
+          font-size: 4rem;
+        }
+        i {
+          font-weight: lighter;
+          padding: .5rem;
+          color: $black;
+          &:hover {
+            color: $orange;
+          }
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+
 .entry-header {
   max-width: 480px;
   margin: 0 auto;
   height: 275px;  
-  position: relative;
+  position: relative;  
   @media screen and (min-width: 480px) {
     max-width: 1024px;
     height: 375px; 
@@ -19,6 +56,8 @@
 }
 
 .entry-title {
+
+
   position: absolute;
   bottom: 0px;
   display: flex;
