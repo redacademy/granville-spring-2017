@@ -1357,18 +1357,12 @@ object {
     .home .program-event-post .front-program p,
     .home .program-event-post .front-program a {
       margin: 0; }
-      @media screen and (min-width: 1024px) {
-        .home .program-event-post .front-program h1,
-        .home .program-event-post .front-program p,
-        .home .program-event-post .front-program a {
-          -ms-flex-pack: start;
-              justify-content: flex-start; } }
     .home .program-event-post .front-program .m-button p:hover, .home .program-event-post .front-program .m-button p:active, .home .program-event-post .front-program .m-button p:focus {
       background: #ffffff;
       color: #f5a623; }
     .home .program-event-post .front-program p {
       display: none;
-      padding: 0 30px; }
+      padding: 0 60px; }
     @media screen and (min-width: 1024px) {
       .home .program-event-post .front-program p {
         display: inline-block; } }
@@ -1381,7 +1375,9 @@ object {
         -ms-flex-pack: start;
             justify-content: flex-start; }
         .home .program-event-post .front-program a {
-          padding-left: 30px; } }
+          padding-left: 60px;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
   @media screen and (min-width: 480px) {
     .home .program-event-post .intro-event-blog {
       display: -ms-flexbox;
