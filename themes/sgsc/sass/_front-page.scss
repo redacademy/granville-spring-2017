@@ -113,6 +113,9 @@
     p,
     a {
       margin: 0;
+      @media screen and (min-width: $d_width) {
+        justify-content: flex-start;
+      }
     }
     .m-button {
       p {
@@ -124,7 +127,7 @@
     }
     p {
       display: none;
-      padding: 0 60px;
+      padding: 0 30px;
     }
     @media screen and (min-width: $d_width) {
       p {
@@ -137,8 +140,7 @@
       flex-flow: column nowrap;
       justify-content: flex-start;
       a {
-        padding-left: 60px;
-        justify-content: center;
+        padding-left: 30px;
       }
     }
   }
