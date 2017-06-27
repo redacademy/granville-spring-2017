@@ -1054,7 +1054,7 @@ object {
   border-radius: 25px;
   font-family: montserrat, merriweather, sans-serif;
   right: 0;
-  top: 50px;
+  top: 3px;
   position: absolute;
   width: 85%;
   line-height: 3; }
@@ -2760,45 +2760,45 @@ footer {
     font-style: lato, novecentosanswide, sans-serif;
     font-size: 18px;
     line-height: 24px; }
-  .entry-content .team-members {
+  .team-members {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-  .entry-content .member {
+  .member {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%; }
-  .entry-content .member-picture {
+  .member-picture {
     height: 282px;
     width: 100%;
     margin-bottom: 20px;
     margin-top: 40px; }
-  .entry-content .member-name {
+  .member-name {
     font-size: 24px;
     font-weight: bold; }
-  .entry-content .member-email.member-container {
+  .member-email.member-container {
     margin-bottom: 20px; }
-  .entry-content .member-container {
+  .member-container {
     margin: 0 0; }
-  .entry-content .member-position, .entry-content .member-email, .entry-content .member-bio {
+  .member-position, .member-email, .member-bio {
     font-size: 18px;
     line-height: 22px; }
-  .entry-content ul li:nth-child(odd) img {
+  ul li:nth-child(odd) img {
     padding-left: 38px; }
-  .entry-content ul li:nth-child(even) img {
+  ul li:nth-child(even) img {
     padding-right: 38px; }
-  .entry-content .member-picture {
+  .member-picture {
     height: auto;
     max-width: 100%;
     margin-bottom: 20px;
     margin-top: 40px; }
-  .entry-content .about-back-btn {
+  .about-back-btn {
     display: none; } }
 
 .page-template-page-about-our-board .donate-btn {

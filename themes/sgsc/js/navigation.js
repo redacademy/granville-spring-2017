@@ -22,13 +22,13 @@
     });
     (function ($) {
       var $window = $(window),
-          $overlay = $('.overlay');
+        $overlay = $('.overlay');
 
       $window.resize(function resize() {
         if ($window.width() > 480) {
-        return $overlay.addClass('desktopWidth');
+          return $overlay.addClass('desktopWidth');
         }
-      $overlay.removeClass('desktopWidth');
+        $overlay.removeClass('desktopWidth');
       }).trigger('resize');
     })(jQuery);
   });

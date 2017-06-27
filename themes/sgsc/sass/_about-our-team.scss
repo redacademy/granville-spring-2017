@@ -122,12 +122,16 @@
     }
   }
 
-  .entry-content {
+    .entry-content {
     P {
       font-style: $font__body;
       font-size: $font_d-sub-body;
       line-height: 24px;
     }
+  }
+
+
+  
     .team-members {
       display: flex;
       flex-wrap: wrap;
@@ -174,4 +178,3 @@
       display: none;
     }
   }
-}
