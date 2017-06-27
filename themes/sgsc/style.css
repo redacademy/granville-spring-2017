@@ -2104,6 +2104,38 @@ object {
                 font-size: 36px;
                 margin: 0; } }
 
+.post-type-archive-gallery .nav-links {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row-reverse nowrap;
+      flex-flow: row-reverse nowrap;
+  margin: 32px; }
+  .post-type-archive-gallery .nav-links a {
+    width: 80px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    text-decoration: none;
+    color: #000000; }
+    .post-type-archive-gallery .nav-links a:hover, .post-type-archive-gallery .nav-links a:active, .post-type-archive-gallery .nav-links a:focus {
+      color: #f5a623; }
+    @media screen and (min-width: 480px) {
+      .post-type-archive-gallery .nav-links a {
+        font-size: 24px; } }
+  .post-type-archive-gallery .nav-links .nav-previous {
+    margin: 0 48px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap; }
+  .post-type-archive-gallery .nav-links .nav-next {
+    margin: 0 48px; }
+  .post-type-archive-gallery .nav-links .fa {
+    font-size: 70px;
+    padding: 10px;
+    font-weight: 300; }
+
 /*--------------------------------------------------------------
 # Single-Gallery Page
 --------------------------------------------------------------*/
