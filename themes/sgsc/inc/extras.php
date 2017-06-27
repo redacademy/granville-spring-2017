@@ -48,7 +48,7 @@ function sgsc_modify_archive_queries( $query ) {
     if ( is_post_type_archive( 'gallery' ) && !is_admin() && $query->is_main_query() ) {
         $query->set( 'posts_per_page', 8);
 				$query->set( 'orderby', 'date' );
-				$query->set ( 'order', 'ASC' );
+				$query->set ( 'order', 'DESC' );
 		}
 }
 add_action( 'pre_get_posts', 'sgsc_modify_archive_queries' );

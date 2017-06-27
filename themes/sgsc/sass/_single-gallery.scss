@@ -36,7 +36,6 @@
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    @include m-button;
     @media screen and (min-width: $mobile_width) {
       justify-content: space-between;
       flex-flow: row wrap;
@@ -72,20 +71,34 @@
       }
     }
   }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  form {
+}
+
+.single-gallery footer {
+  width: 100%;
+  .button {
+    text-decoration: none;
+    color: $black;
+    border: $p_border transparent;
     display: none;
-  }
-  .m-button {
-    display: inline-block;
+    width: initial;
+    @include hover-state {
+      color: $white;
+    }
+    @media screen and (min-width: $mobile_width) {
+      display: inline-block;
+    }
     p {
+      padding: $m_padding;
+      border: $p_border;
+      margin: 0;
+      @include hover-state() {
+        border: $p_border $orange;
+        background: $orange;
+        z-index: 2;
+        opacity: 1;
+      }
       @media screen and (min-width: $mobile_width) {
+        display: flex;
         padding: 0rem 1.5rem;
       }
     }

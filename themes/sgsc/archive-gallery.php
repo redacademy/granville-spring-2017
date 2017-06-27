@@ -9,6 +9,9 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
+		<?php 
+		global $paged; 
+		if ($paged === 0):?>
 		<section class="featured-gallery-section">
 			<?php if ( have_posts() ) : ?>
 				<header class="page-header">
@@ -58,8 +61,8 @@ get_header(); ?>
 				<?php endforeach; ?>
 				<?php wp_reset_postdata(); ?>
 			</div>
-
 		</section>
+		<?php endif ?>
 
 		<section class="lastest-gallery-section">
 			<?php if ( have_posts() ) : ?>
@@ -94,12 +97,12 @@ get_header(); ?>
 				<?php endwhile; ?>
 				</div>
 
-				<?php the_posts_navigation(
-					array (
-					'next_text'=> __( 'next chapter:' ),
-					'prev_text'=> __( 'prev chapter:' )
-					)
-				); ?>
+<?php the_posts_pagination( array(
+    'mid_size' => 5,
+    'prev_text' => __( 'Back', 'textdomain' ),
+    'next_text' => __( 'Onward', 'textdomain' ),
+) ); ?>
+
 
 			<?php else : ?>
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
