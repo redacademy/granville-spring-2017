@@ -55,7 +55,7 @@
 		<section class="calendar-program">
 			<h2>Calendar of Programs</h2>
 			<p>	Join us! We have a multitude of programs to keep you healthy, active and connected. We offer hot lunches, as well as exercise, self-care, educational, and social programs that are affordable and open to participants of all abilities and skill levels.</p>
-			<p>Check out the program descriptions, call us at 604-732-0812 for more information, or drop-in to try out a class! Have an idea for a program? Email Alex at akorotchenko@southgranvilleseniors.ca.</p>
+			<p>Check out the program descriptions, call us at 604-732-0812 for more information, or drop-in to try out a class!</p>
 		</section>
 		
 		<div class="program-back-btn">

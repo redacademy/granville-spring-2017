@@ -1000,6 +1000,29 @@ object {
           .page .site-main article header .entry-meta {
             display: none; } }
 
+.page-id-26 .header .entry-header {
+  height: 7rem; }
+
+.page-id-26 .content-area {
+  line-height: 1.6rem; }
+
+.page-id-26 table {
+  width: 120%; }
+
+.page-id-26 .program-back-btn {
+  display: none; }
+
+@media screen and (min-width: 480px) {
+  .page-id-26 table {
+    width: initial; }
+  .page-id-26 #page .entry-title {
+    position: initial;
+    bottom: initial; }
+  .page-id-26 .header .entry-header {
+    height: 10rem; }
+  .page-id-26 #primary, .page-id-26 .content-area {
+    margin-top: 0; } }
+
 .main-navigation .search-field {
   display: none;
   overflow: hidden;
