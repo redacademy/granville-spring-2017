@@ -1,4 +1,3 @@
-
 ( function($) {
   $(document).ready(function() {
 
@@ -10,14 +9,14 @@
 
     $hamburger.click(function (){
       $content.css({'height': '0', 'overflow': 'hidden'});
-      $overlay.addClass('overlay-open').slideDown('slow');
+      $overlay.addClass('overlay-open').slideDown('1000');
       $mobileMenu.toggleClass('menu-visible');      
       $backButton.css('display', 'initial');
     });
     $backButton.click(function(){
-      $content.css({'height': 'auto', 'overflow': 'scroll'});
-      $overlay.slideUp('1000');
-      $mobileMenu.toggleClass('menu-visible');      
+      $content.css({'height': 'auto', 'overflow': 'scroll'});      
+      $overlay.slideUp('slow');
+      $mobileMenu.toggleClass('menu-visible');
       $backButton.css('display', 'none');
       $overlay.removeClass('overlay-open');
     });

@@ -663,7 +663,8 @@ a {
   -ms-flex-pack: end;
       justify-content: flex-end;
   -ms-flex-align: end;
-      align-items: flex-end; }
+      align-items: flex-end;
+  height: 60px; }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
