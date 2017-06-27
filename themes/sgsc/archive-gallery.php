@@ -11,7 +11,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<?php 
 		global $paged; 
-		if ($paged === 0):?>
+		if ($paged === 1 || $paged === 0):?>
 		<section class="featured-gallery-section">
 			<?php if ( have_posts() ) : ?>
 				<header class="page-header">
@@ -97,11 +97,8 @@ get_header(); ?>
 				<?php endwhile; ?>
 				</div>
 
-<?php the_posts_pagination( array(
-    'mid_size' => 5,
-    'prev_text' => __( 'Back', 'textdomain' ),
-    'next_text' => __( 'Onward', 'textdomain' ),
-) ); ?>
+			<?php the_posts_navigation(); ?>
+
 
 
 			<?php else : ?>
