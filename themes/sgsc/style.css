@@ -4371,7 +4371,8 @@ footer {
   .page-template-page-about-sub .entry-header {
     height: initial; }
     .page-template-page-about-sub .entry-header img {
-      height: 22rem; }
+      height: 22rem;
+      width: 100%; }
   .page-template-page-about-sub .content-area {
     margin-top: 10rem; }
     .page-template-page-about-sub .content-area p {
