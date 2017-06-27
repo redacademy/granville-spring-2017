@@ -1689,6 +1689,7 @@ object {
             align-items: center; } }
     .blog .content-area .site-main .site-header {
       margin: 0;
+      height: 160px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
