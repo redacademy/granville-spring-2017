@@ -359,7 +359,7 @@ th {
   src: url("../../assets/fonts/montserrat-thin-webfont.eot");
   src: url("../../assets/fonts/montserrat-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/montserrat-thin-webfont.woff2") format("woff2"), url("../../assets/fonts/montserrat-thin-webfont.woff") format("woff"), url("../../assets/fonts/montserrat-thin-webfont.ttf") format("truetype"), url("../../assets/fonts/montserrat-thin-webfont.svg#montserratthin") format("svg");
   font-weight: 100;
-  font-style: normal;}
+  font-style: normal; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -1031,7 +1031,7 @@ object {
   border-radius: 25px;
   font-family: montserrat, merriweather, sans-serif;
   right: 0;
-  top: 50px;
+  top: 3px;
   position: absolute;
   width: 85%;
   line-height: 3; }
@@ -1128,6 +1128,7 @@ object {
     font-size: 1.5rem; }
   .menu {
     height: 4rem;
+    width: 98%;
     -ms-flex-item-align: end;
         align-self: flex-end; }
   .search-form fieldset {
