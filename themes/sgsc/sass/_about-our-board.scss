@@ -1,141 +1,122 @@
 .page-template-page-about-our-board {
-
-
-.donate-btn {
-      background-color: $pink;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 3;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 2.3rem;
-      width: 2.3rem;
-      @media screen and (min-width: $mobile_width) {
-        height: 5rem;
-        width: 5rem;
-      }
-      a {
-        text-decoration: none;
-        color: $black;
-        font-size: 1rem;
-        @media screen and (min-width: $mobile_width) {
-          font-size: 4rem;
-        }
-        i {
-          font-weight: lighter;
-          padding: .5rem;
-          color: $black;
-          &:hover {
-            color: $orange;
-          }
-        }
-        p {
-          display: none;
-        }
-      }
-    }
-
-.entry-header {
-  max-width: 480px;
-  margin: 0 auto;
-  height: 275px;  
-  position: relative;  
-  @media screen and (min-width: 480px) {
-    max-width: 1024px;
-    height: 375px; 
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 65% 0%;
+  .donate-btn {
+    background-color: $pink;
     position: absolute;
-  }
-}
-
-.entry-title {
-
-
-  position: absolute;
-  bottom: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 118px;
-  background: $orange;
-  margin-bottom: 0;
-}
-
-.entry-content p {
-  margin: 15px 22px;
-  text-indent: 15px;
-}
-
-.about-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  p {
-    background: $orange;
-    width: 277px;
-    height: 96px;
-    border: 4px solid $orange;
-    text-align: center;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 32px 0 0 0;
-    font-family: $font__header;
-    font-size: $font_m-h1;
+    height: 2.3rem;
+    width: 2.3rem;
+    @media screen and (min-width: $mobile_width) {
+      height: 5rem;
+      width: 5rem;
+    }
+    a {
+      text-decoration: none;
+      color: $black;
+      font-size: 1rem;
+      @media screen and (min-width: $mobile_width) {
+        font-size: 4rem;
+      }
+      i {
+        font-weight: lighter;
+        padding: .5rem;
+        color: $black;
+        &:hover {
+          color: $orange;
+        }
+      }
+      p {
+        display: none;
+      }
+    }
   }
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
-body {
+  .entry-header {
+    max-width: 480px;
+    margin: 0 auto;
+    height: 275px;  
+    position: relative;  
+    @media screen and (min-width: 480px) {
+      max-width: 1024px;
+      height: 375px; 
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 65% 0%;
+      position: absolute;
+    }
+  }
+  .entry-title {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 118px;
+    background: $orange;
+    margin-bottom: 0;
+  }
+  .entry-content p {
+    margin: 15px 22px;
+    text-indent: 15px;
+  }
+  .about-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    p {
+      background: $orange;
+      width: 277px;
+      height: 96px;
+      border: 4px solid $orange;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 32px 0 0 0;
+      font-family: $font__header;
+      font-size: $font_m-h1;
+    }
+  }
+  ul {
     margin: 0;
-}
-
-ul li:nth-child(odd) img {
-  padding-left: 22px;
-  background-color: $blue;
-}
-
-ul li:nth-child(even) img {
-  padding-right: 22px;
-  background-color: $blue;
-}
-
-.member-container {
-  margin: 0 22px;
-}
-
-span.text {
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  body {
+      margin: 0;
+  }
+  ul li:nth-child(odd) img {
+    padding-left: 22px;
+    background-color: $blue;
+  }
+  ul li:nth-child(even) img {
+    padding-right: 22px;
+    background-color: $blue;
+  }
+  .member-container {
+    margin: 0 22px;
+  }
+  span.text {
     color: rgba(92,142,220,1);
-}
-
- .cfs-hyperlink {
+  }
+  .cfs-hyperlink {
     text-decoration: none;
   }
-
-.member-email, .member-bio {
-  margin-bottom: 20px;
-}
-
-.member-picture {
-  width: 100%;
-}
-
+  .member-email, .member-bio {
+    margin-bottom: 20px;
+  }
+  .member-picture {
+    width: 100%;
+  }
   .about-back-btn {
     p {
       border: solid 2px black;
@@ -166,71 +147,57 @@ span.text {
 }
 
 @media all and (min-width: 480px) {
-
 .page-template-page-about-our-board {
-
   .entry-header {
       img {
         object-position: 45% 0%;
       }
     }
-
   .board-p-1, .board-p-2 {
     font-size: $font_d-sub-body;
   }
-
   .team-members {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between
   }
-
   .member {
     display: flex;
     flex-direction: column;
     flex-basis: 47%;
   }
-
   .member-picture {
     height: auto;
     width: 100%;
     margin-bottom: 20px;
     margin-top: 40px;
   }
-
   .member-name {
     font-size: $font_d-body;
     font-weight: bold;
   }
-
   .member-email.member-container {
     margin-bottom: 20px;
   }
-
   .member-container {
     margin: 0 0;
   }
-
   .member-position, .member-email, .member-bio {
     font-size: $font_d-sub-body;
     line-height: 22px;
   }
-
   ul li:nth-child(odd) img {
     padding-left: 38px;
   }
-
   ul li:nth-child(even) img {
     padding-right: 38px;
   }
-
   .member-picture {
     height: auto;
     max-width: 100%;
     margin-bottom: 20px;
     margin-top: 40px;
   }
-
   .about-back-btn {
     display: none;
   }
