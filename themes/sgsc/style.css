@@ -1959,166 +1959,6 @@ object {
           @media screen and (min-width: 480px) {
             .post-type-archive-gallery .gallery-album .gallery .entry-header .entry-title h2 {
               font-size: 36px; } }
-<<<<<<< HEAD
-
-.post-type-archive-gallery .lastest-gallery-section {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
-  .post-type-archive-gallery .lastest-gallery-section .page-header {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    position: relative;
-    background: #f5a623;
-    width: 100%;
-    min-height: 118px;
-    color: #000000; }
-    @media screen and (min-width: 480px) {
-      .post-type-archive-gallery .lastest-gallery-section .page-header {
-        min-height: 160px; } }
-    .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn {
-      background-color: #F91E72;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      z-index: 3;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center;
-      height: 2.3rem;
-      width: 2.3rem; }
-      @media screen and (min-width: 480px) {
-        .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn {
-          height: 5rem;
-          width: 5rem; } }
-      .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a {
-        text-decoration: none;
-        color: #000000;
-        font-size: 1rem; }
-        @media screen and (min-width: 480px) {
-          .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a {
-            font-size: 4rem; } }
-        .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a i {
-          font-weight: lighter;
-          padding: .5rem;
-          color: #000000; }
-          .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a i:hover {
-            color: #f5a623; }
-        .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a p {
-          display: none; }
-    .post-type-archive-gallery .lastest-gallery-section .page-header .entry-meta {
-      display: none; }
-  .post-type-archive-gallery .lastest-gallery-section .gallery-album {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center; }
-    .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery {
-      width: 100%;
-      height: 321px;
-      margin: 0;
-      margin-top: 32px;
-      border: 4px transparent solid; }
-      .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery:hover, .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery:active, .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery:focus {
-        border: 4px #000000 solid; }
-      @media screen and (min-width: 480px) {
-        .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery {
-          width: 48%; } }
-      .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header {
-        width: 100%;
-        height: 100%;
-        display: -ms-flexbox;
-        display: flex;
-        position: relative;
-        overflow: hidden;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: center;
-            align-items: center; }
-        .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .image-position {
-          height: 100%; }
-          .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .image-position img {
-            min-height: 100%;
-            max-height: 100%;
-            width: auto;
-            object-fit: cover;
-            min-width: 100%;
-            left: 50%;
-            top: 70%;
-            transform: translate(-50%, -70%);
-            max-width: none;
-            position: absolute; }
-        .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .entry-title {
-          background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-          z-index: 1;
-          height: 100%;
-          width: 100%;
-          text-align: center;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center;
-          text-decoration: none;
-          -ms-flex-flow: column nowrap;
-              flex-flow: column nowrap;
-          color: #000000; }
-          .post-type-archive-gallery .lastest-gallery-section .gallery-album .gallery .entry-header .entry-title:hover {
-            color: #f5a623; }
-
-/*--------------------------------------------------------------
-# Single-Gallery Page
---------------------------------------------------------------*/
-.single-gallery .content-area {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .single-gallery .content-area .site-main {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap; }
-    @media screen and (min-width: 480px) {
-      .single-gallery .content-area .site-main {
-        width: 1024px; } }
-    .single-gallery .content-area .site-main article {
-      margin: 0; }
-
-.single-gallery .entry-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  position: relative;
-  background: #f5a623;
-  width: 100%;
-  min-height: 118px;
-  color: #000000; }
-  @media screen and (min-width: 480px) {
-    .single-gallery .entry-header {
-      min-height: 160px; } }
-=======
 
 .post-type-archive-gallery .lastest-gallery-section {
   display: -ms-flexbox;
@@ -2314,7 +2154,6 @@ object {
     display: none; }
   .single-gallery .entry-header img {
     display: none; }
->>>>>>> post
   .single-gallery .entry-header .donate-btn {
     background-color: #F91E72;
     position: absolute;
@@ -2350,46 +2189,6 @@ object {
         display: none; }
   .single-gallery .entry-header .entry-meta {
     display: none; }
-<<<<<<< HEAD
-  .single-gallery .entry-header img {
-    display: none; }
-  .single-gallery .entry-header .donate-btn {
-    background-color: #F91E72;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 3;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    height: 2.3rem;
-    width: 2.3rem; }
-    @media screen and (min-width: 480px) {
-      .single-gallery .entry-header .donate-btn {
-        height: 5rem;
-        width: 5rem; } }
-    .single-gallery .entry-header .donate-btn a {
-      text-decoration: none;
-      color: #000000;
-      font-size: 1rem; }
-      @media screen and (min-width: 480px) {
-        .single-gallery .entry-header .donate-btn a {
-          font-size: 4rem; } }
-      .single-gallery .entry-header .donate-btn a i {
-        font-weight: lighter;
-        padding: .5rem;
-        color: #000000; }
-        .single-gallery .entry-header .donate-btn a i:hover {
-          color: #f5a623; }
-      .single-gallery .entry-header .donate-btn a p {
-        display: none; }
-  .single-gallery .entry-header .entry-meta {
-    display: none; }
-=======
->>>>>>> post
 
 .single-gallery .entry-content {
   width: 100%; }
@@ -2402,32 +2201,6 @@ object {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
-    .single-gallery .entry-content .gallery .m-button {
-      text-decoration: none;
-      color: #000000;
-      border: 2px #000000 solid transparent;
-      display: none;
-      width: initial; }
-      .single-gallery .entry-content .gallery .m-button:hover, .single-gallery .entry-content .gallery .m-button:active, .single-gallery .entry-content .gallery .m-button:focus {
-        color: #ffffff; }
-      @media screen and (min-width: 480px) {
-        .single-gallery .entry-content .gallery .m-button {
-          display: -ms-flexbox;
-          display: flex; } }
-      .single-gallery .entry-content .gallery .m-button p {
-        padding: 0.3rem 1.5rem;
-        border: 2px #000000 solid;
-        margin: 0; }
-        .single-gallery .entry-content .gallery .m-button p:hover, .single-gallery .entry-content .gallery .m-button p:active, .single-gallery .entry-content .gallery .m-button p:focus {
-          border: 2px #000000 solid #f5a623;
-          background: #f5a623;
-          z-index: 2;
-          opacity: 1; }
-        @media screen and (min-width: 480px) {
-          .single-gallery .entry-content .gallery .m-button p {
-            display: -ms-flexbox;
-            display: flex;
-            padding: 0rem 3rem; } }
     @media screen and (min-width: 480px) {
       .single-gallery .entry-content .gallery {
         -ms-flex-pack: justify;
@@ -2463,20 +2236,34 @@ object {
         transform: translate(-50%, -70%);
         max-width: none;
         position: absolute; }
-  .single-gallery .entry-content h1,
-  .single-gallery .entry-content h2,
-  .single-gallery .entry-content h3,
-  .single-gallery .entry-content h4,
-  .single-gallery .entry-content h5,
-  .single-gallery .entry-content h6,
-  .single-gallery .entry-content p,
-  .single-gallery .entry-content form {
-    display: none; }
-  .single-gallery .entry-content .m-button {
-    display: inline-block; }
+
+.single-gallery footer {
+  width: 100%; }
+  .single-gallery footer .button {
+    text-decoration: none;
+    color: #000000;
+    border: 2px #000000 solid transparent;
+    display: none;
+    width: initial; }
+    .single-gallery footer .button:hover, .single-gallery footer .button:active, .single-gallery footer .button:focus {
+      color: #ffffff; }
     @media screen and (min-width: 480px) {
-      .single-gallery .entry-content .m-button p {
-        padding: 0rem 1.5rem; } }
+      .single-gallery footer .button {
+        display: inline-block; } }
+    .single-gallery footer .button p {
+      padding: 0.3rem 1.5rem;
+      border: 2px #000000 solid;
+      margin: 0; }
+      .single-gallery footer .button p:hover, .single-gallery footer .button p:active, .single-gallery footer .button p:focus {
+        border: 2px #000000 solid #f5a623;
+        background: #f5a623;
+        z-index: 2;
+        opacity: 1; }
+      @media screen and (min-width: 480px) {
+        .single-gallery footer .button p {
+          display: -ms-flexbox;
+          display: flex;
+          padding: 0rem 1.5rem; } }
 
 #popmake-286 {
   padding: 0;
@@ -2776,7 +2563,6 @@ footer {
       margin-right: 63px;
       margin-left: 31.5px; } }
 
-<<<<<<< HEAD
 .page-template-page-about-our-team .entry-header {
   max-width: 480px;
   margin: 0 auto;
@@ -3028,93 +2814,6 @@ footer {
   width: 100%; }
 
 .page-template-page-about-our-board .about-back-btn p {
-=======
-.page-template-page-about-our-team {
-  margin: 0; }
-  .page-template-page-about-our-team .entry-header {
-    max-width: 480px;
-    margin: 0 auto;
-    height: 275px;
-    position: relative; }
-    @media screen and (min-width: 480px) {
-      .page-template-page-about-our-team .entry-header {
-        max-width: 1024px;
-        height: 375px; } }
-    .page-template-page-about-our-team .entry-header img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 65% 0%;
-      position: absolute; }
-  .page-template-page-about-our-team .entry-title {
-    position: absolute;
-    bottom: 0px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-    width: 100%;
-    height: 118px;
-    background: #f5a623;
-    margin-bottom: 0; }
-  .page-template-page-about-our-team .entry-content p {
-    margin: 15px 22px;
-    text-indent: 15px; }
-  .page-template-page-about-our-team .about-links {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    .page-template-page-about-our-team .about-links p {
-      background: #f5a623;
-      width: 277px;
-      height: 96px;
-      border: 4px solid #f5a623;
-      text-align: center;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-          justify-content: center;
-      -ms-flex-align: center;
-          align-items: center;
-      margin: 32px 0 0 0;
-      font-family: montserrat, merriweather, sans-serif;
-      font-size: 22px; }
-  .page-template-page-about-our-team ul {
-    margin: 0;
-    padding: 0; }
-  .page-template-page-about-our-team li {
-    list-style-type: none; }
-
-ul li:nth-child(odd) img {
-  padding-left: 22px;
-  background-color: #45cdcb; }
-
-ul li:nth-child(even) img {
-  padding-right: 22px;
-  background-color: #45cdcb; }
-
-.member-container {
-  margin: 0 22px; }
-
-span.text {
-  color: #5c8edc; }
-
-.cfs-hyperlink {
-  text-decoration: none; }
-
-.member-email, .member-bio {
-  margin-bottom: 20px; }
-
-.member-picture {
-  width: 100%; }
-
-.about-back-btn p {
->>>>>>> post
   border: solid 2px black;
   width: 6rem;
   height: 2rem;
@@ -3127,7 +2826,6 @@ span.text {
       justify-content: center;
   font-family: montserrat, merriweather, sans-serif;
   font-size: 1.1rem; }
-<<<<<<< HEAD
   .page-template-page-about-our-board .about-back-btn p:hover {
     background-color: #f5a623;
     border-color: #f5a623; }
@@ -3147,54 +2845,24 @@ span.text {
     font-size: 18px;
     line-height: 24px; }
   .page-template-page-about-our-board .team-members {
-=======
-  .about-back-btn p:hover {
-    background-color: #f5a623;
-    border-color: #f5a623; }
-
-.about-back-btn a {
-  color: black;
-  text-decoration: none; }
-  .about-back-btn a:visited {
-    color: black; }
-  .about-back-btn a:hover {
-    color: white; }
-
-@media all and (min-width: 480px) {
-  .entry-content {
-    column-count: 2; }
-  .our-team-paragraph {
-    font-size: 18px;
-    line-height: 24px; }
-  .team-members {
->>>>>>> post
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-<<<<<<< HEAD
   .page-template-page-about-our-board .member {
-=======
-  .member {
->>>>>>> post
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%; }
-<<<<<<< HEAD
   .page-template-page-about-our-board .member-picture {
-=======
-  .member-picture {
->>>>>>> post
     height: 282px;
     width: 100%;
     margin-bottom: 20px;
     margin-top: 40px; }
-<<<<<<< HEAD
   .page-template-page-about-our-board .member-name {
     font-size: 24px;
     font-weight: bold; }
@@ -3210,23 +2878,6 @@ span.text {
   .page-template-page-about-our-board ul li:nth-child(even) img {
     padding-right: 38px; }
   .page-template-page-about-our-board .member-picture {
-=======
-  .member-name {
-    font-size: 24px;
-    font-weight: bold; }
-  .member-email.member-container {
-    margin-bottom: 20px; }
-  .member-container {
-    margin: 0 0; }
-  .member-position, .member-email, .member-bio {
-    font-size: 18px;
-    line-height: 22px; }
-  ul li:nth-child(odd) img {
-    padding-left: 38px; }
-  ul li:nth-child(even) img {
-    padding-right: 38px; }
-  .member-picture {
->>>>>>> post
     height: auto;
     max-width: 100%;
     margin-bottom: 20px;
@@ -4231,8 +3882,6 @@ span.text {
 /*--------------------------------------------------------------
 # Single-Page
 --------------------------------------------------------------*/
-<<<<<<< HEAD
-=======
 .single-post .content-area {
   display: -ms-flexbox;
   display: flex;
@@ -4302,7 +3951,6 @@ span.text {
       .single-post .content-area .site-main {
         width: 1024px; } }
 
->>>>>>> post
 /**
   ** 404 page
   */

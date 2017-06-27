@@ -50,13 +50,11 @@ get_header(); ?>
 				?>
 			</div><!-- .entry-content -->
 
-			<footer class="entry-footer">
-				<?php red_starter_entry_footer(); ?>
-				<a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'gallery' )) ) ?>"><p>Return</p></a>
-			</footer><!-- .entry-footer -->
 		</article><!-- #post-## -->
 
-		<?php the_post_navigation(); ?>
+		<footer class="entry-footer">
+			<a class="button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'gallery' )) ) ?>"><p>Return</p></a>
+		</footer><!-- .entry-footer -->
 
 	<?php endwhile; ?>
 
