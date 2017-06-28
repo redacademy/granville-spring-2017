@@ -129,6 +129,15 @@
 		.individual-partner, .partner-container {
 			flex-basis: 25%;
 		}
+		.entry-title {
+			bottom: -10rem;
+			height: 10rem;
+		}
+			
+		.content-area {
+			margin-top: 10rem;
+		}
+
 		.partner-name {
 			font-size: $font_m-h2;
 		}

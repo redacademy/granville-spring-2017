@@ -4607,6 +4607,11 @@ footer {
   .page-template-page-about-partners .individual-partner, .page-template-page-about-partners .partner-container {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%; }
+  .page-template-page-about-partners .entry-title {
+    bottom: -10rem;
+    height: 10rem; }
+  .page-template-page-about-partners .content-area {
+    margin-top: 10rem; }
   .page-template-page-about-partners .partner-name {
     font-size: 16px; }
   .page-template-page-about-partners .logo-container {
