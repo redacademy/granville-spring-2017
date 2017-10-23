@@ -121,11 +121,12 @@ input.wpcf7-submit {
 	color: $black;
 }
 
+// Footer
 
-footer {
-	max-width: 1024px;
-	margin: auto;
-}
+// footer {
+// 	max-width: 1024px;
+// 	margin: auto;
+// }
 
 .site-info {
 	margin-left: 16px;
@@ -168,7 +169,7 @@ footer {
 	background-repeat: no-repeat; 
 	margin-right: 10px;
 	height: 36px;
-	width: 36px
+	width: 36px;
 }
 
 .twitter {
@@ -177,21 +178,64 @@ footer {
 	margin-left: 10px;
 	margin-right: 10px;
 	height: 36px;
-	width: 36px
+	width: 36px;
 }
 
 .copywrite {
 	text-align: left;
 	padding-left: 16px;
 			margin-bottom: 25px;
-			font-family: $font__body;
-			font-size: 10px;    
+      font-family: $font__body;
+      p{ 
+        font-size: 12px;    
+      }
 }
 
-@media all and (min-width: $desktop-view) {
+@media all and (min-width: $mobile_width) {
+
+	.site-info {
+		padding-left: 35px;
+		padding-top: 20px;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		color: $black;
+		justify-content: flex-start;
+		
+	}
 	.textwidget {
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		min-width: 526px;
+		p {
+				width: 175px;
+				font-size: $font_t-footer;
+				margin: 0;
+		}
 	}
+	.footer-icons {
+		display: flex;
+		align-items: flex-end;
+	}
+	.facebook {
+		height: 38px;
+		width: 38px;
+	}
+	.twitter {
+		height: 38px;
+		width: 38px;
+	}
+	.copywrite {
+		text-align: left;
+		padding-left: 35px;
+		p {
+		font-size: 14px;
+		}
+	}
+}
+
+@media all and (min-width: $tablet_width) {
 	.site-info {
 		padding-left: 35px;
 		padding-top: 20px;

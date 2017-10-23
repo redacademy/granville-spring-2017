@@ -20,6 +20,8 @@ ehthumbs.db
 *.tar
 *.zip
 
+package-lock.json
+
 # Ignore packages #
 # =============== #
 node_modules/
