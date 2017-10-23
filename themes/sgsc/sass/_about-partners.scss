@@ -1,13 +1,9 @@
 .page-template-page-about-partners {
 	.entry-header {
-		max-width: 480px;
+		width: 480px;
 		margin: 0 auto;
 		height: 275px;  
 		position: relative;
-		@media screen and (min-width: 480px) {
-			max-width: 1024px;
-			height: 375px; 
-		}
 		img {
 			width: 100%;
 			height: 100%;
@@ -121,13 +117,17 @@
 	}
 }
 
-@media all and (min-width: 480px) {
+@media all and (min-width: $mobile_width) {
 	.page-template-page-about-partners {
+    .entry-header {
+			width: 768px;
+			height: 375px; 
+    }
 		.entry-content p {
 			font-size: $font_d-sub-body;
 		}
 		.individual-partner, .partner-container {
-			flex-basis: 25%;
+			flex-basis: 33%;
 		}
 		.entry-title {
 			bottom: -10rem;
@@ -135,9 +135,8 @@
 		}
 			
 		.content-area {
-			margin-top: 10rem;
+			margin-top: 1rem;
 		}
-
 		.partner-name {
 			font-size: $font_m-h2;
 		}
@@ -147,5 +146,14 @@
 		.about-back-btn {
 			display: none;
 		}
+	}
+}
+
+@media all and (min-width: 769px) {
+	.page-template-page-about-partners {
+    .entry-header {
+        width: 1024px;
+        height: 375px; 
+      }
 	}
 }

@@ -42,7 +42,7 @@ get_header(); ?>
 					<li class="individual-partner partner-container">
 						<img class="partner-logo logo-container" src="<?php echo $field['partner_logo'] ?>" alt=""/>
 						<p class="partner-name"> <?php echo $field['partner_name']; ?></h1>
-                    </li>
+          </li>
 				<?php endforeach ?>
 			</ul>
 
