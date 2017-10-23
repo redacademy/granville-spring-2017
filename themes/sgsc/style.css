@@ -973,11 +973,14 @@ object {
           position: relative;
           background: #f5a623;
           width: 100%;
-          min-height: 118px;
+          height: 118px;
           color: #000000; } }
       @media screen and (min-width: 480px) and (min-width: 480px) {
         .page .site-main article header {
-          min-height: 160px; } }
+          height: 120px; } }
+      @media screen and (min-width: 480px) and (min-width: 768px) {
+        .page .site-main article header {
+          height: 160px; } }
   @media screen and (min-width: 480px) {
           .page .site-main article header .donate-btn {
             background-color: #F91E72;
@@ -995,6 +998,10 @@ object {
             width: 2.3rem; } }
         @media screen and (min-width: 480px) and (min-width: 480px) {
           .page .site-main article header .donate-btn {
+            height: 3.7rem;
+            width: 3.7rem; } }
+        @media screen and (min-width: 480px) and (min-width: 768px) {
+          .page .site-main article header .donate-btn {
             height: 5rem;
             width: 5rem; } }
   @media screen and (min-width: 480px) {
@@ -1003,6 +1010,9 @@ object {
               color: #000000;
               font-size: 1rem; } }
           @media screen and (min-width: 480px) and (min-width: 480px) {
+            .page .site-main article header .donate-btn a {
+              font-size: 2.5rem; } }
+          @media screen and (min-width: 480px) and (min-width: 768px) {
             .page .site-main article header .donate-btn a {
               font-size: 4rem; } }
   @media screen and (min-width: 480px) {
@@ -1760,6 +1770,7 @@ object {
       display: -ms-flexbox;
       display: flex;
       width: 70%;
+      margin-top: 0;
       text-align: center; } }
   @media screen and (min-width: 480px) {
     .home .front-join {
@@ -1788,11 +1799,14 @@ object {
     position: relative;
     background: #f5a623;
     width: 100%;
-    min-height: 118px;
+    height: 118px;
     color: #000000; }
     @media screen and (min-width: 480px) {
       .content-area .site-header {
-        min-height: 160px; } }
+        height: 120px; } }
+    @media screen and (min-width: 768px) {
+      .content-area .site-header {
+        height: 160px; } }
     .content-area .site-header .donate-btn {
       background-color: #F91E72;
       position: absolute;
@@ -1809,6 +1823,10 @@ object {
       width: 2.3rem; }
       @media screen and (min-width: 480px) {
         .content-area .site-header .donate-btn {
+          height: 3.7rem;
+          width: 3.7rem; } }
+      @media screen and (min-width: 768px) {
+        .content-area .site-header .donate-btn {
           height: 5rem;
           width: 5rem; } }
       .content-area .site-header .donate-btn a {
@@ -1816,6 +1834,9 @@ object {
         color: #000000;
         font-size: 1rem; }
         @media screen and (min-width: 480px) {
+          .content-area .site-header .donate-btn a {
+            font-size: 2.5rem; } }
+        @media screen and (min-width: 768px) {
           .content-area .site-header .donate-btn a {
             font-size: 4rem; } }
         .content-area .site-header .donate-btn a i {
@@ -1844,6 +1865,10 @@ object {
       width: 2.3rem; }
       @media screen and (min-width: 480px) {
         .content-area .site-header .donate-btn {
+          height: 3.7rem;
+          width: 3.7rem; } }
+      @media screen and (min-width: 768px) {
+        .content-area .site-header .donate-btn {
           height: 5rem;
           width: 5rem; } }
       .content-area .site-header .donate-btn a {
@@ -1851,6 +1876,9 @@ object {
         color: #000000;
         font-size: 1rem; }
         @media screen and (min-width: 480px) {
+          .content-area .site-header .donate-btn a {
+            font-size: 2.5rem; } }
+        @media screen and (min-width: 768px) {
           .content-area .site-header .donate-btn a {
             font-size: 4rem; } }
         .content-area .site-header .donate-btn a i {
@@ -1998,11 +2026,14 @@ article .entry-header {
     position: relative;
     background: #f5a623;
     width: 100%;
-    min-height: 118px;
+    height: 118px;
     color: #000000; }
     @media screen and (min-width: 480px) {
       .post-type-archive-gallery .featured-gallery-section .page-header {
-        min-height: 160px; } }
+        height: 120px; } }
+    @media screen and (min-width: 768px) {
+      .post-type-archive-gallery .featured-gallery-section .page-header {
+        height: 160px; } }
     .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn {
       background-color: #F91E72;
       position: absolute;
@@ -2019,6 +2050,10 @@ article .entry-header {
       width: 2.3rem; }
       @media screen and (min-width: 480px) {
         .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn {
+          height: 3.7rem;
+          width: 3.7rem; } }
+      @media screen and (min-width: 768px) {
+        .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn {
           height: 5rem;
           width: 5rem; } }
       .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a {
@@ -2026,6 +2061,9 @@ article .entry-header {
         color: #000000;
         font-size: 1rem; }
         @media screen and (min-width: 480px) {
+          .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a {
+            font-size: 2.5rem; } }
+        @media screen and (min-width: 768px) {
           .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a {
             font-size: 4rem; } }
         .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a i {
@@ -2122,11 +2160,14 @@ article .entry-header {
     position: relative;
     background: #f5a623;
     width: 100%;
-    min-height: 118px;
+    height: 118px;
     color: #000000; }
     @media screen and (min-width: 480px) {
       .post-type-archive-gallery .lastest-gallery-section .page-header {
-        min-height: 160px; } }
+        height: 120px; } }
+    @media screen and (min-width: 768px) {
+      .post-type-archive-gallery .lastest-gallery-section .page-header {
+        height: 160px; } }
     .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn {
       background-color: #F91E72;
       position: absolute;
@@ -2143,6 +2184,10 @@ article .entry-header {
       width: 2.3rem; }
       @media screen and (min-width: 480px) {
         .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn {
+          height: 3.7rem;
+          width: 3.7rem; } }
+      @media screen and (min-width: 768px) {
+        .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn {
           height: 5rem;
           width: 5rem; } }
       .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a {
@@ -2150,6 +2195,9 @@ article .entry-header {
         color: #000000;
         font-size: 1rem; }
         @media screen and (min-width: 480px) {
+          .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a {
+            font-size: 2.5rem; } }
+        @media screen and (min-width: 768px) {
           .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a {
             font-size: 4rem; } }
         .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a i {
@@ -2293,11 +2341,14 @@ article .entry-header {
   position: relative;
   background: #f5a623;
   width: 100%;
-  min-height: 118px;
+  height: 118px;
   color: #000000; }
   @media screen and (min-width: 480px) {
     .single-gallery .entry-header {
-      min-height: 160px; } }
+      height: 120px; } }
+  @media screen and (min-width: 768px) {
+    .single-gallery .entry-header {
+      height: 160px; } }
   .single-gallery .entry-header .donate-btn {
     background-color: #F91E72;
     position: absolute;
@@ -2314,6 +2365,10 @@ article .entry-header {
     width: 2.3rem; }
     @media screen and (min-width: 480px) {
       .single-gallery .entry-header .donate-btn {
+        height: 3.7rem;
+        width: 3.7rem; } }
+    @media screen and (min-width: 768px) {
+      .single-gallery .entry-header .donate-btn {
         height: 5rem;
         width: 5rem; } }
     .single-gallery .entry-header .donate-btn a {
@@ -2321,6 +2376,9 @@ article .entry-header {
       color: #000000;
       font-size: 1rem; }
       @media screen and (min-width: 480px) {
+        .single-gallery .entry-header .donate-btn a {
+          font-size: 2.5rem; } }
+      @media screen and (min-width: 768px) {
         .single-gallery .entry-header .donate-btn a {
           font-size: 4rem; } }
       .single-gallery .entry-header .donate-btn a i {
@@ -2351,6 +2409,10 @@ article .entry-header {
     width: 2.3rem; }
     @media screen and (min-width: 480px) {
       .single-gallery .entry-header .donate-btn {
+        height: 3.7rem;
+        width: 3.7rem; } }
+    @media screen and (min-width: 768px) {
+      .single-gallery .entry-header .donate-btn {
         height: 5rem;
         width: 5rem; } }
     .single-gallery .entry-header .donate-btn a {
@@ -2358,6 +2420,9 @@ article .entry-header {
       color: #000000;
       font-size: 1rem; }
       @media screen and (min-width: 480px) {
+        .single-gallery .entry-header .donate-btn a {
+          font-size: 2.5rem; } }
+      @media screen and (min-width: 768px) {
         .single-gallery .entry-header .donate-btn a {
           font-size: 4rem; } }
       .single-gallery .entry-header .donate-btn a i {
@@ -3476,11 +3541,14 @@ input.wpcf7-submit {
   position: relative;
   background: #f5a623;
   width: 100%;
-  min-height: 118px;
+  height: 118px;
   color: #000000; }
   @media screen and (min-width: 480px) {
     .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
-      min-height: 160px; } }
+      height: 120px; } }
+  @media screen and (min-width: 768px) {
+    .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
+      height: 160px; } }
   .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-volunteer .entry-header .donate-btn {
     background-color: #F91E72;
     position: absolute;
@@ -3497,6 +3565,10 @@ input.wpcf7-submit {
     width: 2.3rem; }
     @media screen and (min-width: 480px) {
       .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-volunteer .entry-header .donate-btn {
+        height: 3.7rem;
+        width: 3.7rem; } }
+    @media screen and (min-width: 768px) {
+      .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-volunteer .entry-header .donate-btn {
         height: 5rem;
         width: 5rem; } }
     .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-volunteer .entry-header .donate-btn a {
@@ -3504,6 +3576,9 @@ input.wpcf7-submit {
       color: #000000;
       font-size: 1rem; }
       @media screen and (min-width: 480px) {
+        .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-volunteer .entry-header .donate-btn a {
+          font-size: 2.5rem; } }
+      @media screen and (min-width: 768px) {
         .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-volunteer .entry-header .donate-btn a {
           font-size: 4rem; } }
       .page-template-page-join-us .entry-header .donate-btn a i, .post-type-archive-volunteer .entry-header .donate-btn a i {
@@ -3699,11 +3774,14 @@ input.wpcf7-submit {
   position: relative;
   background: #f5a623;
   width: 100%;
-  min-height: 118px;
+  height: 118px;
   color: #000000; }
   @media screen and (min-width: 480px) {
     .volunteer-template-default .entry-header {
-      min-height: 160px; } }
+      height: 120px; } }
+  @media screen and (min-width: 768px) {
+    .volunteer-template-default .entry-header {
+      height: 160px; } }
   .volunteer-template-default .entry-header .donate-btn {
     background-color: #F91E72;
     position: absolute;
@@ -3720,6 +3798,10 @@ input.wpcf7-submit {
     width: 2.3rem; }
     @media screen and (min-width: 480px) {
       .volunteer-template-default .entry-header .donate-btn {
+        height: 3.7rem;
+        width: 3.7rem; } }
+    @media screen and (min-width: 768px) {
+      .volunteer-template-default .entry-header .donate-btn {
         height: 5rem;
         width: 5rem; } }
     .volunteer-template-default .entry-header .donate-btn a {
@@ -3727,6 +3809,9 @@ input.wpcf7-submit {
       color: #000000;
       font-size: 1rem; }
       @media screen and (min-width: 480px) {
+        .volunteer-template-default .entry-header .donate-btn a {
+          font-size: 2.5rem; } }
+      @media screen and (min-width: 768px) {
         .volunteer-template-default .entry-header .donate-btn a {
           font-size: 4rem; } }
       .volunteer-template-default .entry-header .donate-btn a i {
@@ -3811,11 +3896,14 @@ input.wpcf7-submit {
         position: relative;
         background: #f5a623;
         width: 100%;
-        min-height: 118px;
+        height: 118px;
         color: #000000; }
         @media screen and (min-width: 480px) {
           .page-id-30 .content-area .site-main article header {
-            min-height: 160px; } }
+            height: 120px; } }
+        @media screen and (min-width: 768px) {
+          .page-id-30 .content-area .site-main article header {
+            height: 160px; } }
         .page-id-30 .content-area .site-main article header .donate-btn {
           background-color: #F91E72;
           position: absolute;
@@ -3832,6 +3920,10 @@ input.wpcf7-submit {
           width: 2.3rem; }
           @media screen and (min-width: 480px) {
             .page-id-30 .content-area .site-main article header .donate-btn {
+              height: 3.7rem;
+              width: 3.7rem; } }
+          @media screen and (min-width: 768px) {
+            .page-id-30 .content-area .site-main article header .donate-btn {
               height: 5rem;
               width: 5rem; } }
           .page-id-30 .content-area .site-main article header .donate-btn a {
@@ -3839,6 +3931,9 @@ input.wpcf7-submit {
             color: #000000;
             font-size: 1rem; }
             @media screen and (min-width: 480px) {
+              .page-id-30 .content-area .site-main article header .donate-btn a {
+                font-size: 2.5rem; } }
+            @media screen and (min-width: 768px) {
               .page-id-30 .content-area .site-main article header .donate-btn a {
                 font-size: 4rem; } }
             .page-id-30 .content-area .site-main article header .donate-btn a i {
@@ -4020,11 +4115,14 @@ input.wpcf7-submit {
         position: relative;
         background: #f5a623;
         width: 100%;
-        min-height: 118px;
+        height: 118px;
         color: #000000; }
         @media screen and (min-width: 480px) {
           .page-id-51 .content-area .site-main article header {
-            min-height: 160px; } }
+            height: 120px; } }
+        @media screen and (min-width: 768px) {
+          .page-id-51 .content-area .site-main article header {
+            height: 160px; } }
         .page-id-51 .content-area .site-main article header .donate-btn {
           background-color: #F91E72;
           position: absolute;
@@ -4041,6 +4139,10 @@ input.wpcf7-submit {
           width: 2.3rem; }
           @media screen and (min-width: 480px) {
             .page-id-51 .content-area .site-main article header .donate-btn {
+              height: 3.7rem;
+              width: 3.7rem; } }
+          @media screen and (min-width: 768px) {
+            .page-id-51 .content-area .site-main article header .donate-btn {
               height: 5rem;
               width: 5rem; } }
           .page-id-51 .content-area .site-main article header .donate-btn a {
@@ -4048,6 +4150,9 @@ input.wpcf7-submit {
             color: #000000;
             font-size: 1rem; }
             @media screen and (min-width: 480px) {
+              .page-id-51 .content-area .site-main article header .donate-btn a {
+                font-size: 2.5rem; } }
+            @media screen and (min-width: 768px) {
               .page-id-51 .content-area .site-main article header .donate-btn a {
                 font-size: 4rem; } }
             .page-id-51 .content-area .site-main article header .donate-btn a i {
@@ -4331,79 +4436,99 @@ input.wpcf7-submit {
 /*--------------------------------------------------------------
 # Single-Page
 --------------------------------------------------------------*/
-.single-post .content-area {
+.content-area {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
-  .single-post .content-area .site-main {
+
+.site-main {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+  .site-main header {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    position: relative;
+    background: #f5a623;
     width: 100%;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap; }
-    .single-post .content-area .site-main article {
-      margin: 0; }
-      .single-post .content-area .site-main article header {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: center;
-            justify-content: center;
-        -ms-flex-align: center;
-            align-items: center;
-        position: relative;
-        background: #f5a623;
-        width: 100%;
-        min-height: 118px;
-        color: #000000; }
+    height: 118px;
+    color: #000000; }
+    @media screen and (min-width: 480px) {
+      .site-main header {
+        height: 120px; } }
+    @media screen and (min-width: 768px) {
+      .site-main header {
+        height: 160px; } }
+    .site-main header .donate-btn {
+      background-color: #F91E72;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      height: 2.3rem;
+      width: 2.3rem; }
+      @media screen and (min-width: 480px) {
+        .site-main header .donate-btn {
+          height: 3.7rem;
+          width: 3.7rem; } }
+      @media screen and (min-width: 768px) {
+        .site-main header .donate-btn {
+          height: 5rem;
+          width: 5rem; } }
+      .site-main header .donate-btn a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1rem; }
         @media screen and (min-width: 480px) {
-          .single-post .content-area .site-main article header {
-            min-height: 160px; } }
-        .single-post .content-area .site-main article header .donate-btn {
-          background-color: #F91E72;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          z-index: 3;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: center;
-              justify-content: center;
-          -ms-flex-align: center;
-              align-items: center;
-          height: 2.3rem;
-          width: 2.3rem; }
-          @media screen and (min-width: 480px) {
-            .single-post .content-area .site-main article header .donate-btn {
-              height: 5rem;
-              width: 5rem; } }
-          .single-post .content-area .site-main article header .donate-btn a {
-            text-decoration: none;
-            color: #000000;
-            font-size: 1rem; }
-            @media screen and (min-width: 480px) {
-              .single-post .content-area .site-main article header .donate-btn a {
-                font-size: 4rem; } }
-            .single-post .content-area .site-main article header .donate-btn a i {
-              font-weight: lighter;
-              padding: .5rem;
-              color: #000000; }
-              .single-post .content-area .site-main article header .donate-btn a i:hover {
-                color: #f5a623; }
-            .single-post .content-area .site-main article header .donate-btn a p {
-              display: none; }
-        .single-post .content-area .site-main article header .entry-meta {
+          .site-main header .donate-btn a {
+            font-size: 2.5rem; } }
+        @media screen and (min-width: 768px) {
+          .site-main header .donate-btn a {
+            font-size: 4rem; } }
+        .site-main header .donate-btn a i {
+          font-weight: lighter;
+          padding: .5rem;
+          color: #000000; }
+          .site-main header .donate-btn a i:hover {
+            color: #f5a623; }
+        .site-main header .donate-btn a p {
           display: none; }
-      .single-post .content-area .site-main article .entry-content {
-        padding: 32px; }
-    @media screen and (min-width: 480px) {
-      .single-post .content-area .site-main {
-        width: 1024px; } }
-  .single-post .content-area p {
-    font-size: 16px; }
-    @media screen and (min-width: 480px) {
-      .single-post .content-area p {
-        font-size: 24px; } }
+    .site-main header .entry-meta {
+      display: none; }
+
+article {
+  margin: 0;
+  width: 100%; }
+
+.entry-content {
+  padding: 32px; }
+
+@media screen and (min-width: 480px) {
+  .content-area {
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .site-main {
+    width: 100vw; } }
+
+@media screen and (min-width: 768px) {
+  .content-area {
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .site-main {
+    width: 1024px; } }
 
 /**
 ** 404 page
@@ -4431,11 +4556,14 @@ input.wpcf7-submit {
         position: relative;
         background: #f5a623;
         width: 100%;
-        min-height: 118px;
+        height: 118px;
         color: #000000; }
         @media screen and (min-width: 480px) {
           .error404 .content-area .site-main article header {
-            min-height: 160px; } }
+            height: 120px; } }
+        @media screen and (min-width: 768px) {
+          .error404 .content-area .site-main article header {
+            height: 160px; } }
         .error404 .content-area .site-main article header .donate-btn {
           background-color: #F91E72;
           position: absolute;
@@ -4452,6 +4580,10 @@ input.wpcf7-submit {
           width: 2.3rem; }
           @media screen and (min-width: 480px) {
             .error404 .content-area .site-main article header .donate-btn {
+              height: 3.7rem;
+              width: 3.7rem; } }
+          @media screen and (min-width: 768px) {
+            .error404 .content-area .site-main article header .donate-btn {
               height: 5rem;
               width: 5rem; } }
           .error404 .content-area .site-main article header .donate-btn a {
@@ -4459,6 +4591,9 @@ input.wpcf7-submit {
             color: #000000;
             font-size: 1rem; }
             @media screen and (min-width: 480px) {
+              .error404 .content-area .site-main article header .donate-btn a {
+                font-size: 2.5rem; } }
+            @media screen and (min-width: 768px) {
               .error404 .content-area .site-main article header .donate-btn a {
                 font-size: 4rem; } }
             .error404 .content-area .site-main article header .donate-btn a i {
@@ -4527,11 +4662,14 @@ input.wpcf7-submit {
     position: relative;
     background: #f5a623;
     width: 100%;
-    min-height: 118px;
+    height: 118px;
     color: #000000; }
     @media screen and (min-width: 480px) {
       .search .content-area .page-header {
-        min-height: 160px; } }
+        height: 120px; } }
+    @media screen and (min-width: 768px) {
+      .search .content-area .page-header {
+        height: 160px; } }
     .search .content-area .page-header .donate-btn {
       background-color: #F91E72;
       position: absolute;
@@ -4548,6 +4686,10 @@ input.wpcf7-submit {
       width: 2.3rem; }
       @media screen and (min-width: 480px) {
         .search .content-area .page-header .donate-btn {
+          height: 3.7rem;
+          width: 3.7rem; } }
+      @media screen and (min-width: 768px) {
+        .search .content-area .page-header .donate-btn {
           height: 5rem;
           width: 5rem; } }
       .search .content-area .page-header .donate-btn a {
@@ -4555,6 +4697,9 @@ input.wpcf7-submit {
         color: #000000;
         font-size: 1rem; }
         @media screen and (min-width: 480px) {
+          .search .content-area .page-header .donate-btn a {
+            font-size: 2.5rem; } }
+        @media screen and (min-width: 768px) {
           .search .content-area .page-header .donate-btn a {
             font-size: 4rem; } }
         .search .content-area .page-header .donate-btn a i {

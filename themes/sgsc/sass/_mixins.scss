@@ -71,6 +71,10 @@
     height: 2.3rem;
     width: 2.3rem;
     @media screen and (min-width: $mobile_width) {
+      height: 3.7rem;
+      width: 3.7rem;
+    }
+    @media screen and (min-width: $tablet_width) {
       height: 5rem;
       width: 5rem;
     }
@@ -79,6 +83,9 @@
       color: $black;
       font-size: 1rem;
       @media screen and (min-width: $mobile_width) {
+        font-size: 2.5rem;
+      }
+      @media screen and (min-width: $tablet_width) {
         font-size: 4rem;
       }
       i {
@@ -168,9 +175,12 @@
   position: relative;
   background: $orange;
   width: 100%;
-  min-height: 118px;
   @media screen and (min-width: $mobile_width) {
-    min-height: 160px;
+    height: 120px;
+  }
+  height: 118px;
+  @media screen and (min-width: $tablet_width) {
+    height: 160px;
   }
   color: $black;
   @include m-donate;
