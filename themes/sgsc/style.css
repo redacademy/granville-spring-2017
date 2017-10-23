@@ -391,6 +391,9 @@ h1 {
   font-size: 22px; }
   @media screen and (min-width: 480px) {
     h1 {
+      font-size: 30px; } }
+  @media screen and (min-width: 768px) {
+    h1 {
       font-size: 40px; } }
 
 h2,
@@ -400,6 +403,13 @@ h5,
 h6 {
   font-size: 16px; }
   @media screen and (min-width: 480px) {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 30px; } }
+  @media screen and (min-width: 768px) {
     h2,
     h3,
     h4,
@@ -415,6 +425,9 @@ p {
   font-weight: normal;
   font-style: normal; }
   @media screen and (min-width: 480px) {
+    p {
+      font-size: 18px; } }
+  @media screen and (min-width: 768px) {
     p {
       font-size: 24px; } }
 
@@ -1186,6 +1199,10 @@ object {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  @media screen and (min-width: 480px) {
+    .home .content-area {
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important; } }
   .home .content-area .site-main {
     width: 100%;
     display: -ms-flexbox;
@@ -1193,6 +1210,11 @@ object {
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
     @media screen and (min-width: 480px) {
+      .home .content-area .site-main {
+        width: 100vw;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important; } }
+    @media screen and (min-width: 768px) {
       .home .content-area .site-main {
         width: 1024px; } }
     .home .content-area .site-main article {
@@ -1210,9 +1232,12 @@ object {
       align-items: center;
   position: relative;
   width: 100%; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     .home .learn-about-story {
       height: 386px; } }
+  @media screen and (min-width: 480px) {
+    .home .learn-about-story {
+      height: 300px; } }
   .home .learn-about-story img {
     height: 276px;
     width: 100%;
@@ -1268,13 +1293,21 @@ object {
           .home .learn-about-story .front-learn .m-button p {
             display: -ms-flexbox;
             display: flex;
-            padding: 0rem 3rem; } }
+            padding: 0rem 1.7rem; } }
+        @media screen and (min-width: 768px) {
+          .home .learn-about-story .front-learn .m-button p {
+            padding: 0rem 3rem;
+            display: -ms-flexbox;
+            display: flex; } }
     .home .learn-about-story .front-learn .m-button {
       display: -ms-flexbox;
       display: flex; }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
       .home .learn-about-story .front-learn {
         height: 174px; } }
+    @media screen and (min-width: 480px) {
+      .home .learn-about-story .front-learn {
+        height: 130px; } }
   .home .learn-about-story .donate-btn {
     background-color: #F91E72;
     position: absolute;
@@ -1299,7 +1332,7 @@ object {
           color: #f5a623; }
       .home .learn-about-story .donate-btn a p {
         display: none; }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
       .home .learn-about-story .donate-btn {
         height: 73px;
         width: 224px; }
@@ -1308,6 +1341,15 @@ object {
         .home .learn-about-story .donate-btn a p {
           display: initial;
           font-size: 40px; } }
+    @media screen and (min-width: 480px) {
+      .home .learn-about-story .donate-btn {
+        height: 55px;
+        width: 167px; }
+        .home .learn-about-story .donate-btn a i {
+          font-size: 30px; }
+        .home .learn-about-story .donate-btn a p {
+          display: initial;
+          font-size: 30px; } }
 
 .home .program-event-post {
   width: 100%; }
@@ -1339,8 +1381,6 @@ object {
     .home .program-event-post .front-events a,
     .home .program-event-post .front-blog a {
       text-decoration: none;
-      height: 100%;
-      width: 100%;
       color: #000000;
       display: -ms-flexbox;
       display: flex;
@@ -1381,7 +1421,12 @@ object {
           .home .program-event-post .front-program .m-button p {
             display: -ms-flexbox;
             display: flex;
-            padding: 0rem 3rem; } }
+            padding: 0rem 1.7rem; } }
+        @media screen and (min-width: 768px) {
+          .home .program-event-post .front-program .m-button p {
+            padding: 0rem 3rem;
+            display: -ms-flexbox;
+            display: flex; } }
     .home .program-event-post .front-program h1,
     .home .program-event-post .front-program p,
     .home .program-event-post .front-program a {
@@ -1392,21 +1437,37 @@ object {
     .home .program-event-post .front-program p {
       display: none;
       padding: 0 60px; }
-    @media screen and (min-width: 1024px) {
-      .home .program-event-post .front-program p {
-        display: inline-block; } }
     @media screen and (min-width: 480px) {
       .home .program-event-post .front-program {
-        width: 53%;
+        width: 63%;
         height: 288px;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
+        padding-left: 30px;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+        .home .program-event-post .front-program .program-sub {
+          display: inline-block;
+          padding: 15px 0;
+          width: 75%; }
+        .home .program-event-post .front-program h1 {
+          padding-top: 20px;
+          width: 200px;
+          line-height: 1.4; } }
+    @media screen and (min-width: 768px) {
+      .home .program-event-post .front-program {
+        width: 53%; }
+        .home .program-event-post .front-program .program-sub {
+          display: inline-block;
+          padding-left: 30px;
+          padding-bottom: 30px;
+          width: 95%; }
         .home .program-event-post .front-program a {
-          padding-left: 60px;
-          -ms-flex-pack: start;
-              justify-content: flex-start; } }
+          padding-left: 30px; }
+        .home .program-event-post .front-program h1 {
+          width: 100%;
+          line-height: normal;
+          padding-bottom: 30px; } }
   @media screen and (min-width: 480px) {
     .home .program-event-post .intro-event-blog {
       display: -ms-flexbox;
@@ -1415,6 +1476,9 @@ object {
           justify-content: space-between;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+      width: 33%; } }
+  @media screen and (min-width: 768px) {
+    .home .program-event-post .intro-event-blog {
       width: 43%; } }
   .home .program-event-post .intro-event-blog .front-events {
     border: 2px #000000 solid 4px #45cdcb;
@@ -1441,8 +1505,6 @@ object {
         height: 129px;
         background: #45cdcb;
         text-align: center; }
-        .home .program-event-post .intro-event-blog .front-blog h1 {
-          font-size: 39px; }
         .home .program-event-post .intro-event-blog .front-blog:hover h1, .home .program-event-post .intro-event-blog .front-blog:active h1, .home .program-event-post .intro-event-blog .front-blog:focus h1 {
           color: #ffffff; } }
 
@@ -1456,7 +1518,7 @@ object {
   position: relative;
   height: 276px;
   width: 100%; }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     .home .feature-gallery {
       height: 356px; } }
   .home .feature-gallery article {
@@ -1527,14 +1589,19 @@ object {
             .home .feature-gallery article .bottom-banner .m-button p {
               display: -ms-flexbox;
               display: flex;
-              padding: 0rem 3rem; } }
+              padding: 0rem 1.7rem; } }
+          @media screen and (min-width: 768px) {
+            .home .feature-gallery article .bottom-banner .m-button p {
+              padding: 0rem 3rem;
+              display: -ms-flexbox;
+              display: flex; } }
       .home .feature-gallery article .bottom-banner .m-button {
         display: -ms-flexbox;
         display: flex; }
       .home .feature-gallery article .bottom-banner h2 {
         text-align: center;
         margin: 0; }
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: 768px) {
         .home .feature-gallery article .bottom-banner {
           height: 174px;
           -ms-flex-pack: distribute;
@@ -1573,13 +1640,6 @@ object {
     text-align: center; }
   .home .involve-pillar .involved-join p {
     display: none; }
-  @media screen and (min-width: 1024px) {
-    .home .involve-pillar .involved-join p {
-      line-height: 120%;
-      text-align: center;
-      display: -ms-flexbox;
-      display: flex;
-      font-size: 18px; } }
   @media screen and (min-width: 480px) {
     .home .involve-pillar .involved-join {
       width: 76%;
@@ -1587,12 +1647,21 @@ object {
       -ms-flex-pack: distribute;
           justify-content: space-around;
       border: 4px #000000 solid #F91E72; }
+      .home .involve-pillar .involved-join p {
+        line-height: 120%;
+        text-align: center;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 18px; }
       .home .involve-pillar .involved-join p,
       .home .involve-pillar .involved-join h1 {
-        padding: 0 60px;
+        padding: 0;
         margin: 0; }
       .home .involve-pillar .involved-join:hover, .home .involve-pillar .involved-join:active, .home .involve-pillar .involved-join:focus {
         border: 2px #000000 solid 4px; } }
+  @media screen and (max-width: 664px) {
+    .home .involve-pillar .involved-join p {
+      display: none; } }
   .home .involve-pillar .involved-join .front-involved {
     display: -ms-flexbox;
     display: flex;
@@ -1626,7 +1695,12 @@ object {
           .home .involve-pillar .involved-join .front-involved .m-button p {
             display: -ms-flexbox;
             display: flex;
-            padding: 0rem 3rem; } }
+            padding: 0rem 1.7rem; } }
+        @media screen and (min-width: 768px) {
+          .home .involve-pillar .involved-join .front-involved .m-button p {
+            padding: 0rem 3rem;
+            display: -ms-flexbox;
+            display: flex; } }
     .home .involve-pillar .involved-join .front-involved .m-button {
       background: #F91E72;
       border: none;
@@ -1681,7 +1755,7 @@ object {
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
     text-align: center; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 644px) {
     .home .front-join p {
       display: -ms-flexbox;
       display: flex;
@@ -4527,7 +4601,12 @@ input.wpcf7-submit {
       .search .m-button p {
         display: -ms-flexbox;
         display: flex;
-        padding: 0rem 3rem; } }
+        padding: 0rem 1.7rem; } }
+    @media screen and (min-width: 768px) {
+      .search .m-button p {
+        padding: 0rem 3rem;
+        display: -ms-flexbox;
+        display: flex; } }
 
 .search .m-button {
   display: inline-block; }

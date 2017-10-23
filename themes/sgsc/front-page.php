@@ -34,7 +34,7 @@ get_header(); ?>
       <div class="front-program">
         <a href="<?php echo esc_url( get_permalink(get_page_by_path( 'programs' )) ) ?>">
           <h1>Discover Our Programs</h1></a>
-        <p>We have a multitude of programs to keep you healthy, active and connected.</p>
+        <p class="program-sub">We have a multitude of programs to keep you healthy, active and connected.</p>
         <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'programs' )) ) ?>"><p>More</p></a>
       </div>
       <div class="intro-event-blog">

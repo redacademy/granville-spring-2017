@@ -39,7 +39,11 @@
       }
       @media screen and (min-width: $mobile_width) {
         display: flex;
+        padding: $t_padding;
+      }
+      @media screen and (min-width: $tablet_width) {
         padding: $d_padding;
+        display: flex;
       }
     }
   }
@@ -118,7 +122,7 @@
         display: none;
       }
     }
-    @media screen and (min-width: $mobile_width) {
+    @media screen and (min-width: $tablet_width) {
       height: 73px;
       width: 224px;
       a {
@@ -128,6 +132,19 @@
         p {
           display: initial;
           font-size: 40px;
+        }
+      } 
+    }
+    @media screen and (min-width: $mobile_width) {
+      height: 55px;
+      width: 167px;
+      a {
+        i {
+          font-size: 30px;
+        }
+        p {
+          display: initial;
+          font-size: 30px;
         }
       }
     }
