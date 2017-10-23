@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A theme for SGSC, based on Underscores.",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-install": "^1.1.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
@@ -13,7 +15,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.2.0",
+    "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^1.5.3"
   },

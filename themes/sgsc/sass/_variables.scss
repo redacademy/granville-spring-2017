@@ -4,6 +4,7 @@
 
 // structure
   $mobile_width: 480px;
+  $tablet_width: 768px;
   $d_width:1024px;
   $desktop-view: 600px;
   $image-d-width: 496px;
@@ -28,6 +29,11 @@
   $font_d-body: 24px;
   $font_d-sub-body: 18px;
 
+//tablet font size
+  $font_t-h2: 30px;
+  $font_t-body: 18px;
+  $font_t-sub-body: 16px;
+
 //mobile font size
   $font_m-h1: 22px;
   $font_m-h2: 16px;
@@ -35,6 +41,7 @@
 
 //button
   $m_padding: .3rem 1.5rem;
+  $t_padding: 0rem 1.7rem;
   $d_padding: 0rem 3rem;
   $p_border: 2px $black solid;
 

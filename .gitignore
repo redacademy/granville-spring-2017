@@ -39,6 +39,7 @@ themes/*
 # Ignore npm packages #
 # =================== #
 themes/sgsc/node_modules/*
+themes/sgsc/package-lock.json
 
 # Ignore build files #
 # ================== #
