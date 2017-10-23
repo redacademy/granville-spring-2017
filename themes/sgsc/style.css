@@ -47,7 +47,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   ** South Granvillge Senior Center Variables
   */
 /*
- ** Default Variables (don't change anything here)
+** Default Variables (don't change anything here)
 */
 html {
   font-family: sans-serif;
@@ -817,6 +817,10 @@ a {
 # Content
 --------------------------------------------------------------*/
 @media screen and (min-width: 480px) {
+  html {
+    min-width: 768px; } }
+
+@media screen and (min-width: 786px) {
   html {
     min-width: 1024px; } }
 
@@ -2563,10 +2567,6 @@ footer {
   margin: 0 auto;
   height: 305px;
   position: relative; }
-  @media screen and (min-width: 480px) {
-    .page-template-page-about .entry-header {
-      max-width: 1024px;
-      height: 356px; } }
   .page-template-page-about .entry-header img {
     width: 100%;
     height: 100%;
@@ -2618,7 +2618,35 @@ footer {
     padding: 1rem;
     font-size: 22px; }
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 481px) {
+  .page-template-page-about .entry-header {
+    max-width: 768px;
+    height: 255px; }
+    .page-template-page-about .entry-header h1 {
+      padding: 40px 0;
+      font-size: 30px; }
+  .page-template-page-about .entry-content {
+    width: 768px;
+    margin: auto;
+    margin-top: 1rem; }
+  .page-template-page-about .about-links {
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .page-template-page-about .about-links p {
+      width: 19.5rem;
+      height: 7.5rem; }
+    .page-template-page-about .about-links a {
+      font-size: 30px; } }
+
+@media all and (min-width: 769px) {
+  .page-template-page-about .entry-header {
+    max-width: 1024px;
+    height: 356px; }
+    .page-template-page-about .entry-header h1 {
+      padding: 45px 0;
+      font-size: 40px; }
   .page-template-page-about .entry-content {
     width: 1024px;
     margin: auto;
