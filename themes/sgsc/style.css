@@ -4533,14 +4533,10 @@ input.wpcf7-submit {
   display: inline-block; }
 
 .page-template-page-about-partners .entry-header {
-  max-width: 480px;
+  width: 480px;
   margin: 0 auto;
   height: 275px;
   position: relative; }
-  @media screen and (min-width: 480px) {
-    .page-template-page-about-partners .entry-header {
-      max-width: 1024px;
-      height: 375px; } }
   .page-template-page-about-partners .entry-header img {
     width: 100%;
     height: 100%;
@@ -4665,6 +4661,9 @@ input.wpcf7-submit {
     color: white; }
 
 @media all and (min-width: 480px) {
+  .page-template-page-about-partners .entry-header {
+    width: 768px;
+    height: 375px; }
   .page-template-page-about-partners .entry-content p {
     font-size: 18px; }
   .page-template-page-about-partners .individual-partner, .page-template-page-about-partners .partner-container {
@@ -4681,6 +4680,11 @@ input.wpcf7-submit {
     min-width: 165px; }
   .page-template-page-about-partners .about-back-btn {
     display: none; } }
+
+@media all and (min-width: 769px) {
+  .page-template-page-about-partners .entry-header {
+    width: 1024px;
+    height: 375px; } }
 
 .page-template-page-about-sub .site-content {
   width: 100%; }
