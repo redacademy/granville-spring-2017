@@ -90,7 +90,7 @@ get_header(); ?>
           <div class="front-involved">
             <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
               <p>Donate</p></a>
-            <a class="m-button"href="<?php echo esc_url( get_permalink(get_page_by_title( 'advertise' )) ) ?>">
+            <a class="m-button"href="<?php echo esc_url( get_permalink(get_page_by_path( 'advertise' )) ) ?>">
               <p>Advertise</p></a>
           </div>
         </div>

@@ -2,30 +2,41 @@
 # Single-Page
 --------------------------------------------------------------*/
 
-.single-post .content-area {
+.content-area {
   display: flex;
   justify-content: center;
-  .site-main {
-    display: flex;
-    width: 100%;
-    flex-flow: column nowrap;
-    article {
-      margin: 0;
-      header {
-        @include page-header;
-      }
-      .entry-content {
-        padding: $margin-d;
-      }
-    }
-    @media screen and (min-width: $mobile_width) {
-      width: $d_width;
-    }
+}
+.site-main {
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  header {
+    @include page-header;
   }
-  p {
-    font-size: $font_m-h2;
-    @media screen and (min-width: $mobile_width) {
-      font-size: $font_d-body;
-    }
+}
+article {
+  margin: 0;
+  width: 100%;
+}
+
+.entry-content {
+  padding: $margin-d;
+}
+
+@media screen and (min-width: $mobile_width) {
+  .content-area {
+    justify-content: flex-start;
+  }
+  .site-main {
+    width: 100vw
+  }
+}
+
+@media screen and (min-width: $tablet_width) {
+  .content-area {
+    justify-content: center;
+  }
+  .site-main {
+    width: $d_width;
   }
 }
