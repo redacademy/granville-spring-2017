@@ -2868,10 +2868,6 @@ input.wpcf7-submit {
   margin: 0 auto;
   height: 275px;
   position: relative; }
-  @media screen and (min-width: 480px) {
-    .page-template-page-about-our-team .entry-header {
-      max-width: 1024px;
-      height: 375px; } }
   .page-template-page-about-our-team .entry-header img {
     width: 100%;
     height: 100%;
@@ -2893,9 +2889,11 @@ input.wpcf7-submit {
   background: #f5a623;
   margin-bottom: 0; }
 
-.page-template-page-about-our-team .entry-content p {
-  margin: 15px 22px;
-  text-indent: 15px; }
+.page-template-page-about-our-team .entry-content {
+  padding: 0; }
+  .page-template-page-about-our-team .entry-content p {
+    margin: 15px 22px;
+    text-indent: 15px; }
 
 .page-template-page-about-our-team .about-links {
   display: -ms-flexbox;
@@ -2979,17 +2977,22 @@ input.wpcf7-submit {
     color: white; }
 
 @media all and (min-width: 480px) {
-  .page-template-page-about-our-team .entry-header img {
-    object-position: 45% 0%; }
-  .page-template-page-about-our-team .entry-content P {
-    font-style: lato, novecentosanswide, sans-serif;
-    font-size: 18px;
-    line-height: 24px; }
+  .page-template-page-about-our-team .entry-header {
+    max-width: 768px;
+    height: 265px; }
+    .page-template-page-about-our-team .entry-header img {
+      object-position: 45% 0%; }
+  .page-template-page-about-our-team .entry-content {
+    padding: 0; }
+    .page-template-page-about-our-team .entry-content P {
+      font-style: lato, novecentosanswide, sans-serif;
+      font-size: 16px;
+      line-height: 24px; }
   .page-template-page-about-our-team .entry-title {
-    bottom: -10rem;
-    height: 10rem; }
+    bottom: -7.5rem;
+    height: 7.5rem; }
   .page-template-page-about-our-team .content-area {
-    margin-top: 10rem; }
+    margin-top: 7.5rem; }
   .page-template-page-about-our-team .team-members {
     display: -ms-flexbox;
     display: flex;
@@ -3005,31 +3008,56 @@ input.wpcf7-submit {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%; }
   .page-template-page-about-our-team .member-picture {
-    height: 282px;
+    height: 212px;
     width: 100%;
     margin-bottom: 20px;
     margin-top: 40px; }
   .page-template-page-about-our-team .member-name {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold; }
   .page-template-page-about-our-team .member-email.member-container {
     margin-bottom: 20px; }
   .page-template-page-about-our-team .member-container {
     margin: 0 0; }
   .page-template-page-about-our-team .member-position, .page-template-page-about-our-team .member-email, .page-template-page-about-our-team .member-bio {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px; }
   .page-template-page-about-our-team ul li:nth-child(odd) img {
-    padding-left: 38px; }
+    padding-left: 30px; }
   .page-template-page-about-our-team ul li:nth-child(even) img {
-    padding-right: 38px; }
+    padding-right: 30px; }
+  .page-template-page-about-our-team ul li:nth-child(odd) p {
+    padding-left: 30px; }
+  .page-template-page-about-our-team ul li:nth-child(odd) h1 {
+    padding-left: 30px; }
   .page-template-page-about-our-team .member-picture {
-    height: auto;
     max-width: 100%;
     margin-bottom: 20px;
     margin-top: 40px; }
   .page-template-page-about-our-team .about-back-btn {
     display: none; } }
+
+@media all and (min-width: 769px) {
+  .page-template-page-about-our-team .entry-header {
+    max-width: 1024px;
+    height: 375px; }
+  .page-template-page-about-our-team .entry-content P {
+    font-size: 18px; }
+  .page-template-page-about-our-team .entry-title {
+    bottom: -10rem;
+    height: 10rem; }
+  .page-template-page-about-our-team .content-area {
+    margin-top: 10rem; }
+  .page-template-page-about-our-team .member-picture {
+    height: 282px; }
+  .page-template-page-about-our-team .member-name {
+    font-size: 24px; }
+  .page-template-page-about-our-team .member-position, .page-template-page-about-our-team .member-email, .page-template-page-about-our-team .member-bio {
+    font-size: 18px; }
+  .page-template-page-about-our-team ul li:nth-child(odd) img {
+    padding-left: 38px; }
+  .page-template-page-about-our-team ul li:nth-child(even) img {
+    padding-right: 38px; } }
 
 .page-template-page-about-our-board .donate-btn {
   background-color: #F91E72;
