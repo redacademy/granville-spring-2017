@@ -121,13 +121,26 @@ input.wpcf7-submit {
 	color: $black;
 }
 
+.wpcf7-response-output, .wpcf7-display-none {
+  background-color: white;
+  font-family: montserrat,merriweather,sans-serif;
+	font-size: 16px;
+  color: $black;
+  width: 284px;
+  height: 43px;
+  // margin-top: 31px !important;
+  margin: 31px auto 0 auto !important;
+  padding: 0 !important;
+  text-align: center;
+}
+span.wpcf7-not-valid-tip {  
+  height: 0 !important;
+}
+.wpcf7-validation-errors, .wpcf7-mail-sent-ok {
+  border: 2px solid $black !important;
+}
+
 // Footer
-
-// footer {
-// 	max-width: 1024px;
-// 	margin: auto;
-// }
-
 .site-info {
 	margin-left: 16px;
 	display: flex;
@@ -135,7 +148,6 @@ input.wpcf7-submit {
 	justify-content: flex-start;
 	color: $black;
 }
-
 .textwidget {
 	width: 125px;
 	font-family: $font__body;
@@ -144,26 +156,21 @@ input.wpcf7-submit {
 			color: $orange;
 	}
 }
-
 .textwidget a {
 	color: black;
 	font-weight: 300;
 	text-decoration: none;
 }
-
 .textwidget :last-child {
 	margin-bottom: 0;
 }
-
 .footer-icons {
 	display: flex;
 	align-items: flex-end;
 }
-
 .footer-widget {
 	display: flex;
 }
-
 .facebook {
 	background-image: url("../../assets/images/facebook-circle-sm.svg");
 	background-repeat: no-repeat; 
@@ -180,19 +187,16 @@ input.wpcf7-submit {
 	height: 36px;
 	width: 36px;
 }
-
 .copywrite {
 	text-align: left;
 	padding-left: 16px;
-			margin-bottom: 25px;
-      font-family: $font__body;
-      p{ 
-        font-size: 12px;    
-      }
+	margin-bottom: 25px;
+  font-family: $font__body;
+  p{ 
+    font-size: 12px;    
+  }
 }
-
 @media all and (min-width: $mobile_width) {
-
 	.site-info {
 		padding-left: 35px;
 		padding-top: 20px;
@@ -201,7 +205,6 @@ input.wpcf7-submit {
 		flex-direction: row;
 		color: $black;
 		justify-content: flex-start;
-		
 	}
 	.textwidget {
 		display: flex;
@@ -209,9 +212,9 @@ input.wpcf7-submit {
 		flex-wrap: wrap;
 		min-width: 526px;
 		p {
-				width: 175px;
-				font-size: $font_t-footer;
-				margin: 0;
+      width: 175px;
+      font-size: $font_t-footer;
+      margin: 0;
 		}
 	}
 	.footer-icons {
@@ -244,7 +247,6 @@ input.wpcf7-submit {
 		flex-direction: row;
 		color: $black;
 		justify-content: flex-start;
-		
 	}
 	.textwidget {
 		display: flex;
@@ -252,9 +254,9 @@ input.wpcf7-submit {
 		flex-wrap: wrap;
 		min-width: 526px;
 		p {
-				width: 175px;
-				font-size: $font_d-sub-body;
-				margin: 0;
+      width: 175px;
+      font-size: $font_d-sub-body;
+      margin: 0;
 		}
 	}
 	.footer-icons {
@@ -275,7 +277,7 @@ input.wpcf7-submit {
 		text-align: left;
 		padding-left: 35px;
 		p {
-		font-size: 14px;
+		  font-size: 14px;
 		}
 	}
 }
