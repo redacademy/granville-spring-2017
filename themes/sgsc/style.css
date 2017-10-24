@@ -2617,6 +2617,23 @@ input.wpcf7-submit {
   font-size: 12px;
   color: #000000; }
 
+.wpcf7-response-output, .wpcf7-display-none {
+  background-color: white;
+  font-family: montserrat,merriweather,sans-serif;
+  font-size: 16px;
+  color: #000000;
+  width: 284px;
+  height: 43px;
+  margin: 31px auto 0 auto !important;
+  padding: 0 !important;
+  text-align: center; }
+
+span.wpcf7-not-valid-tip {
+  height: 0 !important; }
+
+.wpcf7-validation-errors, .wpcf7-mail-sent-ok {
+  border: 2px solid #000000 !important; }
+
 .site-info {
   margin-left: 16px;
   display: -ms-flexbox;
