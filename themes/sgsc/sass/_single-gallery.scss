@@ -5,9 +5,18 @@
 .single-gallery .content-area {
   display: flex;
   justify-content: center;
+  @media screen and (min-width: $mobile_width) {
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: $tablet_width) {
+    justify-content: center;
+  }
   .site-main {
     width: 100%;
     @media screen and (min-width: $mobile_width) {
+      width: 100vw;
+    }
+    @media screen and (min-width: $tablet_width) {
       width: $d_width;
     }
     display: flex;
@@ -31,6 +40,7 @@
 
 .single-gallery .entry-content {
   width: 100%;
+  padding: 32px 0;
   .gallery {
     display: flex;
     flex-flow: column wrap;

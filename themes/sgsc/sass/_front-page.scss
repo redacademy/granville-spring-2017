@@ -6,7 +6,10 @@
   display: flex;
   justify-content: center;
   @media screen and (min-width: $mobile_width) {
-    justify-content: flex-start !important;
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: $tablet_width) {
+    justify-content: center;
   }
   .site-main {
     width: 100%;
@@ -348,6 +351,9 @@
         background: $pink;
         border: none;
         display: flex;
+        @media screen and (max-width: 664px){
+            margin: 10px;
+        }
         p {
           border: none;
           line-height: initial;
@@ -398,7 +404,7 @@
     flex-flow: column nowrap;
     text-align: center;
   }
-  @media screen and (min-width: 644px) {
+  @media screen and (min-width: $tablet_width) {
     p {
       display: flex;
       width: 70%;
