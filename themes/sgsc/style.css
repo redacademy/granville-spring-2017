@@ -2726,7 +2726,10 @@ span.wpcf7-not-valid-tip {
   .copywrite p {
     font-size: 12px; }
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 769px) {
+  .site-footer {
+    width: 1024px;
+    margin: 0 auto; }
   .site-info {
     padding-left: 35px;
     padding-top: 20px;
@@ -2737,7 +2740,9 @@ span.wpcf7-not-valid-tip {
         flex-direction: row;
     color: #000000;
     -ms-flex-pack: start;
-        justify-content: flex-start; }
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center; }
   .textwidget {
     display: -ms-flexbox;
     display: flex;
