@@ -4,8 +4,20 @@
 .post-type-archive-gallery .content-area {
   display: flex;
   justify-content: center;
+  @media screen and (min-width: $mobile_width) {
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: $tablet_width) {
+    justify-content: center;
+  }
   .site-main {
-    width: $d_width;
+    width: 100%;
+    @media screen and (min-width: $mobile_width) {
+      width: 100vw;
+    }
+    @media screen and (min-width: $tablet_width) {
+      width: $d_width;
+    }
     display: flex;
     flex-flow: column nowrap;
   }
@@ -42,6 +54,7 @@
       overflow: hidden;
       justify-content: center;
       align-items: center;
+      margin: 0;
       .image-position {
         height: 100%;
         img {
