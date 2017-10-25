@@ -5,18 +5,27 @@
 .page-id-51 .content-area {
   display: flex;
   justify-content: center;
+  @media screen and (min-width: $mobile_width) {
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: $tablet_width) {
+    justify-content: center;
+  }
   .site-main {
     display: flex;
     width: 100%;
+    @media screen and (min-width: $mobile_width) {
+      width: 100vw;
+    }
+    @media screen and (min-width: $tablet_width) {
+      width: $d_width;
+    }
     flex-flow: column nowrap;
     article {
       margin: 0;
       header {
         @include page-header;
       }
-    }
-    @media screen and (min-width: $mobile_width) {
-      width: $d_width;
     }
   }
 }
@@ -25,14 +34,17 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  @media screen and (min-width: $mobile_width) {
+  @media screen and (min-width: $tablet_width) {
     margin-bottom: 50px;
   }
   .contactus {
     padding: $margin-d;
     width: 100%;
     @media screen and (min-width: $mobile_width) {
-      width: 38%;
+      width: 100%;
+    }
+    @media screen and (min-width: $tablet_width) {
+      width: 38%
     }
   }
   p {
