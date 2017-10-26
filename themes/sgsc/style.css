@@ -2919,6 +2919,71 @@ span.wpcf7-not-valid-tip {
     padding: 3rem 3rem;
     font-size: 2.5rem; } }
 
+.page-id-26 table {
+  width: 0; }
+
+.page-id-26 .entry-header {
+  height: 118px;
+  margin-top: 0.5rem;
+  max-width: 480px; }
+  @media screen and (min-width: 480px) {
+    .page-id-26 .entry-header {
+      height: 120px;
+      max-width: 768px; } }
+  @media screen and (min-width: 480px) and (min-width: 768px) {
+    .page-id-26 .entry-header {
+      height: 160px;
+      max-width: 1024px; } }
+
+.page-id-26 .header .entry-header {
+  height: 118px;
+  width: 480px; }
+  @media screen and (min-width: 480px) {
+    .page-id-26 .header .entry-header {
+      height: 120px;
+      width: 768px; } }
+  @media screen and (min-width: 480px) and (min-width: 768px) {
+    .page-id-26 .header .entry-header {
+      height: 160px;
+      width: 1024px; } }
+
+.page-id-26 .entry-header .entry-title {
+  height: 118px;
+  position: initial;
+  max-width: 480px; }
+  @media screen and (min-width: 480px) {
+    .page-id-26 .entry-header .entry-title {
+      height: 120px;
+      max-width: 768px; } }
+  @media screen and (min-width: 480px) and (min-width: 768px) {
+    .page-id-26 .entry-header .entry-title {
+      height: 160px;
+      max-width: 1024px; } }
+
+.advertise-title {
+  font-size: 18px !important;
+  font-family: lato, novecentosanswide, sans-serif;
+  font-weight: 400; }
+  @media screen and (min-width: 480px) {
+    .advertise-title {
+      font-size: 30px !important; } }
+
+.advertise-body {
+  font-family: lato, novecentosanswide, sans-serif;
+  font-size: 16px; }
+
+.page-id-26 .entry-content {
+  padding: 0 11px !important;
+  max-width: 480px; }
+  @media screen and (min-width: 480px) {
+    .page-id-26 .entry-content {
+      padding: 0 52px !important;
+      max-width: 768px; } }
+  @media screen and (min-width: 480px) and (min-width: 768px) {
+    .page-id-26 .entry-content {
+      height: 0 64px !important;
+      max-width: 1024px; } }
+
 .page-template-page-about-our-team .entry-header {
   max-width: 480px;
   margin: 0 auto;
