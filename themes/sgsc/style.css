@@ -4454,6 +4454,9 @@ span.wpcf7-not-valid-tip {
   height: 13rem;
   position: relative; }
 
+.events-archive .tribe-events-calendar td.tribe-events-present {
+  background-color: #f5a623; }
+
 .events-archive .tribe-events-list-event-title {
   position: absolute;
   right: 0;
@@ -4640,6 +4643,8 @@ span.wpcf7-not-valid-tip {
     height: 4.5rem;
     width: 4.5rem;
     font-size: 2.5rem; }
+  .events-archive .tribe-events-calendar td.tribe-events-present {
+    background-color: #f5a623; }
   .events-archive .site-content {
     display: -ms-flexbox;
     display: flex;

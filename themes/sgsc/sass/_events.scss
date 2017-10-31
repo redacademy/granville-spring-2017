@@ -8,6 +8,10 @@
 		height: 13rem;
 		position: relative;
 	}
+
+	.tribe-events-calendar td.tribe-events-present {
+		background-color: $orange;
+	}
 	
 	.tribe-events-list-event-title {
 		position: absolute;
@@ -206,7 +210,11 @@
       height: 4.5rem;
       width: 4.5rem;
       font-size: 2.5rem;
-    }
+	}
+	
+	.tribe-events-calendar td.tribe-events-present {
+		background-color: $orange;
+	}
 		.site-content {
 			display: flex;
 			width: 1024px;

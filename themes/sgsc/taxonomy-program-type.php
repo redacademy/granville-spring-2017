@@ -57,6 +57,12 @@
 			<p>	Join us! We have a multitude of programs to keep you healthy, active and connected. We offer hot lunches, as well as exercise, self-care, educational, and social programs that are affordable and open to participants of all abilities and skill levels.</p>
 			<p>Check out the program descriptions, call us at 604-732-0812 for more information, or drop-in to try out a class!</p>
 		</section>
+		<div>
+			<?php function events_view( $atts ) {
+				return "view = {$atts['month']}";
+			}
+			echo do_shortcode( '[tribe_events view="month"]' ) ?>
+		</div>
 		
 		<div class="program-back-btn">
 			<a href="<?php echo esc_url( get_permalink (get_page_by_path('programs'))) ?>">
