@@ -5,9 +5,21 @@
 .page-id-30 .content-area {
   display: flex;
   justify-content: center;
+  @media screen and (min-width: $mobile_width) {
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: $tablet_width) {
+    justify-content: center;
+  }
   .site-main {
     display: flex;
     width: 100%;
+    @media screen and (min-width: $mobile_width) {
+      width: 100vw;
+    }
+    @media screen and (min-width: $tablet_width) {
+      width: $d_width;
+    }
     flex-flow: column nowrap;
     article {
       margin: 0;
@@ -26,22 +38,25 @@
           flex-flow: column wrap;
           text-align: center;
           width: 100%;
-          @media screen and (min-width: $mobile_width) {
+          @media screen and (min-width: $tablet_width) {
             width: 50%;
-            padding: 64px;
+            padding: 0 64px;
           }
           .p1 {
             font-size: $font_m-h1;
             width: 50%;
             @media screen and (min-width: $mobile_width) {
+              width: 80%;
               font-size: $font_d-h1;
-              width: 100%;
               line-height: 3.5rem;
+            }
+            @media screen and (min-width: $tablet_width) {
+              width: 100%;
             }
           }
           p {
             width: 90%;
-            @media screen and (min-width: $mobile_width) {
+            @media screen and (min-width: $tablet_width) {
               width: 100%;
             }
             a {
@@ -57,7 +72,7 @@
               @include hover-state {
                 color: $orange;
               }
-              @media screen and (min-width: $mobile_width) {
+              @media screen and (min-width: $tablet_width) {
                 padding: 45px 0;
                 font-size: $font_d-h1;
                 font-weight: 300;
@@ -71,7 +86,7 @@
           align-items: center;
           flex-flow: column wrap;
           width: 90%;
-          @media screen and (min-width: $mobile_width) {
+          @media screen and (min-width: $tablet_width) {
             width: 50%;
             padding: 64px;
             padding-left: 0;
@@ -79,7 +94,7 @@
           }
           p {
             font-size: $font_m-body;
-            @media screen and (min-width: $mobile_width) {
+            @media screen and (min-width: $tablet_width) {
               width: 448px;
               font-size: $font_d-sub-body;
               margin-bottom: 0;
@@ -92,7 +107,8 @@
           justify-content: center;
           flex-flow: column wrap;
           width: 90%;
-          @media screen and (min-width: $mobile_width) {
+          margin: 16px 0;
+          @media screen and (min-width: $tablet_width) {
             padding: 64px;
             width: 50%;
             flex-flow: column wrap;
@@ -100,7 +116,7 @@
           p {
             font-size: $font_m-body;
             margin-top: 0;
-            @media screen and (min-width: $mobile_width) {
+            @media screen and (min-width: $tablet_width) {
               font-size: $font_d-sub-body;
               line-height: 1.4rem;
               padding-right: 2rem;
@@ -113,8 +129,9 @@
           align-items: center;
           flex-flow: row nowrap;
           width: 100%;
+          margin-top: 24px;
           height: 208px;
-          @media screen and (min-width: $mobile_width) {
+          @media screen and (min-width: $tablet_width) {
             width: 50%;
             height: 327px;
           }
@@ -136,16 +153,8 @@
               position: absolute;
             }
           }
-          .margin {
-            width: 5%;
-            height: 100%;
-            background: $blue;
-          }
         }
       }
-    }
-    @media screen and (min-width: $mobile_width) {
-      width: $d_width;
     }
   }
 }

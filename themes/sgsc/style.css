@@ -4057,12 +4057,26 @@ span.wpcf7-not-valid-tip {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  @media screen and (min-width: 480px) {
+    .page-id-30 .content-area {
+      -ms-flex-pack: start;
+          justify-content: flex-start; } }
+  @media screen and (min-width: 768px) {
+    .page-id-30 .content-area {
+      -ms-flex-pack: center;
+          justify-content: center; } }
   .page-id-30 .content-area .site-main {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap; }
+    @media screen and (min-width: 480px) {
+      .page-id-30 .content-area .site-main {
+        width: 100vw; } }
+    @media screen and (min-width: 768px) {
+      .page-id-30 .content-area .site-main {
+        width: 1024px; } }
     .page-id-30 .content-area .site-main article {
       margin: 0; }
       .page-id-30 .content-area .site-main article header {
@@ -4145,21 +4159,24 @@ span.wpcf7-not-valid-tip {
               flex-flow: column wrap;
           text-align: center;
           width: 100%; }
-          @media screen and (min-width: 480px) {
+          @media screen and (min-width: 768px) {
             .page-id-30 .content-area .site-main article .entry-content .support-donate {
               width: 50%;
-              padding: 64px; } }
+              padding: 0 64px; } }
           .page-id-30 .content-area .site-main article .entry-content .support-donate .p1 {
             font-size: 22px;
             width: 50%; }
             @media screen and (min-width: 480px) {
               .page-id-30 .content-area .site-main article .entry-content .support-donate .p1 {
+                width: 80%;
                 font-size: 40px;
-                width: 100%;
                 line-height: 3.5rem; } }
+            @media screen and (min-width: 768px) {
+              .page-id-30 .content-area .site-main article .entry-content .support-donate .p1 {
+                width: 100%; } }
           .page-id-30 .content-area .site-main article .entry-content .support-donate p {
             width: 90%; }
-            @media screen and (min-width: 480px) {
+            @media screen and (min-width: 768px) {
               .page-id-30 .content-area .site-main article .entry-content .support-donate p {
                 width: 100%; } }
             .page-id-30 .content-area .site-main article .entry-content .support-donate p a {
@@ -4177,7 +4194,7 @@ span.wpcf7-not-valid-tip {
               width: 100%; }
               .page-id-30 .content-area .site-main article .entry-content .support-donate p a:hover, .page-id-30 .content-area .site-main article .entry-content .support-donate p a:active, .page-id-30 .content-area .site-main article .entry-content .support-donate p a:focus {
                 color: #f5a623; }
-              @media screen and (min-width: 480px) {
+              @media screen and (min-width: 768px) {
                 .page-id-30 .content-area .site-main article .entry-content .support-donate p a {
                   padding: 45px 0;
                   font-size: 40px;
@@ -4192,7 +4209,7 @@ span.wpcf7-not-valid-tip {
           -ms-flex-flow: column wrap;
               flex-flow: column wrap;
           width: 90%; }
-          @media screen and (min-width: 480px) {
+          @media screen and (min-width: 768px) {
             .page-id-30 .content-area .site-main article .entry-content .detail-donate {
               width: 50%;
               padding: 64px;
@@ -4201,7 +4218,7 @@ span.wpcf7-not-valid-tip {
                   align-items: flex-start; } }
           .page-id-30 .content-area .site-main article .entry-content .detail-donate p {
             font-size: 16px; }
-            @media screen and (min-width: 480px) {
+            @media screen and (min-width: 768px) {
               .page-id-30 .content-area .site-main article .entry-content .detail-donate p {
                 width: 448px;
                 font-size: 18px;
@@ -4214,8 +4231,9 @@ span.wpcf7-not-valid-tip {
               justify-content: center;
           -ms-flex-flow: column wrap;
               flex-flow: column wrap;
-          width: 90%; }
-          @media screen and (min-width: 480px) {
+          width: 90%;
+          margin: 16px 0; }
+          @media screen and (min-width: 768px) {
             .page-id-30 .content-area .site-main article .entry-content .meta-donate {
               padding: 64px;
               width: 50%;
@@ -4224,7 +4242,7 @@ span.wpcf7-not-valid-tip {
           .page-id-30 .content-area .site-main article .entry-content .meta-donate p {
             font-size: 16px;
             margin-top: 0; }
-            @media screen and (min-width: 480px) {
+            @media screen and (min-width: 768px) {
               .page-id-30 .content-area .site-main article .entry-content .meta-donate p {
                 font-size: 18px;
                 line-height: 1.4rem;
@@ -4239,8 +4257,9 @@ span.wpcf7-not-valid-tip {
           -ms-flex-flow: row nowrap;
               flex-flow: row nowrap;
           width: 100%;
+          margin-top: 24px;
           height: 208px; }
-          @media screen and (min-width: 480px) {
+          @media screen and (min-width: 768px) {
             .page-id-30 .content-area .site-main article .entry-content .image-position {
               width: 50%;
               height: 327px; } }
@@ -4260,13 +4279,6 @@ span.wpcf7-not-valid-tip {
               transform: translate(-50%, -70%);
               max-width: none;
               position: absolute; }
-          .page-id-30 .content-area .site-main article .entry-content .image-position .margin {
-            width: 5%;
-            height: 100%;
-            background: #45cdcb; }
-    @media screen and (min-width: 480px) {
-      .page-id-30 .content-area .site-main {
-        width: 1024px; } }
 
 /*--------------------------------------------------------------
 # Contact-us-Page

@@ -43,5 +43,4 @@ themes/sgsc/package-lock.json
 
 # Ignore build files #
 # ================== #
-themes/sgsc/gulpfile.js
 themes/sgsc/build/*
