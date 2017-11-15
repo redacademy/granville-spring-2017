@@ -1,0 +1,282 @@
+.page-template-form-membership-english {
+
+  input[type=text],[type=email],[type=date], textarea {
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 2px solid black;
+    border-radius: 0;
+  }
+
+  .entry-content {
+    margin-top: 24px;
+    padding: 0 22px;
+  }
+
+  .eng_mem_info {
+    font-size: $font_m-h2;
+    font-family: $font__body;
+  }
+
+  .eng_mem_benefits {
+    margin: 0;
+    font-size: $font_m-h2;
+    font-family: $font__body;
+  }
+
+  .eng_form_section {
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+
+  .eng_field_name {
+    font-size: $font_m-h2;
+    font-family: $font__body;
+  }
+  
+  .eng_small_print {
+    font-size: 12px;;
+    font-family: $font__body;  
+  }
+
+  .membership_form_english {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .eng_form_defaults {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5px;
+  }
+
+  .eng_form_name {
+    flex-basis: 100%;
+    flex-direction: column;
+    @media screen and (min-width:481px) {
+      flex-direction: row;
+    }
+  }
+  #eng_first_name, #eng_last_name {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+  }
+  #eng_first_name {
+    @media screen and (min-width:481px) {
+    padding-right: 5px;
+    }
+  }
+  #eng_last_name {
+    @media screen and (min-width:481px) {
+    padding-left: 5px;
+    }
+  }
+
+  .eng_form_telephone {
+    flex-basis: 100%;
+    @media screen and (min-width: 481px) {
+      flex-basis: 50%;
+    }
+  }
+  #eng_telephone {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_email {
+    flex-basis: 100%;
+    @media screen and (min-width: 481px) {
+      flex-basis: 50%;
+    }
+  }
+
+  #eng_email {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_address {
+    flex-basis: 100%;
+  }
+  #eng_address {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_birthday {
+    flex-basis: 100%;
+    @media screen and (min-width: 481px) {
+      flex-basis: 50%;
+    }
+  }
+  
+  #eng_birthday {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_ethnicity {
+    flex-basis: 100%;
+    @media screen and (min-width: 481px) {
+      flex-basis: 50%;
+    }
+  }
+  #eng_ethnicity {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_gender {
+    flex-basis: 100%;
+  }
+  #eng_gender {
+    width: 100%;
+  }
+
+  .eng_form_member {
+    flex-basis: 100%;
+  }
+  #eng_newmember {
+    width: 100%;
+  }
+
+  .eng_form_spanish {
+    flex-basis: 100%;
+  }
+  #eng_spanish {
+    width: 100%;
+  }
+
+  .eng_form_emergname {
+    flex-basis: 100%;
+    flex-direction: column;
+    @media screen and (min-width:481px) {
+      flex-direction: row;
+    }
+  }
+  #eng_first_emergname, #eng_last_emergname {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  #eng_first_emergname {
+    @media screen and (min-width:481px) {
+    padding-right: 5px;
+    }
+  }
+  #eng_last_emergname {
+  @media screen and (min-width:481px) {
+    padding-left: 5px;
+    }
+  }
+
+  .eng_form_emergtelephone {
+    flex-basis: 100%;
+    @media screen and (min-width: 481px) {
+      flex-basis: 50%;
+    }
+  }
+  #eng_emergtelephone {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_emergemail {
+    flex-basis: 100%;
+    @media screen and (min-width: 481px) {
+      flex-basis: 50%;
+    }
+  }
+  #eng_emergemail {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_medinfo {
+    flex-basis: 100%;
+  }
+  #eng_medinfo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_ifyes {
+    flex-basis: 100%;
+  }
+  #eng_ifyes {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_allergies {
+    flex-basis: 100%;
+    @media screen and (min-width: 481px) {
+      flex-basis: 50%;
+    }
+  }
+  #eng_allergies {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_medications {
+    flex-basis: 100%;
+    @media screen and (min-width: 481px) {
+      flex-basis: 50%;
+    }
+  }
+  #eng_medications {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_visit {
+    flex-basis: 100%;
+  }
+  #eng_visit {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .eng_form_submit {
+    flex-basis: 100%;
+  }
+  #eng_submit {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 1rem;    
+    button {
+      width: 75%;
+      margin: 0 auto;
+      margin-top: 0.5rem;
+      background-color: transparent;
+      border: 2px solid black;
+      border-radius: 0;
+      font-size: 1.1rem;
+      @include hover-state() {
+        text-shadow: none;
+        box-shadow: none;
+        border: $p_border $orange;
+        background: $orange;
+        color: white;
+      }
+    }
+  }
+}
