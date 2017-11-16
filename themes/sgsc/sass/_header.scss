@@ -61,17 +61,25 @@
 .site-header {
   height: 4rem;
   width: auto;
+  @media screen and (max-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .logo {
   display: flex;
-  width: 100%;
   position: absolute;
   justify-content: center;
   align-items: center;
   height: 4rem;
   z-index: -1;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: $tablet-width) {
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: initial;    
+  }  
+  @media screen and (min-width: $tablet-width) {
     width: initial;
   }
 }
@@ -83,9 +91,31 @@
 .logo-img {
   height: 3.5rem;
   display: flex;
+  @media screen and (max-width: $tablet-width) {
+    min-width: 60px;
+  } 
 }
 
-@media screen and (min-width: 480px) {
+.form {
+  @media screen and (max-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 60px;
+    padding: 0 7px;
+    .fa {
+      font-size: 1.6rem;
+    }
+  }
+  @media screen and (min-width: $tablet-width) {
+    position: initial;
+    display: flex;
+    align-items: flex-end;
+  }  
+}
+
+@media screen and (min-width: $tablet-width) {
   .site-header {
     display: flex;
     justify-content: space-between;

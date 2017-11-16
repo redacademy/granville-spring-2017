@@ -41,10 +41,10 @@
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 						</div>
 					</nav>
-					<div>
-						<?php get_search_form() ?>
-					</div>
 				</section>
+				<div class="form">
+					<?php get_search_form() ?>
+				</div>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

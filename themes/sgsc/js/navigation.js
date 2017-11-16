@@ -25,7 +25,7 @@
         $overlay = $('.overlay');
 
       $window.resize(function resize() {
-        if ($window.width() > 480) {
+        if ($window.width() > 768) {
           return $overlay.addClass('desktopWidth');
         }
         $overlay.removeClass('desktopWidth');
