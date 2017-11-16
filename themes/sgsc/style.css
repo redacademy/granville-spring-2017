@@ -670,14 +670,15 @@ a {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  width: 100vw; }
-
-.menu {
+  width: 100%;
   -ms-flex-pack: end;
       justify-content: flex-end;
   -ms-flex-align: end;
       align-items: flex-end;
   height: 60px; }
+  @media screen and (max-width: 768px) {
+    .menu {
+      width: initial; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -744,7 +745,7 @@ a {
   box-shadow: none;
   border-radius: 0; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -831,7 +832,7 @@ a {
 --------------------------------------------------------------*/
 @media screen and (min-width: 480px) {
   html {
-    min-width: 768px; } }
+    min-width: 480px; } }
 
 @media screen and (min-width: 786px) {
   html {
@@ -1103,11 +1104,16 @@ object {
 .site-header {
   height: 4rem;
   width: auto; }
+  @media screen and (max-width: 768px) {
+    .site-header {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
 
 .logo {
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   position: absolute;
   -ms-flex-pack: center;
       justify-content: center;
@@ -1115,7 +1121,12 @@ object {
       align-items: center;
   height: 4rem;
   z-index: -1; }
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 768px) {
+    .logo {
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: initial; } }
+  @media screen and (min-width: 768px) {
     .logo {
       width: initial; } }
 
@@ -1126,8 +1137,34 @@ object {
   height: 3.5rem;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .logo-img {
+      min-width: 60px; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
+  .form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-align: end;
+        align-items: flex-end;
+    height: 60px;
+    padding: 0 7px; }
+    .form .fa {
+      font-size: 1.6rem; } }
+
+@media screen and (min-width: 768px) {
+  .form {
+    position: initial;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+        align-items: flex-end; } }
+
+@media screen and (min-width: 768px) {
   .site-header {
     display: -ms-flexbox;
     display: flex;
