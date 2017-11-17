@@ -14,6 +14,13 @@ get_header(); ?>
 
 		<header class="page-header">
 			<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<div class="donate-btn">
+				<a href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
+					<i class="fa fa-heart-o" aria-hidden="true">
+						<p>Donate</p>
+					</i>
+				</a>
+			</div>
 		</header><!-- .page-header -->
 
 		<?php /* Start the Loop */ ?>
