@@ -1824,7 +1824,7 @@ object {
           flex-flow: column nowrap; } }
 
 /*--------------------------------------------------------------
-# Single-Gallery Page
+# Blog Page
 --------------------------------------------------------------*/
 .content-area {
   display: -ms-flexbox;
@@ -1940,6 +1940,12 @@ object {
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; }
+  @media screen and (min-width: 480px) {
+    .site-main {
+      width: 100vw; } }
+  @media screen and (min-width: 768px) {
+    .site-main {
+      width: 1024px; } }
 
 .image-position img {
   min-height: 100%;
@@ -1953,7 +1959,7 @@ object {
   max-width: none;
   position: absolute; }
 
-.page-id-11 .entry-header {
+.blog .entry-blog {
   width: 100%;
   height: 321px;
   display: -ms-flexbox;
@@ -1966,7 +1972,7 @@ object {
       align-items: center;
   margin-top: 32px; }
 
-.page-id-11 .entry-title {
+.entry-title {
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -1978,7 +1984,7 @@ object {
       align-items: center;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap; }
-  .page-id-11 .entry-title a {
+  .entry-title a {
     width: 100%;
     border: 4px transparent solid;
     height: 100%;
@@ -1993,11 +1999,11 @@ object {
         flex-flow: column nowrap;
     color: #000000;
     text-decoration: none; }
-    .page-id-11 .entry-title a:hover, .page-id-11 .entry-title a:active, .page-id-11 .entry-title a:focus {
+    .entry-title a:hover, .entry-title a:active, .entry-title a:focus {
       border: 4px #000000 solid; }
-    .page-id-11 .entry-title a:hover, .page-id-11 .entry-title a:active, .page-id-11 .entry-title a:focus {
+    .entry-title a:hover, .entry-title a:active, .entry-title a:focus {
       color: #f5a623; }
-    .page-id-11 .entry-title a h2 {
+    .entry-title a h2 {
       font-size: 22px;
       margin-bottom: 0; }
 
@@ -2017,14 +2023,14 @@ object {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center; }
-  article {
+  .blog .entry-blog {
     width: 48%; } }
 
 @media screen and (min-width: 768px) {
   .content-area {
     -ms-flex-pack: center;
         justify-content: center; }
-  article {
+  .blog .entry-blog {
     width: 48%; }
   .site-main {
     width: 1024px;

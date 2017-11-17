@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-# Single-Gallery Page
+# Blog Page
 --------------------------------------------------------------*/
   
 .content-area {
@@ -17,6 +17,12 @@
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    @media screen and (min-width: $mobile_width) {
+      width: 100vw;
+    }
+    @media screen and (min-width: $tablet_width) {
+      width: $d_width;
+    }
 }
 
 .image-position {
@@ -34,7 +40,7 @@
     }
 }
 
-.page-id-11 .entry-header {
+.blog .entry-blog {
     width: 100%;
     height: 321px;
     display: flex;
@@ -44,7 +50,7 @@
     align-items: center;
     margin-top: 32px;
 }
-.page-id-11 .entry-title {
+.entry-title {
     z-index: 1;
     height: 100%;
     width: 100%;
@@ -87,7 +93,7 @@
         justify-content: space-between;
         align-items: center;
     }
-    article {
+    .blog .entry-blog {
         width: 48%;
     }
 }
@@ -96,7 +102,7 @@
     .content-area {
         justify-content: center;
     }
-    article {
+    .blog .entry-blog {
         width: 48%;
     }
     .site-main {
