@@ -113,7 +113,7 @@
   }
   .front-program {
     border: $p_border 4px $orange;
-    align-items: flex-start;
+    align-items: center;
     @include hover-state {
       border: $p_border 4px;
     }
@@ -145,6 +145,7 @@
       height: 288px;
       flex-flow: column nowrap;
       padding-left: 30px;
+      align-items: flex-start;            
       justify-content: flex-start;
       .program-sub {
         display: inline-block;
@@ -159,6 +160,7 @@
     }
     @media screen and (min-width: $tablet_width) {
       width: 53%;      
+      align-items: flex-start;      
       .program-sub {
         display: inline-block;
         padding-left: 30px;
