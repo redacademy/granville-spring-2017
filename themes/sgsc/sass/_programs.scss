@@ -52,6 +52,10 @@
   }
 }
 
+.tribe-events-calendar th {
+  background-color: #fff !important
+}
+
 .program-list {
   padding: 0;
   margin: 0;
@@ -104,9 +108,12 @@
     display: flex;
     justify-content: center;
     @media screen and (min-width: 480px) {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
     }
-	}
+  }
+  #tribe-bar-views {
+    display: none;
+  }
 }
 
 .donate-btn {
@@ -120,6 +127,11 @@
   align-items: center;
   height: 2.3rem;
   width: 2.3rem;
+  @media screen and(min-width: $mobile_width) {
+    height: 55px;
+    width: 55px;
+    font-size: 32px;
+  }
   a {
     text-decoration: none;
     color: $black;
@@ -143,6 +155,9 @@
 .tax-program-type {
   .header {
     position: relative;
+    @media screen and(min-width: 480px){
+      width: 100%;
+    }
   }
   .entry-header {
     height: 7.3rem;
@@ -222,7 +237,18 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: $mobile_width) {
+  .program-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  li {
+    flex: 0 1 47%;
+  }
+}
+
+@media screen and (min-width: $tablet_width) {
   .tax-program-type {
     .donate-btn {
       height: 4.5rem;
@@ -232,14 +258,6 @@
     .content-area {
       width: 1024px;
       margin: auto;
-    }
-    .program-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      li {
-        flex: 0 1 47%;
-      }
     }
     .entry-header {
       height: 10rem;
@@ -254,7 +272,7 @@
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width: $tablet_width) {
   .donate-btn {
     height: 5rem;
     width: 5rem;
