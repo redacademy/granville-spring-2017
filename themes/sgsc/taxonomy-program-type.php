@@ -61,7 +61,7 @@
 			<?php function events_view( $atts ) {
 				return "view = {$atts['month']}";
 			}
-			echo do_shortcode( '[tribe_events view="month"]' ) ?>
+			echo do_shortcode( '[tribe_events view="month" tribe-bar="false"]' ) ?>
 		</div>
 		
 		<div class="program-back-btn">

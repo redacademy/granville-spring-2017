@@ -3575,7 +3575,7 @@ span.wpcf7-not-valid-tip {
         justify-content: center; }
     @media screen and (min-width: 480px) {
       .program-list a {
-        font-size: 2.5rem; } }
+        font-size: 2.4rem; } }
   .program-list #tribe-bar-views {
     display: none; }
 
@@ -3593,6 +3593,11 @@ span.wpcf7-not-valid-tip {
       align-items: center;
   height: 2.3rem;
   width: 2.3rem; }
+  @media screen and (min-width: 480px) {
+    .donate-btn {
+      height: 55px;
+      width: 55px;
+      font-size: 32px; } }
   .donate-btn a {
     text-decoration: none;
     color: #000000; }
@@ -3609,6 +3614,9 @@ span.wpcf7-not-valid-tip {
 
 .tax-program-type .header {
   position: relative; }
+  @media screen and (min-width: 480px) {
+    .tax-program-type .header {
+      width: 100%; } }
 
 .tax-program-type .entry-header {
   height: 7.3rem;
@@ -3687,6 +3695,18 @@ span.wpcf7-not-valid-tip {
     color: white; }
 
 @media screen and (min-width: 480px) {
+  .program-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  li {
+    -ms-flex: 0 1 47%;
+        flex: 0 1 47%; } }
+
+@media screen and (min-width: 768px) {
   .tax-program-type .donate-btn {
     height: 4.5rem;
     width: 4.5rem;
@@ -3694,16 +3714,6 @@ span.wpcf7-not-valid-tip {
   .tax-program-type .content-area {
     width: 1024px;
     margin: auto; }
-  .tax-program-type .program-grid {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .tax-program-type .program-grid li {
-      -ms-flex: 0 1 47%;
-          flex: 0 1 47%; }
   .tax-program-type .entry-header {
     height: 10rem; }
   .tax-program-type .program-img {
@@ -3712,7 +3722,7 @@ span.wpcf7-not-valid-tip {
       height: 100%;
       width: auto; } }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .donate-btn {
     height: 5rem;
     width: 5rem;
