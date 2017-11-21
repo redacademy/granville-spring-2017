@@ -52,6 +52,10 @@
   }
 }
 
+.tribe-events-calendar th {
+  background-color: #fff !important
+}
+
 .program-list {
   padding: 0;
   margin: 0;
@@ -106,7 +110,10 @@
     @media screen and (min-width: 480px) {
       font-size: 2.5rem;
     }
-	}
+  }
+  #tribe-bar-views {
+    display: none;
+  }
 }
 
 .donate-btn {

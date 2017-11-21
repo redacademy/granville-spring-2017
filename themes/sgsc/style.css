@@ -3515,6 +3515,9 @@ span.wpcf7-not-valid-tip {
 .page-template-page-programs .entry-content {
   padding: 0 1rem; }
 
+.tribe-events-calendar th {
+  background-color: #fff !important; }
+
 .program-list {
   padding: 0;
   margin: 0;
@@ -3573,6 +3576,8 @@ span.wpcf7-not-valid-tip {
     @media screen and (min-width: 480px) {
       .program-list a {
         font-size: 2.5rem; } }
+  .program-list #tribe-bar-views {
+    display: none; }
 
 .donate-btn {
   background-color: #F91E72;
@@ -4454,8 +4459,11 @@ span.wpcf7-not-valid-tip {
   height: 13rem;
   position: relative; }
 
-.events-archive .tribe-events-calendar td.tribe-events-present {
+.events-archive .tribe-events-calendar thead th {
   background-color: #f5a623; }
+
+.events-archive .tribe-events-tooltip .entry-title {
+  background-color: #ffffff; }
 
 .events-archive .tribe-events-list-event-title {
   position: absolute;
@@ -5322,310 +5330,3 @@ article {
       margin: 0; }
     .page-template-page-about-sub .content-area ul {
       font-size: 1.15rem; } }
-
-.page-template-form-membership-english input[type=text], .page-template-form-membership-english [type=email], .page-template-form-membership-english [type=date], .page-template-form-membership-english textarea {
-  outline: none;
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
-  border: 2px solid black;
-  border-radius: 0; }
-
-.page-template-form-membership-english .entry-content {
-  margin-top: 24px;
-  padding: 0 22px; }
-
-.page-template-form-membership-english .eng_mem_info {
-  font-size: 16px;
-  font-family: lato, novecentosanswide, sans-serif; }
-
-.page-template-form-membership-english .eng_mem_benefits {
-  margin: 0;
-  font-size: 16px;
-  font-family: lato, novecentosanswide, sans-serif; }
-
-.page-template-form-membership-english .eng_form_section {
-  font-weight: bold;
-  margin-bottom: 0.75rem; }
-
-.page-template-form-membership-english .eng_field_name {
-  font-size: 16px;
-  font-family: lato, novecentosanswide, sans-serif; }
-
-.page-template-form-membership-english .eng_small_print {
-  font-size: 12px;
-  font-family: lato, novecentosanswide, sans-serif; }
-
-.page-template-form-membership-english .membership_form_english {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.page-template-form-membership-english .eng_form_defaults {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  padding: 0 5px; }
-
-.page-template-form-membership-english .eng_form_name {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_name {
-      -ms-flex-direction: row;
-          flex-direction: row; } }
-
-.page-template-form-membership-english #eng_first_name, .page-template-form-membership-english #eng_last_name {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-@media screen and (min-width: 481px) {
-  .page-template-form-membership-english #eng_first_name {
-    padding-right: 5px; } }
-
-@media screen and (min-width: 481px) {
-  .page-template-form-membership-english #eng_last_name {
-    padding-left: 5px; } }
-
-.page-template-form-membership-english .eng_form_telephone {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_telephone {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-
-.page-template-form-membership-english #eng_telephone {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_email {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_email {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-
-.page-template-form-membership-english #eng_email {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_address {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-
-.page-template-form-membership-english #eng_address {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_birthday {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_birthday {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-
-.page-template-form-membership-english #eng_birthday {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_ethnicity {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_ethnicity {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-
-.page-template-form-membership-english #eng_ethnicity {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_gender {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-
-.page-template-form-membership-english #eng_gender {
-  width: 100%; }
-
-.page-template-form-membership-english .eng_form_member {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-
-.page-template-form-membership-english #eng_newmember {
-  width: 100%; }
-
-.page-template-form-membership-english .eng_form_spanish {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-
-.page-template-form-membership-english #eng_spanish {
-  width: 100%; }
-
-.page-template-form-membership-english .eng_form_emergname {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_emergname {
-      -ms-flex-direction: row;
-          flex-direction: row; } }
-
-.page-template-form-membership-english #eng_first_emergname, .page-template-form-membership-english #eng_last_emergname {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-@media screen and (min-width: 481px) {
-  .page-template-form-membership-english #eng_first_emergname {
-    padding-right: 5px; } }
-
-@media screen and (min-width: 481px) {
-  .page-template-form-membership-english #eng_last_emergname {
-    padding-left: 5px; } }
-
-.page-template-form-membership-english .eng_form_emergtelephone {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_emergtelephone {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-
-.page-template-form-membership-english #eng_emergtelephone {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_emergemail {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_emergemail {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-
-.page-template-form-membership-english #eng_emergemail {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_medinfo {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-
-.page-template-form-membership-english #eng_medinfo {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_ifyes {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-
-.page-template-form-membership-english #eng_ifyes {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_allergies {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_allergies {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-
-.page-template-form-membership-english #eng_allergies {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_medications {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_medications {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-
-.page-template-form-membership-english #eng_medications {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_visit {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-
-.page-template-form-membership-english #eng_visit {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_submit {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-
-.page-template-form-membership-english #eng_submit {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  margin-bottom: 3rem;
-  margin-top: 1rem; }
-  .page-template-form-membership-english #eng_submit button {
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 0.5rem;
-    background-color: transparent;
-    border: 2px solid black;
-    border-radius: 0;
-    font-size: 1.1rem; }
-    .page-template-form-membership-english #eng_submit button:hover, .page-template-form-membership-english #eng_submit button:active, .page-template-form-membership-english #eng_submit button:focus {
-      text-shadow: none;
-      box-shadow: none;
-      border: 2px #000000 solid #f5a623;
-      background: #f5a623;
-      color: white; }

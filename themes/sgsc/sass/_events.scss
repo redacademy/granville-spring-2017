@@ -9,8 +9,12 @@
 		position: relative;
 	}
 
-	.tribe-events-calendar td.tribe-events-present {
+	.tribe-events-calendar thead th {
 		background-color: $orange;
+	}
+
+	.tribe-events-tooltip .entry-title {
+		background-color: $white;
 	}
 	
 	.tribe-events-list-event-title {
