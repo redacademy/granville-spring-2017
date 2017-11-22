@@ -293,52 +293,23 @@
 @media screen and (min-width: $tablet_width) {
 	.events-archive {
 		.events-title {
-			width: initial;
 			height: 10rem;
 		}
-		.donate-btn {
-			height: 4.5rem;
-			width: 4.5rem;
-			font-size: 2.5rem;
-		}
-		.tribe-events-calendar td.tribe-events-present {
-			background-color: $orange;
-		}
 		.site-content {
-			display: flex;
 			width: 1024px;
-			margin: 0 auto;
-			justify-content: space-between;
-		}
-		#primary {
-			flex: 0 1 60%;
 		}
 		#secondary {
-			flex: 0 1 35%;
 			margin-top: 11.6rem;
-		}
-		.title-events-archive {
-			width: 166.6%;
-		}
-		.tribe-events-page-title {
-			font-size: 2.5rem;
-    		margin: 0;
 		}
 		.event-header {
 			height: 20rem;
-		}
-		.event-bar {
-			width: 2rem;
 		}
 		.widget-title {
 			height: 20rem;
 		}
 		.tribe-events-list-event-title {
 			height: 12.5rem;
-			width: 9.5rem;
 			font-size: 1.8rem;
-			align-items: center;
-			display: flex;
 		}
 		.gallery-widget-img {
 			img {
@@ -350,9 +321,6 @@
 		}
 		.tribe-events-event-meta {
 			margin-left: 4rem;
-			font-size: 1.6rem;
-			font-weight: 500;
-			padding-left: 0;
 		}
 		#tribe-events .tribe-events-content {
 			padding: 0 0 0 4rem;

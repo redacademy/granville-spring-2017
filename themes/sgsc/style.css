@@ -4728,56 +4728,24 @@ span.wpcf7-not-valid-tip {
 
 @media screen and (min-width: 769px) {
   .events-archive .events-title {
-    width: initial;
     height: 10rem; }
-  .events-archive .donate-btn {
-    height: 4.5rem;
-    width: 4.5rem;
-    font-size: 2.5rem; }
-  .events-archive .tribe-events-calendar td.tribe-events-present {
-    background-color: #f5a623; }
   .events-archive .site-content {
-    display: -ms-flexbox;
-    display: flex;
-    width: 1024px;
-    margin: 0 auto;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-  .events-archive #primary {
-    -ms-flex: 0 1 60%;
-        flex: 0 1 60%; }
+    width: 1024px; }
   .events-archive #secondary {
-    -ms-flex: 0 1 35%;
-        flex: 0 1 35%;
     margin-top: 11.6rem; }
-  .events-archive .title-events-archive {
-    width: 166.6%; }
-  .events-archive .tribe-events-page-title {
-    font-size: 2.5rem;
-    margin: 0; }
   .events-archive .event-header {
     height: 20rem; }
-  .events-archive .event-bar {
-    width: 2rem; }
   .events-archive .widget-title {
     height: 20rem; }
   .events-archive .tribe-events-list-event-title {
     height: 12.5rem;
-    width: 9.5rem;
-    font-size: 1.8rem;
-    -ms-flex-align: center;
-        align-items: center;
-    display: -ms-flexbox;
-    display: flex; }
+    font-size: 1.8rem; }
   .events-archive .gallery-widget-img img {
     height: 11.6rem; }
   .events-archive .gallery-widget-img a {
     padding: 22% 0; }
   .events-archive .tribe-events-event-meta {
-    margin-left: 4rem;
-    font-size: 1.6rem;
-    font-weight: 500;
-    padding-left: 0; }
+    margin-left: 4rem; }
   .events-archive #tribe-events .tribe-events-content {
     padding: 0 0 0 4rem;
     margin-top: 0; }
