@@ -4463,6 +4463,9 @@ span.wpcf7-not-valid-tip {
 .events-archive .entry-content {
   width: initial; }
 
+.tribe-events-user-recurrence-toggle {
+  display: none; }
+
 .events-archive .event-header {
   display: -ms-flexbox;
   display: flex;
@@ -4479,7 +4482,8 @@ span.wpcf7-not-valid-tip {
   position: absolute;
   right: 0;
   top: 0;
-  width: 5.4rem;
+  width: 6rem;
+  height: auto;
   background: #f5a623;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -4790,9 +4794,6 @@ article {
   margin: 0;
   width: 100%; }
 
-.entry-content {
-  padding: 32px; }
-
 @media screen and (min-width: 480px) {
   .content-area {
     -ms-flex-pack: start;
@@ -4801,6 +4802,8 @@ article {
     width: 100vw; } }
 
 @media screen and (min-width: 768px) {
+  .entry-content {
+    padding: 32px; }
   .content-area {
     -ms-flex-pack: center;
         justify-content: center; }

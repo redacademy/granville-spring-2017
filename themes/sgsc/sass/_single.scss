@@ -19,10 +19,6 @@ article {
   width: 100%;
 }
 
-.entry-content {
-  padding: $margin-d;
-}
-
 @media screen and (min-width: $mobile_width) {
   .content-area {
     justify-content: flex-start;
@@ -33,6 +29,9 @@ article {
 }
 
 @media screen and (min-width: $tablet_width) {
+  .entry-content {
+    padding: $margin-d;
+  }
   .content-area {
     justify-content: center;
   }
