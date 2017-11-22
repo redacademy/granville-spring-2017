@@ -392,7 +392,7 @@ h1 {
   @media screen and (min-width: 480px) {
     h1 {
       font-size: 30px; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     h1 {
       font-size: 40px; } }
 
@@ -409,7 +409,7 @@ h6 {
     h5,
     h6 {
       font-size: 30px; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     h2,
     h3,
     h4,
@@ -427,7 +427,7 @@ p {
   @media screen and (min-width: 480px) {
     p {
       font-size: 18px; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     p {
       font-size: 24px; } }
 
@@ -676,7 +676,7 @@ a {
   -ms-flex-align: end;
       align-items: flex-end;
   height: 60px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .menu {
       width: initial; } }
 
@@ -745,7 +745,7 @@ a {
   box-shadow: none;
   border-radius: 0; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -979,7 +979,7 @@ object {
       @media screen and (min-width: 480px) and (min-width: 480px) {
         .page .site-main article header {
           height: 120px; } }
-      @media screen and (min-width: 480px) and (min-width: 768px) {
+      @media screen and (min-width: 480px) and (min-width: 769px) {
         .page .site-main article header {
           height: 160px; } }
   @media screen and (min-width: 480px) {
@@ -1001,7 +1001,7 @@ object {
           .page .site-main article header .donate-btn {
             height: 3.7rem;
             width: 3.7rem; } }
-        @media screen and (min-width: 480px) and (min-width: 768px) {
+        @media screen and (min-width: 480px) and (min-width: 769px) {
           .page .site-main article header .donate-btn {
             height: 5rem;
             width: 5rem; } }
@@ -1013,7 +1013,7 @@ object {
           @media screen and (min-width: 480px) and (min-width: 480px) {
             .page .site-main article header .donate-btn a {
               font-size: 2.5rem; } }
-          @media screen and (min-width: 480px) and (min-width: 768px) {
+          @media screen and (min-width: 480px) and (min-width: 769px) {
             .page .site-main article header .donate-btn a {
               font-size: 4rem; } }
   @media screen and (min-width: 480px) {
@@ -1104,7 +1104,7 @@ object {
 .site-header {
   height: 4rem;
   width: auto; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .site-header {
       display: -ms-flexbox;
       display: flex;
@@ -1121,12 +1121,12 @@ object {
       align-items: center;
   height: 4rem;
   z-index: -1; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .logo {
       left: 50%;
       transform: translate(-50%, 0);
       z-index: initial; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .logo {
       width: initial; } }
 
@@ -1137,11 +1137,11 @@ object {
   height: 3.5rem;
   display: -ms-flexbox;
   display: flex; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     .logo-img {
       min-width: 60px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .form {
     display: -ms-flexbox;
     display: flex;
@@ -1156,7 +1156,7 @@ object {
     .form .fa {
       font-size: 1.6rem; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .form {
     position: initial;
     display: -ms-flexbox;
@@ -1164,7 +1164,7 @@ object {
     -ms-flex-align: end;
         align-items: flex-end; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .site-header {
     display: -ms-flexbox;
     display: flex;
@@ -1250,7 +1250,7 @@ object {
     .home .content-area {
       -ms-flex-pack: start;
           justify-content: flex-start; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .home .content-area {
       -ms-flex-pack: center;
           justify-content: center; } }
@@ -1265,7 +1265,7 @@ object {
         width: 100vw;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .home .content-area .site-main {
         width: 1024px; } }
     .home .content-area .site-main article {
@@ -1283,7 +1283,7 @@ object {
       align-items: center;
   position: relative;
   width: 100%; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .home .learn-about-story {
       height: 386px; } }
   @media screen and (min-width: 480px) {
@@ -1345,7 +1345,7 @@ object {
             display: -ms-flexbox;
             display: flex;
             padding: 0rem 1.7rem; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .home .learn-about-story .front-learn .m-button p {
             padding: 0rem 3rem;
             display: -ms-flexbox;
@@ -1353,7 +1353,7 @@ object {
     .home .learn-about-story .front-learn .m-button {
       display: -ms-flexbox;
       display: flex; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .home .learn-about-story .front-learn {
         height: 174px; } }
     @media screen and (min-width: 480px) {
@@ -1383,7 +1383,7 @@ object {
           color: #f5a623; }
       .home .learn-about-story .donate-btn a p {
         display: none; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .home .learn-about-story .donate-btn {
         height: 73px;
         width: 224px; }
@@ -1473,7 +1473,7 @@ object {
             display: -ms-flexbox;
             display: flex;
             padding: 0rem 1.7rem; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .home .program-event-post .front-program .m-button p {
             padding: 0rem 3rem;
             display: -ms-flexbox;
@@ -1507,7 +1507,7 @@ object {
           padding-top: 20px;
           width: 200px;
           line-height: 1.4; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .home .program-event-post .front-program {
         width: 53%;
         -ms-flex-align: start;
@@ -1532,7 +1532,7 @@ object {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
       width: 33%; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .home .program-event-post .intro-event-blog {
       width: 43%; } }
   .home .program-event-post .intro-event-blog .front-events {
@@ -1573,7 +1573,7 @@ object {
   position: relative;
   height: 276px;
   width: 100%; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .home .feature-gallery {
       height: 356px; } }
   .home .feature-gallery article {
@@ -1645,7 +1645,7 @@ object {
               display: -ms-flexbox;
               display: flex;
               padding: 0rem 1.7rem; } }
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 769px) {
             .home .feature-gallery article .bottom-banner .m-button p {
               padding: 0rem 3rem;
               display: -ms-flexbox;
@@ -1656,7 +1656,7 @@ object {
       .home .feature-gallery article .bottom-banner h2 {
         text-align: center;
         margin: 0; }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         .home .feature-gallery article .bottom-banner {
           height: 174px;
           -ms-flex-pack: distribute;
@@ -1751,7 +1751,7 @@ object {
             display: -ms-flexbox;
             display: flex;
             padding: 0rem 1.7rem; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .home .involve-pillar .involved-join .front-involved .m-button p {
             padding: 0rem 3rem;
             display: -ms-flexbox;
@@ -1813,7 +1813,7 @@ object {
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
     text-align: center; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .home .front-join p {
       display: -ms-flexbox;
       display: flex;
@@ -1852,7 +1852,7 @@ object {
     @media screen and (min-width: 480px) {
       .content-area .site-header {
         height: 120px; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .content-area .site-header {
         height: 160px; } }
     .content-area .site-header .donate-btn {
@@ -1873,7 +1873,7 @@ object {
         .content-area .site-header .donate-btn {
           height: 3.7rem;
           width: 3.7rem; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         .content-area .site-header .donate-btn {
           height: 5rem;
           width: 5rem; } }
@@ -1884,7 +1884,7 @@ object {
         @media screen and (min-width: 480px) {
           .content-area .site-header .donate-btn a {
             font-size: 2.5rem; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .content-area .site-header .donate-btn a {
             font-size: 4rem; } }
         .content-area .site-header .donate-btn a i {
@@ -1915,7 +1915,7 @@ object {
         .content-area .site-header .donate-btn {
           height: 3.7rem;
           width: 3.7rem; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         .content-area .site-header .donate-btn {
           height: 5rem;
           width: 5rem; } }
@@ -1926,7 +1926,7 @@ object {
         @media screen and (min-width: 480px) {
           .content-area .site-header .donate-btn a {
             font-size: 2.5rem; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .content-area .site-header .donate-btn a {
             font-size: 4rem; } }
         .content-area .site-header .donate-btn a i {
@@ -1947,7 +1947,7 @@ object {
   @media screen and (min-width: 480px) {
     .site-main {
       width: 100vw; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .site-main {
       width: 1024px; } }
 
@@ -2030,7 +2030,7 @@ object {
   .blog .entry-blog {
     width: 48%; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .content-area {
     -ms-flex-pack: center;
         justify-content: center; }
@@ -2057,7 +2057,7 @@ object {
     .post-type-archive-gallery .content-area {
       -ms-flex-pack: start;
           justify-content: flex-start; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .post-type-archive-gallery .content-area {
       -ms-flex-pack: center;
           justify-content: center; } }
@@ -2070,7 +2070,7 @@ object {
     @media screen and (min-width: 480px) {
       .post-type-archive-gallery .content-area .site-main {
         width: 100vw; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .post-type-archive-gallery .content-area .site-main {
         width: 1024px; } }
 
@@ -2099,7 +2099,7 @@ object {
     @media screen and (min-width: 480px) {
       .post-type-archive-gallery .featured-gallery-section .page-header {
         height: 120px; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .post-type-archive-gallery .featured-gallery-section .page-header {
         height: 160px; } }
     .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn {
@@ -2120,7 +2120,7 @@ object {
         .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn {
           height: 3.7rem;
           width: 3.7rem; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn {
           height: 5rem;
           width: 5rem; } }
@@ -2131,7 +2131,7 @@ object {
         @media screen and (min-width: 480px) {
           .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a {
             font-size: 2.5rem; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a {
             font-size: 4rem; } }
         .post-type-archive-gallery .featured-gallery-section .page-header .donate-btn a i {
@@ -2234,7 +2234,7 @@ object {
     @media screen and (min-width: 480px) {
       .post-type-archive-gallery .lastest-gallery-section .page-header {
         height: 120px; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .post-type-archive-gallery .lastest-gallery-section .page-header {
         height: 160px; } }
     .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn {
@@ -2255,7 +2255,7 @@ object {
         .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn {
           height: 3.7rem;
           width: 3.7rem; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn {
           height: 5rem;
           width: 5rem; } }
@@ -2266,7 +2266,7 @@ object {
         @media screen and (min-width: 480px) {
           .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a {
             font-size: 2.5rem; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a {
             font-size: 4rem; } }
         .post-type-archive-gallery .lastest-gallery-section .page-header .donate-btn a i {
@@ -2392,7 +2392,7 @@ object {
     .single-gallery .content-area {
       -ms-flex-pack: start;
           justify-content: flex-start; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .single-gallery .content-area {
       -ms-flex-pack: center;
           justify-content: center; } }
@@ -2405,7 +2405,7 @@ object {
     @media screen and (min-width: 480px) {
       .single-gallery .content-area .site-main {
         width: 100vw; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .single-gallery .content-area .site-main {
         width: 1024px; } }
     .single-gallery .content-area .site-main article {
@@ -2426,7 +2426,7 @@ object {
   @media screen and (min-width: 480px) {
     .single-gallery .entry-header {
       height: 120px; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .single-gallery .entry-header {
       height: 160px; } }
   .single-gallery .entry-header .donate-btn {
@@ -2447,7 +2447,7 @@ object {
       .single-gallery .entry-header .donate-btn {
         height: 3.7rem;
         width: 3.7rem; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .single-gallery .entry-header .donate-btn {
         height: 5rem;
         width: 5rem; } }
@@ -2458,7 +2458,7 @@ object {
       @media screen and (min-width: 480px) {
         .single-gallery .entry-header .donate-btn a {
           font-size: 2.5rem; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         .single-gallery .entry-header .donate-btn a {
           font-size: 4rem; } }
       .single-gallery .entry-header .donate-btn a i {
@@ -2491,7 +2491,7 @@ object {
       .single-gallery .entry-header .donate-btn {
         height: 3.7rem;
         width: 3.7rem; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .single-gallery .entry-header .donate-btn {
         height: 5rem;
         width: 5rem; } }
@@ -2502,7 +2502,7 @@ object {
       @media screen and (min-width: 480px) {
         .single-gallery .entry-header .donate-btn a {
           font-size: 2.5rem; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         .single-gallery .entry-header .donate-btn a {
           font-size: 4rem; } }
       .single-gallery .entry-header .donate-btn a i {
@@ -2821,7 +2821,7 @@ span.wpcf7-not-valid-tip {
     .copywrite p {
       font-size: 14px; } }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 769px) {
   .site-info {
     padding-left: 35px;
     padding-top: 20px;
@@ -2979,7 +2979,7 @@ span.wpcf7-not-valid-tip {
     .page-id-26 .entry-header {
       height: 120px;
       max-width: 768px; } }
-  @media screen and (min-width: 480px) and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (min-width: 769px) {
     .page-id-26 .entry-header {
       height: 160px;
       max-width: 1024px; } }
@@ -2991,7 +2991,7 @@ span.wpcf7-not-valid-tip {
     .page-id-26 .header .entry-header {
       height: 120px;
       width: 768px; } }
-  @media screen and (min-width: 480px) and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (min-width: 769px) {
     .page-id-26 .header .entry-header {
       height: 160px;
       width: 1024px; } }
@@ -3004,7 +3004,7 @@ span.wpcf7-not-valid-tip {
     .page-id-26 .entry-header .entry-title {
       height: 120px;
       max-width: 768px; } }
-  @media screen and (min-width: 480px) and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (min-width: 769px) {
     .page-id-26 .entry-header .entry-title {
       height: 160px;
       max-width: 1024px; } }
@@ -3028,7 +3028,7 @@ span.wpcf7-not-valid-tip {
     .page-id-26 .entry-content {
       padding: 0 52px !important;
       max-width: 768px; } }
-  @media screen and (min-width: 480px) and (min-width: 768px) {
+  @media screen and (min-width: 480px) and (min-width: 769px) {
     .page-id-26 .entry-content {
       height: 0 64px !important;
       max-width: 1024px; } }
@@ -3706,7 +3706,7 @@ span.wpcf7-not-valid-tip {
     -ms-flex: 0 1 47%;
         flex: 0 1 47%; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .tax-program-type .donate-btn {
     height: 4.5rem;
     width: 4.5rem;
@@ -3722,7 +3722,7 @@ span.wpcf7-not-valid-tip {
       height: 100%;
       width: auto; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .donate-btn {
     height: 5rem;
     width: 5rem;
@@ -3789,7 +3789,7 @@ span.wpcf7-not-valid-tip {
   @media screen and (min-width: 480px) {
     .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
       height: 120px; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
       height: 160px; } }
   .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-volunteer .entry-header .donate-btn {
@@ -3810,7 +3810,7 @@ span.wpcf7-not-valid-tip {
       .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-volunteer .entry-header .donate-btn {
         height: 3.7rem;
         width: 3.7rem; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-volunteer .entry-header .donate-btn {
         height: 5rem;
         width: 5rem; } }
@@ -3821,7 +3821,7 @@ span.wpcf7-not-valid-tip {
       @media screen and (min-width: 480px) {
         .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-volunteer .entry-header .donate-btn a {
           font-size: 2.5rem; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-volunteer .entry-header .donate-btn a {
           font-size: 4rem; } }
       .page-template-page-join-us .entry-header .donate-btn a i, .post-type-archive-volunteer .entry-header .donate-btn a i {
@@ -4022,7 +4022,7 @@ span.wpcf7-not-valid-tip {
   @media screen and (min-width: 480px) {
     .volunteer-template-default .entry-header {
       height: 120px; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .volunteer-template-default .entry-header {
       height: 160px; } }
   .volunteer-template-default .entry-header .donate-btn {
@@ -4043,7 +4043,7 @@ span.wpcf7-not-valid-tip {
       .volunteer-template-default .entry-header .donate-btn {
         height: 3.7rem;
         width: 3.7rem; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .volunteer-template-default .entry-header .donate-btn {
         height: 5rem;
         width: 5rem; } }
@@ -4054,7 +4054,7 @@ span.wpcf7-not-valid-tip {
       @media screen and (min-width: 480px) {
         .volunteer-template-default .entry-header .donate-btn a {
           font-size: 2.5rem; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         .volunteer-template-default .entry-header .donate-btn a {
           font-size: 4rem; } }
       .volunteer-template-default .entry-header .donate-btn a i {
@@ -4125,7 +4125,7 @@ span.wpcf7-not-valid-tip {
     .page-id-30 .content-area {
       -ms-flex-pack: start;
           justify-content: flex-start; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .page-id-30 .content-area {
       -ms-flex-pack: center;
           justify-content: center; } }
@@ -4138,7 +4138,7 @@ span.wpcf7-not-valid-tip {
     @media screen and (min-width: 480px) {
       .page-id-30 .content-area .site-main {
         width: 100vw; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .page-id-30 .content-area .site-main {
         width: 1024px; } }
     .page-id-30 .content-area .site-main article {
@@ -4158,7 +4158,7 @@ span.wpcf7-not-valid-tip {
         @media screen and (min-width: 480px) {
           .page-id-30 .content-area .site-main article header {
             height: 120px; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .page-id-30 .content-area .site-main article header {
             height: 160px; } }
         .page-id-30 .content-area .site-main article header .donate-btn {
@@ -4179,7 +4179,7 @@ span.wpcf7-not-valid-tip {
             .page-id-30 .content-area .site-main article header .donate-btn {
               height: 3.7rem;
               width: 3.7rem; } }
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 769px) {
             .page-id-30 .content-area .site-main article header .donate-btn {
               height: 5rem;
               width: 5rem; } }
@@ -4190,7 +4190,7 @@ span.wpcf7-not-valid-tip {
             @media screen and (min-width: 480px) {
               .page-id-30 .content-area .site-main article header .donate-btn a {
                 font-size: 2.5rem; } }
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 769px) {
               .page-id-30 .content-area .site-main article header .donate-btn a {
                 font-size: 4rem; } }
             .page-id-30 .content-area .site-main article header .donate-btn a i {
@@ -4223,7 +4223,7 @@ span.wpcf7-not-valid-tip {
               flex-flow: column wrap;
           text-align: center;
           width: 100%; }
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 769px) {
             .page-id-30 .content-area .site-main article .entry-content .support-donate {
               width: 50%;
               padding: 0 64px; } }
@@ -4235,12 +4235,12 @@ span.wpcf7-not-valid-tip {
                 width: 80%;
                 font-size: 40px;
                 line-height: 3.5rem; } }
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 769px) {
               .page-id-30 .content-area .site-main article .entry-content .support-donate .p1 {
                 width: 100%; } }
           .page-id-30 .content-area .site-main article .entry-content .support-donate p {
             width: 90%; }
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 769px) {
               .page-id-30 .content-area .site-main article .entry-content .support-donate p {
                 width: 100%; } }
             .page-id-30 .content-area .site-main article .entry-content .support-donate p a {
@@ -4258,7 +4258,7 @@ span.wpcf7-not-valid-tip {
               width: 100%; }
               .page-id-30 .content-area .site-main article .entry-content .support-donate p a:hover, .page-id-30 .content-area .site-main article .entry-content .support-donate p a:active, .page-id-30 .content-area .site-main article .entry-content .support-donate p a:focus {
                 color: #f5a623; }
-              @media screen and (min-width: 768px) {
+              @media screen and (min-width: 769px) {
                 .page-id-30 .content-area .site-main article .entry-content .support-donate p a {
                   padding: 45px 0;
                   font-size: 40px;
@@ -4273,7 +4273,7 @@ span.wpcf7-not-valid-tip {
           -ms-flex-flow: column wrap;
               flex-flow: column wrap;
           width: 90%; }
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 769px) {
             .page-id-30 .content-area .site-main article .entry-content .detail-donate {
               width: 50%;
               padding: 64px;
@@ -4282,7 +4282,7 @@ span.wpcf7-not-valid-tip {
                   align-items: flex-start; } }
           .page-id-30 .content-area .site-main article .entry-content .detail-donate p {
             font-size: 16px; }
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 769px) {
               .page-id-30 .content-area .site-main article .entry-content .detail-donate p {
                 width: 448px;
                 font-size: 18px;
@@ -4297,7 +4297,7 @@ span.wpcf7-not-valid-tip {
               flex-flow: column wrap;
           width: 90%;
           margin: 16px 0; }
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 769px) {
             .page-id-30 .content-area .site-main article .entry-content .meta-donate {
               padding: 64px;
               width: 50%;
@@ -4306,7 +4306,7 @@ span.wpcf7-not-valid-tip {
           .page-id-30 .content-area .site-main article .entry-content .meta-donate p {
             font-size: 16px;
             margin-top: 0; }
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 769px) {
               .page-id-30 .content-area .site-main article .entry-content .meta-donate p {
                 font-size: 18px;
                 line-height: 1.4rem;
@@ -4323,7 +4323,7 @@ span.wpcf7-not-valid-tip {
           width: 100%;
           margin-top: 24px;
           height: 208px; }
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 769px) {
             .page-id-30 .content-area .site-main article .entry-content .image-position {
               width: 50%;
               height: 327px; } }
@@ -4356,7 +4356,7 @@ span.wpcf7-not-valid-tip {
     .page-id-51 .content-area {
       -ms-flex-pack: start;
           justify-content: flex-start; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .page-id-51 .content-area {
       -ms-flex-pack: center;
           justify-content: center; } }
@@ -4369,7 +4369,7 @@ span.wpcf7-not-valid-tip {
     @media screen and (min-width: 480px) {
       .page-id-51 .content-area .site-main {
         width: 100vw; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .page-id-51 .content-area .site-main {
         width: 1024px; } }
     .page-id-51 .content-area .site-main article {
@@ -4389,7 +4389,7 @@ span.wpcf7-not-valid-tip {
         @media screen and (min-width: 480px) {
           .page-id-51 .content-area .site-main article header {
             height: 120px; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .page-id-51 .content-area .site-main article header {
             height: 160px; } }
         .page-id-51 .content-area .site-main article header .donate-btn {
@@ -4410,7 +4410,7 @@ span.wpcf7-not-valid-tip {
             .page-id-51 .content-area .site-main article header .donate-btn {
               height: 3.7rem;
               width: 3.7rem; } }
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 769px) {
             .page-id-51 .content-area .site-main article header .donate-btn {
               height: 5rem;
               width: 5rem; } }
@@ -4421,7 +4421,7 @@ span.wpcf7-not-valid-tip {
             @media screen and (min-width: 480px) {
               .page-id-51 .content-area .site-main article header .donate-btn a {
                 font-size: 2.5rem; } }
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 769px) {
               .page-id-51 .content-area .site-main article header .donate-btn a {
                 font-size: 4rem; } }
             .page-id-51 .content-area .site-main article header .donate-btn a i {
@@ -4442,7 +4442,7 @@ span.wpcf7-not-valid-tip {
       flex-flow: row wrap;
   -ms-flex-pack: justify;
       justify-content: space-between; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .page-id-51 .entry-content {
       margin-bottom: 50px; } }
   .page-id-51 .entry-content .contactus {
@@ -4451,7 +4451,7 @@ span.wpcf7-not-valid-tip {
     @media screen and (min-width: 480px) {
       .page-id-51 .entry-content .contactus {
         width: 100%; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .page-id-51 .entry-content .contactus {
         width: 38%; } }
   .page-id-51 .entry-content p {
@@ -4463,11 +4463,17 @@ span.wpcf7-not-valid-tip {
 .events-archive .entry-content {
   width: initial; }
 
+.tribe-events-user-recurrence-toggle {
+  display: none; }
+
 .events-archive .event-header {
   display: -ms-flexbox;
   display: flex;
   height: 13rem;
   position: relative; }
+
+.events-archive #tribe-events-content {
+  overflow: initial; }
 
 .events-archive .tribe-events-calendar thead th {
   background-color: #f5a623; }
@@ -4479,7 +4485,8 @@ span.wpcf7-not-valid-tip {
   position: absolute;
   right: 0;
   top: 0;
-  width: 5.4rem;
+  width: 6rem;
+  height: auto;
   background: #f5a623;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -4618,8 +4625,15 @@ span.wpcf7-not-valid-tip {
   padding: 0 1rem; }
 
 .events-archive .gallery-widget-img {
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
-  margin: 2rem 0px; }
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 2rem 0px;
+  cursor: pointer; }
   .events-archive .gallery-widget-img img {
     width: 100%;
     height: 300px;
@@ -4632,7 +4646,7 @@ span.wpcf7-not-valid-tip {
     text-decoration: none;
     color: black;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
-    padding: 37% 0;
+    padding: 19% 0;
     font-size: 1.5rem; }
 
 .events-archive .tribe-events-after-html {
@@ -4654,6 +4668,10 @@ span.wpcf7-not-valid-tip {
   padding: 0; }
 
 @media screen and (min-width: 480px) {
+  .events-archive .site-main {
+    width: initial; }
+  .events-archive .entry-content {
+    padding: 0; }
   .events-archive .events-title {
     width: initial;
     height: 10rem; }
@@ -4666,7 +4684,6 @@ span.wpcf7-not-valid-tip {
   .events-archive .site-content {
     display: -ms-flexbox;
     display: flex;
-    width: 1024px;
     margin: 0 auto;
     -ms-flex-pack: justify;
         justify-content: space-between; }
@@ -4676,39 +4693,64 @@ span.wpcf7-not-valid-tip {
   .events-archive #secondary {
     -ms-flex: 0 1 35%;
         flex: 0 1 35%;
-    margin-top: 11.6rem; }
+    margin-top: 11.7rem; }
   .events-archive .title-events-archive {
     width: 166.6%; }
   .events-archive .tribe-events-page-title {
     font-size: 2.5rem;
     margin: 0; }
   .events-archive .event-header {
-    height: 20rem; }
+    height: 15rem; }
   .events-archive .event-bar {
     width: 2rem; }
+  .events-archive .widget-title {
+    height: 15rem; }
+  .events-archive .tribe-events-list-event-title {
+    height: auto;
+    width: 9.5rem;
+    font-size: 1.5rem;
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.4rem 1rem; }
+  .events-archive .gallery-widget-img img {
+    height: 8.75rem; }
+  .events-archive .tribe-events-list .tribe-events-event-meta {
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-left: 0; }
+  .events-archive #tribe-events .tribe-events-content {
+    padding: 0 0 0 2rem; }
+  .events-archive .tribe-events-event-cost {
+    margin-left: 2rem; } }
+
+@media screen and (min-width: 769px) {
+  .events-archive .events-title {
+    height: 10rem; }
+  .events-archive .site-content {
+    width: 1024px; }
+  .events-archive #secondary {
+    margin-top: 11.6rem; }
+  .events-archive .event-header {
+    height: 20rem; }
   .events-archive .widget-title {
     height: 20rem; }
   .events-archive .tribe-events-list-event-title {
     height: 12.5rem;
-    width: 9.5rem;
-    font-size: 1.8rem;
-    -ms-flex-align: center;
-        align-items: center;
-    display: -ms-flexbox;
-    display: flex; }
+    font-size: 1.8rem; }
   .events-archive .gallery-widget-img img {
     height: 11.6rem; }
   .events-archive .gallery-widget-img a {
     padding: 22% 0; }
   .events-archive .tribe-events-event-meta {
-    margin-left: 3rem;
-    font-size: 1.6rem;
-    font-weight: 500;
-    padding-left: 0; }
+    margin-left: 4rem; }
   .events-archive #tribe-events .tribe-events-content {
-    padding: 0 0 0 3rem; }
+    padding: 0 0 0 4rem;
+    margin-top: 0; }
   .events-archive .tribe-events-event-cost {
-    margin-left: 3rem; } }
+    margin-left: 4rem; } }
 
 /*--------------------------------------------------------------
 # Single-Page
@@ -4740,7 +4782,7 @@ span.wpcf7-not-valid-tip {
     @media screen and (min-width: 480px) {
       .site-main header {
         height: 120px; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .site-main header {
         height: 160px; } }
     .site-main header .donate-btn {
@@ -4761,7 +4803,7 @@ span.wpcf7-not-valid-tip {
         .site-main header .donate-btn {
           height: 3.7rem;
           width: 3.7rem; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         .site-main header .donate-btn {
           height: 5rem;
           width: 5rem; } }
@@ -4772,7 +4814,7 @@ span.wpcf7-not-valid-tip {
         @media screen and (min-width: 480px) {
           .site-main header .donate-btn a {
             font-size: 2.5rem; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .site-main header .donate-btn a {
             font-size: 4rem; } }
         .site-main header .donate-btn a i {
@@ -4790,9 +4832,6 @@ article {
   margin: 0;
   width: 100%; }
 
-.entry-content {
-  padding: 32px; }
-
 @media screen and (min-width: 480px) {
   .content-area {
     -ms-flex-pack: start;
@@ -4800,7 +4839,9 @@ article {
   .site-main {
     width: 100vw; } }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
+  .entry-content {
+    padding: 32px; }
   .content-area {
     -ms-flex-pack: center;
         justify-content: center; }
@@ -4838,7 +4879,7 @@ article {
         @media screen and (min-width: 480px) {
           .error404 .content-area .site-main article header {
             height: 120px; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .error404 .content-area .site-main article header {
             height: 160px; } }
         .error404 .content-area .site-main article header .donate-btn {
@@ -4859,7 +4900,7 @@ article {
             .error404 .content-area .site-main article header .donate-btn {
               height: 3.7rem;
               width: 3.7rem; } }
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 769px) {
             .error404 .content-area .site-main article header .donate-btn {
               height: 5rem;
               width: 5rem; } }
@@ -4870,7 +4911,7 @@ article {
             @media screen and (min-width: 480px) {
               .error404 .content-area .site-main article header .donate-btn a {
                 font-size: 2.5rem; } }
-            @media screen and (min-width: 768px) {
+            @media screen and (min-width: 769px) {
               .error404 .content-area .site-main article header .donate-btn a {
                 font-size: 4rem; } }
             .error404 .content-area .site-main article header .donate-btn a i {
@@ -4886,7 +4927,7 @@ article {
     @media screen and (min-width: 480px) {
       .error404 .content-area .site-main {
         width: 100vw; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .error404 .content-area .site-main {
         width: 1024px; } }
 
@@ -4908,7 +4949,7 @@ article {
     .page-header .donate-btn {
       height: 3.7rem;
       width: 3.7rem; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .page-header .donate-btn {
       height: 5rem;
       width: 5rem; } }
@@ -4919,7 +4960,7 @@ article {
     @media screen and (min-width: 480px) {
       .page-header .donate-btn a {
         font-size: 2.5rem; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .page-header .donate-btn a {
         font-size: 4rem; } }
     .page-header .donate-btn a i {
@@ -4951,7 +4992,7 @@ article {
   margin: 32px; }
   .search-form1 fieldset:hover, .search-form1 fieldset:active, .search-form1 fieldset:focus {
     border: #f5a623 1px solid; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .search-form1 fieldset {
       width: 470px; } }
   .search-form1 fieldset .search-field1 {
@@ -4993,7 +5034,7 @@ article {
     @media screen and (min-width: 480px) {
       .search .content-area .page-header {
         height: 120px; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .search .content-area .page-header {
         height: 160px; } }
     .search .content-area .page-header .donate-btn {
@@ -5014,7 +5055,7 @@ article {
         .search .content-area .page-header .donate-btn {
           height: 3.7rem;
           width: 3.7rem; } }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 769px) {
         .search .content-area .page-header .donate-btn {
           height: 5rem;
           width: 5rem; } }
@@ -5025,7 +5066,7 @@ article {
         @media screen and (min-width: 480px) {
           .search .content-area .page-header .donate-btn a {
             font-size: 2.5rem; } }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           .search .content-area .page-header .donate-btn a {
             font-size: 4rem; } }
         .search .content-area .page-header .donate-btn a i {
@@ -5049,7 +5090,7 @@ article {
     @media screen and (min-width: 480px) {
       .search .content-area .site-main {
         width: 100vw; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .search .content-area .site-main {
         width: 1024px; } }
 
@@ -5107,7 +5148,7 @@ article {
         display: -ms-flexbox;
         display: flex;
         padding: 0rem 1.7rem; } }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       .search .m-button p {
         padding: 0rem 3rem;
         display: -ms-flexbox;
