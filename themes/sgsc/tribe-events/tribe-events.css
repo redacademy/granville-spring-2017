@@ -1,0 +1,9 @@
+@media screen and(min-width: 768px) {
+    .tribe-events-list .tribe-events-loop .type-tribe_events .tribe-events-event-meta {
+        margin-left: 4rem;
+    }
+}
+
+.tribe-events-event-meta {
+    margin-left: 4rem;
+}

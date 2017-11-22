@@ -12,6 +12,9 @@
 		height: 13rem;
 		position: relative;
 	}
+	#tribe-events-content {
+		overflow: initial;
+	}
 
 	.tribe-events-calendar thead th {
 		background-color: $orange;
@@ -170,8 +173,12 @@
 		padding: 0 1rem;
 	}
 	.gallery-widget-img {
+		display: flex;
 		position: relative;
+		justify-content: center;
+		align-items: center;
 		margin: 2rem 0px;
+		cursor: pointer;
 		img {
 			width: 100%;
 			height: 300px;
@@ -185,7 +192,7 @@
 			text-decoration: none;
 			color: black;
 			background: linear-gradient(hsla(0,0%,100%,.8),hsla(0,0%,100%,.8));
-			padding: 37% 0;
+			padding: 19% 0;
 			font-size: 1.5rem;
 		}
 	}
@@ -208,7 +215,82 @@
 	}
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: $mobile_width) {
+	.events-archive {
+		.site-main {
+			width: initial;
+		}
+		.entry-content {
+			padding: 0;
+		}
+		.events-title {
+			width: initial;
+			height: 10rem;
+		}
+		.donate-btn {
+			height: 4.5rem;
+			width: 4.5rem;
+			font-size: 2.5rem;
+		}
+		.tribe-events-calendar td.tribe-events-present {
+			background-color: $orange;
+		}
+		.site-content {
+			display: flex;
+			margin: 0 auto;
+			justify-content: space-between;
+		}
+		#primary {
+			flex: 0 1 60%;
+		}
+		#secondary {
+			flex: 0 1 35%;
+			margin-top: 11.7rem;
+		}
+		.title-events-archive {
+			width: 166.6%;
+		}
+		.tribe-events-page-title {
+			font-size: 2.5rem;
+    		margin: 0;
+		}
+		.event-header {
+			height: 15rem;
+		}
+		.event-bar {
+			width: 2rem;
+		}
+		.widget-title {
+			height: 15rem;
+		}
+		.tribe-events-list-event-title {
+			height: auto;
+			width: 9.5rem;
+			font-size: 1.5rem;
+			align-items: center;
+			display: flex;
+			padding: 1.4rem 1rem;
+		}
+		.gallery-widget-img {
+			img {
+				height: 8.75rem;
+			}
+		}
+		.tribe-events-list .tribe-events-event-meta {
+			margin-left: 2rem;
+			font-size: 1.6rem;
+			font-weight: 500;
+			padding-left: 0;
+		}
+		#tribe-events .tribe-events-content {
+			padding: 0 0 0 2rem;
+		}
+		.tribe-events-event-cost {
+			margin-left: 2rem;
+		}
+	}
+}
+@media screen and (min-width: $tablet_width) {
 	.events-archive {
 		.events-title {
 			width: initial;
@@ -267,16 +349,17 @@
 			}
 		}
 		.tribe-events-event-meta {
-			margin-left: 3rem;
+			margin-left: 4rem;
 			font-size: 1.6rem;
 			font-weight: 500;
 			padding-left: 0;
 		}
 		#tribe-events .tribe-events-content {
-			padding: 0 0 0 3rem;
+			padding: 0 0 0 4rem;
+			margin-top: 0;
 		}
 		.tribe-events-event-cost {
-			margin-left: 3rem;
+			margin-left: 4rem;
 		}
 	}
 }
