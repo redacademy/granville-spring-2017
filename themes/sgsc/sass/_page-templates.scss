@@ -41,7 +41,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile_width) {
     table {
       width: initial;
     }

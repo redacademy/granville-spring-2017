@@ -25,7 +25,6 @@
 	}
 	.entry-content p {
 		margin: 15px 22px;
-		text-indent: 15px;
 	}
 	.linkhighlight a {
 		color: #5C8EDC;
@@ -149,7 +148,7 @@
 	}
 }
 
-@media all and (min-width: 769px) {
+@media all and (min-width: $tablet-width) {
 	.page-template-page-about-partners {
     .entry-header {
         width: 1024px;

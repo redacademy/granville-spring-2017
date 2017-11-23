@@ -53,7 +53,7 @@
   }
 }
 
-@media all and (min-width: 481px) {
+@media all and (min-width: $mobile_width) {
   .page-template-page-about {
     .entry-header {
       max-width: 768px;
@@ -82,7 +82,7 @@
   }
 }
 
-@media all and (min-width: 769px) {
+@media all and (min-width: $tablet-width) {
   .page-template-page-about {
     .entry-header {
       max-width: 1024px;

@@ -57,7 +57,7 @@
     display: flex;
     margin: 0;
     flex-direction: column;
-    max-width: $mobile-width;
+    max-width: $mobile_width;
     background-image: url("../../assets/images/149-46.jpg");
     background-repeat: no-repeat;
     min-height: 250px;
@@ -67,9 +67,8 @@
   }
   .rectangle {
     height: 208px;
-    max-width: $mobile-width;
+    max-width: $mobile_width;
     box-sizing: border-box;
-    max-width: $mobile-width;
     flex-direction: column;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.8);
