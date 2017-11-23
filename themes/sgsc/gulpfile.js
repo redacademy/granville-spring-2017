@@ -57,7 +57,7 @@ gulp.task('browser-sync', function () {
     ];
 
     browserSync.init(files, {
-        proxy: 'localhost:8888/south-granville',
+        proxy: 'localhost:8888/sgsc',
     });
 
     gulp.watch(files).on('change', browserSync.reload);

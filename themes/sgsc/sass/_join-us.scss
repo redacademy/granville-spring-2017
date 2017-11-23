@@ -108,6 +108,11 @@
   .rectangle p {
     display: none;
   }
+  .form-link {
+    display: initial !important;
+    color: black;
+    padding-top: 0.5rem;
+  }
 }
 
 @media all and (min-width: $mobile_width) {

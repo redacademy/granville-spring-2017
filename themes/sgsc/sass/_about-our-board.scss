@@ -62,7 +62,6 @@
     padding: 0;
     p {
       margin: 15px 22px;
-      text-indent: 15px;
     }
   }
   .about-links {
@@ -146,11 +145,11 @@
 }
 
 //Tablet
-@media all and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .page-template-page-about-our-board {
     .entry-header {
       max-width: 768px;
-      height: 265;
+      height: 265px;
       img {
         object-position: 45% 0%;
       }
@@ -229,7 +228,7 @@
 }
 
 //Desktop
-@media all and (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .page-template-page-about-our-board {
     .entry-header {
       max-width: 1024px;
