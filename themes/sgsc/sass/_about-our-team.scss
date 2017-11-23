@@ -28,7 +28,6 @@
     padding: 0;
     p {
     margin: 15px 22px;
-    text-indent: 15px;
   }
 }
   .about-links {
@@ -113,7 +112,7 @@
 }
 
 //Tablet
-@media all and (min-width: 480px) {
+@media all and (min-width: $mobile_width) {
   .page-template-page-about-our-team {
     .entry-header {
       max-width: 768px;
@@ -190,7 +189,7 @@
   }
 }
 //Desktop
-@media all and (min-width: 769px) {
+@media all and (min-width: $tablet_width) {
   .page-template-page-about-our-team {
     .entry-header {
       max-width: 1024px;

@@ -16,7 +16,7 @@
   .entry-content {
     margin-top: 24px;
     padding: 0 22px;
-    @media screen and(min-width: 408px) {
+    @media screen and(min-width: $mobile_width) {
       padding: 0 52px;
     }
   }
@@ -24,7 +24,7 @@
   .mem_info {
     font-size: $font_m-h2;
     font-family: $font__body;
-    @media screen and(min-width: 408px) {
+    @media screen and(min-width: $mobile_width) {
       font-size: $font_t-body;
     }
   }
@@ -33,7 +33,7 @@
     margin: 0;
     font-size: $font_m-h2;
     font-family: $font__body;
-    @media screen and(min-width: 408px) {
+    @media screen and(min-width: $mobile_width) {
       font-size: $font_t-body;
     }
   }
@@ -50,7 +50,7 @@
   .field_name {
     font-size: $font_m-h2;
     font-family: $font__body;
-    @media screen and(min-width: 408px) {
+    @media screen and(min-width: $mobile_width) {
       font-size: $font_t-body;
     }
   }
@@ -74,7 +74,7 @@
   .form_name {
     flex-basis: 100%;
     flex-direction: column;
-    @media screen and (min-width:481px) {
+    @media screen and (min-width: $mobile_width) {
       flex-direction: row;
     }
   }
@@ -85,19 +85,19 @@
 
   }
   #first_name {
-    @media screen and (min-width:481px) {
+    @media screen and (min-width: $mobile_width) {
     padding-right: 5px;
     }
   }
   #last_name {
-    @media screen and (min-width:481px) {
+    @media screen and (min-width: $mobile_width) {
     padding-left: 5px;
     }
   }
 
   .form_telephone {
     flex-basis: 100%;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $mobile_width) {
       flex-basis: 50%;
     }
   }
@@ -109,7 +109,7 @@
 
   .form_email {
     flex-basis: 100%;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $mobile_width) {
       flex-basis: 50%;
     }
   }
@@ -131,7 +131,7 @@
 
   .form_birthday {
     flex-basis: 100%;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $mobile_width) {
       flex-basis: 50%;
     }
   }
@@ -140,14 +140,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $mobile_width) {
       width: 100%;
     }
   }
 
   .form_ethnicity {
     flex-basis: 100%;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $mobile_width) {
       flex-basis: 50%;
     }
   }
@@ -155,7 +155,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $mobile_width) {
       width: 100%;
     }
   }
@@ -184,7 +184,7 @@
   .form_emerg_name {
     flex-basis: 100%;
     flex-direction: column;
-    @media screen and (min-width:481px) {
+    @media screen and (min-width: $mobile_width) {
       flex-direction: row;
     }
   }
@@ -195,19 +195,19 @@
   }
   
   #first_emerg_name {
-    @media screen and (min-width:481px) {
+    @media screen and (min-width: $mobile_width) {
     padding-right: 5px;
     }
   }
   #last_emergname {
-  @media screen and (min-width:481px) {
+  @media screen and (min-width: $mobile_width) {
     padding-left: 5px;
     }
   }
 
   .form_emerg_telephone {
     flex-basis: 100%;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $mobile_width) {
       flex-basis: 50%;
     }
   }
@@ -219,7 +219,7 @@
 
   .form_emerg_email {
     flex-basis: 100%;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $mobile_width) {
       flex-basis: 50%;
     }
   }
@@ -249,7 +249,7 @@
 
   .form_allergies {
     flex-basis: 100%;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $mobile_width) {
       flex-basis: 50%;
     }
   }
@@ -261,7 +261,7 @@
 
   .form_medications {
     flex-basis: 100%;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $mobile_width) {
       flex-basis: 50%;
     }
   }
