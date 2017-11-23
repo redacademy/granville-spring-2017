@@ -15,6 +15,13 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+					<div class="donate-btn">
+						<a href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
+							<i class="fa fa-heart-o" aria-hidden="true">
+								<p>Donate</p>
+							</i>
+						</a>
+					</div>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
