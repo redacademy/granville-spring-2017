@@ -1,4 +1,4 @@
-.page-template-form-membership-english {
+.page-template-form-membership-english, .page-template-form-membership-spanish  {
 
   input[type=text],[type=email],[type=date], textarea {
     outline: none;
@@ -8,34 +8,55 @@
     border-radius: 0;
   }
 
+  .member_signup_form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .entry-content {
     margin-top: 24px;
     padding: 0 22px;
+    @media screen and(min-width: 408px) {
+      padding: 0 52px;
+    }
   }
 
-  .eng_mem_info {
+  .mem_info {
     font-size: $font_m-h2;
     font-family: $font__body;
+    @media screen and(min-width: 408px) {
+      font-size: $font_t-body;
+    }
   }
 
-  .eng_mem_benefits {
+  .mem_benefits {
     margin: 0;
     font-size: $font_m-h2;
     font-family: $font__body;
+    @media screen and(min-width: 408px) {
+      font-size: $font_t-body;
+    }
   }
 
-  .eng_form_section {
+  .form_section {
     font-weight: bold;
+    font-size: $font_m-h1;
     margin-bottom: 0.75rem;
+    @media screen and (min-width: $mobile_width) {
+      font-size: $font_d-body;
+    }
   }
 
-  .eng_field_name {
+  .field_name {
     font-size: $font_m-h2;
     font-family: $font__body;
+    @media screen and(min-width: 408px) {
+      font-size: $font_t-body;
+    }
   }
   
-  .eng_small_print {
-    font-size: 12px;;
+  .small_print {
+    font-size: 12px;
     font-family: $font__body;  
   }
 
@@ -44,219 +65,220 @@
     flex-wrap: wrap;
   }
 
-  .eng_form_defaults {
+  .form_defaults {
     display: flex;
     flex-direction: row;
     padding: 0 5px;
   }
 
-  .eng_form_name {
+  .form_name {
     flex-basis: 100%;
     flex-direction: column;
     @media screen and (min-width:481px) {
       flex-direction: row;
     }
   }
-  #eng_first_name, #eng_last_name {
+  #first_name, #last_name {
     display: flex;
     width: 100%;
     flex-direction: column;
 
   }
-  #eng_first_name {
+  #first_name {
     @media screen and (min-width:481px) {
     padding-right: 5px;
     }
   }
-  #eng_last_name {
+  #last_name {
     @media screen and (min-width:481px) {
     padding-left: 5px;
     }
   }
 
-  .eng_form_telephone {
+  .form_telephone {
     flex-basis: 100%;
     @media screen and (min-width: 481px) {
       flex-basis: 50%;
     }
   }
-  #eng_telephone {
+  #telephone {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
 
-  .eng_form_email {
+  .form_email {
     flex-basis: 100%;
     @media screen and (min-width: 481px) {
       flex-basis: 50%;
     }
   }
 
-  #eng_email {
+  #email {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
 
-  .eng_form_address {
+  .form_address {
     flex-basis: 100%;
   }
-  #eng_address {
+  #address {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
 
-  .eng_form_birthday {
+  .form_birthday {
     flex-basis: 100%;
     @media screen and (min-width: 481px) {
       flex-basis: 50%;
     }
   }
   
-  #eng_birthday {
+  #birthday {
     display: flex;
-    width: 100%;
     flex-direction: column;
+    width: 100%;
+    @media screen and (min-width: 481px) {
+      width: 100%;
+    }
   }
 
-  .eng_form_ethnicity {
+  .form_ethnicity {
     flex-basis: 100%;
     @media screen and (min-width: 481px) {
       flex-basis: 50%;
     }
   }
-  #eng_ethnicity {
+  #ethnicity {
     display: flex;
-    width: 100%;
     flex-direction: column;
+    width: 100%;
+    @media screen and (min-width: 481px) {
+      width: 100%;
+    }
   }
 
-  .eng_form_gender {
+  .form_gender {
     flex-basis: 100%;
   }
-  #eng_gender {
+  #gender {
     width: 100%;
   }
 
-  .eng_form_member {
+  .form_member {
     flex-basis: 100%;
   }
-  #eng_newmember {
+  #new_member_radio {
     width: 100%;
   }
 
-  .eng_form_spanish {
+  .form_spanish {
     flex-basis: 100%;
   }
-  #eng_spanish {
-    width: 100%;
-  }
+  // #spanish_member {
+  //   width: 100%;
+  // }
 
-  .eng_form_emergname {
+  .form_emerg_name {
     flex-basis: 100%;
     flex-direction: column;
     @media screen and (min-width:481px) {
       flex-direction: row;
     }
   }
-  #eng_first_emergname, #eng_last_emergname {
+  #first_emerg_name, #last_emerg_name {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
   
-  #eng_first_emergname {
+  #first_emerg_name {
     @media screen and (min-width:481px) {
     padding-right: 5px;
     }
   }
-  #eng_last_emergname {
+  #last_emergname {
   @media screen and (min-width:481px) {
     padding-left: 5px;
     }
   }
 
-  .eng_form_emergtelephone {
+  .form_emerg_telephone {
     flex-basis: 100%;
     @media screen and (min-width: 481px) {
       flex-basis: 50%;
     }
   }
-  #eng_emergtelephone {
+  #emerg_telephone {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
 
-  .eng_form_emergemail {
+  .form_emerg_email {
     flex-basis: 100%;
     @media screen and (min-width: 481px) {
       flex-basis: 50%;
     }
   }
-  #eng_emergemail {
+  #emerg_email {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
 
-  .eng_form_medinfo {
+  .form_med_info {
     flex-basis: 100%;
   }
-  #eng_medinfo {
+  #med_info {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
 
-  .eng_form_ifyes {
+  .form_if_yes {
     flex-basis: 100%;
   }
-  #eng_ifyes {
+  #if_yes {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
 
-  .eng_form_allergies {
-    flex-basis: 100%;
-    @media screen and (min-width: 481px) {
-      flex-basis: 50%;
-    }
-  }
-  #eng_allergies {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .eng_form_medications {
+  .form_allergies {
     flex-basis: 100%;
     @media screen and (min-width: 481px) {
       flex-basis: 50%;
     }
   }
-  #eng_medications {
+  #allergies {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
 
-  .eng_form_visit {
+  .form_medications {
     flex-basis: 100%;
+    @media screen and (min-width: 481px) {
+      flex-basis: 50%;
+    }
   }
-  #eng_visit {
+  #medications {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
 
-  .eng_form_submit {
+  .form_visit {
     flex-basis: 100%;
   }
-  #eng_submit {
+
+  .form_submit {
+    flex-basis: 100%;
+  }
+  #mem_submit {
     display: flex;
     width: 100%;
     flex-direction: column;

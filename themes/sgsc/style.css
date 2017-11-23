@@ -3282,8 +3282,7 @@ span.wpcf7-not-valid-tip {
 .page-template-page-about-our-board .entry-content {
   padding: 0; }
   .page-template-page-about-our-board .entry-content p {
-    margin: 15px 22px;
-    text-indent: 15px; }
+    margin: 15px 22px; }
 
 .page-template-page-about-our-board .about-links {
   display: -ms-flexbox;
@@ -3366,10 +3365,10 @@ span.wpcf7-not-valid-tip {
   .page-template-page-about-our-board .about-back-btn a:hover {
     color: white; }
 
-@media all and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .page-template-page-about-our-board .entry-header {
     max-width: 768px;
-    height: 265; }
+    height: 265px; }
     .page-template-page-about-our-board .entry-header img {
       object-position: 45% 0%; }
   .page-template-page-about-our-board .entry-content {
@@ -3430,7 +3429,7 @@ span.wpcf7-not-valid-tip {
   .page-template-page-about-our-board .about-back-btn {
     display: none; } }
 
-@media all and (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .page-template-page-about-our-board .entry-header {
     max-width: 1024px;
     height: 375px; }
@@ -3886,6 +3885,11 @@ span.wpcf7-not-valid-tip {
 
 .page-template-page-join-us .rectangle p, .post-type-archive-volunteer .rectangle p {
   display: none; }
+
+.page-template-page-join-us .form-link, .post-type-archive-volunteer .form-link {
+  display: initial !important;
+  color: black;
+  padding-top: 0.5rem; }
 
 @media all and (min-width: 480px) {
   .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
@@ -5248,62 +5252,84 @@ article {
     .page-template-page-about-sub .content-area ul {
       font-size: 1.15rem; } }
 
-.page-template-form-membership-english input[type=text], .page-template-form-membership-english [type=email], .page-template-form-membership-english [type=date], .page-template-form-membership-english textarea {
+.page-template-form-membership-english input[type=text], .page-template-form-membership-english [type=email], .page-template-form-membership-english [type=date], .page-template-form-membership-english textarea, .page-template-form-membership-spanish input[type=text], .page-template-form-membership-spanish [type=email], .page-template-form-membership-spanish [type=date], .page-template-form-membership-spanish textarea {
   outline: none;
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 0px;
   border: 2px solid black;
   border-radius: 0; }
 
-.page-template-form-membership-english .entry-content {
-  margin-top: 24px;
-  padding: 0 22px; }
-
-.page-template-form-membership-english .eng_mem_info {
-  font-size: 16px;
-  font-family: lato, novecentosanswide, sans-serif; }
-
-.page-template-form-membership-english .eng_mem_benefits {
-  margin: 0;
-  font-size: 16px;
-  font-family: lato, novecentosanswide, sans-serif; }
-
-.page-template-form-membership-english .eng_form_section {
-  font-weight: bold;
-  margin-bottom: 0.75rem; }
-
-.page-template-form-membership-english .eng_field_name {
-  font-size: 16px;
-  font-family: lato, novecentosanswide, sans-serif; }
-
-.page-template-form-membership-english .eng_small_print {
-  font-size: 12px;
-  font-family: lato, novecentosanswide, sans-serif; }
-
-.page-template-form-membership-english .membership_form_english {
+.page-template-form-membership-english .member_signup_form, .page-template-form-membership-spanish .member_signup_form {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-.page-template-form-membership-english .eng_form_defaults {
+.page-template-form-membership-english .entry-content, .page-template-form-membership-spanish .entry-content {
+  margin-top: 24px;
+  padding: 0 22px; }
+  @media screen and (min-width: 408px) {
+    .page-template-form-membership-english .entry-content, .page-template-form-membership-spanish .entry-content {
+      padding: 0 52px; } }
+
+.page-template-form-membership-english .mem_info, .page-template-form-membership-spanish .mem_info {
+  font-size: 16px;
+  font-family: lato, novecentosanswide, sans-serif; }
+  @media screen and (min-width: 408px) {
+    .page-template-form-membership-english .mem_info, .page-template-form-membership-spanish .mem_info {
+      font-size: 18px; } }
+
+.page-template-form-membership-english .mem_benefits, .page-template-form-membership-spanish .mem_benefits {
+  margin: 0;
+  font-size: 16px;
+  font-family: lato, novecentosanswide, sans-serif; }
+  @media screen and (min-width: 408px) {
+    .page-template-form-membership-english .mem_benefits, .page-template-form-membership-spanish .mem_benefits {
+      font-size: 18px; } }
+
+.page-template-form-membership-english .form_section, .page-template-form-membership-spanish .form_section {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 0.75rem; }
+  @media screen and (min-width: 480px) {
+    .page-template-form-membership-english .form_section, .page-template-form-membership-spanish .form_section {
+      font-size: 24px; } }
+
+.page-template-form-membership-english .field_name, .page-template-form-membership-spanish .field_name {
+  font-size: 16px;
+  font-family: lato, novecentosanswide, sans-serif; }
+  @media screen and (min-width: 408px) {
+    .page-template-form-membership-english .field_name, .page-template-form-membership-spanish .field_name {
+      font-size: 18px; } }
+
+.page-template-form-membership-english .small_print, .page-template-form-membership-spanish .small_print {
+  font-size: 12px;
+  font-family: lato, novecentosanswide, sans-serif; }
+
+.page-template-form-membership-english .membership_form_english, .page-template-form-membership-spanish .membership_form_english {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.page-template-form-membership-english .form_defaults, .page-template-form-membership-spanish .form_defaults {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   padding: 0 5px; }
 
-.page-template-form-membership-english .eng_form_name {
+.page-template-form-membership-english .form_name, .page-template-form-membership-spanish .form_name {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   -ms-flex-direction: column;
       flex-direction: column; }
   @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_name {
+    .page-template-form-membership-english .form_name, .page-template-form-membership-spanish .form_name {
       -ms-flex-direction: row;
           flex-direction: row; } }
 
-.page-template-form-membership-english #eng_first_name, .page-template-form-membership-english #eng_last_name {
+.page-template-form-membership-english #first_name, .page-template-form-membership-english #last_name, .page-template-form-membership-spanish #first_name, .page-template-form-membership-spanish #last_name {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
@@ -5311,116 +5337,119 @@ article {
       flex-direction: column; }
 
 @media screen and (min-width: 481px) {
-  .page-template-form-membership-english #eng_first_name {
+  .page-template-form-membership-english #first_name, .page-template-form-membership-spanish #first_name {
     padding-right: 5px; } }
 
 @media screen and (min-width: 481px) {
-  .page-template-form-membership-english #eng_last_name {
+  .page-template-form-membership-english #last_name, .page-template-form-membership-spanish #last_name {
     padding-left: 5px; } }
 
-.page-template-form-membership-english .eng_form_telephone {
+.page-template-form-membership-english .form_telephone, .page-template-form-membership-spanish .form_telephone {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_telephone {
+    .page-template-form-membership-english .form_telephone, .page-template-form-membership-spanish .form_telephone {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
 
-.page-template-form-membership-english #eng_telephone {
+.page-template-form-membership-english #telephone, .page-template-form-membership-spanish #telephone {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.page-template-form-membership-english .eng_form_email {
+.page-template-form-membership-english .form_email, .page-template-form-membership-spanish .form_email {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_email {
+    .page-template-form-membership-english .form_email, .page-template-form-membership-spanish .form_email {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
 
-.page-template-form-membership-english #eng_email {
+.page-template-form-membership-english #email, .page-template-form-membership-spanish #email {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.page-template-form-membership-english .eng_form_address {
+.page-template-form-membership-english .form_address, .page-template-form-membership-spanish .form_address {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
 
-.page-template-form-membership-english #eng_address {
+.page-template-form-membership-english #address, .page-template-form-membership-spanish #address {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.page-template-form-membership-english .eng_form_birthday {
+.page-template-form-membership-english .form_birthday, .page-template-form-membership-spanish .form_birthday {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_birthday {
+    .page-template-form-membership-english .form_birthday, .page-template-form-membership-spanish .form_birthday {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
 
-.page-template-form-membership-english #eng_birthday {
+.page-template-form-membership-english #birthday, .page-template-form-membership-spanish #birthday {
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  width: 100%; }
+  @media screen and (min-width: 481px) {
+    .page-template-form-membership-english #birthday, .page-template-form-membership-spanish #birthday {
+      width: 100%; } }
 
-.page-template-form-membership-english .eng_form_ethnicity {
+.page-template-form-membership-english .form_ethnicity, .page-template-form-membership-spanish .form_ethnicity {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_ethnicity {
+    .page-template-form-membership-english .form_ethnicity, .page-template-form-membership-spanish .form_ethnicity {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
 
-.page-template-form-membership-english #eng_ethnicity {
+.page-template-form-membership-english #ethnicity, .page-template-form-membership-spanish #ethnicity {
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  width: 100%; }
+  @media screen and (min-width: 481px) {
+    .page-template-form-membership-english #ethnicity, .page-template-form-membership-spanish #ethnicity {
+      width: 100%; } }
 
-.page-template-form-membership-english .eng_form_gender {
+.page-template-form-membership-english .form_gender, .page-template-form-membership-spanish .form_gender {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
 
-.page-template-form-membership-english #eng_gender {
+.page-template-form-membership-english #gender, .page-template-form-membership-spanish #gender {
   width: 100%; }
 
-.page-template-form-membership-english .eng_form_member {
+.page-template-form-membership-english .form_member, .page-template-form-membership-spanish .form_member {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
 
-.page-template-form-membership-english #eng_newmember {
+.page-template-form-membership-english #new_member_radio, .page-template-form-membership-spanish #new_member_radio {
   width: 100%; }
 
-.page-template-form-membership-english .eng_form_spanish {
+.page-template-form-membership-english .form_spanish, .page-template-form-membership-spanish .form_spanish {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
 
-.page-template-form-membership-english #eng_spanish {
-  width: 100%; }
-
-.page-template-form-membership-english .eng_form_emergname {
+.page-template-form-membership-english .form_emerg_name, .page-template-form-membership-spanish .form_emerg_name {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   -ms-flex-direction: column;
       flex-direction: column; }
   @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_emergname {
+    .page-template-form-membership-english .form_emerg_name, .page-template-form-membership-spanish .form_emerg_name {
       -ms-flex-direction: row;
           flex-direction: row; } }
 
-.page-template-form-membership-english #eng_first_emergname, .page-template-form-membership-english #eng_last_emergname {
+.page-template-form-membership-english #first_emerg_name, .page-template-form-membership-english #last_emerg_name, .page-template-form-membership-spanish #first_emerg_name, .page-template-form-membership-spanish #last_emerg_name {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
@@ -5428,111 +5457,104 @@ article {
       flex-direction: column; }
 
 @media screen and (min-width: 481px) {
-  .page-template-form-membership-english #eng_first_emergname {
+  .page-template-form-membership-english #first_emerg_name, .page-template-form-membership-spanish #first_emerg_name {
     padding-right: 5px; } }
 
 @media screen and (min-width: 481px) {
-  .page-template-form-membership-english #eng_last_emergname {
+  .page-template-form-membership-english #last_emergname, .page-template-form-membership-spanish #last_emergname {
     padding-left: 5px; } }
 
-.page-template-form-membership-english .eng_form_emergtelephone {
+.page-template-form-membership-english .form_emerg_telephone, .page-template-form-membership-spanish .form_emerg_telephone {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_emergtelephone {
+    .page-template-form-membership-english .form_emerg_telephone, .page-template-form-membership-spanish .form_emerg_telephone {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
 
-.page-template-form-membership-english #eng_emergtelephone {
+.page-template-form-membership-english #emerg_telephone, .page-template-form-membership-spanish #emerg_telephone {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.page-template-form-membership-english .eng_form_emergemail {
+.page-template-form-membership-english .form_emerg_email, .page-template-form-membership-spanish .form_emerg_email {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_emergemail {
+    .page-template-form-membership-english .form_emerg_email, .page-template-form-membership-spanish .form_emerg_email {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
 
-.page-template-form-membership-english #eng_emergemail {
+.page-template-form-membership-english #emerg_email, .page-template-form-membership-spanish #emerg_email {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.page-template-form-membership-english .eng_form_medinfo {
+.page-template-form-membership-english .form_med_info, .page-template-form-membership-spanish .form_med_info {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
 
-.page-template-form-membership-english #eng_medinfo {
+.page-template-form-membership-english #med_info, .page-template-form-membership-spanish #med_info {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.page-template-form-membership-english .eng_form_ifyes {
+.page-template-form-membership-english .form_if_yes, .page-template-form-membership-spanish .form_if_yes {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
 
-.page-template-form-membership-english #eng_ifyes {
+.page-template-form-membership-english #if_yes, .page-template-form-membership-spanish #if_yes {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.page-template-form-membership-english .eng_form_allergies {
+.page-template-form-membership-english .form_allergies, .page-template-form-membership-spanish .form_allergies {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_allergies {
+    .page-template-form-membership-english .form_allergies, .page-template-form-membership-spanish .form_allergies {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
 
-.page-template-form-membership-english #eng_allergies {
+.page-template-form-membership-english #allergies, .page-template-form-membership-spanish #allergies {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.page-template-form-membership-english .eng_form_medications {
+.page-template-form-membership-english .form_medications, .page-template-form-membership-spanish .form_medications {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media screen and (min-width: 481px) {
-    .page-template-form-membership-english .eng_form_medications {
+    .page-template-form-membership-english .form_medications, .page-template-form-membership-spanish .form_medications {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; } }
 
-.page-template-form-membership-english #eng_medications {
+.page-template-form-membership-english #medications, .page-template-form-membership-spanish #medications {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.page-template-form-membership-english .eng_form_visit {
+.page-template-form-membership-english .form_visit, .page-template-form-membership-spanish .form_visit {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
 
-.page-template-form-membership-english #eng_visit {
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-.page-template-form-membership-english .eng_form_submit {
+.page-template-form-membership-english .form_submit, .page-template-form-membership-spanish .form_submit {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
 
-.page-template-form-membership-english #eng_submit {
+.page-template-form-membership-english #mem_submit, .page-template-form-membership-spanish #mem_submit {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
@@ -5540,7 +5562,7 @@ article {
       flex-direction: column;
   margin-bottom: 3rem;
   margin-top: 1rem; }
-  .page-template-form-membership-english #eng_submit button {
+  .page-template-form-membership-english #mem_submit button, .page-template-form-membership-spanish #mem_submit button {
     width: 75%;
     margin: 0 auto;
     margin-top: 0.5rem;
@@ -5548,9 +5570,107 @@ article {
     border: 2px solid black;
     border-radius: 0;
     font-size: 1.1rem; }
-    .page-template-form-membership-english #eng_submit button:hover, .page-template-form-membership-english #eng_submit button:active, .page-template-form-membership-english #eng_submit button:focus {
+    .page-template-form-membership-english #mem_submit button:hover, .page-template-form-membership-english #mem_submit button:active, .page-template-form-membership-english #mem_submit button:focus, .page-template-form-membership-spanish #mem_submit button:hover, .page-template-form-membership-spanish #mem_submit button:active, .page-template-form-membership-spanish #mem_submit button:focus {
       text-shadow: none;
       box-shadow: none;
       border: 2px #000000 solid #f5a623;
       background: #f5a623;
       color: white; }
+
+.page-template-form-success-page .donate-btn {
+  background-color: #F91E72;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 2.3rem;
+  width: 2.3rem; }
+  @media screen and (min-width: 480px) {
+    .page-template-form-success-page .donate-btn {
+      height: 5rem;
+      width: 5rem; } }
+  .page-template-form-success-page .donate-btn a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem; }
+    @media screen and (min-width: 480px) {
+      .page-template-form-success-page .donate-btn a {
+        font-size: 4rem; } }
+    .page-template-form-success-page .donate-btn a i {
+      font-weight: lighter;
+      padding: .5rem;
+      color: #000000; }
+      .page-template-form-success-page .donate-btn a i:hover {
+        color: #f5a623; }
+    .page-template-form-success-page .donate-btn a p {
+      display: none; }
+
+.page-template-form-success-page .entry-header {
+  max-width: 480px;
+  margin: 0 auto;
+  height: 275px;
+  position: relative; }
+  @media screen and (min-width: 480px) {
+    .page-template-form-success-page .entry-header {
+      max-width: 768px;
+      height: 265px; } }
+  @media screen and (min-width: 480px) and (min-width: 768px) {
+    .page-template-form-success-page .entry-header {
+      max-width: 1024px;
+      height: 375px; } }
+  .page-template-form-success-page .entry-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 65% 0%;
+    position: absolute; }
+    @media screen and (min-width: 480px) {
+      .page-template-form-success-page .entry-header img {
+        object-position: 45% 0%; } }
+
+.page-template-form-success-page .entry-title {
+  position: absolute;
+  bottom: 0px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 118px;
+  background: #f5a623;
+  margin-bottom: 0; }
+  @media screen and (min-width: 480px) {
+    .page-template-form-success-page .entry-title {
+      bottom: -7.5rem;
+      height: 7.5rem; } }
+  @media screen and (min-width: 480px) and (min-width: 768px) {
+    .page-template-form-success-page .entry-title {
+      bottom: -10rem;
+      height: 10rem; } }
+
+@media screen and (min-width: 480px) {
+  .page-template-form-success-page .content-area {
+    margin-top: 7.5rem; } }
+  @media screen and (min-width: 480px) and (min-width: 768px) {
+    .page-template-form-success-page .content-area {
+      margin-top: 10rem; } }
+
+.page-template-form-success-page .site-main, .page-template-form-success-page .entry-content {
+  padding: 0;
+  text-align: center; }
+  .page-template-form-success-page .site-main p, .page-template-form-success-page .entry-content p {
+    margin: 15px 22px;
+    font-style: lato, novecentosanswide, sans-serif;
+    font-size: 16px;
+    line-height: 24px; }
+    @media screen and (min-width: 768px) {
+      .page-template-form-success-page .site-main p, .page-template-form-success-page .entry-content p {
+        font-size: 18px; } }
