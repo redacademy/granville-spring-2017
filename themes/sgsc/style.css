@@ -2775,7 +2775,7 @@ span.wpcf7-not-valid-tip {
 
 @media all and (min-width: 481px) {
   .site-footer {
-    width: 1024px;
+    max-width: 768px;
     margin: 0 auto; }
   .site-info {
     padding-left: 35px;
@@ -2822,6 +2822,8 @@ span.wpcf7-not-valid-tip {
       font-size: 14px; } }
 
 @media all and (min-width: 769px) {
+  .site-footer {
+    max-width: 1024px; }
   .site-info {
     padding-left: 35px;
     padding-top: 20px;
@@ -2840,7 +2842,7 @@ span.wpcf7-not-valid-tip {
         flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    min-width: 526px; }
+    max-width: 526px; }
     .textwidget p {
       width: 175px;
       font-size: 18px;
@@ -3062,8 +3064,7 @@ span.wpcf7-not-valid-tip {
 .page-template-page-about-our-team .entry-content {
   padding: 0; }
   .page-template-page-about-our-team .entry-content p {
-    margin: 15px 22px;
-    text-indent: 15px; }
+    margin: 15px 22px; }
 
 .page-template-page-about-our-team .about-links {
   display: -ms-flexbox;
@@ -3917,6 +3918,33 @@ span.wpcf7-not-valid-tip {
 
 @media all and (min-width: 481px) {
   .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
+    width: 768px; }
+  .page-template-page-join-us .join-us-section, .post-type-archive-volunteer .join-us-section {
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: initial;
+    margin: 0 auto;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    width: 768px;
+    margin-top: 2rem;
+    margin-bottom: 28px;
+    max-width: none;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    background-size: 100%; }
+  .page-template-page-join-us .rectangle, .post-type-archive-volunteer .rectangle {
+    margin-top: initial;
+    height: 280px;
+    box-sizing: border-box;
+    width: 225px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 4px solid rgba(255, 255, 255, 0); }
+    .page-template-page-join-us .rectangle:hover, .post-type-archive-volunteer .rectangle:hover {
+      border: 4px solid #000000; } }
+
+@media all and (min-width: 769px) {
+  .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
     width: 1024px; }
   .page-template-page-join-us .join-us-section, .post-type-archive-volunteer .join-us-section {
     display: -ms-flexbox;
@@ -3925,10 +3953,8 @@ span.wpcf7-not-valid-tip {
     margin: 0 auto;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    width: 1024px;
-    background-image: url("../../assets/images/149-46.jpg");
     margin-bottom: 28px;
-    max-width: none;
+    width: 1024px;
     -ms-flex-direction: row;
         flex-direction: row;
     background-size: 100%; }
