@@ -15,7 +15,7 @@ get_header(); ?>
 		<section class="featured-gallery-section">
 			<?php if ( have_posts() ) : ?>
 				<header class="page-header">
-					<h1 class="page-title">Our Featured Gallery</h1>
+					<h1 class="page-title">Our Featured Galleries</h1>
 					<div class="donate-btn">
 						<a href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
 							<i class="fa fa-heart-o" aria-hidden="true">
