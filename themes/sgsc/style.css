@@ -2517,8 +2517,7 @@ object {
     display: none; }
 
 .single-gallery .entry-content {
-  width: 100%;
-  padding: 32px 0; }
+  width: 100%; }
   .single-gallery .entry-content .gallery {
     display: -ms-flexbox;
     display: flex;
