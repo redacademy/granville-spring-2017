@@ -384,7 +384,7 @@ h5,
 h6 {
   clear: both;
   font-family: montserrat, merriweather, sans-serif;
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal; }
 
 h1 {
@@ -2864,6 +2864,9 @@ span.wpcf7-not-valid-tip {
     padding-left: 35px; }
     .copywrite p {
       font-size: 14px; } }
+
+.page-template-page-about .entry-title {
+  height: 50%; }
 
 .page-template-page-about .entry-header {
   max-width: 480px;
