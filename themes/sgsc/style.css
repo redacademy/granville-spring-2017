@@ -1494,7 +1494,7 @@ object {
         height: 288px;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-        padding-left: 30px;
+        padding-left: 8%;
         -ms-flex-align: start;
             align-items: flex-start;
         -ms-flex-pack: start;
@@ -1502,7 +1502,7 @@ object {
         .home .program-event-post .front-program .program-sub {
           display: inline-block;
           padding: 15px 0;
-          width: 75%; }
+          width: 85%; }
         .home .program-event-post .front-program h1 {
           padding-top: 20px;
           width: 200px;
@@ -1511,7 +1511,8 @@ object {
       .home .program-event-post .front-program {
         width: 53%;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+        padding-left: 20px; }
         .home .program-event-post .front-program .program-sub {
           display: inline-block;
           padding-left: 30px;
@@ -1548,7 +1549,7 @@ object {
         height: 129px;
         text-align: center; } }
   .home .program-event-post .intro-event-blog .front-blog {
-    border: 2px #000000 solid 4px #ffffff;
+    border: 2px #000000 solid 4px #45cdcb;
     background: #ffffff; }
     .home .program-event-post .intro-event-blog .front-blog:hover, .home .program-event-post .intro-event-blog .front-blog:active, .home .program-event-post .intro-event-blog .front-blog:focus {
       border: 2px #000000 solid 4px; }
