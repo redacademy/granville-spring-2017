@@ -2772,7 +2772,7 @@ span.wpcf7-not-valid-tip {
   .copywrite p {
     font-size: 12px; }
 
-@media all and (min-width: 481px) {
+@media all and (min-width: 660px) {
   .site-footer {
     max-width: 768px;
     margin: 0 auto; }
@@ -2843,7 +2843,7 @@ span.wpcf7-not-valid-tip {
         flex-wrap: wrap;
     max-width: 526px; }
     .textwidget p {
-      width: 175px;
+      max-width: 175px;
       font-size: 18px;
       margin: 0; }
   .footer-icons {
@@ -5189,7 +5189,7 @@ article {
   display: inline-block; }
 
 .page-template-page-about-partners .entry-header {
-  width: 480px;
+  max-width: 480px;
   margin: 0 auto;
   height: 275px;
   position: relative; }
@@ -5317,7 +5317,7 @@ article {
 
 @media all and (min-width: 481px) {
   .page-template-page-about-partners .entry-header {
-    width: 768px;
+    max-width: 768px;
     height: 375px; }
   .page-template-page-about-partners .entry-content p {
     font-size: 18px; }
@@ -5338,7 +5338,7 @@ article {
 
 @media all and (min-width: 769px) {
   .page-template-page-about-partners .entry-header {
-    width: 1024px;
+    max-width: 1024px;
     height: 375px; } }
 
 .page-template-page-about-sub .site-content {

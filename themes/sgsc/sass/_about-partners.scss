@@ -1,6 +1,6 @@
 .page-template-page-about-partners {
 	.entry-header {
-		width: 480px;
+		max-width: 480px;
 		margin: 0 auto;
 		height: 275px;  
 		position: relative;
@@ -119,7 +119,7 @@
 @media all and (min-width: $mobile_width) {
 	.page-template-page-about-partners {
     .entry-header {
-			width: 768px;
+			max-width: 768px;
 			height: 375px; 
     }
 		.entry-content p {
@@ -151,7 +151,7 @@
 @media all and (min-width: $tablet-width) {
 	.page-template-page-about-partners {
     .entry-header {
-        width: 1024px;
+        max-width: 1024px;
         height: 375px; 
       }
 	}
