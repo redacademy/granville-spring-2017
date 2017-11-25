@@ -197,7 +197,7 @@ span.wpcf7-not-valid-tip {
     font-size: 12px;    
   }
 }
-@media all and (min-width: $mobile_width) {
+@media all and (min-width: 660px) {
   .site-footer {
     max-width: 768px;
     margin: 0 auto;
@@ -266,7 +266,7 @@ span.wpcf7-not-valid-tip {
 		flex-wrap: wrap;
 	  max-width: 526px;
 		p {
-      width: 175px;
+      max-width: 175px;
       font-size: $font_d-sub-body;
       margin: 0;
 		}
