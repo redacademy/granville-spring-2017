@@ -2766,10 +2766,9 @@ span.wpcf7-not-valid-tip {
   .copywrite p {
     font-size: 12px; }
 
-@media all and (min-width: 660px) {
+@media all and (min-width: 690px) {
   .site-footer {
-    max-width: 768px;
-    margin: 0 auto; }
+    max-width: 768px; }
   .site-info {
     padding-left: 35px;
     padding-top: 20px;
