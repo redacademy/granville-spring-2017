@@ -830,14 +830,6 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@media screen and (min-width: 480px) {
-  html {
-    min-width: 480px; } }
-
-@media screen and (min-width: 786px) {
-  html {
-    min-width: 1024px; } }
-
 /* Posts and pages */
 .sticky {
   display: block; }
