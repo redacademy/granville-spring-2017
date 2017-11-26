@@ -830,14 +830,6 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@media screen and (min-width: 480px) {
-  html {
-    min-width: 480px; } }
-
-@media screen and (min-width: 786px) {
-  html {
-    min-width: 1024px; } }
-
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -1408,9 +1400,12 @@ object {
     .home .program-event-post {
       display: -ms-flexbox;
       display: flex;
-      padding: 32px 0;
+      padding: 32px;
       -ms-flex-pack: justify;
           justify-content: space-between; } }
+  @media screen and (min-width: 1024px) {
+    .home .program-event-post {
+      padding: 32px 0; } }
   .home .program-event-post .front-program,
   .home .program-event-post .front-events,
   .home .program-event-post .front-blog {
@@ -1494,7 +1489,7 @@ object {
         height: 288px;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-        padding-left: 30px;
+        padding-left: 40px;
         -ms-flex-align: start;
             align-items: flex-start;
         -ms-flex-pack: start;
@@ -1502,7 +1497,7 @@ object {
         .home .program-event-post .front-program .program-sub {
           display: inline-block;
           padding: 15px 0;
-          width: 75%; }
+          width: 85%; }
         .home .program-event-post .front-program h1 {
           padding-top: 20px;
           width: 200px;
@@ -1510,10 +1505,8 @@ object {
     @media screen and (min-width: 1024px) {
       .home .program-event-post .front-program {
         width: 53%;
-        -ms-flex-align: start;
-            align-items: flex-start; }
+        padding-left: 20px; }
         .home .program-event-post .front-program .program-sub {
-          display: inline-block;
           padding-left: 30px;
           padding-bottom: 30px;
           width: 95%; }
@@ -1556,6 +1549,7 @@ object {
         color: #f5a623; }
     @media screen and (min-width: 590px) {
       .home .program-event-post .intro-event-blog .front-blog {
+        border: 2px #000000 solid 4px #45cdcb;
         width: 100%;
         height: 129px;
         background: #45cdcb;
@@ -2772,10 +2766,9 @@ span.wpcf7-not-valid-tip {
   .copywrite p {
     font-size: 12px; }
 
-@media all and (min-width: 660px) {
+@media all and (min-width: 690px) {
   .site-footer {
-    max-width: 768px;
-    margin: 0 auto; }
+    max-width: 768px; }
   .site-info {
     padding-left: 35px;
     padding-top: 20px;
@@ -3699,7 +3692,8 @@ span.wpcf7-not-valid-tip {
 
 @media screen and (min-width: 590px) {
   .tax-program-type #tribe-events {
-    margin: 0 1rem; }
+    margin: 0 1rem; 
+  }
   .program-grid {
     display: -ms-flexbox;
     display: flex;
