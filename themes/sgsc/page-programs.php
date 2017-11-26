@@ -38,7 +38,7 @@ get_header(); ?>
 							<?php foreach ($program_list as $program_type) : ?>
 								<a href = "<?php echo get_term_link($program_type); ?>" class="program-link">
 									<li>
-										<?php echo $program_type->name; ?>
+										<h2 class="program-title"><?php echo $program_type->name; ?></h2>
 									</li>
 								</a>
 							<?php endforeach; ?>
