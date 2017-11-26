@@ -240,6 +240,11 @@
 }
 
 @media screen and (min-width: $mobile_width) {
+  .tax-program-type {
+    #tribe-events {
+      margin: 0 1rem;
+    }
+  }
   .program-grid {
     display: flex;
     flex-wrap: wrap;

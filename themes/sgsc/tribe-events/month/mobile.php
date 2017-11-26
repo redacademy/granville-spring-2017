@@ -19,7 +19,7 @@
 <script type="text/html" id="tribe_tmpl_month_mobile">
 	<div class="tribe-events-mobile tribe-clearfix tribe-events-mobile-event-[[=eventId]][[ if(categoryClasses.length) { ]] [[= categoryClasses]][[ } ]]">
 		<h4 class="summary">
-			<!-- <a class="url" href="[[=permalink]]" title="[[=title]]" rel="bookmark">[[=raw title]]</a> -->
+			[[=title]]
 		</h4>
 
 		<div class="tribe-events-event-body">
@@ -28,15 +28,12 @@
 			</div>
 			[[ if(imageSrc.length) { ]]
 			<div class="tribe-events-event-image">
-				<a href="[[=permalink]]" title="[[=title]]">
-					<img src="[[=imageSrc]]" alt="[[=title]]" title="[[=title]]">
-				</a>
+				<img src="[[=imageSrc]]" alt="[[=title]]" title="[[=title]]">
 			</div>
 			[[ } ]]
 			[[ if(excerpt.length) { ]]
 			<div class="tribe-event-description"> [[=raw excerpt]] </div>
 			[[ } ]]
-			<a href="[[=permalink]]" class="tribe-events-read-more" rel="bookmark">[[=i18n.find_out_more]]</a>
 		</div>
 	</div>
 </script>

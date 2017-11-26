@@ -3698,6 +3698,8 @@ span.wpcf7-not-valid-tip {
     color: white; }
 
 @media screen and (min-width: 590px) {
+  .tax-program-type #tribe-events {
+    margin: 0 1rem; }
   .program-grid {
     display: -ms-flexbox;
     display: flex;
