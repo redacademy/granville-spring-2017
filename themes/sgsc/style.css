@@ -3856,7 +3856,6 @@ span.wpcf7-not-valid-tip {
 
 .page-template-page-join-us .rectangle, .post-type-archive-volunteer .rectangle {
   height: 208px;
-  max-width: 590px;
   box-sizing: border-box;
   -ms-flex-direction: column;
       flex-direction: column;
@@ -3905,7 +3904,8 @@ span.wpcf7-not-valid-tip {
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    width: 80%; }
 
 .page-template-page-join-us .rectangle p, .post-type-archive-volunteer .rectangle p {
   display: none; }
@@ -3925,22 +3925,35 @@ span.wpcf7-not-valid-tip {
     margin: 0 auto;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    width: 768px;
+    width: 100%;
     margin-top: 2rem;
     margin-bottom: 28px;
     max-width: none;
     -ms-flex-direction: row;
         flex-direction: row;
-    background-size: 100%; }
+    background-size: 100%;
+    min-height: 393px; }
   .page-template-page-join-us .rectangle, .post-type-archive-volunteer .rectangle {
     margin-top: initial;
-    height: 280px;
+    min-height: 393px;
     box-sizing: border-box;
-    width: 225px;
+    width: 29.5%;
     background-color: rgba(255, 255, 255, 0.8);
     border: 4px solid rgba(255, 255, 255, 0); }
     .page-template-page-join-us .rectangle:hover, .post-type-archive-volunteer .rectangle:hover {
-      border: 4px solid #000000; } }
+      border: 4px solid #000000; }
+    .page-template-page-join-us .rectangle p, .post-type-archive-volunteer .rectangle p {
+      display: initial;
+      font-family: lato, novecentosanswide, sans-serif;
+      font-size: 18px;
+      color: black;
+      width: 163px;
+      margin-top: 11px;
+      line-height: 22px;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      display: -ms-flexbox;
+      display: flex; } }
 
 @media all and (min-width: 1024px) {
   .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
@@ -3952,20 +3965,15 @@ span.wpcf7-not-valid-tip {
     margin: 0 auto;
     -ms-flex-pack: justify;
         justify-content: space-between;
+    min-height: 615px;
     margin-bottom: 28px;
     width: 1024px;
     -ms-flex-direction: row;
         flex-direction: row;
     background-size: 100%; }
   .page-template-page-join-us .rectangle, .post-type-archive-volunteer .rectangle {
-    margin-top: initial;
-    height: 356px;
-    box-sizing: border-box;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 4px solid rgba(255, 255, 255, 0); }
-    .page-template-page-join-us .rectangle:hover, .post-type-archive-volunteer .rectangle:hover {
-      border: 4px solid #000000; }
+    width: 29.5%;
+    min-height: 615px; }
   .page-template-page-join-us .new-member h2,
   .page-template-page-join-us .membership-renewal h2,
   .page-template-page-join-us .volunteer h2, .post-type-archive-volunteer .new-member h2,
@@ -3973,26 +3981,12 @@ span.wpcf7-not-valid-tip {
   .post-type-archive-volunteer .volunteer h2 {
     font-family: montserrat, merriweather, sans-serif;
     font-size: 24px;
-    width: 163px;
     height: 58px;
     margin: 38px auto 11px auto;
     text-align: center;
     padding-bottom: 11px;
-    line-height: 29px; }
-  .page-template-page-join-us .new-member p,
-  .page-template-page-join-us .membership-renewal p,
-  .page-template-page-join-us .volunteer p, .post-type-archive-volunteer .new-member p,
-  .post-type-archive-volunteer .membership-renewal p,
-  .post-type-archive-volunteer .volunteer p {
-    font-family: lato, novecentosanswide, sans-serif;
-    font-size: 18px;
-    color: black;
-    width: 163px;
-    margin: auto;
-    margin-top: 11px;
-    line-height: 22px; }
-  .page-template-page-join-us .rectangle p, .post-type-archive-volunteer .rectangle p {
-    display: initial; } }
+    line-height: 29px;
+    width: 80%; } }
 
 .volunteer-template-default .donate-btn {
   background-color: #F91E72;
