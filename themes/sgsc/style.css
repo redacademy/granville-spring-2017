@@ -3212,7 +3212,10 @@ span.wpcf7-not-valid-tip {
     margin-bottom: 20px;
     margin-top: 40px; }
   .page-template-page-about-our-team .about-back-btn {
-    display: none; } }
+    padding-left: 20px;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end; } }
 
 @media all and (min-width: 1024px) {
   .page-template-page-about-our-team .entry-header {
@@ -3234,7 +3237,9 @@ span.wpcf7-not-valid-tip {
   .page-template-page-about-our-team ul li:nth-child(odd) img {
     padding-left: 38px; }
   .page-template-page-about-our-team ul li:nth-child(even) img {
-    padding-right: 38px; } }
+    padding-right: 38px; }
+  .page-template-page-about-our-team .about-back-btn {
+    display: none; } }
 
 .page-template-page-about-our-board .donate-btn {
   background-color: #F91E72;
@@ -5186,8 +5191,10 @@ article {
 .search .m-button {
   display: inline-block; }
 
+.page-template-page-about-partners .post-63 {
+  margin-bottom: 0; }
+
 .page-template-page-about-partners .entry-header {
-  max-width: 480px;
   margin: 0 auto;
   height: 275px;
   position: relative; }
@@ -5315,7 +5322,6 @@ article {
 
 @media all and (min-width: 590px) {
   .page-template-page-about-partners .entry-header {
-    max-width: 768px;
     height: 375px; }
   .page-template-page-about-partners .entry-content p {
     font-size: 18px; }
@@ -5332,12 +5338,20 @@ article {
   .page-template-page-about-partners .logo-container {
     min-width: 165px; }
   .page-template-page-about-partners .about-back-btn {
-    display: none; } }
+    padding-left: 20px;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end; } }
 
 @media all and (min-width: 1024px) {
   .page-template-page-about-partners .entry-header {
     max-width: 1024px;
-    height: 375px; } }
+    height: 375px; }
+  .page-template-page-about-partners .about-back-btn {
+    display: none; } }
+
+.post-612 {
+  margin-bottom: 0; }
 
 .page-template-page-about-sub .site-content {
   width: 100%;
@@ -5348,7 +5362,7 @@ article {
   position: relative; }
   .page-template-page-about-sub .entry-header img {
     object-fit: cover;
-    width: auto;
+    width: 100%;
     height: 100%; }
 
 .page-template-page-about-sub .entry-title {
@@ -5374,8 +5388,11 @@ article {
     font-family: lato, novecentosanswide, sans-serif; }
 
 @media screen and (min-width: 590px) {
-  .page-template-page-about-sub .site-content {
-    width: 768px; }
+  .page-template-page-about-sub .program-back-btn {
+    padding-left: 20px;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end; }
   .page-template-page-about-sub .entry-title {
     height: 7.5rem;
     bottom: -7.5rem; }

@@ -1,6 +1,8 @@
 .page-template-page-about-partners {
+  .post-63 {
+    margin-bottom: 0;
+  }
 	.entry-header {
-		max-width: 480px;
 		margin: 0 auto;
 		height: 275px;  
 		position: relative;
@@ -119,7 +121,6 @@
 @media all and (min-width: $mobile_width) {
 	.page-template-page-about-partners {
     .entry-header {
-			max-width: 768px;
 			height: 375px; 
     }
 		.entry-content p {
@@ -141,10 +142,11 @@
 		}
 		.logo-container {
 			min-width: 165px;
-		}
-		.about-back-btn {
-			display: none;
-		}
+    }
+    .about-back-btn {
+      padding-left: 20px;
+      align-self: end;
+    }
 	}
 }
 
@@ -153,6 +155,9 @@
     .entry-header {
         max-width: 1024px;
         height: 375px; 
+      }
+      .about-back-btn {
+        display: none;
       }
 	}
 }
