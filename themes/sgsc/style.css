@@ -2862,13 +2862,20 @@ span.wpcf7-not-valid-tip {
     .copywrite p {
       font-size: 14px; } }
 
+.page-template-page-about .entry-content {
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem; }
+  .page-template-page-about .entry-content a {
+    color: #000000;
+    text-decoration: none; }
+
 .page-template-page-about .entry-title {
-  height: 50%; }
+  height: 7rem; }
 
 .page-template-page-about .entry-header {
-  max-width: 480px;
   margin: 0 auto;
-  height: 305px;
+  height: 19rem;
   position: relative; }
   .page-template-page-about .entry-header img {
     width: 100%;
@@ -2888,10 +2895,6 @@ span.wpcf7-not-valid-tip {
     padding: 45px 0;
     background: rgba(255, 255, 255, 0.81); }
 
-.page-template-page-about .entry-content a {
-  color: #000000;
-  text-decoration: none; }
-
 .page-template-page-about .about-links {
   display: -ms-flexbox;
   display: flex;
@@ -2904,8 +2907,9 @@ span.wpcf7-not-valid-tip {
   text-align: center; }
   .page-template-page-about .about-links p {
     font-family: montserrat, merriweather, sans-serif;
+    font-weight: 500;
     margin: 1rem 0;
-    width: 18rem;
+    width: 80%;
     height: 6rem;
     border: 4px solid #f5a623;
     background: #f5a623;
@@ -2922,52 +2926,55 @@ span.wpcf7-not-valid-tip {
     font-size: 22px; }
 
 @media all and (min-width: 590px) {
+  .page-template-page-about .page .site-main {
+    width: initial; }
   .page-template-page-about .entry-header {
-    max-width: 768px;
-    height: 255px; }
+    height: 22.5rem; }
     .page-template-page-about .entry-header h1 {
       padding: 40px 0;
       font-size: 30px; }
   .page-template-page-about .entry-content {
-    width: 768px;
     margin: auto;
     margin-top: 1rem; }
   .page-template-page-about .about-links {
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly; }
     .page-template-page-about .about-links p {
-      width: 19.5rem;
+      width: 40.65%;
       height: 7.5rem; }
+    .page-template-page-about .about-links p:last-child {
+      width: 88%; }
     .page-template-page-about .about-links a {
       font-size: 30px; } }
 
 @media all and (min-width: 1024px) {
   .page-template-page-about .entry-header {
     max-width: 1024px;
-    height: 356px; }
+    height: 22.25rem; }
     .page-template-page-about .entry-header h1 {
       padding: 45px 0;
       font-size: 40px; }
-  .page-template-page-about .entry-content {
-    width: 1024px;
-    margin: auto;
-    margin-top: 1rem; }
+  .page-template-page-about .entry-title {
+    height: 10rem; }
   .page-template-page-about .about-links {
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly; }
   .page-template-page-about .about-links p {
     -ms-flex: 0 1 43%;
         flex: 0 1 43%;
     height: 10rem;
     margin: 2rem 0;
-    font-size: 2.5rem; }
+    font-size: 2.4rem; }
+  .page-template-page-about .about-links p:last-child {
+    -ms-flex: 0 1 90.7%;
+        flex: 0 1 90.7%; }
   .page-template-page-about .about-links a {
     padding: 3rem 3rem;
-    font-size: 2.5rem; } }
+    font-size: 2.4rem; } }
 
 .page-id-26 table {
   width: 0; }
