@@ -40,6 +40,11 @@
 
 .single-gallery .entry-content {
   width: 100%;
+  margin: 0;
+  @media screen and (min-width: $tablet_width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .gallery {
     display: flex;
     flex-flow: column wrap;
@@ -49,6 +54,10 @@
       justify-content: space-between;
       flex-flow: row wrap;
       margin-bottom: 0;
+      padding: 25.5px;
+    }
+    @media screen and (min-width: $tablet_width) {
+      padding: 0;
     }
     .thumbnail {
       display: flex;
@@ -82,8 +91,14 @@
   }
 }
 
-.single-gallery footer {
+.single-gallery .entry-footer {
   width: 100%;
+  @media screen and (min-width: $mobile_width) {
+    padding-left: 25.5px;
+  }
+  @media screen and (min-width: $tablet_width) {
+    padding-left: 0;
+  }  
   .button {
     text-decoration: none;
     color: $black;
