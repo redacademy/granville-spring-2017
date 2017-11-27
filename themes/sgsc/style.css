@@ -3692,8 +3692,7 @@ span.wpcf7-not-valid-tip {
 
 @media screen and (min-width: 590px) {
   .tax-program-type #tribe-events {
-    margin: 0 1rem; 
-  }
+    margin: 0 1rem; }
   .program-grid {
     display: -ms-flexbox;
     display: flex;
@@ -4643,6 +4642,9 @@ span.wpcf7-not-valid-tip {
   padding: 0;
   list-style: none; }
 
+.events-archive #secondary {
+  margin-top: -4rem; }
+
 .events-archive .widget-title {
   background-color: #45cdcb;
   width: 100%;
@@ -4664,11 +4666,12 @@ span.wpcf7-not-valid-tip {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  height: 186px;
   margin: 2rem 0px;
   cursor: pointer; }
   .events-archive .gallery-widget-img img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover; }
   .events-archive .gallery-widget-img a {
     position: absolute;
@@ -4746,10 +4749,13 @@ span.wpcf7-not-valid-tip {
     display: -ms-flexbox;
     display: flex;
     padding: 1.4rem 1rem; }
-  .events-archive .gallery-widget-img img {
-    height: 8.75rem; }
+  .events-archive .gallery-widget {
+    margin-top: 3rem; }
+  .events-archive .gallery-widget-img {
+    height: 140px; }
+  .events-archive #events-meta {
+    margin-left: 2rem; }
   .events-archive .tribe-events-list .tribe-events-event-meta {
-    margin-left: 2rem;
     font-size: 1.6rem;
     font-weight: 500;
     padding-left: 0; }
@@ -4772,11 +4778,11 @@ span.wpcf7-not-valid-tip {
   .events-archive .tribe-events-list-event-title {
     height: 12.5rem;
     font-size: 1.8rem; }
-  .events-archive .gallery-widget-img img {
-    height: 11.6rem; }
-  .events-archive .gallery-widget-img a {
-    padding: 22% 0; }
-  .events-archive .tribe-events-event-meta {
+  .events-archive .gallery-widget-img {
+    height: 186px; }
+    .events-archive .gallery-widget-img a {
+      padding: 22% 0; }
+  .events-archive #events-meta {
     margin-left: 4rem; }
   .events-archive #tribe-events .tribe-events-content {
     padding: 0 0 0 4rem;

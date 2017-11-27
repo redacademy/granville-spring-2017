@@ -46,7 +46,7 @@ $organizer = tribe_get_organizer();
 
 <!-- Event Meta -->
 <?php do_action( 'tribe_events_before_the_meta' ) ?>
-<div class="tribe-events-event-meta">
+<div id="events-meta" class="tribe-events-event-meta">
 	<div class="author <?php echo esc_attr( $has_venue_address ); ?>">
 
 		<!-- Schedule & Recurrence Details -->
