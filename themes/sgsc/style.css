@@ -3021,7 +3021,6 @@ span.wpcf7-not-valid-tip {
   font-size: 16px; }
 
 .page-template-page-about-our-team .entry-header {
-  max-width: 480px;
   margin: 0 auto;
   height: 275px;
   position: relative; }
@@ -3134,7 +3133,6 @@ span.wpcf7-not-valid-tip {
 
 @media all and (min-width: 590px) {
   .page-template-page-about-our-team .entry-header {
-    max-width: 768px;
     height: 265px; }
     .page-template-page-about-our-team .entry-header img {
       object-position: 45% 0%; }
@@ -3220,42 +3218,7 @@ span.wpcf7-not-valid-tip {
   .page-template-page-about-our-team .about-back-btn {
     display: none; } }
 
-.page-template-page-about-our-board .donate-btn {
-  background-color: #F91E72;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 3;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 2.3rem;
-  width: 2.3rem; }
-  @media screen and (min-width: 590px) {
-    .page-template-page-about-our-board .donate-btn {
-      height: 5rem;
-      width: 5rem; } }
-  .page-template-page-about-our-board .donate-btn a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 1rem; }
-    @media screen and (min-width: 590px) {
-      .page-template-page-about-our-board .donate-btn a {
-        font-size: 4rem; } }
-    .page-template-page-about-our-board .donate-btn a i {
-      font-weight: lighter;
-      padding: .5rem;
-      color: #000000; }
-      .page-template-page-about-our-board .donate-btn a i:hover {
-        color: #f5a623; }
-    .page-template-page-about-our-board .donate-btn a p {
-      display: none; }
-
 .page-template-page-about-our-board .entry-header {
-  max-width: 480px;
   margin: 0 auto;
   height: 275px;
   position: relative; }
@@ -3368,7 +3331,6 @@ span.wpcf7-not-valid-tip {
 
 @media screen and (min-width: 590px) {
   .page-template-page-about-our-board .entry-header {
-    max-width: 768px;
     height: 265px; }
     .page-template-page-about-our-board .entry-header img {
       object-position: 45% 0%; }
