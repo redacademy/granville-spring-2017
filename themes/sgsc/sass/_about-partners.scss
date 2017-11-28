@@ -12,10 +12,11 @@
 			object-fit: cover;
 			object-position: 65% 0%;
 			position: absolute;
-		}
+    }
+  }
 		.entry-title {
 			position: absolute;
-			bottom: 0px;
+			bottom: 0rem;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -23,11 +24,13 @@
 			height: 118px;
 			background: $orange;
 			margin-bottom: 0;
-		}
-	}
-	.entry-content p {
-		margin: 15px 22px;
-	}
+    }
+    .entry-content {
+      padding: 0;
+      p {
+      margin: 15px 22px;
+    }
+  }
 	.linkhighlight a {
 		color: #5C8EDC;
 		text-decoration: none;
@@ -121,7 +124,10 @@
 @media all and (min-width: $mobile_width) {
 	.page-template-page-about-partners {
     .entry-header {
-			height: 375px; 
+      height: 265px; 
+      img {
+        object-position: 45% 0%;
+      }
     }
 		.entry-content p {
 			font-size: $font_d-sub-body;
@@ -130,10 +136,12 @@
 			flex-basis: 33%;
 		}
 		.entry-title {
-			bottom: -10rem;
-			height: 10rem;
+			bottom: -7.5rem;
+			height: 7.5rem;
 		}
-			
+    .entry-content {
+      margin-top: 7.5rem;
+    }
 		.content-area {
 			margin-top: 1rem;
 		}
@@ -155,6 +163,13 @@
     .entry-header {
         max-width: 1024px;
         height: 375px; 
+      }
+      .entry-title {
+        bottom: -10rem;
+        height: 10rem;
+      }
+      .entry-content {
+        margin-top: 10rem;
       }
       .about-back-btn {
         display: none;
