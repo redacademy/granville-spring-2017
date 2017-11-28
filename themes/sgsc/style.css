@@ -4491,7 +4491,7 @@ span.wpcf7-not-valid-tip {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap; }
         .page-id-51 .entry-content .contactus p {
-          margin: 18px; } }
+          margin: 18px 0; } }
     @media screen and (min-width: 1024px) {
       .page-id-51 .entry-content .contactus {
         width: 38%;
