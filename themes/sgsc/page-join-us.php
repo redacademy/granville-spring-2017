@@ -48,11 +48,12 @@ get_the_title();
               <h2><?php echo CFS()->get( 'new_member' );	?></h2>
               <p class="membership-description"><?php echo CFS()->get( 'new_member_text' );	?></p>
               <div class="membership-links">
-                <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'english_form' )) ) ?>">
+                <span class="links-title">Membership Forms:</span>
+                <a class="link-wrapper" href="<?php echo esc_url( get_permalink(get_page_by_path( 'english_form' )) ) ?>">
                   <p class="form-link">English</p></a>
-                <a class="m-button" href="<?php echo esc_url( get_permalink(get_page_by_path( 'spanish_form' )) ) ?>">
+                <a class="link-wrapper" href="<?php echo esc_url( get_permalink(get_page_by_path( 'spanish_form' )) ) ?>">
                   <p class="form-link">Spanish</p></a>
-                <a class="m-button" href="<?php echo CFS() ->get('membership_form'); ?>" download>
+                <a class="link-wrapper" href="<?php echo CFS() ->get('membership_form'); ?>" download>
                   <p class="form-link">PDF</p></a>
                 </div>
             </div>
