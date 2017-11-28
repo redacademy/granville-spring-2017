@@ -1,6 +1,13 @@
 .page-id-26 {
   table {
-    width: 120%
+    width: 100%;
+  }
+  .hentry {
+    margin-bottom: 0;
+  }
+  td {
+    border: 1px solid grey;
+    padding-left: 0.5rem;
   }
   .content-area {
     line-height: 1.6rem;
