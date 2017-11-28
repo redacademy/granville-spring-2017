@@ -203,6 +203,9 @@ span.wpcf7-not-valid-tip {
 }
 @media all and (min-width: 690px) {
   .site-footer {
+    border-top: none;
+  }
+  .site-footer {
     max-width: 768px;
   }
 	.site-info {
