@@ -3053,7 +3053,6 @@ span.wpcf7-not-valid-tip {
       max-width: 1024px; } }
 
 .page-template-page-about-our-team .entry-header {
-  max-width: 480px;
   margin: 0 auto;
   height: 275px;
   position: relative; }
@@ -3166,7 +3165,6 @@ span.wpcf7-not-valid-tip {
 
 @media all and (min-width: 590px) {
   .page-template-page-about-our-team .entry-header {
-    max-width: 768px;
     height: 265px; }
     .page-template-page-about-our-team .entry-header img {
       object-position: 45% 0%; }

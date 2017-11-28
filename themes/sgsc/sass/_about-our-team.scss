@@ -1,6 +1,5 @@
 .page-template-page-about-our-team {
   .entry-header {
-    max-width: 480px;
     margin: 0 auto;
     height: 275px;  
     position: relative;
@@ -115,7 +114,6 @@
 @media all and (min-width: $mobile_width) {
   .page-template-page-about-our-team {
     .entry-header {
-      max-width: 768px;
       height: 265px; 
       img {
         object-position: 45% 0%;
