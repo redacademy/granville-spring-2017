@@ -184,7 +184,8 @@
       margin-top: 40px;
     }
     .about-back-btn {
-      display: none;
+      padding-left: 20px;
+      align-self: end;
     }
   }
 }
@@ -198,8 +199,8 @@
     .entry-content {
       P {
         font-size: $font_d-sub-body;
-     }
-   }
+      }
+    }
     .entry-title {
       bottom: -10rem;
       height: 10rem;
@@ -221,6 +222,9 @@
     }
     ul li:nth-child(even) img {
       padding-right: 38px;
+    }
+    .about-back-btn {
+      display: none;
     }
   }
 }
