@@ -3922,6 +3922,9 @@ span.wpcf7-not-valid-tip {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center; }
+  .page-template-page-join-us .membership-links a, .post-type-archive-volunteer .membership-links a {
+    -webkit-text-decoration-color: #000000;
+            text-decoration-color: #000000; }
 
 .page-template-page-join-us .links-title, .post-type-archive-volunteer .links-title {
   -ms-flex-preferred-size: 100%;
@@ -3933,13 +3936,10 @@ span.wpcf7-not-valid-tip {
   @media all and (min-width: 590px) {
     .page-template-page-join-us .links-title, .post-type-archive-volunteer .links-title {
       font-size: 18px; } }
-  .page-template-page-join-us .links-title .link-wrapper, .post-type-archive-volunteer .links-title .link-wrapper {
-    padding: 0 0.25rem; }
 
 .page-template-page-join-us .form-link, .post-type-archive-volunteer .form-link {
   display: initial !important;
-  color: black;
-  padding-top: 0.5rem; }
+  padding: 0 0.25rem; }
 
 @media all and (min-width: 590px) {
   .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {

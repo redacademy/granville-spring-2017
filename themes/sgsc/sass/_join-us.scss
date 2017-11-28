@@ -116,6 +116,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    a {
+    text-decoration-color: $black;
+    }
   }
   .links-title {
     flex-basis: 100%;
@@ -126,15 +129,11 @@
     @media all and (min-width: $mobile_width) {
       font-size: $font_t-body;
   }
-  .link-wrapper {
-    padding: 0 0.25rem;
-  }
 }
 
 .form-link {
     display: initial !important;
-    color: black;
-    padding-top: 0.5rem;
+    padding: 0 0.25rem;
   }
 }
 
