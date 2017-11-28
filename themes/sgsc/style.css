@@ -4497,24 +4497,36 @@ span.wpcf7-not-valid-tip {
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  padding: 32px;
+  margin-top: 0px; }
   @media screen and (min-width: 1024px) {
     .page-id-51 .entry-content {
       margin-bottom: 50px; } }
   .page-id-51 .entry-content .contactus {
-    padding: 32px;
     width: 100%; }
     @media screen and (min-width: 590px) {
       .page-id-51 .entry-content .contactus {
-        width: 100%; } }
+        width: 100%;
+        max-height: 300px;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap; }
+        .page-id-51 .entry-content .contactus p {
+          margin: 18px 0; } }
     @media screen and (min-width: 1024px) {
       .page-id-51 .entry-content .contactus {
-        width: 38%; } }
+        width: 38%;
+        display: block; }
+        .page-id-51 .entry-content .contactus p {
+          margin: 18px 0; } }
   .page-id-51 .entry-content p {
     font-size: 18px; }
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 1024px) {
     .page-id-51 .entry-content iframe {
-      margin: 32px; } }
+      max-width: 550px; } }
 
 .events-archive .entry-content {
   width: initial; }

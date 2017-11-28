@@ -34,25 +34,37 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  padding: $margin-d;  
+  margin-top: 0px;
   @media screen and (min-width: $tablet_width) {
     margin-bottom: 50px;
   }
   .contactus {
-    padding: $margin-d;
     width: 100%;
     @media screen and (min-width: $mobile_width) {
       width: 100%;
+      max-height: 300px;
+      display: flex;
+      overflow: hidden;
+      flex-flow: column wrap;
+      p {
+        margin: 18px 0;
+      }
     }
     @media screen and (min-width: $tablet_width) {
-      width: 38%
+      width: 38%;
+      display: block;
+      p {
+        margin: 18px 0;
+      }
     }
   }
   p {
     font-size: $font_d-sub-body;
   }
   iframe {
-    @media screen and (min-width: $mobile_width) {
-      margin: $margin-d;
+    @media screen and (min-width: $tablet_width) {
+      max-width: 550px;
     }
   }
 }
