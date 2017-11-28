@@ -52,6 +52,7 @@
   }
   .entry-content {
     margin: 0;
+    padding: 0;
   }
   .join-us-section {
     display: flex;
@@ -62,8 +63,11 @@
     background-repeat: no-repeat;
     min-height: 250px;
     max-height: 750px;
-    padding-bottom: 21px;
+    padding-bottom: 0;
     background-position: 60%;
+    div:first-child {
+      margin-top: 17px;
+    }
   }
   .rectangle {
     height: 208px;
@@ -108,10 +112,28 @@
   .rectangle p {
     display: none;
   }
-  .form-link {
+  .membership-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+    text-decoration-color: $black;
+    }
+  }
+  .links-title {
+    flex-basis: 100%;
+    text-align: center;
+    font-family: $font__header;
+    color: $black;
+    font-size: $font_t-footer;
+    @media all and (min-width: $mobile_width) {
+      font-size: $font_t-body;
+  }
+}
+
+.form-link {
     display: initial !important;
-    color: black;
-    padding-top: 0.5rem;
+    padding: 0 0.25rem;
   }
 }
 
@@ -128,12 +150,15 @@
       margin: 0 auto;
       justify-content: space-between;
       width: 100%;
-      margin-top: 2rem;
+      margin-top: 0;
       margin-bottom: 28px;
       max-width: none;
       flex-direction: row;
       background-size: 100%;
       min-height: 393px;
+      div:first-child {
+        margin-top: initial;
+      }
     }
     .rectangle {
       margin-top: initial;
