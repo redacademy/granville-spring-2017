@@ -3948,41 +3948,7 @@ span.wpcf7-not-valid-tip {
     line-height: 29px;
     width: 80%; } }
 
-.volunteer-template-default .donate-btn {
-  background-color: #F91E72;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 3;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 2.3rem;
-  width: 2.3rem; }
-  @media screen and (min-width: 590px) {
-    .volunteer-template-default .donate-btn {
-      height: 5rem;
-      width: 5rem; } }
-  .volunteer-template-default .donate-btn a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 1rem; }
-    @media screen and (min-width: 590px) {
-      .volunteer-template-default .donate-btn a {
-        font-size: 4rem; } }
-    .volunteer-template-default .donate-btn a i {
-      font-weight: lighter;
-      padding: .5rem;
-      color: #000000; }
-      .volunteer-template-default .donate-btn a i:hover {
-        color: #f5a623; }
-    .volunteer-template-default .donate-btn a p {
-      display: none; }
-
-.volunteer-template-default .entry-header {
+.post-type-archive-volunteer .entry-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -4002,12 +3968,12 @@ span.wpcf7-not-valid-tip {
   height: 118px;
   color: #000000; }
   @media screen and (min-width: 590px) {
-    .volunteer-template-default .entry-header {
+    .post-type-archive-volunteer .entry-header {
       height: 120px; } }
   @media screen and (min-width: 1024px) {
-    .volunteer-template-default .entry-header {
+    .post-type-archive-volunteer .entry-header {
       height: 160px; } }
-  .volunteer-template-default .entry-header .donate-btn {
+  .post-type-archive-volunteer .entry-header .donate-btn {
     background-color: #F91E72;
     position: absolute;
     bottom: 0;
@@ -4022,70 +3988,77 @@ span.wpcf7-not-valid-tip {
     height: 2.3rem;
     width: 2.3rem; }
     @media screen and (min-width: 590px) {
-      .volunteer-template-default .entry-header .donate-btn {
+      .post-type-archive-volunteer .entry-header .donate-btn {
         height: 3.7rem;
         width: 3.7rem; } }
     @media screen and (min-width: 1024px) {
-      .volunteer-template-default .entry-header .donate-btn {
+      .post-type-archive-volunteer .entry-header .donate-btn {
         height: 5rem;
         width: 5rem; } }
-    .volunteer-template-default .entry-header .donate-btn a {
+    .post-type-archive-volunteer .entry-header .donate-btn a {
       text-decoration: none;
       color: #000000;
       font-size: 1rem; }
       @media screen and (min-width: 590px) {
-        .volunteer-template-default .entry-header .donate-btn a {
+        .post-type-archive-volunteer .entry-header .donate-btn a {
           font-size: 2.5rem; } }
       @media screen and (min-width: 1024px) {
-        .volunteer-template-default .entry-header .donate-btn a {
+        .post-type-archive-volunteer .entry-header .donate-btn a {
           font-size: 4rem; } }
-      .volunteer-template-default .entry-header .donate-btn a i {
+      .post-type-archive-volunteer .entry-header .donate-btn a i {
         font-weight: lighter;
         padding: .5rem;
         color: #000000; }
-        .volunteer-template-default .entry-header .donate-btn a i:hover {
+        .post-type-archive-volunteer .entry-header .donate-btn a i:hover {
           color: #f5a623; }
-      .volunteer-template-default .entry-header .donate-btn a p {
+      .post-type-archive-volunteer .entry-header .donate-btn a p {
         display: none; }
-  .volunteer-template-default .entry-header .entry-meta {
+  .post-type-archive-volunteer .entry-header .entry-meta {
     display: none; }
 
-.volunteer-template-default .entry-title {
+.post-type-archive-volunteer .entry-title {
   margin: auto; }
 
-.volunteer-template-default .volunteer-post {
+.post-type-archive-volunteer .volunteer-post {
   margin: 20px 25px; }
 
-.volunteer-template-default .volunteer-title {
+.post-type-archive-volunteer .volunteer-title {
   font-size: 16px;
   text-align: center; }
 
-.volunteer-template-default .volunteer-header h1 {
+.post-type-archive-volunteer .volunteer-header h1 {
   font-family: lato, novecentosanswide, sans-serif;
   font-weight: bold;
   font-size: 24px; }
 
-.volunteer-template-default .volunteer-content {
+.post-type-archive-volunteer .volunteer-content {
   font-size: 16px; }
 
+.post-type-archive-volunteer .no-postings {
+  margin: 10rem 0;
+  text-align: center; }
+  @media all and (min-width: 600px) {
+    .post-type-archive-volunteer .no-postings {
+      margin: 15rem 0; } }
+
 @media all and (min-width: 600px) {
-  .volunteer-template-default .volunteer-post {
+  .post-type-archive-volunteer .volunteer-post {
     margin: 20px 25px; }
-  .volunteer-template-default .volunteer-title {
+  .post-type-archive-volunteer .volunteer-title {
     font-size: 16px;
     font-weight: 300; }
-  .volunteer-template-default .volunteer-header {
+  .post-type-archive-volunteer .volunteer-header {
     width: 1024px;
     margin: auto; }
-  .volunteer-template-default .volunteer-content p {
+  .post-type-archive-volunteer .volunteer-content p {
     column-width: 512px;
     font-size: 18px; }
-  .volunteer-template-default .csRow {
+  .post-type-archive-volunteer .csRow {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-  .volunteer-template-default .csColumn {
+  .post-type-archive-volunteer .csColumn {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -5367,6 +5340,11 @@ article {
     font-family: lato, novecentosanswide, sans-serif; }
 
 @media screen and (min-width: 590px) {
+  .page-template-page-about-sub .program-back-btn {
+    padding-left: 20px;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end; }
   .page-template-page-about-sub .entry-title {
     height: 7.5rem;
     bottom: -7.5rem; }
