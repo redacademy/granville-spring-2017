@@ -43,11 +43,19 @@ get_header(); ?>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
-
-			<?php get_template_part(); ?>
-
-		<?php endif; ?>
-</div>
+    <header class="entry-header">
+								<h1 class="entry-header">Join Us</h1>
+								<div class="donate-btn">
+								<a href="<?php echo esc_url( get_permalink(get_page_by_path( 'donate' )) ) ?>">
+								<i class="fa fa-heart-o" aria-hidden="true">
+									<p>Donate</p>
+								</i>
+								</a>
+							</div>
+					</header><!-- .entry-header -->
+      <p class="no-postings"><?php esc_html_e('Sorry, there are no available postings at this time.'); ?></p>
+		
+<?php endif; ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

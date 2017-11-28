@@ -1,39 +1,4 @@
-.volunteer-template-default {
-  .donate-btn {
-    background-color: $pink;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2.3rem;
-    width: 2.3rem;
-    @media screen and (min-width: $mobile_width) {
-      height: 5rem;
-      width: 5rem;
-    }
-    a {
-      text-decoration: none;
-      color: $black;
-      font-size: 1rem;
-      @media screen and (min-width: $mobile_width) {
-        font-size: 4rem;
-      }
-      i {
-        font-weight: lighter;
-        padding: .5rem;
-        color: $black;
-        &:hover {
-          color: $orange;
-        }
-      }
-      p {
-        display: none;
-      }
-    }
-  }
+.post-type-archive-volunteer{
   .entry-header {
   display: flex;
   justify-content: center;
@@ -64,7 +29,18 @@
   .volunteer-content {
     font-size: $font_m-h2;
   }
+  .no-postings {
+    margin: 10rem 0;
+    text-align: center;
+    @media all and (min-width: $desktop-view) {
+      margin: 15rem 0;
+    }
+  }
+}
+
   @media all and (min-width: $desktop-view) {
+    // .volunteer-template-default {
+  .post-type-archive-volunteer {
     .volunteer-post {
       margin: 20px 25px;
     }
