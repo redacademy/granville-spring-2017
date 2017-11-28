@@ -1020,29 +1020,6 @@ object {
           .page .site-main article header .entry-meta {
             display: none; } }
 
-.page-id-26 .header .entry-header {
-  height: 7rem; }
-
-.page-id-26 .content-area {
-  line-height: 1.6rem; }
-
-.page-id-26 table {
-  width: 120%; }
-
-.page-id-26 .program-back-btn {
-  display: none; }
-
-@media screen and (min-width: 590px) {
-  .page-id-26 table {
-    width: initial; }
-  .page-id-26 #page .entry-title {
-    position: initial;
-    bottom: initial; }
-  .page-id-26 .header .entry-header {
-    height: 10rem; }
-  .page-id-26 #primary, .page-id-26 .content-area {
-    margin-top: 0; } }
-
 .main-navigation .search-field {
   display: none;
   overflow: hidden;
@@ -2991,45 +2968,31 @@ span.wpcf7-not-valid-tip {
     font-size: 2.5rem; } }
 
 .page-id-26 table {
-  width: 0; }
+  width: 120%; }
 
-.page-id-26 .entry-header {
-  height: 118px;
-  margin-top: 0.5rem;
-  max-width: 480px; }
-  @media screen and (min-width: 590px) {
-    .page-id-26 .entry-header {
-      height: 120px;
-      max-width: 768px; } }
-  @media screen and (min-width: 590px) and (min-width: 1024px) {
-    .page-id-26 .entry-header {
-      height: 160px;
-      max-width: 1024px; } }
+.page-id-26 .content-area {
+  line-height: 1.6rem; }
 
-.page-id-26 .header .entry-header {
-  height: 118px;
-  width: 480px; }
-  @media screen and (min-width: 590px) {
-    .page-id-26 .header .entry-header {
-      height: 120px;
-      width: 768px; } }
-  @media screen and (min-width: 590px) and (min-width: 1024px) {
-    .page-id-26 .header .entry-header {
-      height: 160px;
-      width: 1024px; } }
+.page-id-26 .program-back-btn {
+  display: none; }
 
-.page-id-26 .entry-header .entry-title {
-  height: 118px;
-  position: initial;
-  max-width: 480px; }
-  @media screen and (min-width: 590px) {
-    .page-id-26 .entry-header .entry-title {
-      height: 120px;
-      max-width: 768px; } }
-  @media screen and (min-width: 590px) and (min-width: 1024px) {
-    .page-id-26 .entry-header .entry-title {
-      height: 160px;
-      max-width: 1024px; } }
+.page-id-26 #orange-header {
+  height: 7.37rem;
+  margin-top: 0.5rem; }
+
+@media screen and (min-width: 590px) {
+  .page-id-26 #page .entry-title {
+    position: initial;
+    bottom: initial; }
+  .page-id-26 #orange-header {
+    height: 7.5rem; }
+  .page-id-26 #primary, .page-id-26 .content-area {
+    margin-top: 0; } }
+
+@media screen and (min-width: 1024px) {
+  .page-id-26 #orange-header {
+    height: 10rem;
+    max-width: 1024px; } }
 
 .advertise-title {
   font-size: 18px !important;
@@ -3042,18 +3005,6 @@ span.wpcf7-not-valid-tip {
 .advertise-body {
   font-family: lato, novecentosanswide, sans-serif;
   font-size: 16px; }
-
-.page-id-26 .entry-content {
-  padding: 0 11px !important;
-  max-width: 480px; }
-  @media screen and (min-width: 590px) {
-    .page-id-26 .entry-content {
-      padding: 0 52px !important;
-      max-width: 768px; } }
-  @media screen and (min-width: 590px) and (min-width: 1024px) {
-    .page-id-26 .entry-content {
-      height: 0 64px !important;
-      max-width: 1024px; } }
 
 .page-template-page-about-our-team .entry-header {
   max-width: 480px;
@@ -5408,8 +5359,6 @@ article {
     font-family: lato, novecentosanswide, sans-serif; }
 
 @media screen and (min-width: 590px) {
-  .page-template-page-about-sub .site-content {
-    width: 768px; }
   .page-template-page-about-sub .entry-title {
     height: 7.5rem;
     bottom: -7.5rem; }

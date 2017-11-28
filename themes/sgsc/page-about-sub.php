@@ -9,7 +9,7 @@
 get_header(); ?>
 
 	<section class="header">
-		<div class="entry-header">
+		<div id="orange-header" class="entry-header">
 			<!--<div class="about-hero-wrapper"> -->
 			<?php if ( has_post_thumbnail() ) {
         		the_post_thumbnail();

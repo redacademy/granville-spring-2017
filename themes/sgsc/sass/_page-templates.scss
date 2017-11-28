@@ -24,36 +24,3 @@
     }
   }
 }
-
-// Advertise Page
-
-.page-id-26 {
-  .header .entry-header {
-    height: 7rem;
-  }
-  .content-area {
-    line-height: 1.6rem;
-  }
-  table {
-    width: 120%
-  }
-  .program-back-btn {
-    display: none;
-  }
-
-  @media screen and (min-width: $mobile_width) {
-    table {
-      width: initial;
-    }
-    #page .entry-title {
-      position: initial;
-      bottom: initial;
-    }
-    .header .entry-header {
-      height: 10rem;
-    }
-    #primary, .content-area {
-      margin-top: 0;
-    }
-  }
-}
