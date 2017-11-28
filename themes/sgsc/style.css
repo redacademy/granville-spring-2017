@@ -1275,12 +1275,12 @@ object {
       align-items: center;
   position: relative;
   width: 100%; }
-  @media screen and (min-width: 1024px) {
-    .home .learn-about-story {
-      height: 386px; } }
   @media screen and (min-width: 590px) {
     .home .learn-about-story {
       height: 300px; } }
+  @media screen and (min-width: 1024px) {
+    .home .learn-about-story {
+      height: 386px; } }
   .home .learn-about-story img {
     height: 276px;
     width: 100%;
@@ -2815,7 +2815,8 @@ span.wpcf7-not-valid-tip {
 
 @media all and (min-width: 1024px) {
   .site-footer {
-    max-width: 1024px; }
+    max-width: 1024px;
+    margin: 0 auto; }
   .site-info {
     padding-left: 35px;
     padding-top: 20px;

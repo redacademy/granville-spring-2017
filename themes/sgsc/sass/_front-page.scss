@@ -36,11 +36,11 @@
   align-items: center;
   position: relative;
   width: 100%;
-  @media screen and (min-width: $tablet_width) {
-    height: 386px;
-  }
   @media screen and (min-width: $mobile_width) {
     height: 300px;
+  }
+  @media screen and (min-width: $tablet_width) {
+    height: 386px;
   }
   img {
     height: 276px;
