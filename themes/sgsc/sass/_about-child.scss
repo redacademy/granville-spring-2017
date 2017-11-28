@@ -1,14 +1,18 @@
+.post-612 {
+  margin-bottom: 0;
+}
+
 .page-template-page-about-sub {
   .site-content {
     width: 100%;
     margin: auto;
   }
   .entry-header {
-    height: 17rem;
+  height: 17rem;
     position: relative;
     img {
       object-fit: cover;
-      width: auto;
+      width: 100%;
       height: 100%
     }
   }
@@ -37,6 +41,10 @@
 
 @media screen and (min-width: $mobile_width) {
   .page-template-page-about-sub {
+    .program-back-btn {
+      padding-left: 20px;
+      align-self: end;
+    }
     .entry-title {
       height: 7.5rem;
       bottom: -7.5rem;

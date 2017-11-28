@@ -2860,13 +2860,20 @@ span.wpcf7-not-valid-tip {
     .copywrite p {
       font-size: 14px; } }
 
+.page-template-page-about .entry-content {
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem; }
+  .page-template-page-about .entry-content a {
+    color: #000000;
+    text-decoration: none; }
+
 .page-template-page-about .entry-title {
-  height: 50%; }
+  height: 7rem; }
 
 .page-template-page-about .entry-header {
-  max-width: 480px;
   margin: 0 auto;
-  height: 305px;
+  height: 19rem;
   position: relative; }
   .page-template-page-about .entry-header img {
     width: 100%;
@@ -2886,10 +2893,6 @@ span.wpcf7-not-valid-tip {
     padding: 45px 0;
     background: rgba(255, 255, 255, 0.81); }
 
-.page-template-page-about .entry-content a {
-  color: #000000;
-  text-decoration: none; }
-
 .page-template-page-about .about-links {
   display: -ms-flexbox;
   display: flex;
@@ -2902,8 +2905,9 @@ span.wpcf7-not-valid-tip {
   text-align: center; }
   .page-template-page-about .about-links p {
     font-family: montserrat, merriweather, sans-serif;
+    font-weight: 500;
     margin: 1rem 0;
-    width: 18rem;
+    width: 80%;
     height: 6rem;
     border: 4px solid #f5a623;
     background: #f5a623;
@@ -2920,52 +2924,55 @@ span.wpcf7-not-valid-tip {
     font-size: 22px; }
 
 @media all and (min-width: 590px) {
+  .page-template-page-about .page .site-main {
+    width: initial; }
   .page-template-page-about .entry-header {
-    max-width: 768px;
-    height: 255px; }
+    height: 22.5rem; }
     .page-template-page-about .entry-header h1 {
       padding: 40px 0;
       font-size: 30px; }
   .page-template-page-about .entry-content {
-    width: 768px;
     margin: auto;
     margin-top: 1rem; }
   .page-template-page-about .about-links {
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly; }
     .page-template-page-about .about-links p {
-      width: 19.5rem;
+      width: 40.65%;
       height: 7.5rem; }
+    .page-template-page-about .about-links p:last-child {
+      width: 88%; }
     .page-template-page-about .about-links a {
       font-size: 30px; } }
 
 @media all and (min-width: 1024px) {
   .page-template-page-about .entry-header {
     max-width: 1024px;
-    height: 356px; }
+    height: 22.25rem; }
     .page-template-page-about .entry-header h1 {
       padding: 45px 0;
       font-size: 40px; }
-  .page-template-page-about .entry-content {
-    width: 1024px;
-    margin: auto;
-    margin-top: 1rem; }
+  .page-template-page-about .entry-title {
+    height: 10rem; }
   .page-template-page-about .about-links {
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly; }
   .page-template-page-about .about-links p {
     -ms-flex: 0 1 43%;
         flex: 0 1 43%;
     height: 10rem;
     margin: 2rem 0;
-    font-size: 2.5rem; }
+    font-size: 2.4rem; }
+  .page-template-page-about .about-links p:last-child {
+    -ms-flex: 0 1 90.7%;
+        flex: 0 1 90.7%; }
   .page-template-page-about .about-links a {
     padding: 3rem 3rem;
-    font-size: 2.5rem; } }
+    font-size: 2.4rem; } }
 
 .page-id-26 table {
   width: 100%; }
@@ -3184,7 +3191,10 @@ span.wpcf7-not-valid-tip {
     margin-bottom: 20px;
     margin-top: 40px; }
   .page-template-page-about-our-team .about-back-btn {
-    display: none; } }
+    padding-left: 20px;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end; } }
 
 @media all and (min-width: 1024px) {
   .page-template-page-about-our-team .entry-header {
@@ -3206,7 +3216,9 @@ span.wpcf7-not-valid-tip {
   .page-template-page-about-our-team ul li:nth-child(odd) img {
     padding-left: 38px; }
   .page-template-page-about-our-team ul li:nth-child(even) img {
-    padding-right: 38px; } }
+    padding-right: 38px; }
+  .page-template-page-about-our-team .about-back-btn {
+    display: none; } }
 
 .page-template-page-about-our-board .donate-btn {
   background-color: #F91E72;
@@ -3842,7 +3854,6 @@ span.wpcf7-not-valid-tip {
 
 .page-template-page-join-us .rectangle, .post-type-archive-volunteer .rectangle {
   height: 208px;
-  max-width: 590px;
   box-sizing: border-box;
   -ms-flex-direction: column;
       flex-direction: column;
@@ -3891,7 +3902,8 @@ span.wpcf7-not-valid-tip {
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    width: 80%; }
 
 .page-template-page-join-us .rectangle p, .post-type-archive-volunteer .rectangle p {
   display: none; }
@@ -3911,22 +3923,35 @@ span.wpcf7-not-valid-tip {
     margin: 0 auto;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    width: 768px;
+    width: 100%;
     margin-top: 2rem;
     margin-bottom: 28px;
     max-width: none;
     -ms-flex-direction: row;
         flex-direction: row;
-    background-size: 100%; }
+    background-size: 100%;
+    min-height: 393px; }
   .page-template-page-join-us .rectangle, .post-type-archive-volunteer .rectangle {
     margin-top: initial;
-    height: 280px;
+    min-height: 393px;
     box-sizing: border-box;
-    width: 225px;
+    width: 29.5%;
     background-color: rgba(255, 255, 255, 0.8);
     border: 4px solid rgba(255, 255, 255, 0); }
     .page-template-page-join-us .rectangle:hover, .post-type-archive-volunteer .rectangle:hover {
-      border: 4px solid #000000; } }
+      border: 4px solid #000000; }
+    .page-template-page-join-us .rectangle p, .post-type-archive-volunteer .rectangle p {
+      display: initial;
+      font-family: lato, novecentosanswide, sans-serif;
+      font-size: 18px;
+      color: black;
+      width: 163px;
+      margin-top: 11px;
+      line-height: 22px;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      display: -ms-flexbox;
+      display: flex; } }
 
 @media all and (min-width: 1024px) {
   .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
@@ -3938,20 +3963,15 @@ span.wpcf7-not-valid-tip {
     margin: 0 auto;
     -ms-flex-pack: justify;
         justify-content: space-between;
+    min-height: 615px;
     margin-bottom: 28px;
     width: 1024px;
     -ms-flex-direction: row;
         flex-direction: row;
     background-size: 100%; }
   .page-template-page-join-us .rectangle, .post-type-archive-volunteer .rectangle {
-    margin-top: initial;
-    height: 356px;
-    box-sizing: border-box;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 4px solid rgba(255, 255, 255, 0); }
-    .page-template-page-join-us .rectangle:hover, .post-type-archive-volunteer .rectangle:hover {
-      border: 4px solid #000000; }
+    width: 29.5%;
+    min-height: 615px; }
   .page-template-page-join-us .new-member h2,
   .page-template-page-join-us .membership-renewal h2,
   .page-template-page-join-us .volunteer h2, .post-type-archive-volunteer .new-member h2,
@@ -3959,26 +3979,12 @@ span.wpcf7-not-valid-tip {
   .post-type-archive-volunteer .volunteer h2 {
     font-family: montserrat, merriweather, sans-serif;
     font-size: 24px;
-    width: 163px;
     height: 58px;
     margin: 38px auto 11px auto;
     text-align: center;
     padding-bottom: 11px;
-    line-height: 29px; }
-  .page-template-page-join-us .new-member p,
-  .page-template-page-join-us .membership-renewal p,
-  .page-template-page-join-us .volunteer p, .post-type-archive-volunteer .new-member p,
-  .post-type-archive-volunteer .membership-renewal p,
-  .post-type-archive-volunteer .volunteer p {
-    font-family: lato, novecentosanswide, sans-serif;
-    font-size: 18px;
-    color: black;
-    width: 163px;
-    margin: auto;
-    margin-top: 11px;
-    line-height: 22px; }
-  .page-template-page-join-us .rectangle p, .post-type-archive-volunteer .rectangle p {
-    display: initial; } }
+    line-height: 29px;
+    width: 80%; } }
 
 .volunteer-template-default .donate-btn {
   background-color: #F91E72;
@@ -4455,24 +4461,36 @@ span.wpcf7-not-valid-tip {
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  padding: 32px;
+  margin-top: 0px; }
   @media screen and (min-width: 1024px) {
     .page-id-51 .entry-content {
       margin-bottom: 50px; } }
   .page-id-51 .entry-content .contactus {
-    padding: 32px;
     width: 100%; }
     @media screen and (min-width: 590px) {
       .page-id-51 .entry-content .contactus {
-        width: 100%; } }
+        width: 100%;
+        max-height: 300px;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap; }
+        .page-id-51 .entry-content .contactus p {
+          margin: 18px 0; } }
     @media screen and (min-width: 1024px) {
       .page-id-51 .entry-content .contactus {
-        width: 38%; } }
+        width: 38%;
+        display: block; }
+        .page-id-51 .entry-content .contactus p {
+          margin: 18px 0; } }
   .page-id-51 .entry-content p {
     font-size: 18px; }
-  @media screen and (min-width: 590px) {
+  @media screen and (min-width: 1024px) {
     .page-id-51 .entry-content iframe {
-      margin: 32px; } }
+      max-width: 550px; } }
 
 .events-archive .entry-content {
   width: initial; }
@@ -5178,8 +5196,10 @@ article {
 .search .m-button {
   display: inline-block; }
 
+.page-template-page-about-partners .post-63 {
+  margin-bottom: 0; }
+
 .page-template-page-about-partners .entry-header {
-  max-width: 480px;
   margin: 0 auto;
   height: 275px;
   position: relative; }
@@ -5189,22 +5209,25 @@ article {
     object-fit: cover;
     object-position: 65% 0%;
     position: absolute; }
-  .page-template-page-about-partners .entry-header .entry-title {
-    position: absolute;
-    bottom: 0px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-    width: 100%;
-    height: 118px;
-    background: #f5a623;
-    margin-bottom: 0; }
 
-.page-template-page-about-partners .entry-content p {
-  margin: 15px 22px; }
+.page-template-page-about-partners .entry-title {
+  position: absolute;
+  bottom: 0rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 118px;
+  background: #f5a623;
+  margin-bottom: 0; }
+
+.page-template-page-about-partners .entry-content {
+  padding: 0; }
+  .page-template-page-about-partners .entry-content p {
+    margin: 15px 22px; }
 
 .page-template-page-about-partners .linkhighlight a {
   color: #5C8EDC;
@@ -5307,16 +5330,19 @@ article {
 
 @media all and (min-width: 590px) {
   .page-template-page-about-partners .entry-header {
-    max-width: 768px;
-    height: 375px; }
+    height: 265px; }
+    .page-template-page-about-partners .entry-header img {
+      object-position: 45% 0%; }
   .page-template-page-about-partners .entry-content p {
     font-size: 18px; }
   .page-template-page-about-partners .individual-partner, .page-template-page-about-partners .partner-container {
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%; }
   .page-template-page-about-partners .entry-title {
-    bottom: -10rem;
-    height: 10rem; }
+    bottom: -7.5rem;
+    height: 7.5rem; }
+  .page-template-page-about-partners .entry-content {
+    margin-top: 7.5rem; }
   .page-template-page-about-partners .content-area {
     margin-top: 1rem; }
   .page-template-page-about-partners .partner-name {
@@ -5324,12 +5350,25 @@ article {
   .page-template-page-about-partners .logo-container {
     min-width: 165px; }
   .page-template-page-about-partners .about-back-btn {
-    display: none; } }
+    padding-left: 20px;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end; } }
 
 @media all and (min-width: 1024px) {
   .page-template-page-about-partners .entry-header {
     max-width: 1024px;
-    height: 375px; } }
+    height: 375px; }
+  .page-template-page-about-partners .entry-title {
+    bottom: -10rem;
+    height: 10rem; }
+  .page-template-page-about-partners .entry-content {
+    margin-top: 10rem; }
+  .page-template-page-about-partners .about-back-btn {
+    display: none; } }
+
+.post-612 {
+  margin-bottom: 0; }
 
 .page-template-page-about-sub .site-content {
   width: 100%;
@@ -5340,7 +5379,7 @@ article {
   position: relative; }
   .page-template-page-about-sub .entry-header img {
     object-fit: cover;
-    width: auto;
+    width: 100%;
     height: 100%; }
 
 .page-template-page-about-sub .entry-title {
