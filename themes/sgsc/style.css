@@ -5732,62 +5732,17 @@ article {
       background: #f5a623;
       color: white; }
 
-.page-template-form-success-page .donate-btn {
-  background-color: #F91E72;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 3;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 2.3rem;
-  width: 2.3rem; }
-  @media screen and (min-width: 590px) {
-    .page-template-form-success-page .donate-btn {
-      height: 5rem;
-      width: 5rem; } }
-  .page-template-form-success-page .donate-btn a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 1rem; }
-    @media screen and (min-width: 590px) {
-      .page-template-form-success-page .donate-btn a {
-        font-size: 4rem; } }
-    .page-template-form-success-page .donate-btn a i {
-      font-weight: lighter;
-      padding: .5rem;
-      color: #000000; }
-      .page-template-form-success-page .donate-btn a i:hover {
-        color: #f5a623; }
-    .page-template-form-success-page .donate-btn a p {
-      display: none; }
-
 .page-template-form-success-page .entry-header {
-  max-width: 480px;
   margin: 0 auto;
-  height: 275px;
+  height: 118px;
   position: relative; }
   @media screen and (min-width: 590px) {
     .page-template-form-success-page .entry-header {
-      max-width: 768px;
-      height: 265px; } }
+      height: 120px; } }
   @media screen and (min-width: 590px) and (min-width: 1024px) {
     .page-template-form-success-page .entry-header {
       max-width: 1024px;
-      height: 375px; } }
-  .page-template-form-success-page .entry-header img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 65% 0%;
-    position: absolute; }
-    @media screen and (min-width: 590px) {
-      .page-template-form-success-page .entry-header img {
-        object-position: 45% 0%; } }
+      height: 10rem; } }
 
 .page-template-form-success-page .entry-title {
   position: absolute;
@@ -5804,19 +5759,11 @@ article {
   margin-bottom: 0; }
   @media screen and (min-width: 590px) {
     .page-template-form-success-page .entry-title {
-      bottom: -7.5rem;
-      height: 7.5rem; } }
+      height: 120px; } }
   @media screen and (min-width: 590px) and (min-width: 1024px) {
     .page-template-form-success-page .entry-title {
-      bottom: -10rem;
+      max-width: 1024px;
       height: 10rem; } }
-
-@media screen and (min-width: 590px) {
-  .page-template-form-success-page .content-area {
-    margin-top: 7.5rem; } }
-  @media screen and (min-width: 590px) and (min-width: 1024px) {
-    .page-template-form-success-page .content-area {
-      margin-top: 10rem; } }
 
 .page-template-form-success-page .site-main, .page-template-form-success-page .entry-content {
   padding: 0;
@@ -5829,3 +5776,8 @@ article {
     @media screen and (min-width: 1024px) {
       .page-template-form-success-page .site-main p, .page-template-form-success-page .entry-content p {
         font-size: 18px; } }
+  .page-template-form-success-page .site-main .post-1663, .page-template-form-success-page .entry-content .post-1663 {
+    margin: 7.5rem 0; }
+    @media all and (min-width: 600px) {
+      .page-template-form-success-page .site-main .post-1663, .page-template-form-success-page .entry-content .post-1663 {
+        margin: 12rem 0; } }

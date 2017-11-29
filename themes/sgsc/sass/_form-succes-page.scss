@@ -1,60 +1,13 @@
 .page-template-form-success-page {
-  .donate-btn {
-    background-color: $pink;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2.3rem;
-    width: 2.3rem;
-    @media screen and (min-width: $mobile_width) {
-      height: 5rem;
-      width: 5rem;
-    }
-    a {
-      text-decoration: none;
-      color: $black;
-      font-size: 1rem;
-      @media screen and (min-width: $mobile_width) {
-        font-size: 4rem;
-      }
-      i {
-        font-weight: lighter;
-        padding: .5rem;
-        color: $black;
-        &:hover {
-          color: $orange;
-        }
-      }
-      p {
-        display: none;
-      }
-    }
-  }
   .entry-header {
-    max-width: 480px;
     margin: 0 auto;
-    height: 275px;  
+    height: 118px;  
     position: relative;
     @media screen and (min-width: $mobile_width) {
-      max-width: 768px;
-      height: 265px;
+      height: 120px;
       @media screen and (min-width: $tablet_width) {
         max-width: 1024px;
-        height: 375px;
-      }
-    }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 65% 0%;
-      position: absolute;
-      @media screen and (min-width: $mobile_width) {
-        object-position: 45% 0%;
+        height: 10rem;
       }
     }
   }
@@ -69,19 +22,10 @@
     background: $orange;
     margin-bottom: 0;
     @media screen and (min-width: $mobile_width) {
-      bottom: -7.5rem;
-      height: 7.5rem;
+      height: 120px;
       @media screen and (min-width: $tablet_width) {
-        bottom: -10rem;
+        max-width: 1024px;
         height: 10rem;
-      }
-    }
-  }
-  .content-area {
-    @media screen and (min-width: $mobile_width) {
-    margin-top: 7.5rem;
-      @media screen and (min-width: $tablet_width) {
-        margin-top: 10rem;
       }
     }
   }
@@ -95,6 +39,12 @@
       line-height: 24px;
       @media screen and (min-width: $tablet_width) {
         font-size: $font_d-sub-body;
+      }
+    }
+    .post-1663 {
+      margin: 7.5rem 0;
+      @media all and (min-width: $desktop-view) {
+        margin: 12rem 0;
       }
     }
   }
