@@ -1,0 +1,13 @@
+.intern-template-default {
+  .entry-content {
+    padding: 0 22px;
+  }
+}
+
+@media screen and (min-width: $mobile_width) {
+  .intern-template-default {
+    .entry-content {
+      padding: 0 52px;
+    }
+  }
+}
