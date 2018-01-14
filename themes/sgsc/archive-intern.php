@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Archive Intern Template
+* Template Name: Archive InternPage Template
  *
  * @package SGSC_Theme
  */
