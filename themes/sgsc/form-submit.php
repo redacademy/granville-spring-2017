@@ -21,7 +21,7 @@ $medications = $_POST['medications'];
 $home_visit = $_POST['home_visit'];
 
 //php mailer variables
-$to = 'sgscdevs@gmail.com';
+$to = 'info@southgranvilleseniors.ca';
 $subject = "Membership Application from ". $firstname ." ". $lastname;
 $headers = 'From: '. $email . "\r\n" .'Reply-To: ' . $email . "\r\n";
 $subject = "Membership Application from ". $firstname ." ". $lastname;
