@@ -310,8 +310,8 @@
 			height: 20rem;
 		}
 		.tribe-events-list-event-title {
-			height: 12.5rem;
-			font-size: 1.8rem;
+			min-height: 12.5rem;
+			max-height: 18rem;
 		}
 		.gallery-widget-img {
 			height: 186px;

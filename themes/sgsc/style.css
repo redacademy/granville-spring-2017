@@ -4710,8 +4710,8 @@ span.wpcf7-not-valid-tip {
   .events-archive .widget-title {
     height: 20rem; }
   .events-archive .tribe-events-list-event-title {
-    height: 12.5rem;
-    font-size: 1.8rem; }
+    min-height: 12.5rem;
+    max-height: 18rem; }
   .events-archive .gallery-widget-img {
     height: 186px; }
     .events-archive .gallery-widget-img a {
