@@ -3696,7 +3696,7 @@ span.wpcf7-not-valid-tip {
 #post-18 {
   margin: 0; }
 
-.page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
+.page-template-page-join-us .entry-header, .post-type-archive-intern .entry-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -3716,12 +3716,12 @@ span.wpcf7-not-valid-tip {
   height: 118px;
   color: #000000; }
   @media screen and (min-width: 590px) {
-    .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
+    .page-template-page-join-us .entry-header, .post-type-archive-intern .entry-header {
       height: 120px; } }
   @media screen and (min-width: 1024px) {
-    .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
+    .page-template-page-join-us .entry-header, .post-type-archive-intern .entry-header {
       height: 160px; } }
-  .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-volunteer .entry-header .donate-btn {
+  .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-intern .entry-header .donate-btn {
     background-color: #F91E72;
     position: absolute;
     bottom: 0;
@@ -3736,42 +3736,42 @@ span.wpcf7-not-valid-tip {
     height: 2.3rem;
     width: 2.3rem; }
     @media screen and (min-width: 590px) {
-      .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-volunteer .entry-header .donate-btn {
+      .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-intern .entry-header .donate-btn {
         height: 3.7rem;
         width: 3.7rem; } }
     @media screen and (min-width: 1024px) {
-      .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-volunteer .entry-header .donate-btn {
+      .page-template-page-join-us .entry-header .donate-btn, .post-type-archive-intern .entry-header .donate-btn {
         height: 5rem;
         width: 5rem; } }
-    .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-volunteer .entry-header .donate-btn a {
+    .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-intern .entry-header .donate-btn a {
       text-decoration: none;
       color: #000000;
       font-size: 1rem; }
       @media screen and (min-width: 590px) {
-        .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-volunteer .entry-header .donate-btn a {
+        .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-intern .entry-header .donate-btn a {
           font-size: 2.5rem; } }
       @media screen and (min-width: 1024px) {
-        .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-volunteer .entry-header .donate-btn a {
+        .page-template-page-join-us .entry-header .donate-btn a, .post-type-archive-intern .entry-header .donate-btn a {
           font-size: 4rem; } }
-      .page-template-page-join-us .entry-header .donate-btn a i, .post-type-archive-volunteer .entry-header .donate-btn a i {
+      .page-template-page-join-us .entry-header .donate-btn a i, .post-type-archive-intern .entry-header .donate-btn a i {
         font-weight: lighter;
         padding: .5rem;
         color: #000000; }
-        .page-template-page-join-us .entry-header .donate-btn a i:hover, .post-type-archive-volunteer .entry-header .donate-btn a i:hover {
+        .page-template-page-join-us .entry-header .donate-btn a i:hover, .post-type-archive-intern .entry-header .donate-btn a i:hover {
           color: #f5a623; }
-      .page-template-page-join-us .entry-header .donate-btn a p, .post-type-archive-volunteer .entry-header .donate-btn a p {
+      .page-template-page-join-us .entry-header .donate-btn a p, .post-type-archive-intern .entry-header .donate-btn a p {
         display: none; }
-  .page-template-page-join-us .entry-header .entry-meta, .post-type-archive-volunteer .entry-header .entry-meta {
+  .page-template-page-join-us .entry-header .entry-meta, .post-type-archive-intern .entry-header .entry-meta {
     display: none; }
 
-.page-template-page-join-us .entry-title, .post-type-archive-volunteer .entry-title {
+.page-template-page-join-us .entry-title, .post-type-archive-intern .entry-title {
   margin: auto; }
 
-.page-template-page-join-us .entry-content, .post-type-archive-volunteer .entry-content {
+.page-template-page-join-us .entry-content, .post-type-archive-intern .entry-content {
   margin: 0;
   padding: 0; }
 
-.page-template-page-join-us .join-us-section, .post-type-archive-volunteer .join-us-section {
+.page-template-page-join-us .join-us-section, .post-type-archive-intern .join-us-section {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
@@ -3784,13 +3784,13 @@ span.wpcf7-not-valid-tip {
   max-height: 750px;
   padding-bottom: 0;
   background-position: 60%; }
-  .page-template-page-join-us .join-us-section div:first-child, .post-type-archive-volunteer .join-us-section div:first-child {
+  .page-template-page-join-us .join-us-section div:first-child, .post-type-archive-intern .join-us-section div:first-child {
     margin-top: 17px; }
 
-.page-template-page-join-us .form-link, .post-type-archive-volunteer .form-link {
+.page-template-page-join-us .form-link, .post-type-archive-intern .form-link {
   color: #000000; }
 
-.page-template-page-join-us .rectangle, .post-type-archive-volunteer .rectangle {
+.page-template-page-join-us .rectangle, .post-type-archive-intern .rectangle {
   height: 208px;
   box-sizing: border-box;
   -ms-flex-direction: column;
@@ -3798,16 +3798,16 @@ span.wpcf7-not-valid-tip {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.8);
   border: 4px solid rgba(255, 255, 255, 0); }
-  .page-template-page-join-us .rectangle:hover, .post-type-archive-volunteer .rectangle:hover {
+  .page-template-page-join-us .rectangle:hover, .post-type-archive-intern .rectangle:hover {
     border: 4px solid #000000; }
 
 .page-template-page-join-us .new-member,
 .page-template-page-join-us .membership-renewal,
 .page-template-page-join-us .volunteer,
-.page-template-page-join-us .rectangle, .post-type-archive-volunteer .new-member,
-.post-type-archive-volunteer .membership-renewal,
-.post-type-archive-volunteer .volunteer,
-.post-type-archive-volunteer .rectangle {
+.page-template-page-join-us .rectangle, .post-type-archive-intern .new-member,
+.post-type-archive-intern .membership-renewal,
+.post-type-archive-intern .volunteer,
+.post-type-archive-intern .rectangle {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -3817,15 +3817,15 @@ span.wpcf7-not-valid-tip {
 
 .page-template-page-join-us .new-member,
 .page-template-page-join-us .membership-renewal,
-.page-template-page-join-us .volunteer, .post-type-archive-volunteer .new-member,
-.post-type-archive-volunteer .membership-renewal,
-.post-type-archive-volunteer .volunteer {
+.page-template-page-join-us .volunteer, .post-type-archive-intern .new-member,
+.post-type-archive-intern .membership-renewal,
+.post-type-archive-intern .volunteer {
   margin-top: 21px; }
   .page-template-page-join-us .new-member h2,
   .page-template-page-join-us .membership-renewal h2,
-  .page-template-page-join-us .volunteer h2, .post-type-archive-volunteer .new-member h2,
-  .post-type-archive-volunteer .membership-renewal h2,
-  .post-type-archive-volunteer .volunteer h2 {
+  .page-template-page-join-us .volunteer h2, .post-type-archive-intern .new-member h2,
+  .post-type-archive-intern .membership-renewal h2,
+  .post-type-archive-intern .volunteer h2 {
     font-family: montserrat, merriweather, sans-serif;
     font-size: 19px;
     color: #000000;
@@ -3843,21 +3843,21 @@ span.wpcf7-not-valid-tip {
         align-items: center;
     width: 80%; }
 
-.page-template-page-join-us .rectangle p, .post-type-archive-volunteer .rectangle p {
+.page-template-page-join-us .rectangle p, .post-type-archive-intern .rectangle p {
   display: none; }
 
-.page-template-page-join-us .membership-links, .post-type-archive-volunteer .membership-links {
+.page-template-page-join-us .membership-links, .post-type-archive-intern .membership-links {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center; }
-  .page-template-page-join-us .membership-links a, .post-type-archive-volunteer .membership-links a {
+  .page-template-page-join-us .membership-links a, .post-type-archive-intern .membership-links a {
     -webkit-text-decoration-color: #000000;
             text-decoration-color: #000000; }
 
-.page-template-page-join-us .links-title, .post-type-archive-volunteer .links-title {
+.page-template-page-join-us .links-title, .post-type-archive-intern .links-title {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-align: center;
@@ -3865,17 +3865,17 @@ span.wpcf7-not-valid-tip {
   color: #000000;
   font-size: 16px; }
   @media all and (min-width: 590px) {
-    .page-template-page-join-us .links-title, .post-type-archive-volunteer .links-title {
+    .page-template-page-join-us .links-title, .post-type-archive-intern .links-title {
       font-size: 18px; } }
 
-.page-template-page-join-us .form-link, .post-type-archive-volunteer .form-link {
+.page-template-page-join-us .form-link, .post-type-archive-intern .form-link {
   display: initial !important;
   padding: 0 0.25rem; }
 
 @media all and (min-width: 590px) {
-  .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
+  .page-template-page-join-us .entry-header, .post-type-archive-intern .entry-header {
     width: 768px; }
-  .page-template-page-join-us .join-us-section, .post-type-archive-volunteer .join-us-section {
+  .page-template-page-join-us .join-us-section, .post-type-archive-intern .join-us-section {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: initial;
@@ -3890,18 +3890,18 @@ span.wpcf7-not-valid-tip {
         flex-direction: row;
     background-size: 100%;
     min-height: 393px; }
-    .page-template-page-join-us .join-us-section div:first-child, .post-type-archive-volunteer .join-us-section div:first-child {
+    .page-template-page-join-us .join-us-section div:first-child, .post-type-archive-intern .join-us-section div:first-child {
       margin-top: initial; }
-  .page-template-page-join-us .rectangle, .post-type-archive-volunteer .rectangle {
+  .page-template-page-join-us .rectangle, .post-type-archive-intern .rectangle {
     margin-top: initial;
     min-height: 393px;
     box-sizing: border-box;
     width: 29.5%;
     background-color: rgba(255, 255, 255, 0.8);
     border: 4px solid rgba(255, 255, 255, 0); }
-    .page-template-page-join-us .rectangle:hover, .post-type-archive-volunteer .rectangle:hover {
+    .page-template-page-join-us .rectangle:hover, .post-type-archive-intern .rectangle:hover {
       border: 4px solid #000000; }
-    .page-template-page-join-us .rectangle p, .post-type-archive-volunteer .rectangle p {
+    .page-template-page-join-us .rectangle p, .post-type-archive-intern .rectangle p {
       font-family: lato, novecentosanswide, sans-serif;
       font-size: 18px;
       color: #000000;
@@ -3914,9 +3914,9 @@ span.wpcf7-not-valid-tip {
       display: flex; } }
 
 @media all and (min-width: 1024px) {
-  .page-template-page-join-us .entry-header, .post-type-archive-volunteer .entry-header {
+  .page-template-page-join-us .entry-header, .post-type-archive-intern .entry-header {
     width: 1024px; }
-  .page-template-page-join-us .join-us-section, .post-type-archive-volunteer .join-us-section {
+  .page-template-page-join-us .join-us-section, .post-type-archive-intern .join-us-section {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: initial;
@@ -3929,14 +3929,14 @@ span.wpcf7-not-valid-tip {
     -ms-flex-direction: row;
         flex-direction: row;
     background-size: 100%; }
-  .page-template-page-join-us .rectangle, .post-type-archive-volunteer .rectangle {
+  .page-template-page-join-us .rectangle, .post-type-archive-intern .rectangle {
     width: 29.5%;
     min-height: 615px; }
   .page-template-page-join-us .new-member h2,
   .page-template-page-join-us .membership-renewal h2,
-  .page-template-page-join-us .volunteer h2, .post-type-archive-volunteer .new-member h2,
-  .post-type-archive-volunteer .membership-renewal h2,
-  .post-type-archive-volunteer .volunteer h2 {
+  .page-template-page-join-us .volunteer h2, .post-type-archive-intern .new-member h2,
+  .post-type-archive-intern .membership-renewal h2,
+  .post-type-archive-intern .volunteer h2 {
     font-family: montserrat, merriweather, sans-serif;
     font-size: 24px;
     height: 58px;
@@ -3946,125 +3946,12 @@ span.wpcf7-not-valid-tip {
     line-height: 29px;
     width: 80%; } }
 
-.post-type-archive-volunteer .entry-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  background: #f5a623;
-  height: 118px;
-  width: 590px;
-  max-width: 1024px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  position: relative;
-  background: #f5a623;
-  width: 100%;
-  height: 118px;
-  color: #000000; }
-  @media screen and (min-width: 590px) {
-    .post-type-archive-volunteer .entry-header {
-      height: 120px; } }
-  @media screen and (min-width: 1024px) {
-    .post-type-archive-volunteer .entry-header {
-      height: 160px; } }
-  .post-type-archive-volunteer .entry-header .donate-btn {
-    background-color: #F91E72;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 3;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    height: 2.3rem;
-    width: 2.3rem; }
-    @media screen and (min-width: 590px) {
-      .post-type-archive-volunteer .entry-header .donate-btn {
-        height: 3.7rem;
-        width: 3.7rem; } }
-    @media screen and (min-width: 1024px) {
-      .post-type-archive-volunteer .entry-header .donate-btn {
-        height: 5rem;
-        width: 5rem; } }
-    .post-type-archive-volunteer .entry-header .donate-btn a {
-      text-decoration: none;
-      color: #000000;
-      font-size: 1rem; }
-      @media screen and (min-width: 590px) {
-        .post-type-archive-volunteer .entry-header .donate-btn a {
-          font-size: 2.5rem; } }
-      @media screen and (min-width: 1024px) {
-        .post-type-archive-volunteer .entry-header .donate-btn a {
-          font-size: 4rem; } }
-      .post-type-archive-volunteer .entry-header .donate-btn a i {
-        font-weight: lighter;
-        padding: .5rem;
-        color: #000000; }
-        .post-type-archive-volunteer .entry-header .donate-btn a i:hover {
-          color: #f5a623; }
-      .post-type-archive-volunteer .entry-header .donate-btn a p {
-        display: none; }
-  .post-type-archive-volunteer .entry-header .entry-meta {
-    display: none; }
+.intern-template-default .entry-content {
+  padding: 0 22px; }
 
-.post-type-archive-volunteer .entry-title {
-  margin: auto; }
-
-.post-type-archive-volunteer .volunteer-post {
-  margin: 20px 25px; }
-
-.post-type-archive-volunteer .volunteer-title {
-  font-size: 16px;
-  text-align: center; }
-
-.post-type-archive-volunteer .volunteer-header h1 {
-  font-family: lato, novecentosanswide, sans-serif;
-  font-weight: bold;
-  font-size: 24px; }
-
-.post-type-archive-volunteer .volunteer-content {
-  font-size: 16px; }
-
-.post-type-archive-volunteer .no-postings {
-  margin: 10rem 0;
-  text-align: center; }
-  @media all and (min-width: 600px) {
-    .post-type-archive-volunteer .no-postings {
-      margin: 15rem 0; } }
-
-@media all and (min-width: 600px) {
-  .post-type-archive-volunteer .volunteer-post {
-    margin: 20px 25px; }
-  .post-type-archive-volunteer .volunteer-title {
-    font-size: 16px;
-    font-weight: 300; }
-  .post-type-archive-volunteer .volunteer-header {
-    width: 1024px;
-    margin: auto; }
-  .post-type-archive-volunteer .volunteer-content p {
-    column-width: 512px;
-    font-size: 18px; }
-  .post-type-archive-volunteer .csRow {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-  .post-type-archive-volunteer .csColumn {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%; } }
+@media screen and (min-width: 590px) {
+  .intern-template-default .entry-content {
+    padding: 0 52px; } }
 
 /*--------------------------------------------------------------
 # Donate-Page

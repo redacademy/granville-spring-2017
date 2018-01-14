@@ -1,7 +1,7 @@
 #post-18 {
   margin: 0;
 }
-.page-template-page-join-us, .post-type-archive-volunteer {
+.page-template-page-join-us, .post-type-archive-intern {
   .entry-header {
     display: flex;
     justify-content: center;
@@ -105,7 +105,7 @@
 }
 
 @media all and (min-width: $mobile_width) {
-  .page-template-page-join-us, .post-type-archive-volunteer {
+  .page-template-page-join-us, .post-type-archive-intern {
     .entry-header {
       width: 768px;
     }
@@ -150,7 +150,7 @@
 }
 
 @media all and (min-width: $tablet_width) {
-  .page-template-page-join-us, .post-type-archive-volunteer {
+  .page-template-page-join-us, .post-type-archive-intern {
 
 
     .entry-header {

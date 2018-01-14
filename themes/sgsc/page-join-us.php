@@ -62,9 +62,9 @@ get_the_title();
 							<p><?php echo CFS()->get( 'membership_renewal_text' );	?></p>
 						</a>	
 						<!--<div class="volunteer rectangle">-->
-							<a class="volunteer rectangle" href="<?php echo get_post_type_archive_link( 'volunteer' ); ?>">
-							<h2><?php echo CFS()->get( 'volunteer_opportunities' );	?></h2>
-							<p><?php echo CFS()->get( 'volunteer_opportunities_text' );	?></p></a>
+							<a class="volunteer rectangle" href="<?php echo get_post_type_archive_link( 'intern' ); ?>">
+							<h2><?php echo CFS()->get( 'intern_opportunities' );	?></h2>
+							<p><?php echo CFS()->get( 'intern_opportunities_text' );	?></p></a>
 						<!--</div>-->
 					</div>
 

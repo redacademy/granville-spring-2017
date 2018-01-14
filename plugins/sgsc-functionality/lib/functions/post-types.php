@@ -128,7 +128,7 @@ function intern_post_type() {
 		'archives'              => 'Intern Archives',
 		'attributes'            => 'Intern Attributes',
 		'parent_item_colon'     => 'Intern Parent Item:',
-		'all_items'             => 'All Volunteers',
+		'all_items'             => 'All Interns',
 		'add_new_item'          => 'Add New Intern',
 		'add_new'               => 'Add New',
 		'new_item'              => 'New Intern',
