@@ -2199,7 +2199,8 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  width: 100%; }
   .post-type-archive-gallery .lastest-gallery-section .page-header {
     display: -ms-flexbox;
     display: flex;
