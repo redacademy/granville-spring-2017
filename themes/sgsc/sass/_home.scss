@@ -17,12 +17,6 @@
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    @media screen and (min-width: $mobile_width) {
-      width: 100vw;
-    }
-    @media screen and (min-width: $tablet_width) {
-      width: $d_width;
-    }
 }
 
 .image-position {
@@ -93,8 +87,18 @@
         justify-content: space-between;
         align-items: center;
     }
+    .blog .site-main {
+        width: 100vw;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }    
+    .blog article {
+        width: 50%;
+        padding: 0 20px;
+    }    
     .blog .entry-blog {
-        width: 48%;
+        width: 100%;
     }
 }
 
@@ -102,10 +106,7 @@
     .content-area {
         justify-content: center;
     }
-    .blog .entry-blog {
-        width: 48%;
-    }
-    .site-main {
+    .blog .site-main {
         width: $d_width;
         flex-flow: row wrap;
         justify-content: space-between;
